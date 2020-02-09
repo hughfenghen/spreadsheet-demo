@@ -1,0 +1,713 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%ProjectTitle%% - %%ItemTitle%%</title>" --><title>SpreadJS Documentation - Scatter Chart</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ProjectTitle%% - %%ItemTitleNoQuotes%%""/>" --><meta name="Title" content="SpreadJS Documentation - Scatter Chart"/><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n371","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="light" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="An Scatter chart is extensively used to illustrate relationships between individual items or categories. This chart is ideal for showing comparisons for scientific, statistical and engineering data." /><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-topics/topics.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-topics/topics.mshv1.css"" data-responsive-mobile=""template/packages/core-topics/topics.mobile.css"" data-responsive-tablet=""template/packages/core-topics/topics.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="script"--><script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="script"--><script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="6470d0c4-58ac-4cb8-b19a-2d3bccd8d1df"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="1124f6de-499a-4032-8d2a-c338ec23d096"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocOrdinal" format="<meta name=""Microsoft.Help.TocOrder"" content=""%%TocOrdinal%%""/>" --><meta name="Microsoft.Help.TocOrder" content="6"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/hs-simpletab.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="StylePropertyValues" format="<style>%%StylePropertyValues%%</style>" --><style>.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+    <!--DXMETADATA start type="CustomHeadContent" --><link rel="stylesheet" type="text/css" href="template/packages/core-web/css/SP.css">
+<script type="text/javascript">
+var currentHeader = function() {
+    return "spjs";
+}
+</script>
+<script src="template/packages/core-web/script/topNavigation.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WT462SJ"></script>
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime()
+                , event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WT462SJ');
+    </script>
+<!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->SpreadJS Documentation<!--DXMETADATA end--></div>
+            <div class="i-search-container">
+                <!--DXMETADATA start type="outputfileextension" format="<form action=""websearch%%outputfileextension%%"">" --><form action="websearch.html"><!--DXMETADATA end-->
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                <!--DXMETADATA start type="Literal" value="</form>" --></form><!--DXMETADATA end-->
+            </div>
+            <!--DXMETADATA start type="outputfileextension" format="<a id=""i-index-button"" href=""webindex%%outputfileextension%%""></a>" --><a id="i-index-button" href="webindex.html"></a><!--DXMETADATA end-->
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container">
+<a href="overview.html">SpreadJS Documentation</a>
+ / <a href="devguide.html">Developer's Guide</a>
+ / <a href="features.html">Features</a>
+ / <a href="ManagingDataVisualizationAndObjects.html">Manage Data Visualization and Objects</a>
+ / <a href="Charts.html">Charts</a>
+ / <a href="ChartTypes.html">Chart Types</a>
+ / Scatter Chart</div><!--DXMETADATA end --></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="ItemTitle" -->Scatter Chart<!--DXMETADATA end--></div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+            </div>
+            <!--DXMETADATA start type="TopicSection" name="BodyText"--><p>An Scatter chart is extensively used to illustrate relationships between individual items or categories. This chart is ideal for showing comparisons for scientific, statistical and engineering data.</p>
+
+<p>The data arranged in columns or rows&nbsp;of&nbsp;a worksheet can be plotted in a Scatter chart. Unlike other charts, a scatter chart displays the actual values of the x and y&nbsp;variables in horizontal axis (also called X axis)&nbsp;and vertical axis (also called&nbsp;Y axis)&nbsp;respectively in the plot area. Typically, this chart combines the x and y values into single data points and displays them&nbsp;at&nbsp;irregular intervals. Also, this chart does not make use of the category axis because both horizontal axis (primary axis)&nbsp;and vertical axes (secondary axis)&nbsp;are value axes.</p>
+
+<p>SpreadJS supports the following types of Scatter charts. In the examples shown below, the height and weight distribution of a number of males and females are depicted with the help of different types of scatter charts.</p>
+
+<ol>
+    <li>
+        <strong>Scatter Chart</strong>
+
+        <p>A clustered Scatter chart displays the data points based on a selected data range. This can help users to analyse and determine the relationship between x and y variables.</p>
+
+        <p>An image of a scatter chart is shown below:<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img border="0" alt="" src="images/xyscatter.png" /></p>
+    </li>
+
+    <li>
+        <strong>Scatter with Smooth Lines</strong> <strong>and Markers</strong>
+
+        <p>A scatter chart with smooth lines and markers displays a smooth curve that connects all the data points in a particular series.</p>
+
+        <p>An image of a scatter chart with smooth line and markers&nbsp;is shown below:<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img border="0" alt="" src="images/xyscattersmooth.png" /></p>
+    </li>
+
+    <li>
+        <strong>Scatter with Smooth Lines&nbsp;</strong>
+
+        <p>A scatter chart with smooth lines displays a smooth curve that connects all the data points in a particular series without displaying the individual points.</p>
+
+        <p>An image of&nbsp;a Scatter chart with smooth lines is shown below:<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img border="0" alt="" src="images/xyscattersmoothnomarkers.png" /></p>
+    </li>
+
+    <li>
+        <strong>Scatter with Straight Lines and Markers</strong>
+
+        <p>A scatter chart with straight lines and markers displays a straight line that connects all the data points in a particular series.</p>
+
+        <p>An image of&nbsp;a Scatter chart with straight lines and markers is shown below:<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img border="0" alt="" src="images/xyscatterlines.png" /></p>
+    </li>
+
+    <li>
+        <strong>Scatter with Straight Lines&nbsp;</strong>
+
+        <p>A scatter chart with straight lines displays a straight connecting line between data points in a particular series without showing the individual points.</p>
+
+        <p>An image of&nbsp;a Scatter chart with straight lines is shown below:<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img border="0" alt="" src="images/xyscatterlinesnomarkers.png" /></p>
+    </li>
+
+    <li>&nbsp;<strong>Bubble Chart</strong>
+
+        <p>A bubble chart is ideal for financial data analysis. It displays the variations of a scatter chart where data points are replaced with bubbles and a third dimension is represented (Z axis)&nbsp;in the size of the bubbles. This chart plots z(size) values as well as x values and y values.&nbsp;Typically, this chart can be used when you want to plot three data series. The size of the bubbles is determined by the values in the third data series.</p>
+
+        <p>An image of&nbsp;a bubble chart is shown below:<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img border="0" alt="" src="images/bubble_chart.png" /></p>
+    </li>
+</ol>
+
+<h4>Using Code</h4>
+
+<p>This code shows how to add different types of scatter charts in a spreadsheet.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <p class="i-dropdown-heading">Click here to see code</p>
+
+                    <div class="i-dropdown-content">
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">var</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">scatterDataArray = [];</font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">var</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">scatterWithLineDataArray = dataArray = [[</font></font><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"Period"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">,</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"Zantedeschia"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">,</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"Celosia"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">,</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"Calendula"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">], [0, 0, 0, 0], [1, 2, 1, 1], [2, 6, 1, 2], [3, 6, 1, 2], [4, 10, 2, 2], [5, 11, 2, 2], [6, 13, 2, 3], [7, 14, 2, 4], [8, 15, 3, 5], [9, 16, 3, 7], [10, 17, 4, 9], [11, 22, 4, 11], [12, 27, 5, 12], [13, 30, 8, 13], [14, 32, 10, 14], [15, 34, 13, 15], [16, 36, 16, 15], [17, 37, 20, 15], [18, 39, 23, 15], [19, 40, 25, 15], [20, 40, 25, 15]];</font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">function</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">initSpread(spread) {</font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">var</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">chartType = [{</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">type: GC.Spread.Sheets.Charts.ChartType.xyScatterSmoothNoMarkers,</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">desc:</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"xyScatterSmoothNoMarkers"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">,</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">}, {</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">type: GC.Spread.Sheets.Charts.ChartType.xyScatterSmooth,</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">desc:</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"xyScatterSmooth"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">,</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">}, {</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">type: GC.Spread.Sheets.Charts.ChartType.xyScatterLinesNoMarkers,</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">desc:</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"xyScatterLinesNoMarkers"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">,</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">}, {</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">type: GC.Spread.Sheets.Charts.ChartType.xyScatterLines,</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">desc:</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"xyScatterLines"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">,</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">}];</font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">var</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">sheets = SpreadJS;</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">spread.suspendPaint();</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">initXYScatterSheet(sheets[0]);</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">initXYScatterChart(sheets[0]);</font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">for</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">(</font></font><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">var</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">i = 0; i &lt; chartType.length; i++) {</font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">var</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">sheet = sheets[i + 1];</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">initSheet(sheet, chartType[i].desc);</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">initChart(sheet, chartType[i].type);</font></font><font color="green" size="2" face="Consolas"><font color="green" size="2" face="Consolas"><font color="green" size="2" face="Consolas">//add chart</font></font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">}</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">initBubbleSheet(sheets[sheets.length - 1]);</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">initBubbleChart(sheets[sheets.length - 1]);</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">spread.options.tabStripRatio = 0.8;</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">spread.resumePaint();</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">}</font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">function</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">initSheet(sheet, sheetName) {</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">sheet.name(sheetName);</font></font></p>
+
+                        <p><font color="green" size="2" face="Consolas"><font color="green" size="2" face="Consolas"><font color="green" size="2" face="Consolas">//prepare data for chart</font></font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">var</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">dataArray = [[</font></font><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"Period"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">,</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"Zantedeschia"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">,</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"Celosia"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">,</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"Calendula"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">], [0, 0, 0, 0], [1, 2, 1, 1], [2, 6, 1, 2], [3, 6, 1, 2], [4, 10, 2, 2], [5, 11, 2, 2], [6, 13, 2, 3], [7, 14, 2, 4], [8, 15, 3, 5], [9, 16, 3, 7], [10, 17, 4, 9], [11, 22, 4, 11], [12, 27, 5, 12], [13, 30, 8, 13], [14, 32, 10, 14], [15, 34, 13, 15], [16, 36, 16, 15], [17, 37, 20, 15], [18, 39, 23, 15], [19, 40, 25, 15], [20, 40, 25, 15]];</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">sheet.setArray(0, 0, dataArray);</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">}</font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">function</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">initChart(sheet, chartType) {</font></font></p>
+
+                        <p><font color="green" size="2" face="Consolas"><font color="green" size="2" face="Consolas"><font color="green" size="2" face="Consolas">//add chart</font></font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">var</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">chart = sheet.charts.add((sheet.name() +</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">'Chart1'</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">), chartType, 280, 0, 650, 290,</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"A1:D22"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">, GC.Spread.Sheets.Charts.RowCol.columns);</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">changeGridLines(chart);</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">chart.title({ text:</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"The Influence of Greenhouse Cultivation on Different Flowers"</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">});</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">}</font></font></p>
+
+                        <p><font color="green" size="2" face="Consolas"><font color="green" size="2" face="Consolas"><font color="green" size="2" face="Consolas">// show gridLines</font></font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">function</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">changeGridLines(chart) {</font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">var</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">gridLinesAxes = chart.axes();</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">gridLinesAxes.primaryCategory.majorGridLine.visible =</font></font> <font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">true</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">;</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">gridLinesAxes.primaryCategory.title.text =</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"Period(day)"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">;</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">gridLinesAxes.primaryValue.title.text =</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"Number of Flowering"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">;</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">chart.axes(gridLinesAxes);</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">}</font></font></p>
+
+                        <p><font color="green" size="2" face="Consolas"><font color="green" size="2" face="Consolas"><font color="green" size="2" face="Consolas">// show gridLines</font></font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">function</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">changeXYScatterChartGridLines(chart) {</font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">var</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">axes = chart.axes();</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">axes.primaryCategory.majorGridLine.visible =</font></font> <font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">true</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">;</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">axes.primaryCategory.min = 140;</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">axes.primaryCategory.max = 200;</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">axes.primaryCategory.title.text =</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"Height(cm)"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">;</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">axes.primaryValue.min = 40;</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">axes.primaryValue.max = 120;</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">axes.primaryValue.title.text =</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"Weight(kg)"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">;</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">chart.axes(axes);</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">}</font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">function</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">addSeries(chart, chartType) {</font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">var</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">series1 = {}, series2 = {};</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">series1.name =</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"A1"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">;</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">series1.xValues =</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"A3:A200"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">;</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">series1.yValues =</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"B3:B200"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">;</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">series1.chartType = chartType;</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">series1.axisGroup = GC.Spread.Sheets.Charts.AxisGroup.primary;</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">chart.series().add(series1);</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">series2.name =</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"C1"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">;</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">series2.xValues =</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"C3:C200"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">;</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">series2.yValues =</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"D3:D200"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">;</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">series2.chartType = chartType;</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">series2.axisGroup = GC.Spread.Sheets.Charts.AxisGroup.primary;</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">chart.series().add(series2);</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">}</font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">function</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">initXYScatterSheet(sheet) {</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">sheet.name(</font></font><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"xyScatter"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">);</font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">var</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">femaleDataArray = [[</font></font><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"Female"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">,</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">""</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">], [</font></font><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"Height"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">,</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"Weight"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[161.2, 51.6], [167.5, 59.0], [159.5, 49.2], [157.0, 63.0], [155.8, 53.6],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[170.0, 59.0], [159.1, 47.6], [166.0, 69.8], [176.2, 66.8], [160.2, 75.2],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[172.5, 55.2], [170.9, 54.2], [172.9, 62.5], [153.4, 42.0], [160.0, 50.0],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[147.2, 49.8], [168.2, 49.2], [175.0, 73.2], [157.0, 47.8], [167.6, 68.8],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[167.6, 61.0], [160.7, 69.1], [163.2, 55.9], [152.4, 46.5], [157.5, 54.3],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[168.3, 54.8], [180.3, 60.7], [165.5, 60.0], [165.0, 62.0], [164.5, 60.3],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[156.0, 52.7], [160.0, 74.3], [163.0, 62.0], [165.7, 73.1], [161.0, 80.0],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[162.0, 54.7], [166.0, 53.2], [174.0, 75.7], [172.7, 61.1], [167.6, 55.7],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[151.1, 48.7], [164.5, 52.3], [163.5, 50.0], [152.0, 59.3], [169.0, 62.5],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[164.0, 55.7], [161.2, 54.8], [155.0, 45.9], [170.0, 70.6], [176.2, 67.2],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[170.0, 69.4], [162.5, 58.2], [170.3, 64.8], [164.1, 71.6], [169.5, 52.8],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[163.2, 59.8], [154.5, 49.0], [159.8, 50.0], [173.2, 69.2], [170.0, 55.9],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[161.4, 63.4], [169.0, 58.2], [166.2, 58.6], [159.4, 45.7], [162.5, 52.2],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[159.0, 48.6], [162.8, 57.8], [159.0, 55.6], [179.8, 66.8], [162.9, 59.4],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[161.0, 53.6], [151.1, 73.2], [168.2, 53.4], [168.9, 69.0], [173.2, 58.4],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[171.8, 56.2], [178.0, 70.6], [164.3, 59.8], [163.0, 72.0], [168.5, 65.2],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[166.8, 56.6], [172.7, 105.2], [163.5, 51.8], [169.4, 63.4], [167.8, 59.0],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[159.5, 47.6], [167.6, 63.0], [161.2, 55.2], [160.0, 45.0], [163.2, 54.0],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[170.5, 64.5], [159.2, 51.8], [157.5, 56.0], [161.3, 63.6], [162.6, 63.2],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[160.0, 59.5], [168.9, 56.8], [165.1, 64.1], [162.6, 50.0], [165.1, 72.3],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[166.4, 55.0], [160.0, 55.9], [152.4, 60.4], [170.2, 69.1], [162.6, 84.5],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[170.2, 55.9], [158.8, 55.5], [172.7, 69.5], [167.6, 76.4], [162.6, 61.4],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[167.6, 65.9], [156.2, 58.6], [175.2, 66.8], [172.1, 56.6], [162.6, 58.6],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[160.0, 55.9], [165.1, 59.1], [182.9, 81.8], [166.4, 70.7], [165.1, 56.8],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[177.8, 60.0], [165.1, 58.2], [175.3, 72.7], [154.9, 54.1], [158.8, 49.1],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[172.7, 75.9], [168.9, 55.0], [161.3, 57.3], [167.6, 55.0], [165.1, 65.5],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[175.3, 65.5], [157.5, 48.6], [163.8, 58.6], [167.6, 63.6], [165.1, 55.2],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[165.1, 62.7], [168.9, 56.6], [162.6, 53.9], [164.5, 63.2], [176.5, 73.6],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[168.9, 62.0], [175.3, 63.6], [159.4, 53.2], [160.0, 53.4], [170.2, 55.0],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[162.6, 70.5], [167.6, 54.5], [162.6, 54.5], [160.7, 55.9], [160.0, 59.0],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[157.5, 63.6], [162.6, 54.5], [152.4, 47.3], [170.2, 67.7], [165.1, 80.9],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[172.7, 70.5], [165.1, 60.9], [170.2, 63.6], [170.2, 54.5], [170.2, 59.1],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[161.3, 70.5], [167.6, 52.7], [167.6, 62.7], [165.1, 86.3], [162.6, 66.4],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[152.4, 67.3], [168.9, 63.0], [170.2, 73.6], [175.2, 62.3], [175.2, 57.7],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[169.5, 67.3], [160.0, 75.5], [172.7, 68.2], [162.6, 61.4], [157.5, 76.8],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[176.5, 71.8], [164.4, 55.5], [160.7, 48.6], [174.0, 66.4], [163.8, 67.3]];</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">sheet.setArray(0, 0, femaleDataArray);</font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">var</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">maleDataArray = [[</font></font><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"Male"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">,</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">""</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">], [</font></font><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"Height"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">,</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"Weight"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[174.0, 65.6], [175.3, 71.8], [193.5, 80.7], [186.5, 72.6], [187.2, 78.8],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[181.5, 74.8], [184.0, 86.4], [184.5, 78.4], [175.0, 62.0], [184.0, 81.6],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[180.0, 76.6], [177.8, 83.6], [192.0, 90.0], [176.0, 74.6], [174.0, 71.0],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[184.0, 79.6], [192.7, 93.8], [171.5, 70.0], [173.0, 72.4], [176.0, 85.9],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[169.5, 75.6], [174.0, 86.2], [172.7, 75.3], [182.2, 87.1], [164.1, 55.2],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[163.0, 57.0], [171.5, 61.4], [184.2, 76.8], [174.0, 86.8], [174.0, 72.2],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[177.0, 71.6], [186.0, 84.8], [167.0, 68.2], [171.8, 66.1], [182.0, 72.0],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[167.0, 64.6], [177.8, 74.8], [164.5, 70.0], [192.0, 101.6], [175.5, 63.2],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[171.2, 79.1], [181.6, 78.9], [167.4, 67.7], [181.1, 66.0], [177.0, 68.2],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[174.5, 63.9], [177.5, 72.0], [170.5, 56.8], [182.4, 74.5], [197.1, 90.9],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[180.1, 93.0], [175.5, 80.9], [180.6, 72.7], [184.4, 68.0], [175.5, 70.9],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[180.6, 72.5], [177.0, 72.5], [177.1, 83.4], [181.6, 75.5], [176.5, 73.0],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[175.0, 70.2], [174.0, 73.4], [165.1, 70.5], [177.0, 68.9], [192.0, 102.3],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[176.5, 68.4], [169.4, 65.9], [182.1, 75.7], [179.8, 84.5], [175.3, 87.7],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[184.9, 86.4], [177.3, 73.2], [167.4, 53.9], [178.1, 72.0], [168.9, 55.5],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[157.2, 58.4], [180.3, 83.2], [170.2, 72.7], [177.8, 64.1], [172.7, 72.3],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[165.1, 65.0], [186.7, 86.4], [165.1, 65.0], [174.0, 88.6], [175.3, 84.1],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[185.4, 66.8], [177.8, 75.5], [180.3, 93.2], [180.3, 82.7], [177.8, 58.0],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[177.8, 79.5], [177.8, 78.6], [177.8, 71.8], [177.8, 116.4], [163.8, 72.2],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[172.7, 76.8], [177.8, 63.6], [177.8, 80.9], [182.9, 80.9], [170.2, 85.5],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[167.6, 68.6], [175.3, 67.7], [165.1, 66.4], [185.4, 102.3], [181.6, 70.5],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[172.7, 95.9], [190.5, 84.1], [179.1, 87.3], [175.3, 71.8], [170.2, 65.9],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[193.0, 95.9], [171.4, 91.4], [177.8, 81.8], [177.8, 96.8], [167.6, 69.1],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[167.6, 82.7], [180.3, 75.5], [182.9, 79.5], [176.5, 73.6], [186.7, 91.8],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[188.0, 84.1], [188.0, 85.9], [177.8, 81.8], [174.0, 82.5], [177.8, 80.5],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[171.4, 70.0], [185.4, 81.8], [185.4, 84.1], [188.0, 90.5], [188.0, 91.4],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[182.9, 89.1], [176.5, 85.0], [175.3, 69.1], [175.3, 73.6], [188.0, 80.5],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[188.0, 82.7], [175.3, 86.4], [170.5, 67.7], [179.1, 92.7], [177.8, 93.6],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[175.3, 70.9], [182.9, 75.0], [170.8, 93.2], [188.0, 93.2], [180.3, 77.7],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[177.8, 61.4], [185.4, 94.1], [168.9, 75.0], [185.4, 83.6], [180.3, 85.5],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[174.0, 73.9], [167.6, 66.8], [182.9, 87.3], [160.0, 72.3], [180.3, 88.6],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[180.3, 73.2], [167.6, 76.3], [183.0, 65.9], [183.0, 90.9], [179.1, 89.1],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[170.2, 62.3], [177.8, 82.7], [179.1, 79.1], [190.5, 98.2], [177.8, 84.1],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[180.3, 83.2], [180.3, 83.2]];</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">sheet.setArray(0, 2, maleDataArray);</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">}</font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">function</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">initXYScatterChart(sheet) {</font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">var</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">chartType = GC.Spread.Sheets.Charts.ChartType.xyScatter;</font></font></p>
+
+                        <p><font color="green" size="2" face="Consolas"><font color="green" size="2" face="Consolas"><font color="green" size="2" face="Consolas">//add chart</font></font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">var</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">chart = sheet.charts.add((sheet.name() +</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">'Chart1'</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">), chartType, 280, 0, 650, 290,</font></font> <font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">null</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">);</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">addSeries(chart, chartType);</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">changeXYScatterChartGridLines(chart);</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">chart.title({ text:</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"Male and Female Height and Weight Distribution"</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">});</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">}</font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">function</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">initBubbleSheet(sheet) {</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">sheet.name(</font></font><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">'Bubble'</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">);</font></font></p>
+
+                        <p><font color="green" size="2" face="Consolas"><font color="green" size="2" face="Consolas"><font color="green" size="2" face="Consolas">//prepare data for chart</font></font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">var</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">dataArray = [</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[28604, 77, 17096869, 74, 67096869],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[41163, 77.4, 27662440, 71.8, 47662440],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[3516, 68, 1154605773, 78, 1654605773],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[13670, 74.7, 10582082, 72.7, 69582082],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[28599, 75, 4986705, 79, 1986705],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[29476, 77.1, 56943299, 82.1, 26943299],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[31476, 75.4, 78958237, 79.4, 98958237],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[28666, 78.1, 254830, 74.1, 954830],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[4777, 57.7, 870601776, 67.7, 570601776],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[29550, 79.1, 122249285, 82.1, 22249285],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[5076, 67.9, 20194354, 64.9, 40194354],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[12087, 72, 42972254, 76, 342972254],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[24021, 75.4, 3397534, 78.4, 1397534],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[48296, 76.8, 4240375, 78.8, 14240375],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[10088, 70.8, 38195258, 78.8, 18195258],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[19349, 69.6, 147568552, 77.6, 234568552],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[10670, 67.3, 53994605, 77.3, 83994605],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[26424, 75.7, 57110117, 83.7, 86110117],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[37062, 75.4, 252847810, 80.4, 652847810],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[49056, 81.8, 23968973, 79.8, 63968973],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[43294, 81.7, 35939927, 78.7, 15939927],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[13334, 76.9, 1376048943, 80.9, 976048943],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[21291, 78.5, 11389562, 82.5, 151389562],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[38923, 80.8, 5503457, 76.8, 1503457],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[57599, 81.9, 64395345, 75.9, 34395345],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[49053, 81.1, 80688545, 75.1, 20688545],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[42182, 82.8, 329425, 83.8, 1329425],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[5903, 66.8, 1311050527, 65.8, 311050527],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[36162, 83.5, 126573481, 85.5, 326573481],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[4390, 71.4, 25155317, 77.4, 55155317],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[34644, 80.7, 50293439, 83.7, 20293439],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[24186, 80.6, 4528526, 78.6, 13528526],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[64304, 81.6, 5210967, 83.6, 3210967],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[24787, 77.3, 38611794, 74.3, 88611794],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[23038, 73.13, 143456918, 76.13, 83456918],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[19360, 76.5, 78665830, 79.5, 58665830],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[58225, 81.4, 64715810, 76.4, 84715810],</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">[53354, 79.1, 321773631, 83.1, 721773631]</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">];</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">sheet.setArray(0, 0, dataArray);</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">}</font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">function</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">initBubbleChart(sheet) {</font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">var</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">chart = sheet.charts.add(</font></font><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">'BubbleChart1'</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">, GC.Spread.Sheets.Charts.ChartType.bubble, 280, 0, 620, 400,</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">"A1:E38"</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">, GC.Spread.Sheets.Charts.RowCol.columns);</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">changeBubbleGridLines(chart);</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">changeBubbleBackColor(chart);</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">changePrimaryCategoryMin(chart);</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">}</font></font></p>
+
+                        <p><font color="green" size="2" face="Consolas"><font color="green" size="2" face="Consolas"><font color="green" size="2" face="Consolas">// hide bubble gridLines</font></font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">function</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">changeBubbleGridLines(chart) {</font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">var</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">gridLinesAxes = chart.axes();</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">gridLinesAxes.primaryCategory.majorGridLine.visible =</font></font> <font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">false</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">;</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">gridLinesAxes.primaryValue.majorGridLine.visible =</font></font> <font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">false</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">;</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">chart.axes(gridLinesAxes);</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">}</font></font></p>
+
+                        <p><font color="green" size="2" face="Consolas"><font color="green" size="2" face="Consolas"><font color="green" size="2" face="Consolas">//change bubble backColor</font></font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">function</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">changeBubbleBackColor(chart) {</font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">var</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">series = chart.series().get();</font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">var</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">seriesColors = [</font></font><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">'rgba(25, 183, 207, 0.6)'</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">,</font></font> <font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas"><font color="#A31515" size="2" face="Consolas">'rgba(251, 118, 123, 0.6)'</font></font></font><font size="2" face="Consolas"><font size="2" face="Consolas">]</font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">for</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">(</font></font><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">var</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">i = 0; i &lt; series.length; i++) {</font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">var</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">seriesItem = series[i];</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">seriesItem.backColor = seriesColors[i];</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">chart.series().set(i, seriesItem);</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">}</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">}</font></font></p>
+
+                        <p><font color="green" size="2" face="Consolas"><font color="green" size="2" face="Consolas"><font color="green" size="2" face="Consolas">// change primary min num</font></font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">function</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">changePrimaryCategoryMin(chart) {</font></font></p>
+
+                        <p><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas"><font color="blue" size="2" face="Consolas">var</font></font></font> <font size="2" face="Consolas"><font size="2" face="Consolas">gridLinesAxes = chart.axes();</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">gridLinesAxes.primaryValue.min = 50;</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">gridLinesAxes.primaryValue.max = 88;</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">chart.axes(gridLinesAxes);</font></font></p>
+
+                        <p><font size="2" face="Consolas"><font size="2" face="Consolas">}</font></font></p>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div><!--DXMETADATA end-->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORISED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""%%phrase:name=SeeAlso%%%%designlist:tagidentifier=seealso,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><!--DXMETADATA end-->
+            
+            <div id="i-footer-content" class="i-footer-content">
+                <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p><p>Copyright © 2019 GrapeCity, Inc. All rights reserved.</p>
+<p><a href="https://www.grapecity.com/en/forums/winforms-edition" target="_blank">Product Support Forum</a> | <a href="javascript:window.print()">Print this page</a></p>
+<ul class="social">
+<li><a href="https://www.facebook.com/GrapeCityUS/" target="_blank" class="facebook">&nbsp;</a></li>
+<li><a href="https://twitter.com/GrapeCityUS" target="_blank" class="twitter">&nbsp;</a></li>
+<li><a href="https://www.linkedin.com/company/grapecity" target="_blank" class="linkedin">&nbsp;</a></li>
+</ul>
+</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end-->
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

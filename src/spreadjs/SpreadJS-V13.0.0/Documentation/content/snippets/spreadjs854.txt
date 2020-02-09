@@ -1,0 +1,15 @@
+var comment = activeSheet.comments.add(5, 5, "Comment1");
+comment.backColor("yellow");
+comment.foreColor("green");
+comment.displayMode(GC.Spread.Sheets.Comments.DisplayMode.hoverShown);
+
+var comment1 = activeSheet.comments.add(1, 1, "");
+comment1.text("Comment2");
+comment1.displayMode(GC.Spread.Sheets.Comments.DisplayMode.alwaysShown);
+comment1.backColor("red");
+comment1.foreColor("blue");
+
+var gcomments = activeSheet.comments.all();
+for (var i = 0; i < gcomments.length; i++) {
+     alert(gcomments[i].text());
+}

@@ -1,0 +1,59 @@
+.slicer-format-2013 {
+  overflow: hidden;
+}
+.slicer-format-2013 .slicer-format-item {
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 2px 3px;
+  margin-bottom: 5px;
+  border: 1px solid transparent;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.slicer-format-2013 .slicer-format-item:hover {
+  background: #d0f0e0;
+}
+.slicer-format-2013 .slicer-format-item-selected {
+  background: #9fd5b7;  
+}
+
+.slicer-format-2013 .slicer-format-icon {
+  width: 43px;
+  height: 48px;
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url(images/formatslicer2013.png);
+}
+.slicer-format-2013 .slicer-format-light1 {
+  background-position: 0 -48px;
+}
+.slicer-format-2013 .slicer-format-light2 {
+  background-position: 0 -96px;
+}
+.slicer-format-2013 .slicer-format-light3 {
+  background-position: 0 -144px;
+}
+.slicer-format-2013 .slicer-format-light5 {
+  background-position: 0 -240px;
+}
+.slicer-format-2013 .slicer-format-light6 {
+  background-position: 0 -288px;
+}
+.slicer-format-2013 .slicer-format-dark1 {
+  background-position: 0 -432px;
+}
+.slicer-format-2013 .slicer-format-dark2 {
+  background-position: 0 -480px;
+}
+.slicer-format-2013 .slicer-format-dark3 {
+  background-position: 0 -528px;
+}
+.slicer-format-2013 .slicer-format-dark5 {
+  background-position: 0 -624px;
+}
+.slicer-format-2013 .slicer-format-dark6 {
+  background-position: 0 -672px;
+}

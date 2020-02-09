@@ -1,0 +1,458 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%ProjectTitle%% - %%ItemTitle%%</title>" --><title>SpreadJS Documentation - Scroll By Pixel</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ProjectTitle%% - %%ItemTitleNoQuotes%%""/>" --><meta name="Title" content="SpreadJS Documentation - Scroll By Pixel"/><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n229","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="light" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="While dealing with bulk data in spreadsheets, rows and columns usually exceed the height of the viewport and the cells appear clipped by screen edges. This leaves users frustrated with the task of scrolling left, right, upwards or downwards again and" /><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-topics/topics.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-topics/topics.mshv1.css"" data-responsive-mobile=""template/packages/core-topics/topics.mobile.css"" data-responsive-tablet=""template/packages/core-topics/topics.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="script"--><script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="script"--><script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="fadfa49a-974b-4b43-8bf3-0841431118ab"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="3ff39078-fb0f-471b-a3ec-25d37e40d683"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocOrdinal" format="<meta name=""Microsoft.Help.TocOrder"" content=""%%TocOrdinal%%""/>" --><meta name="Microsoft.Help.TocOrder" content="35"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/hs-simpletab.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="StylePropertyValues" format="<style>%%StylePropertyValues%%</style>" --><style>.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+    <!--DXMETADATA start type="CustomHeadContent" --><link rel="stylesheet" type="text/css" href="template/packages/core-web/css/SP.css">
+<script type="text/javascript">
+var currentHeader = function() {
+    return "spjs";
+}
+</script>
+<script src="template/packages/core-web/script/topNavigation.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WT462SJ"></script>
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime()
+                , event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WT462SJ');
+    </script>
+<!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->SpreadJS Documentation<!--DXMETADATA end--></div>
+            <div class="i-search-container">
+                <!--DXMETADATA start type="outputfileextension" format="<form action=""websearch%%outputfileextension%%"">" --><form action="websearch.html"><!--DXMETADATA end-->
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                <!--DXMETADATA start type="Literal" value="</form>" --></form><!--DXMETADATA end-->
+            </div>
+            <!--DXMETADATA start type="outputfileextension" format="<a id=""i-index-button"" href=""webindex%%outputfileextension%%""></a>" --><a id="i-index-button" href="webindex.html"></a><!--DXMETADATA end-->
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container">
+<a href="overview.html">SpreadJS Documentation</a>
+ / <a href="devguide.html">Developer's Guide</a>
+ / <a href="features.html">Features</a>
+ / <a href="interface.html">Manage User Interface</a>
+ / Scroll By Pixel</div><!--DXMETADATA end --></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="ItemTitle" -->Scroll By Pixel<!--DXMETADATA end--></div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+            </div>
+            <!--DXMETADATA start type="TopicSection" name="BodyText"--><p>While dealing with bulk data in spreadsheets, rows and columns usually exceed the height of the viewport and the cells appear clipped by screen edges. This leaves users frustrated with the task of scrolling left, right, upwards or downwards again and again to grab cell contents.</p>
+
+<p>SpreadJS provides extensive support for Excel-like precision scrolling to ensure users enjoy a smooth and flawless scrolling experience while having additional control over their worksheets.</p>
+
+<h3 id="a">Benefits of Pixel Scrolling</h3>
+
+<p>The scroll by pixel feature provides an enhanced user experience by allowing users to move steadily around the cells of the worksheet.&nbsp;</p>
+
+<p>Let's take a look at&nbsp;a few&nbsp;scenarios where pixel scrolling is helpful:&nbsp;</p>
+
+<ul>
+    <li>When the cells in the spreadsheet are extremely tall (containing multi-line text) or wide (increased column width).</li>
+
+    <li>When users want to resize a row or column by grabbing its edges.</li>
+
+    <li>When users are trying to position a shape or picture within the cell.</li>
+
+    <li>When users need to fill a lot of data in a single cell. For example - Entry Forms, Survey Forms, Records etc. in spreadsheets.</li>
+
+    <li>When users are scrolling worksheets on a small screen, such as a tablet or mobile.</li>
+</ul>
+
+<h3 id="b">Usage Scenario</h3>
+
+<p>For Example - Let's say you're working on a spreadsheet that depicts product analysis of different countries and the states within a particular country. While scrolling past the rows and columns, you may want to look at the last entry(state) of a specific country or the last column (product details). In this scenario, working with default scrolling won't help because it will completely jump over to an entire row or column at a time and the whole process will eventually become tedious while trying to grab the edges.</p>
+
+<p>The following image depicts pixel scrolling in a worksheet:</p>
+
+<p><img style="MAX-WIDTH: 100%; HEIGHT: auto" border="0" alt="" src="images/spreadjsv13images/scroll-pixel-gif.gif" /></p>
+
+<h3 id="c">Supported User Interactions</h3>
+
+<p>Users can scroll by pixel in both the directions - horizontal direction (for scrolling columns by pixel) or vertical direction (for scrolling rows by pixel).</p>
+
+<p>SpreadJS provides support for the following mousewheel and keyboard actions while using the scroll by pixel feature in the worksheets:</p>
+
+<ul>
+    <li>Mouse/Trackpad wheel on viewport area where the row viewport index is 1 or column viewport index is 1.</li>
+
+    <li>Clicking the Mouse/Trackpad using the left/right/up/down buttons or track button of the scroll bar.</li>
+
+    <li>Using the drag thumb button of the scroll bar on mouse/trackpad.</li>
+
+    <li>During the keyboard navigation or selection.</li>
+
+    <li>Touch Scrolling on the viewport area.</li>
+
+    <li>Touch tap left/right/up/down button or track button of the scroll bar.</li>
+
+    <li>Touch drag thumb button of the scroll bar.</li>
+</ul>
+
+<h3 id="d">Enable Pixel Scrolling</h3>
+
+<p>By default, both Excel and SpreadJS scroll only by rows or columns. You can enable pixel scrolling in the worksheet&nbsp;by setting the <strong>scrollByPixel</strong> property to "true" as shown in the code snippet shared below.&nbsp;</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">// Enable the precision scrolling by pixel<br />
+                spread.options.scrollByPixel = true;</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="i-box i-box-note">
+    <p><strong>Note:</strong> The following limitations must be kept in mind while using the pixel scrolling feature in spreadsheets:</p>
+
+    <ul>
+        <li>While scrolling by pixel on touch-based devices, the touch gesture will not support boundary feedback effect and scrolling to the entire rows or columns.</li>
+
+        <li>While exporting to a PDF file or printing the spreadsheets, users won't be able to use the scroll by pixel feature. However, pixel scrolling works with all other features without any hassle.</li>
+    </ul>
+</div>
+
+<h3 id="e">Using Code</h3>
+
+<p>The following example code allows users to set custom pixel size and scroll rows and columns in a&nbsp;worksheet&nbsp;as per their specific preferences.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <p>&nbsp;&lt;script&gt;<br />
+                    &nbsp;var data = [<br />
+                    &nbsp;{<br />
+                    &nbsp;&nbsp;&nbsp; "Country": "Canada",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;"State": "Ontario",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;"City": "Ottawa",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;"Product": "Kraft Grated Parmesan Cheese"<br />
+                    &nbsp;},<br />
+                    &nbsp;{<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;"Country": "Canada",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;"State": "Ontario",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;"City": "Belleville",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;"Product": "KIND Bars Almond &amp; Coconut Gluten Free"<br />
+                    &nbsp;},<br />
+                    &nbsp;{<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "Country": "Canada",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"State": "Ontario",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"City": "Alliston",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Product": "Kraft Grated Parmesan Cheese"<br />
+                    &nbsp; },<br />
+                    &nbsp;&nbsp;{<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Country": "Canada",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"State": "Saskatchewan",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"City": "Prince Albert",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Product": "Smartfood Popcorn"<br />
+                    &nbsp;&nbsp;&nbsp;},<br />
+                    &nbsp;&nbsp;&nbsp;{<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Country": "Canada",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"State": "Alberta",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"City": "Red Deer",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Product": "Smartfood Popcorn"<br />
+                    &nbsp;&nbsp;&nbsp;},<br />
+                    &nbsp;&nbsp;&nbsp;{<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Country": "Canada",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"State": "Alberta",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"City": "Calgary",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Product": "Planters Deluxe Whole Cashew"<br />
+                    &nbsp;&nbsp;&nbsp;},<br />
+                    &nbsp;&nbsp;&nbsp;{<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Country": "Canada",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"State": "Alberta",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"City": "Calgary",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Product": "Kraft Grated Parmesan Cheese"<br />
+                    &nbsp;&nbsp;&nbsp;},<br />
+                    &nbsp;&nbsp;&nbsp;{<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Country": "Canada",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"State": "Alberta",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"City": "Okotoks",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Product": "Smartfood Popcorn"<br />
+                    &nbsp;&nbsp;&nbsp;},<br />
+                    &nbsp;&nbsp;&nbsp;{<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Country": "India",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"State": "Andhra Pradesh",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"City": "Hyderabad",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Product": "Teddy Grahams Crackers"<br />
+                    &nbsp;&nbsp;&nbsp;},<br />
+                    &nbsp;&nbsp;&nbsp;{<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Country": "South Africa",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"State": "Gauteng",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"City": "Roodepoort",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Product": "Jaybee's Gourmet Nuts Gift Pack (3 Lb)"<br />
+                    &nbsp;&nbsp;&nbsp;},<br />
+                    &nbsp;&nbsp;&nbsp;{<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Country": "Finland",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"State": "Ita-Suomen Laani",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "City": "Kuopio",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Product": "Planters Deluxe Whole Cashew"<br />
+                    &nbsp;&nbsp; },<br />
+                    &nbsp;&nbsp;&nbsp;{<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Country": "Switzerland",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"State": "Geneve",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"City": "Vesenaz",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Product": "KIND Bars Almond &amp; Coconut Gluten Free"<br />
+                    &nbsp;&nbsp;&nbsp;},<br />
+                    &nbsp;&nbsp;&nbsp;{<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Country": "Switzerland",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"State": "Vaud",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"City": "Lausanne",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Product": "Smartfood Popcorn"<br />
+                    &nbsp;&nbsp; },<br />
+                    &nbsp;&nbsp;&nbsp;{<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Country": "Switzerland",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"State": "Vaud",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"City": "Morges",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Product": "Kraft Real Mayo"<br />
+                    &nbsp;&nbsp; },<br />
+                    &nbsp;&nbsp;&nbsp;{<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Country": "Denmark",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"State": "Frederiksborg",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"City": "Helsingor",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Product": "Planters Deluxe Whole Cashew"<br />
+                    &nbsp;&nbsp;&nbsp;},<br />
+                    &nbsp;&nbsp;&nbsp;{<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Country": "Denmark",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"State": "Kobenhavn",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"City": "Kobenhavn",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Product": "Kraft Grated Parmesan Cheese"<br />
+                    &nbsp;&nbsp;&nbsp;},<br />
+                    &nbsp;&nbsp;&nbsp;{<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Country": "Denmark",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"State": "Storstrom",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"City": "Nakskov",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Product": "Kraft Grated Parmesan Cheese"<br />
+                    &nbsp;&nbsp;&nbsp;}<br />
+                    &nbsp;&nbsp; ]<br />
+                    &lt;/script&gt;<br /></p>
+
+                    <p>&lt;script&gt;<br />
+                    $(document).ready(function ()</p>
+
+                    <p>{</p>
+
+                    <p>// Initializing Spread<br />
+                    var spread = new GC.Spread.Sheets.Workbook(document.getElementById('ss'),</p>
+
+                    <p>{ sheetCount: 1 });<br />
+                    &nbsp;</p>
+
+                    <p>// Get the activesheet<br />
+                    var sheet = spread.getSheet(0);</p>
+
+                    <p>spread.suspendPaint();<br />
+                    &nbsp;</p>
+
+                    <p>// Enable the precision scrolling by pixel<br />
+                    spread.options.scrollByPixel = true;<br /></p>
+
+                    <p>// Bind data source<br />
+                    sheet.setRowHeight(0, 30, 1);<br />
+                    sheet.autoGenerateColumns = false;<br />
+                    sheet.setDataSource(data);<br />
+                    var colInfos =</p>
+
+                    <p>[<br />
+                    &nbsp;&nbsp;&nbsp;{ name: 'Country', size: 180 },<br />
+                    &nbsp;&nbsp;&nbsp;{ name: 'State', size: 120 },<br />
+                    &nbsp;&nbsp;&nbsp;{ name: 'City', size: 120 },<br />
+                    &nbsp;&nbsp;&nbsp;{ name: 'Product', size: 280 }<br />
+                    ];<br />
+                    &nbsp;sheet.bindColumns(colInfos);<br /></p>
+
+                    <p>// Add span<br />
+                    var defaultStyle = sheet.getDefaultStyle();<br />
+                    defaultStyle.vAlign = GC.Spread.Sheets.VerticalAlign.center;<br />
+                    defaultStyle.hAlign = GC.Spread.Sheets.HorizontalAlign.center;<br />
+                    sheet.setDefaultStyle(defaultStyle);<br />
+                    var cc = sheet.getColumnCount(), rc = sheet.getRowCount();<br />
+                    for (var c = 0; c &lt; cc; c++) {<br />
+                    var tempValue = null, tempRow = -1, tempRowCount = -1;<br />
+                    for (var r = 0; r &lt; rc; r++) {<br />
+                    var cellValue = sheet.getValue(r, c);<br />
+                    if (tempValue == null)</p>
+
+                    <p>{<br />
+                    tempValue = cellValue;<br />
+                    tempRow = r;<br />
+                    tempRowCount = 1;<br />
+                    }</p>
+
+                    <p>else if (tempValue === cellValue)</p>
+
+                    <p>{<br />
+                    &nbsp;tempRowCount++;<br />
+                    &nbsp;}</p>
+
+                    <p>else {<br />
+                    &nbsp;&nbsp;if (tempRowCount &gt; 1)</p>
+
+                    <p>&nbsp;{<br />
+                    &nbsp;&nbsp; sheet.addSpan(tempRow, c, tempRowCount, 1);<br />
+                    &nbsp;&nbsp;}<br />
+                    &nbsp;&nbsp;tempValue = cellValue;<br />
+                    &nbsp;&nbsp;tempRow = r;<br />
+                    &nbsp;&nbsp;tempRowCount = 1;<br />
+                    &nbsp;}<br />
+                    &nbsp;}<br />
+                    &nbsp;if (tempRowCount &gt; 1)</p>
+
+                    <p>&nbsp;{<br />
+                    &nbsp;&nbsp;sheet.addSpan(tempRow, c, tempRowCount, 1);<br />
+                    &nbsp;}<br />
+                    &nbsp;}<br />
+                    spread.resumePaint();</p>
+
+                    <p>// Bind events to set scrollByPixel<br />
+                    var scrollByPixel = document.getElementById("scrollByPixel");<br />
+                    scrollByPixel.addEventListener("change", function () {<br />
+                    spread.options.scrollByPixel = scrollByPixel.checked;<br />
+                    });<br />
+                    var scrollPixel = document.getElementById("scrollPixel");<br />
+                    document.getElementById("setScrollPixel").addEventListener("click", function ()</p>
+
+                    <p>{<br />
+                    spread.options.scrollPixel = parseInt(scrollPixel.value);<br />
+                    });</p>
+
+                    <p>});<br />
+                    &lt;/script&gt;</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div><!--DXMETADATA end-->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORISED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""%%phrase:name=SeeAlso%%%%designlist:tagidentifier=seealso,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><!--DXMETADATA end-->
+            
+            <div id="i-footer-content" class="i-footer-content">
+                <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p><p>Copyright © 2019 GrapeCity, Inc. All rights reserved.</p>
+<p><a href="https://www.grapecity.com/en/forums/winforms-edition" target="_blank">Product Support Forum</a> | <a href="javascript:window.print()">Print this page</a></p>
+<ul class="social">
+<li><a href="https://www.facebook.com/GrapeCityUS/" target="_blank" class="facebook">&nbsp;</a></li>
+<li><a href="https://twitter.com/GrapeCityUS" target="_blank" class="twitter">&nbsp;</a></li>
+<li><a href="https://www.linkedin.com/company/grapecity" target="_blank" class="linkedin">&nbsp;</a></li>
+</ul>
+</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end-->
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

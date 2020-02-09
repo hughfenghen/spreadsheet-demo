@@ -1,0 +1,4 @@
+spread.options.highlightInvalidData = true;
+var dv = new GC.Spread.Sheets.DataValidation.createTextLengthValidator(GC.Spread.Sheets.ConditionalFormatting.ComparisonOperators.greaterThan, 5);
+activeSheet.setDataValidator(0, 0, 1, 1, dv, GC.Spread.Sheets.SheetArea.viewport);
+activeSheet.setValue(0, 0, "abcf");

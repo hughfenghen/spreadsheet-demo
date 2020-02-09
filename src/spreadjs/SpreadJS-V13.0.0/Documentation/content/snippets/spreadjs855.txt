@@ -1,0 +1,9 @@
+//Note: This code only works with V9 or earlier versions.
+activeSheet.setDataContext(new GC.Spread.Sheets.DataContext(
+            '@Url.Action("Load", "Home")',
+            '@Url.Action("Create", "Home")',
+            '@Url.Action("Update", "Home")',
+            '@Url.Action("Delete", "Home")'
+        ));
+
+alert(activeSheet.getDataContext().create);

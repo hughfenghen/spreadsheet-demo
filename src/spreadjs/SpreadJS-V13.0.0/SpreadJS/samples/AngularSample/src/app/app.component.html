@@ -1,0 +1,27 @@
+<div class="app-container">
+    <div class="app-header content">
+      <img class="logo" src="assets/img/logo.png" alt="logo"><span class="header-text">{{ appHeader }}</span>
+    </div>
+    <div class="body-container">
+        <div class="navigationBar content">
+            <h2>SpreadJS</h2>
+            <nav>
+                <ul>
+                    <li><a routerLink="/quick-start" routerLinkActive="active">快速入门指南</a></li>
+                    <li><a routerLink="/gc-spread-sheets" routerLinkActive="active">GC-Spread-Sheets</a></li>
+                    <li><a routerLink="/gc-worksheet" routerLinkActive="active">GC-Worksheet</a></li>
+                    <li><a routerLink="/gc-column" routerLinkActive="active">GC-Column</a></li>
+                    <li><a routerLink="/data-binding" routerLinkActive="active">数据绑定</a></li>
+                    <li><a routerLink="/style" routerLinkActive="active">样式</a></li>
+                    <li><a routerLink="/outline" routerLinkActive="active">分组</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="componentContainer content">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+    <div class="app-footer content">
+        <span class="footer-text">{{appFooter}}</span>
+    </div>
+</div>

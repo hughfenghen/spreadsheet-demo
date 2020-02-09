@@ -1,0 +1,22 @@
+activeSheet.setValue(0, 0, "North");
+activeSheet.setValue(1, 0, "South");
+activeSheet.setValue(2, 0, "East");
+activeSheet.setValue(3, 0, "South");
+activeSheet.setValue(4, 0, "North");
+activeSheet.setValue(5, 0, "North");
+activeSheet.setValue(6, 0, "West");
+activeSheet.setColumnWidth(0, 80);
+
+//Set a row filter.
+activeSheet.rowFilter(new GC.Spread.Sheets.Filter.HideRowFilter(new GC.Spread.Sheets.Range(0, 0, 7, 1)));
+
+$("#button1").click(function () {
+    var rowFilter = spread.getActiveSheet().rowFilter();
+    if (rowFilter.isFiltered(0)) {
+        alert("Row-filtering executed for Column1");
+    } else {
+        alert("Row-filtering not executed for Column1");
+    }
+});
+//Add button control to page
+<input type="button" id="button1" value="button1"/>

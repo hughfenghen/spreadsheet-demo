@@ -1,0 +1,5 @@
+spread.setSheetCount(3);
+spread.startSheetIndex(0);
+spread.getSheet(0).options.sheetTabColor = "red";
+spread.getSheet(1).options.sheetTabColor = "#FFFF00";
+spread.getSheet(2).options.sheetTabColor = "Accent 4";

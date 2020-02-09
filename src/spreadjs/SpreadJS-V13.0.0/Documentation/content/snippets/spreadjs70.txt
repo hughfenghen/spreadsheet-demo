@@ -1,0 +1,2 @@
+activeSheet.setValue(2, 3, new Date(2011, 2, 9));
+activeSheet.setFormatter(2,3,"M",GC.Spread.Sheets.SheetArea.viewport);

@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%ProjectTitle%% - %%ItemTitle%%</title>" --><title>SpreadJS Documentation - Auto Merge Cells</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ProjectTitle%% - %%ItemTitleNoQuotes%%""/>" --><meta name="Title" content="SpreadJS Documentation - Auto Merge Cells"/><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n113","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="light" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="SpreadJS supports the auto merge feature allowing users to automatically merge the neighboring cells containing duplicate text. During the auto merge operation, no data is lost in the process." /><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-topics/topics.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-topics/topics.mshv1.css"" data-responsive-mobile=""template/packages/core-topics/topics.mobile.css"" data-responsive-tablet=""template/packages/core-topics/topics.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="script"--><script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="script"--><script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="95ca2512-9403-41a3-94e4-f388b2a9d5d0"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="3ff39078-fb0f-471b-a3ec-25d37e40d683"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocOrdinal" format="<meta name=""Microsoft.Help.TocOrder"" content=""%%TocOrdinal%%""/>" --><meta name="Microsoft.Help.TocOrder" content="3"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/hs-simpletab.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="StylePropertyValues" format="<style>%%StylePropertyValues%%</style>" --><style>.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+    <!--DXMETADATA start type="CustomHeadContent" --><link rel="stylesheet" type="text/css" href="template/packages/core-web/css/SP.css">
+<script type="text/javascript">
+var currentHeader = function() {
+    return "spjs";
+}
+</script>
+<script src="template/packages/core-web/script/topNavigation.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WT462SJ"></script>
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime()
+                , event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WT462SJ');
+    </script>
+<!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->SpreadJS Documentation<!--DXMETADATA end--></div>
+            <div class="i-search-container">
+                <!--DXMETADATA start type="outputfileextension" format="<form action=""websearch%%outputfileextension%%"">" --><form action="websearch.html"><!--DXMETADATA end-->
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                <!--DXMETADATA start type="Literal" value="</form>" --></form><!--DXMETADATA end-->
+            </div>
+            <!--DXMETADATA start type="outputfileextension" format="<a id=""i-index-button"" href=""webindex%%outputfileextension%%""></a>" --><a id="i-index-button" href="webindex.html"></a><!--DXMETADATA end-->
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container">
+<a href="overview.html">SpreadJS Documentation</a>
+ / <a href="devguide.html">Developer's Guide</a>
+ / <a href="features.html">Features</a>
+ / <a href="interface.html">Manage User Interface</a>
+ / Auto Merge Cells</div><!--DXMETADATA end --></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="ItemTitle" -->Auto Merge Cells<!--DXMETADATA end--></div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+            </div>
+            <!--DXMETADATA start type="TopicSection" name="BodyText"--><p>SpreadJS supports the auto merge feature allowing users to automatically merge the neighboring cells containing duplicate text. During the auto merge operation, no data is lost in the process.</p>
+
+<h3 id="a">Benefits of Using Auto Merge</h3>
+
+<p>The auto merge feature helps users to:</p>
+
+<ul>
+    <li>Create clear visualization of groups within large data sets.</li>
+
+    <li>Merge identical cells without losing any data.</li>
+
+    <li>Eliminate redundancy (repetition of text) to remove unnecessary clutter&nbsp;in the worksheet.</li>
+
+    <li>Save considerable amount of time&nbsp;and efforts without manually scanning the duplicate cells to merge them one by one.</li>
+</ul>
+
+<h3 id="b">Usage Scenario</h3>
+
+<p>While executing data analysis on a worksheet, users may want to combine several cells&nbsp;containing identical text&nbsp;for enhanced data presentation&nbsp;and better structure.&nbsp;</p>
+
+<p>For example - While generating sales reports, it's a good idea to automatically merge matching&nbsp;states or city names together to make it look neater and cleaner&nbsp;while&nbsp;ensuring that no information loss occurs and the data remains intact in the merged cells.</p>
+
+<p>The following screenshot depicts how the auto merge operation combines the names of countries, states and cities&nbsp;in a worksheet.</p>
+
+<p><img style="MAX-WIDTH: 100%; HEIGHT: auto" border="0" alt="" src="images/spreadjsv13images/auto-merge-2.png" /></p>
+
+<h3 id="c">How Auto Merge Works?</h3>
+
+<p>The auto merge feature automatically merges the contiguous cells with identical text and adjusts the text position of the merged cells.</p>
+
+<p>This feature works upon the condition that the cells you want to merge shouldn't belong to any span range. While working with SpreadJS, users can use the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Worksheet~autoMerge.html" data-auto-update-caption="true">autoMerge()</a> method&nbsp;to apply the auto merge feature to specified ranges, including range, row, column and the entire worksheet. The directions supported by the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.AutoMerge.AutoMergeDirection.html" data-auto-update-caption="true">AutoMergeDirection</a> enumeration include:&nbsp;row direction, column direction and both row and column direction.</p>
+
+<p>SpreadJS provides support for the following two modes available in the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.AutoMerge.AutoMergeMode.html" data-auto-update-caption="true">AutoMergeMode</a> enumeration:</p>
+
+<ul>
+    <li>Free Mode<a href="SpreadJS~GC.Spread.Sheets.AutoMerge.AutoMergeMode~free.html" data-auto-update-caption="true">&nbsp;</a>- In this mode, cells with identical values are automatically merged with the neighboring cells.</li>
+
+    <li>Restricted Mode - In this mode, cells with identical values are merged with the neighboring cells only if the corresponding cells in the previous row or column are merged in a similar way.</li>
+</ul>
+
+<h3 id="d">Auto Merge Cells vs Spanning and Merging Cells</h3>
+
+<p>The basic differences between executing the "Auto Merge Cells" operation and "Spanning and Merging Cells" in a worksheet are:</p>
+
+<ul>
+    <li>While using the Auto Merge feature in SpreadJS, the cells remain navigable and editable even after the merge operation has been executed. On the contrary, while carrying out the spanning and merging of cells, the spanned and merged cells&nbsp;are automatically adjusted when a cell value is changed.</li>
+
+    <li>When a user scrolls through the worksheet, the text remains visible(sticky) in the merged span. Unlike regular merge spans, the auto-merged cells have the same value.</li>
+</ul>
+
+<div class="i-box i-box-note">
+    <p><strong>Note:</strong> The following limitations must be kept in mind while using the auto merge feature:</p>
+
+    <ul>
+        <li>The auto merge range is affected when a user executes the following operations in the spreadsheet
+
+            <ul>
+                <li>While adding a row or column</li>
+
+                <li>While removing a row or column</li>
+
+                <li>While setting row count or column count</li>
+            </ul>
+        </li>
+
+        <li>While printing or saving to a PDF file (using the savePDF() method), all the merged cells will automatically be treated as normal span ranges.</li>
+
+        <li>The copy or move operation will not affect the auto merge range, and will not treat the automatically merged cells as normal span ranges.</li>
+    </ul>
+</div>
+
+<h3 id="e">Using Code</h3>
+
+<p>The following code snippet merges the cells containing identical country names, states and cities using the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Worksheet~autoMerge.html" data-auto-update-caption="true">autoMerge()</a> method.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <p>&lt;script&gt;<br />
+                    &nbsp;var data = [<br />
+                    &nbsp;{<br />
+                    &nbsp;&nbsp;&nbsp; "Country": "Canada",<br />
+                    &nbsp;&nbsp;&nbsp; "State": "Ontario",<br />
+                    &nbsp;&nbsp;&nbsp; "City": "Ottawa",<br />
+                    &nbsp;&nbsp;&nbsp; "Product": "Kraft Grated Parmesan Cheese"<br />
+                    &nbsp;},<br />
+                    &nbsp;{<br />
+                    &nbsp;&nbsp;&nbsp; "Country": "Canada",<br />
+                    &nbsp;&nbsp;&nbsp; "State": "Ontario",<br />
+                    &nbsp;&nbsp;&nbsp; "City": "Belleville",<br />
+                    &nbsp;&nbsp;&nbsp; "Product": "KIND Bars Almond &amp; Coconut Gluten Free"<br />
+                    &nbsp;},<br />
+                    &nbsp;{<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "Country": "Canada",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "State": "Ontario",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "City": "Alliston",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "Product": "Kraft Grated Parmesan Cheese"<br />
+                    &nbsp; },<br />
+                    &nbsp; {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "Country": "Canada",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "State": "Saskatchewan",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "City": "Prince Albert",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Product": "Smartfood Popcorn"<br />
+                    &nbsp;&nbsp; },<br />
+                    &nbsp;&nbsp; {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "Country": "Canada",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "State": "Alberta",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "City": "Red Deer",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "Product": "Smartfood Popcorn"<br />
+                    &nbsp;&nbsp; },<br />
+                    &nbsp;&nbsp; {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "Country": "Canada",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "State": "Alberta",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "City": "Calgary",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "Product": "Planters Deluxe Whole Cashew"<br />
+                    &nbsp;&nbsp; },<br />
+                    &nbsp;&nbsp; {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "Country": "Canada",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "State": "Alberta",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "City": "Calgary",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "Product": "Kraft Grated Parmesan Cheese"<br />
+                    &nbsp;&nbsp; },<br />
+                    &nbsp;&nbsp; {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Country": "Canada",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "State": "Alberta",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "City": "Okotoks",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Product": "Smartfood Popcorn"<br />
+                    &nbsp;&nbsp; },<br />
+                    &nbsp;&nbsp; {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Country": "India",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "State": "Andhra Pradesh",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "City": "Hyderabad",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Product": "Teddy Grahams Crackers"<br />
+                    &nbsp;&nbsp; },<br />
+                    &nbsp;&nbsp; {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Country": "South Africa",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "State": "Gauteng",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "City": "Roodepoort",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Product": "Jaybee's Gourmet Nuts Gift Pack (3 Lb)"<br />
+                    &nbsp;&nbsp; },<br />
+                    &nbsp;&nbsp; {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Country": "Finland",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "State": "Ita-Suomen Laani",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "City": "Kuopio",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Product": "Planters Deluxe Whole Cashew"<br />
+                    &nbsp;&nbsp; },<br />
+                    &nbsp;&nbsp; {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Country": "Switzerland",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "State": "Geneve",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "City": "Vesenaz",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Product": "KIND Bars Almond &amp; Coconut Gluten Free"<br />
+                    &nbsp;&nbsp; },<br />
+                    &nbsp;&nbsp; {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Country": "Switzerland",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "State": "Vaud",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "City": "Lausanne",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Product": "Smartfood Popcorn"<br />
+                    &nbsp;&nbsp; },<br />
+                    &nbsp;&nbsp; {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "Country": "Switzerland",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "State": "Vaud",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "City": "Morges",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "Product": "Kraft Real Mayo"<br />
+                    &nbsp;&nbsp; },<br />
+                    &nbsp;&nbsp; {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "Country": "Denmark",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "State": "Frederiksborg",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "City": "Helsingor",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "Product": "Planters Deluxe Whole Cashew"<br />
+                    &nbsp;&nbsp; },<br />
+                    &nbsp;&nbsp; {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "Country": "Denmark",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "State": "Kobenhavn",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "City": "Kobenhavn",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "Product": "Kraft Grated Parmesan Cheese"<br />
+                    &nbsp;&nbsp; },<br />
+                    &nbsp;&nbsp; {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "Country": "Denmark",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "State": "Storstrom",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "City": "Nakskov",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "Product": "Kraft Grated Parmesan Cheese"<br />
+                    &nbsp;&nbsp; }<br />
+                    &nbsp;&nbsp; ]<br />
+                    &lt;/script&gt;<br />
+                    &lt;script&gt;<br />
+                    $(document).ready(function ()</p>
+
+                    <p>{<br />
+                    &nbsp;GC.Spread.Sheets.LicenseKey = "xxx";</p>
+
+                    <p>// Initializing Spread<br />
+                    var spread = new GC.Spread.Sheets.Workbook(document.getElementById('ss'), { sheetCount: 1 });<br /></p>
+
+                    <p>// Get the activesheet<br />
+                    var activeSheet = spread.getActiveSheet();</p>
+
+                    <p>// Bind data source<br />
+                    activeSheet.setRowHeight(0, 30, 1);<br />
+                    activeSheet.autoGenerateColumns = true;<br />
+                    activeSheet.setDataSource(data);</p>
+
+                    <p>/* Merging complete sheet cells when AutoMergeDirection is set to Column &amp; AutoMergeMode is set to restricted mode */<br />
+                    var range = new GC.Spread.Sheets.Range(-1, -1, -1, -1);<br />
+                    activeSheet.autoMerge(range, GC.Spread.Sheets.AutoMerge.AutoMergeDirection.column, GC.Spread.Sheets.AutoMerge.AutoMergeMode.restricted);</p>
+
+                    <p>// Set the column width<br />
+                    for (var c = 0; c &lt; activeSheet.getColumnCount(); c++)<br />
+                    activeSheet.setColumnWidth(c, 130.0, GC.Spread.Sheets.SheetArea.viewport);</p>
+
+                    <p>});<br />
+                    &lt;/script&gt;&nbsp;</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div><!--DXMETADATA end-->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORISED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""%%phrase:name=SeeAlso%%%%designlist:tagidentifier=seealso,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><!--DXMETADATA end-->
+            
+            <div id="i-footer-content" class="i-footer-content">
+                <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p><p>Copyright © 2019 GrapeCity, Inc. All rights reserved.</p>
+<p><a href="https://www.grapecity.com/en/forums/winforms-edition" target="_blank">Product Support Forum</a> | <a href="javascript:window.print()">Print this page</a></p>
+<ul class="social">
+<li><a href="https://www.facebook.com/GrapeCityUS/" target="_blank" class="facebook">&nbsp;</a></li>
+<li><a href="https://twitter.com/GrapeCityUS" target="_blank" class="twitter">&nbsp;</a></li>
+<li><a href="https://www.linkedin.com/company/grapecity" target="_blank" class="linkedin">&nbsp;</a></li>
+</ul>
+</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end-->
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

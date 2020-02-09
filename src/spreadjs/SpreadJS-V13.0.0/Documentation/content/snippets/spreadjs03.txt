@@ -1,0 +1,10 @@
+// Set the horizontal and vertical alignment to center
+    var cell = activeSheet.getCell(1, 1, GC.Spread.Sheets.SheetArea.viewport);
+    cell.hAlign(GC.Spread.Sheets.HorizontalAlign.center);
+    cell.vAlign(GC.Spread.Sheets.VerticalAlign.center);
+    cell.value("Alignment");
+
+    // Indent the string.
+    cell = activeSheet.getCell(2, 1, GC.Spread.Sheets.SheetArea.viewport);
+    cell.textIndent(2);
+    cell.value("Indent");

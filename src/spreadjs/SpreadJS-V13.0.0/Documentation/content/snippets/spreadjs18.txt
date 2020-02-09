@@ -1,0 +1,33 @@
+activeSheet.setRowCount(7);
+activeSheet.setValue(0, 0, "North");
+activeSheet.setValue(1, 0, "South");
+activeSheet.setValue(2, 0, "East");
+activeSheet.setValue(3, 0, "South");
+activeSheet.setValue(4, 0, "North");
+activeSheet.setValue(5, 0, "North");
+activeSheet.setValue(6, 0, "West");
+activeSheet.setColumnWidth(0, 80);
+activeSheet.rowFilter(new GC.Spread.Sheets.Filter.HideRowFilter(new GC.Spread.Sheets.Range(0, 0, 7, 1)));
+$("#button1").click(function () {
+    //Filter Column1 by "North".
+    var rowFilter = activeSheet.rowFilter();
+    var condition = new GC.Spread.Sheets.ConditionalFormatting.Condition(GC.Spread.Sheets.ConditionalFormatting.ConditionType.textCondition, {
+        compareType: GC.Spread.Sheets.ConditionalFormatting.TextCompareType.equalsTo,
+        expected: "North"
+    });
+    rowFilter.addFilterItem(0, condition);
+    rowFilter.filter(0);
+});
+$("#button2").click(function () {
+    // Remove filtering for Column1
+    var rowFilter = activeSheet.rowFilter();
+    if (rowFilter) {
+        rowFilter.removeFilterItems(0);
+        rowFilter.filter();
+    }
+});
+//Add button controls to page
+<input type="button" id="button1" value="button1"/>
+<input type="button" id="button2" value="button2"/>
+
+

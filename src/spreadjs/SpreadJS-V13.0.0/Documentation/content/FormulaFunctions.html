@@ -1,0 +1,1424 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%ProjectTitle%% - %%ItemTitle%%</title>" --><title>SpreadJS Documentation - Formula Functions</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ProjectTitle%% - %%ItemTitleNoQuotes%%""/>" --><meta name="Title" content="SpreadJS Documentation - Formula Functions"/><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n681","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="light" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="Spread provides these built-in functions, listed alphabetically." /><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-topics/topics.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-topics/topics.mshv1.css"" data-responsive-mobile=""template/packages/core-topics/topics.mobile.css"" data-responsive-tablet=""template/packages/core-topics/topics.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="script"--><script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="script"--><script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="f00c213a-31d9-4eac-87f4-d899b4be3a44"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="ac468504-a649-40be-8d57-8519229b63fa"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocOrdinal" format="<meta name=""Microsoft.Help.TocOrder"" content=""%%TocOrdinal%%""/>" --><meta name="Microsoft.Help.TocOrder" content="2"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/hs-simpletab.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="StylePropertyValues" format="<style>%%StylePropertyValues%%</style>" --><style>.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+    <!--DXMETADATA start type="CustomHeadContent" --><link rel="stylesheet" type="text/css" href="template/packages/core-web/css/SP.css">
+<script type="text/javascript">
+var currentHeader = function() {
+    return "spjs";
+}
+</script>
+<script src="template/packages/core-web/script/topNavigation.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WT462SJ"></script>
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime()
+                , event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WT462SJ');
+    </script>
+<!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->SpreadJS Documentation<!--DXMETADATA end--></div>
+            <div class="i-search-container">
+                <!--DXMETADATA start type="outputfileextension" format="<form action=""websearch%%outputfileextension%%"">" --><form action="websearch.html"><!--DXMETADATA end-->
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                <!--DXMETADATA start type="Literal" value="</form>" --></form><!--DXMETADATA end-->
+            </div>
+            <!--DXMETADATA start type="outputfileextension" format="<a id=""i-index-button"" href=""webindex%%outputfileextension%%""></a>" --><a id="i-index-button" href="webindex.html"></a><!--DXMETADATA end-->
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container">
+<a href="overview.html">SpreadJS Documentation</a>
+ / <a href="formulareference.html">Formula Reference</a>
+ / Formula Functions</div><!--DXMETADATA end --></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="ItemTitle" -->Formula Functions<!--DXMETADATA end--></div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+            </div>
+            <!--DXMETADATA start type="TopicSection" name="BodyText"--><p>Spread provides these built-in functions, listed alphabetically.</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td><a href="ABS.html" data-auto-update-caption="true">ABS</a></td>
+
+            <td><a href="ACCRINT.html" data-auto-update-caption="true">ACCRINT</a></td>
+
+            <td><a href="ACCRINTM.html" data-auto-update-caption="true">ACCRINTM</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="ACOS.html" data-auto-update-caption="true">ACOS</a></td>
+
+            <td><a href="ACOSH.html" data-auto-update-caption="true">ACOSH</a></td>
+
+            <td><a href="ACOT.html" data-auto-update-caption="true">ACOT</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="ACOTH.html" data-auto-update-caption="true">ACOTH</a></td>
+
+            <td><a href="ADDRESS.html" data-auto-update-caption="true">ADDRESS</a></td>
+
+            <td><a href="agrregate.html">AGGREGATE</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="AMORDEGRC.html" data-auto-update-caption="true">AMORDEGRC</a></td>
+
+            <td><a href="AMORLINC.html" data-auto-update-caption="true">AMORLINC</a></td>
+
+            <td><a href="AND.html" data-auto-update-caption="true">AND</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="ARABIC.html" data-auto-update-caption="true">ARABIC</a></td>
+
+            <td><a href="AREAS.html" data-auto-update-caption="true">AREAS</a></td>
+
+            <td><a href="ASIN.html" data-auto-update-caption="true">ASIN</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="ASINH.html" data-auto-update-caption="true">ASINH</a></td>
+
+            <td><a href="ATAN.html" data-auto-update-caption="true">ATAN</a></td>
+
+            <td><a href="ATAN2.html" data-auto-update-caption="true">ATAN2</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="ATANH.html" data-auto-update-caption="true">ATANH</a></td>
+
+            <td><a href="AVEDEV.html" data-auto-update-caption="true">AVEDEV</a></td>
+
+            <td><a href="AVERAGE.html" data-auto-update-caption="true">AVERAGE</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="AVERAGEA.html" data-auto-update-caption="true">AVERAGEA</a></td>
+
+            <td><a href="AVERAGEIF.html" data-auto-update-caption="true">AVERAGEIF</a></td>
+
+            <td><a href="AVERAGEIFS.html" data-auto-update-caption="true">AVERAGEIFS</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="BAHTTEXT.html" data-auto-update-caption="true">BAHTTEXT</a></td>
+
+            <td><a href="BASE.html" data-auto-update-caption="true">BASE</a></td>
+
+            <td><a href="BESSELI.html" data-auto-update-caption="true">BESSELI</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="BESSELJ.html" data-auto-update-caption="true">BESSELJ</a></td>
+
+            <td><a href="BESSELK.html" data-auto-update-caption="true">BESSELK</a></td>
+
+            <td><a href="BESSELY.html" data-auto-update-caption="true">BESSELY</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="BETADIST.html" data-auto-update-caption="true">BETADIST</a></td>
+
+            <td><a href="BETA.DIST.html" data-auto-update-caption="true">BETA.DIST</a></td>
+
+            <td><a href="BETAINV.html" data-auto-update-caption="true">BETAINV</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="BETA.INV.html" data-auto-update-caption="true">BETA.INV</a></td>
+
+            <td><a href="BIN2DEC.html" data-auto-update-caption="true">BIN2DEC</a></td>
+
+            <td><a href="BIN2HEX.html" data-auto-update-caption="true">BIN2HEX</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="BIN2OCT.html" data-auto-update-caption="true">BIN2OCT</a></td>
+
+            <td><a href="BINOMDIST.html" data-auto-update-caption="true">BINOMDIST</a></td>
+
+            <td><a href="BINOM.DIST.html" data-auto-update-caption="true">BINOM.DIST</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="BINOM.DIST.RANGE.html" data-auto-update-caption="true">BINOM.DIST.RANGE</a></td>
+
+            <td><a href="BINOM.INV.html" data-auto-update-caption="true">BINOM.INV</a></td>
+
+            <td><a href="BITAND.html" data-auto-update-caption="true">BITAND</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="BITLSHIFT.html" data-auto-update-caption="true">BITLSHIFT</a></td>
+
+            <td><a href="BITOR.html" data-auto-update-caption="true">BITOR</a></td>
+
+            <td><a href="BITRSHIFT.html" data-auto-update-caption="true">BITRSHIFT</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="BITXOR.html" data-auto-update-caption="true">BITXOR</a></td>
+
+            <td><a href="CEILING.html" data-auto-update-caption="true">CEILING</a></td>
+
+            <td><a href="CEILING.MATH.html" data-auto-update-caption="true">CEILING.MATH</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="CEILING.PRECISE.html" data-auto-update-caption="true">CEILING.PRECISE</a></td>
+
+            <td><a href="CHAR.html" data-auto-update-caption="true">CHAR</a></td>
+
+            <td><a href="CHIDIST.html" data-auto-update-caption="true">CHIDIST</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="CHIINV.html" data-auto-update-caption="true">CHIINV</a></td>
+
+            <td><a href="CHISQ.DIST.html" data-auto-update-caption="true">CHISQ.DIST</a></td>
+
+            <td><a href="CHISQ.DIST.RT.html" data-auto-update-caption="true">CHISQ.DIST.RT</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="CHISQ.INV.html" data-auto-update-caption="true">CHISQ.INV</a></td>
+
+            <td><a href="CHISQ.INV.RT.html" data-auto-update-caption="true">CHISQ.INV.RT</a></td>
+
+            <td><a href="CHISQ.TEST.html" data-auto-update-caption="true">CHISQ.TEST</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="CHITEST.html" data-auto-update-caption="true">CHITEST</a></td>
+
+            <td><a href="CHOOSE.html" data-auto-update-caption="true">CHOOSE</a></td>
+
+            <td><a href="CLEAN.html" data-auto-update-caption="true">CLEAN</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="CODE.html" data-auto-update-caption="true">CODE</a></td>
+
+            <td><a href="COLUMN.html" data-auto-update-caption="true">COLUMN</a></td>
+
+            <td><a href="COLUMNS.html" data-auto-update-caption="true">COLUMNS</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="COMBIN.html" data-auto-update-caption="true">COMBIN</a></td>
+
+            <td><a href="COMBINA.html" data-auto-update-caption="true">COMBINA</a></td>
+
+            <td><a href="COMPLEX.html" data-auto-update-caption="true">COMPLEX</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="CONCAT.html" data-auto-update-caption="true">CONCAT</a></td>
+
+            <td><a href="CONCATENATE.html" data-auto-update-caption="true">CONCATENATE</a></td>
+
+            <td><a href="CONFIDENCE.html" data-auto-update-caption="true">CONFIDENCE</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="CONFIDENCE.NORM.html" data-auto-update-caption="true">CONFIDENCE.NORM</a></td>
+
+            <td><a href="CONFIDENCE.T.html" data-auto-update-caption="true">CONFIDENCE.T</a></td>
+
+            <td><a href="CONVERT.html" data-auto-update-caption="true">CONVERT</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="CORREL.html" data-auto-update-caption="true">CORREL</a></td>
+
+            <td><a href="COS.html" data-auto-update-caption="true">COS</a></td>
+
+            <td><a href="COSH.html" data-auto-update-caption="true">COSH</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="COT.html" data-auto-update-caption="true">COT</a></td>
+
+            <td><a href="COTH.html" data-auto-update-caption="true">COTH</a></td>
+
+            <td><a href="COUNT.html" data-auto-update-caption="true">COUNT</a></td>
+        </tr>
+
+        <tr>
+            <td>&nbsp;<a href="COUNTA.html" data-auto-update-caption="true">COUNTA</a></td>
+
+            <td><a href="COUNTBLANK.html" data-auto-update-caption="true">COUNTBLANK</a></td>
+
+            <td><a href="COUNTIF.html" data-auto-update-caption="true">COUNTIF</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="COUNTIFS.html" data-auto-update-caption="true">COUNTIFS</a></td>
+
+            <td><a href="COUPDAYBS.html" data-auto-update-caption="true">COUPDAYBS</a></td>
+
+            <td><a href="COUPDAYS.html" data-auto-update-caption="true">COUPDAYS</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="COUPDAYSNC.html" data-auto-update-caption="true">COUPDAYSNC</a></td>
+
+            <td><a href="COUPNCD.html" data-auto-update-caption="true">COUPNCD</a></td>
+
+            <td><a href="COUPNUM.html" data-auto-update-caption="true">COUPNUM</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="COUPPCD.html" data-auto-update-caption="true">COUPPCD</a></td>
+
+            <td><a href="COVAR.html" data-auto-update-caption="true">COVAR</a></td>
+
+            <td><a href="COVARIANCE.P.html" data-auto-update-caption="true">COVARIANCE.P</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="COVARIANCE.S.html" data-auto-update-caption="true">COVARIANCE.S</a></td>
+
+            <td><a href="CRITBINOM.html" data-auto-update-caption="true">CRITBINOM</a></td>
+
+            <td><a href="CSC.html" data-auto-update-caption="true">CSC</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="CSCH.html" data-auto-update-caption="true">CSCH</a></td>
+
+            <td><a href="CUMIPMT.html" data-auto-update-caption="true">CUMIPMT</a></td>
+
+            <td><a href="CUMPRINC.html" data-auto-update-caption="true">CUMPRINC</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td><a href="DATE.html" data-auto-update-caption="true">DATE</a></td>
+
+            <td><a href="DATEDIF.html" data-auto-update-caption="true">DATEDIF</a></td>
+
+            <td><a href="DATEVALUE.html" data-auto-update-caption="true">DATEVALUE</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="DAVERAGE.html" data-auto-update-caption="true">DAVERAGE</a></td>
+
+            <td><a href="DAY.html" data-auto-update-caption="true">DAY</a></td>
+
+            <td><a href="DAYS.html" data-auto-update-caption="true">DAYS</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="DAYS360.html" data-auto-update-caption="true">DAYS360</a></td>
+
+            <td><a href="DB.html" data-auto-update-caption="true">DB</a></td>
+
+            <td><a href="DCOUNT.html" data-auto-update-caption="true">DCOUNT</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="DCOUNTA.html" data-auto-update-caption="true">DCOUNTA</a></td>
+
+            <td><a href="DDB.html" data-auto-update-caption="true">DDB</a></td>
+
+            <td><a href="DEC2BIN.html" data-auto-update-caption="true">DEC2BIN</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="DEC2HEX.html" data-auto-update-caption="true">DEC2HEX</a></td>
+
+            <td><a href="DEC2OCT.html" data-auto-update-caption="true">DEC2OCT</a></td>
+
+            <td><a href="DECIMAL.html" data-auto-update-caption="true">DECIMAL</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="DEGREES.html" data-auto-update-caption="true">DEGREES</a></td>
+
+            <td><a href="DELTA.html" data-auto-update-caption="true">DELTA</a></td>
+
+            <td><a href="DEVSQ.html" data-auto-update-caption="true">DEVSQ</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="DGET.html" data-auto-update-caption="true">DGET</a></td>
+
+            <td><a href="DISC.html" data-auto-update-caption="true">DISC</a></td>
+
+            <td><a href="DMAX.html" data-auto-update-caption="true">DMAX</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="DMIN.html" data-auto-update-caption="true">DMIN</a></td>
+
+            <td><a href="DOLLAR.html" data-auto-update-caption="true">DOLLAR</a></td>
+
+            <td><a href="DOLLARDE.html" data-auto-update-caption="true">DOLLARDE</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="DOLLARFR.html" data-auto-update-caption="true">DOLLARFR</a></td>
+
+            <td><a href="DPRODUCT.html" data-auto-update-caption="true">DPRODUCT</a></td>
+
+            <td><a href="DSTDEV.html" data-auto-update-caption="true">DSTDEV</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="DSTDEVP.html" data-auto-update-caption="true">DSTDEVP</a></td>
+
+            <td><a href="DSUM.html" data-auto-update-caption="true">DSUM</a></td>
+
+            <td><a href="DURATION.html" data-auto-update-caption="true">DURATION</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="DVAR.html" data-auto-update-caption="true">DVAR</a></td>
+
+            <td><a href="DVARP.html" data-auto-update-caption="true">DVARP</a></td>
+
+            <td><a href="EDATE.html" data-auto-update-caption="true">EDATE</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="EFFECT.html" data-auto-update-caption="true">EFFECT</a></td>
+
+            <td><a href="ENCODEURL.html" data-auto-update-caption="true">ENCODEURL</a></td>
+
+            <td><a href="EOMONTH.html" data-auto-update-caption="true">EOMONTH</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="ERF.html" data-auto-update-caption="true">ERF</a></td>
+
+            <td><a href="ERF.PRECISE.html" data-auto-update-caption="true">ERF.PRECISE</a></td>
+
+            <td><a href="ERFC.html" data-auto-update-caption="true">ERFC</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="ERFC.PRECISE.html" data-auto-update-caption="true">ERFC.PRECISE</a></td>
+
+            <td><a href="ERRORTYPE.html" data-auto-update-caption="true">ERROR.TYPE</a></td>
+
+            <td><a href="EURO.html" data-auto-update-caption="true">EURO</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="EUROCONVERT.html" data-auto-update-caption="true">EUROCONVERT</a></td>
+
+            <td><a href="EVEN.html" data-auto-update-caption="true">EVEN</a></td>
+
+            <td><a href="EXACT.html" data-auto-update-caption="true">EXACT</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="EXP.html" data-auto-update-caption="true">EXP</a></td>
+
+            <td><a href="EXPONDIST.html" data-auto-update-caption="true">EXPONDIST</a></td>
+
+            <td><a href="EXPON.DIST.html" data-auto-update-caption="true">EXPON.DIST</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td><a href="FACT.html" data-auto-update-caption="true">FACT</a></td>
+
+            <td><a href="FACTDOUBLE.html" data-auto-update-caption="true">FACTDOUBLE</a></td>
+
+            <td><a href="FALSE.html" data-auto-update-caption="true">FALSE</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="FDIST.html" data-auto-update-caption="true">FDIST</a></td>
+
+            <td><a href="F.DIST.html" data-auto-update-caption="true">F.DIST</a></td>
+
+            <td><a href="F.DIST.RT.html" data-auto-update-caption="true">F.DIST.RT</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="FIND.html" data-auto-update-caption="true">FIND</a></td>
+
+            <td><a href="FINDB.html" data-auto-update-caption="true">FINDB</a></td>
+
+            <td><a href="FINV.html" data-auto-update-caption="true">FINV</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="F.INV.html" data-auto-update-caption="true">F.INV</a></td>
+
+            <td><a href="F.INV.RT.html" data-auto-update-caption="true">F.INV.RT</a></td>
+
+            <td><a href="filter-dynamic-array.html" data-auto-update-caption="true">FILTER</a></td>
+
+            <td><a href="FISHER.html" data-auto-update-caption="true">FISHER</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="FISHERINV.html" data-auto-update-caption="true">FISHERINV</a></td>
+
+            <td><a href="FIXED.html" data-auto-update-caption="true">FIXED</a></td>
+
+            <td><a href="FLOOR.html" data-auto-update-caption="true">FLOOR</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="FLOOR.MATH.html" data-auto-update-caption="true">FLOOR.MATH</a></td>
+
+            <td><a href="FLOOR.PRECISE.html" data-auto-update-caption="true">FLOOR.PRECISE</a></td>
+
+            <td><a href="FORECAST.html" data-auto-update-caption="true">FORECAST</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="FORMULATEXT.html" data-auto-update-caption="true">FORMULATEXT</a></td>
+
+            <td><a href="FREQUENCY.html" data-auto-update-caption="true">FREQUENCY</a></td>
+
+            <td><a href="FTEST.html" data-auto-update-caption="true">FTEST</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="F.TEST.html" data-auto-update-caption="true">F.TEST</a></td>
+
+            <td><a href="FV.html" data-auto-update-caption="true">FV</a></td>
+
+            <td><a href="FVSCHEDULE.html" data-auto-update-caption="true">FVSCHEDULE</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="GAMMA.html" data-auto-update-caption="true">GAMMA</a></td>
+
+            <td><a href="GAMMADIST.html" data-auto-update-caption="true">GAMMADIST</a></td>
+
+            <td><a href="GAMMA.DIST.html" data-auto-update-caption="true">GAMMA.DIST</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="GAMMAINV.html" data-auto-update-caption="true">GAMMAINV</a></td>
+
+            <td><a href="GAMMA.INV.html" data-auto-update-caption="true">GAMMA.INV</a></td>
+
+            <td><a href="GAMMALN.html" data-auto-update-caption="true">GAMMALN</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="GAMMALN.PRECISE.html" data-auto-update-caption="true">GAMMALN.PRECISE</a></td>
+
+            <td><a href="GAUSS.html" data-auto-update-caption="true">GAUSS</a></td>
+
+            <td><a href="GCD.html" data-auto-update-caption="true">GCD</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="GEOMEAN.html" data-auto-update-caption="true">GEOMEAN</a></td>
+
+            <td><a href="GESTEP.html" data-auto-update-caption="true">GESTEP</a></td>
+
+            <td><a href="GROWTH.html" data-auto-update-caption="true">GROWTH</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="HARMEAN.html" data-auto-update-caption="true">HARMEAN</a></td>
+
+            <td><a href="HEX2BIN.html" data-auto-update-caption="true">HEX2BIN</a></td>
+
+            <td><a href="HEX2DEC.html" data-auto-update-caption="true">HEX2DEC</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="HEX2OCT.html" data-auto-update-caption="true">HEX2OCT</a></td>
+
+            <td><a href="HLOOKUP.html" data-auto-update-caption="true">HLOOKUP</a></td>
+
+            <td><a href="HOUR.html" data-auto-update-caption="true">HOUR</a></td>
+        </tr>
+
+        <tr>
+            <td></td>
+
+            <td><a href="HYPGEOMDIST.html" data-auto-update-caption="true">HYPGEOMDIST</a></td>
+
+            <td>&nbsp;<a href="HYPGEOM.DIST.html" data-auto-update-caption="true">HYPGEOM.DIST</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td><a href="IF.html" data-auto-update-caption="true">IF</a></td>
+
+            <td><a href="IFERROR.html" data-auto-update-caption="true">IFERROR</a></td>
+
+            <td><a href="IFS.html" data-auto-update-caption="true">IFS</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="IFNA.html" data-auto-update-caption="true">IFNA</a></td>
+
+            <td><a href="IMABS.html" data-auto-update-caption="true">IMABS</a></td>
+
+            <td><a href="IMAGINARY.html" data-auto-update-caption="true">IMAGINARY</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="IMARGUMENT.html" data-auto-update-caption="true">IMARGUMENT</a></td>
+
+            <td><a href="IMCONJUGATE.html" data-auto-update-caption="true">IMCONJUGATE</a></td>
+
+            <td><a href="IMCOS.html" data-auto-update-caption="true">IMCOS</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="IMDIV.html" data-auto-update-caption="true">IMDIV</a></td>
+
+            <td><a href="IMEXP.html" data-auto-update-caption="true">IMEXP</a></td>
+
+            <td><a href="IMLN.html" data-auto-update-caption="true">IMLN</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="IMLOG2.html" data-auto-update-caption="true">IMLOG2</a></td>
+
+            <td><a href="IMLOG10.html" data-auto-update-caption="true">IMLOG10</a></td>
+
+            <td><a href="IMPOWER.html" data-auto-update-caption="true">IMPOWER</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="IMPRODUCT.html" data-auto-update-caption="true">IMPRODUCT</a></td>
+
+            <td><a href="IMREAL.html" data-auto-update-caption="true">IMREAL</a></td>
+
+            <td><a href="IMCOSH.html" data-auto-update-caption="true">IMCOSH</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="IMCOT.html" data-auto-update-caption="true">IMCOT</a></td>
+
+            <td><a href="IMCSC.html" data-auto-update-caption="true">IMCSC</a></td>
+
+            <td><a href="IMCSCH.html" data-auto-update-caption="true">IMCSCH</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="IMSEC.html" data-auto-update-caption="true">IMSEC</a></td>
+
+            <td><a href="IMSECH.html" data-auto-update-caption="true">IMSECH</a></td>
+
+            <td><a href="IMSIN.html" data-auto-update-caption="true">IMSIN</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="IMSINH.html" data-auto-update-caption="true">IMSINH</a></td>
+
+            <td><a href="IMSQRT.html" data-auto-update-caption="true">IMSQRT</a></td>
+
+            <td><a href="IMSUB.html" data-auto-update-caption="true">IMSUB</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="IMSUM.html" data-auto-update-caption="true">IMSUM</a></td>
+
+            <td><a href="IMTAN.html" data-auto-update-caption="true">IMTAN</a></td>
+
+            <td><a href="FORMULA_INDEX.html" data-auto-update-caption="true">INDEX</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="INDIRECT.html" data-auto-update-caption="true">INDIRECT</a></td>
+
+            <td><a href="INT.html" data-auto-update-caption="true">INT</a></td>
+
+            <td><a href="INTERCEPT.html" data-auto-update-caption="true">INTERCEPT</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="INTRATE.html" data-auto-update-caption="true">INTRATE</a></td>
+
+            <td><a href="IPMT.html" data-auto-update-caption="true">IPMT</a></td>
+
+            <td><a href="IRR.html" data-auto-update-caption="true">IRR</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="ISBLANK.html" data-auto-update-caption="true">ISBLANK</a></td>
+
+            <td><a href="ISERR.html" data-auto-update-caption="true">ISERR</a></td>
+
+            <td><a href="ISERROR.html" data-auto-update-caption="true">ISERROR</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="ISEVEN.html" data-auto-update-caption="true">ISEVEN</a></td>
+
+            <td><a href="ISFORMULA.html" data-auto-update-caption="true">ISFORMULA</a></td>
+
+            <td><a href="ISLOGICAL.html" data-auto-update-caption="true">ISLOGICAL</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="ISNA.html" data-auto-update-caption="true">ISNA</a></td>
+
+            <td><a href="ISNONTEXT.html" data-auto-update-caption="true">ISNONTEXT</a></td>
+
+            <td><a href="ISNUMBER.html" data-auto-update-caption="true">ISNUMBER</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="ISO.CEILING.html" data-auto-update-caption="true">ISO.CEILING</a></td>
+
+            <td><a href="ISODD.html" data-auto-update-caption="true">ISODD</a></td>
+
+            <td><a href="ISOWEEKNUM.html" data-auto-update-caption="true">ISOWEEKNUM</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="ISPMT.html" data-auto-update-caption="true">ISPMT</a></td>
+
+            <td><a href="ISREF.html" data-auto-update-caption="true">ISREF</a></td>
+
+            <td><a href="ISTEXT.html" data-auto-update-caption="true">ISTEXT</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="KURT.html" data-auto-update-caption="true">KURT</a></td>
+
+            <td><a href="LARGE.html" data-auto-update-caption="true">LARGE</a></td>
+
+            <td><a href="LCM.html" data-auto-update-caption="true">LCM</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="LEFT.html" data-auto-update-caption="true">LEFT</a></td>
+
+            <td><a href="LEFTB.html" data-auto-update-caption="true">LEFTB</a></td>
+
+            <td><a href="LEN.html" data-auto-update-caption="true">LEN</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="LENB.html" data-auto-update-caption="true">LENB</a></td>
+
+            <td><a href="LINEST.html" data-auto-update-caption="true">LINEST</a></td>
+
+            <td><a href="LN.html" data-auto-update-caption="true">LN</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="LOG.html" data-auto-update-caption="true">LOG</a></td>
+
+            <td><a href="LOG10.html" data-auto-update-caption="true">LOG10</a></td>
+
+            <td><a href="LOGEST.html" data-auto-update-caption="true">LOGEST</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="LOGINV.html" data-auto-update-caption="true">LOGINV</a></td>
+
+            <td><a href="LOGNORMDIST.html" data-auto-update-caption="true">LOGNORMDIST</a></td>
+
+            <td><a href="LOGNORM.DIST.html" data-auto-update-caption="true">LOGNORM.DIST</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="LOGNORM.INV.html" data-auto-update-caption="true">LOGNORM.INV</a></td>
+
+            <td><a href="LOOKUP.html" data-auto-update-caption="true">LOOKUP</a></td>
+
+            <td><a href="LOWER.html" data-auto-update-caption="true">LOWER</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td><a href="MATCH.html" data-auto-update-caption="true">MATCH</a></td>
+
+            <td><a href="MAX.html" data-auto-update-caption="true">MAX</a></td>
+
+            <td><a href="MAXA.html" data-auto-update-caption="true">MAXA</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="MAXIFS.html" data-auto-update-caption="true">MAXIFS</a></td>
+
+            <td><a href="MDETERM.html" data-auto-update-caption="true">MDETERM</a></td>
+
+            <td><a href="MDURATION.html" data-auto-update-caption="true">MDURATION</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="MEDIAN.html" data-auto-update-caption="true">MEDIAN</a></td>
+
+            <td><a href="MID.html" data-auto-update-caption="true">MID</a></td>
+
+            <td><a href="MIDB.html" data-auto-update-caption="true">MIDB</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="MIN.html" data-auto-update-caption="true">MIN</a></td>
+
+            <td><a href="MINA.html" data-auto-update-caption="true">MINA</a></td>
+
+            <td><a href="MINIFS.html" data-auto-update-caption="true">MINIFS</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="MINUTE.html" data-auto-update-caption="true">MINUTE</a></td>
+
+            <td><a href="MINVERSE.html" data-auto-update-caption="true">MINVERSE</a></td>
+
+            <td><a href="MIRR.html" data-auto-update-caption="true">MIRR</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="MMULT.html" data-auto-update-caption="true">MMULT</a></td>
+
+            <td><a href="MOD.html" data-auto-update-caption="true">MOD</a></td>
+
+            <td><a href="MODE.html" data-auto-update-caption="true">MODE</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="MODE.MULT.html" data-auto-update-caption="true">MODE.MULT</a></td>
+
+            <td><a href="MODE.SNGL.html" data-auto-update-caption="true">MODE.SNGL</a></td>
+
+            <td><a href="MONTH.html" data-auto-update-caption="true">MONTH</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="MROUND.html" data-auto-update-caption="true">MROUND</a></td>
+
+            <td><a href="MULTINOMIAL.html" data-auto-update-caption="true">MULTINOMIAL</a></td>
+
+            <td><a href="NEGBINOMDIST.html" data-auto-update-caption="true">NEGBINOMDIST</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="NEGBINOM.DIST.html" data-auto-update-caption="true">NEGBINOM.DIST</a></td>
+
+            <td><a href="N.html" data-auto-update-caption="true">N</a></td>
+
+            <td><a href="NA.html" data-auto-update-caption="true">NA</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="NETWORKDAYS.html" data-auto-update-caption="true">NETWORKDAYS</a></td>
+
+            <td><a href="NETWORKDAYS.INTL.html" data-auto-update-caption="true">NETWORKDAYS.INTL</a></td>
+
+            <td><a href="NOMINAL.html" data-auto-update-caption="true">NOMINAL</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="NORMDIST.html" data-auto-update-caption="true">NORMDIST</a></td>
+
+            <td><a href="NORM.DIST.html" data-auto-update-caption="true">NORM.DIST</a></td>
+
+            <td><a href="NORMINV.html" data-auto-update-caption="true">NORMINV</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="NORM.INV.html" data-auto-update-caption="true">NORM.INV</a></td>
+
+            <td><a href="NORMSDIST.html" data-auto-update-caption="true">NORMSDIST</a></td>
+
+            <td><a href="NORM.S.DIST.html" data-auto-update-caption="true">NORM.S.DIST</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="NORMSINV.html" data-auto-update-caption="true">NORMSINV</a></td>
+
+            <td><a href="NORM.S.INV.html" data-auto-update-caption="true">NORM.S.INV</a></td>
+
+            <td><a href="NOT.html" data-auto-update-caption="true">NOT</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="NOW.html" data-auto-update-caption="true">NOW</a></td>
+
+            <td><a href="NPER.html" data-auto-update-caption="true">NPER</a></td>
+
+            <td><a href="NPV.html" data-auto-update-caption="true">NPV</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="OCT2BIN.html" data-auto-update-caption="true">OCT2BIN</a></td>
+
+            <td><a href="OCT2DEC.html" data-auto-update-caption="true">OCT2DEC</a></td>
+
+            <td><a href="OCT2HEX.html" data-auto-update-caption="true">OCT2HEX</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="ODD.html" data-auto-update-caption="true">ODD</a></td>
+
+            <td><a href="ODDFPRICE.html" data-auto-update-caption="true">ODDFPRICE</a></td>
+
+            <td><a href="ODDFYIELD.html" data-auto-update-caption="true">ODDFYIELD</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="ODDLPRICE.html" data-auto-update-caption="true">ODDLPRICE</a></td>
+
+            <td><a href="ODDLYIELD.html" data-auto-update-caption="true">ODDLYIELD</a></td>
+
+            <td><a href="OFFSET.html" data-auto-update-caption="true">OFFSET</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="OR.html" data-auto-update-caption="true">OR</a></td>
+
+            <td><a href="OFFSET.html" data-auto-update-caption="true">OFFSET</a></td>
+
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td><a href="PDURATION.html" data-auto-update-caption="true">PDURATION</a></td>
+
+            <td><a href="PEARSON.html" data-auto-update-caption="true">PEARSON</a></td>
+
+            <td><a href="PERCENTILE.html" data-auto-update-caption="true">PERCENTILE</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="PERCENTILE.EXC.html" data-auto-update-caption="true">PERCENTILE.EXC</a></td>
+
+            <td><a href="PERCENTILE.INC.html" data-auto-update-caption="true">PERCENTILE.INC</a></td>
+
+            <td><a href="PERCENTRANK.html" data-auto-update-caption="true">PERCENTRANK</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="PERCENTRANK.EXC.html" data-auto-update-caption="true">PERCENTRANK.EXC</a></td>
+
+            <td><a href="PERCENTRANK.INC.html" data-auto-update-caption="true">PERCENTRANK.INC</a></td>
+
+            <td><a href="PERMUT.html" data-auto-update-caption="true">PERMUT</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="PERMUTATIONA.html" data-auto-update-caption="true">PERMUTATIONA</a></td>
+
+            <td><a href="PHI.html" data-auto-update-caption="true">PHI</a></td>
+
+            <td><a href="PI.html" data-auto-update-caption="true">PI</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="PMT.html" data-auto-update-caption="true">PMT</a></td>
+
+            <td><a href="POISSON.html" data-auto-update-caption="true">POISSON</a></td>
+
+            <td><a href="POISSON.DIST.html" data-auto-update-caption="true">POISSON.DIST</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="POWER.html" data-auto-update-caption="true">POWER</a></td>
+
+            <td><a href="PPMT.html" data-auto-update-caption="true">PPMT</a></td>
+
+            <td><a href="PRICE.html" data-auto-update-caption="true">PRICE</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="PRICEDISC.html" data-auto-update-caption="true">PRICEDISC</a></td>
+
+            <td><a href="PRICEMAT.html" data-auto-update-caption="true">PRICEMAT</a></td>
+
+            <td><a href="PROB.html" data-auto-update-caption="true">PROB</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="PRODUCT.html" data-auto-update-caption="true">PRODUCT</a></td>
+
+            <td><a href="PROPER.html" data-auto-update-caption="true">PROPER</a></td>
+
+            <td><a href="PV.html" data-auto-update-caption="true">PV</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="QUARTILE.html" data-auto-update-caption="true">QUARTILE</a></td>
+
+            <td><a href="QUARTILE.EXC.html" data-auto-update-caption="true">QUARTILE.EXC</a></td>
+
+            <td><a href="QUARTILE.INC.html" data-auto-update-caption="true">QUARTILE.INC</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="QUOTIENT.html" data-auto-update-caption="true">QUOTIENT</a></td>
+
+            <td><a href="RADIANS.html" data-auto-update-caption="true">RADIANS</a></td>
+
+            <td><a href="RAND.html" data-auto-update-caption="true">RAND</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="randarray.html" data-auto-update-caption="true">RANDARRAY</a></td>
+
+            <td><a href="RANDBETWEEN.html" data-auto-update-caption="true">RANDBETWEEN</a></td>
+
+            <td><a href="RANK.html" data-auto-update-caption="true">RANK</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="RANK.AVG.html" data-auto-update-caption="true">RANK.AVG</a></td>
+
+            <td><a href="RANK.EQ.html" data-auto-update-caption="true">RANK.EQ</a></td>
+
+            <td><a href="RATE.html" data-auto-update-caption="true">RATE</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="RECEIVED.html" data-auto-update-caption="true">RECEIVED</a></td>
+
+            <td><a href="REFRESH.html" data-auto-update-caption="true">REFRESH</a></td>
+
+            <td><a href="REPLACE.html" data-auto-update-caption="true">REPLACE</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="REPLACEB.html" data-auto-update-caption="true">REPLACEB</a></td>
+
+            <td><a href="REPT.html" data-auto-update-caption="true">REPT</a></td>
+
+            <td><a href="RIGHT.html" data-auto-update-caption="true">RIGHT</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="RIGHTB.html" data-auto-update-caption="true">RIGHTB</a></td>
+
+            <td><a href="ROMAN.html" data-auto-update-caption="true">ROMAN</a></td>
+
+            <td><a href="ROUND.html" data-auto-update-caption="true">ROUND</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="ROUNDDOWN.html" data-auto-update-caption="true">ROUNDDOWN</a></td>
+
+            <td><a href="ROUNDUP.html" data-auto-update-caption="true">ROUNDUP</a></td>
+
+            <td><a href="ROW.html" data-auto-update-caption="true">ROW</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="ROWS.html" data-auto-update-caption="true">ROWS</a></td>
+
+            <td><a href="RRI.html" data-auto-update-caption="true">RRI</a></td>
+
+            <td><a href="RSQ.html" data-auto-update-caption="true">RSQ</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td><a href="SEARCH.html" data-auto-update-caption="true">SEARCH</a></td>
+
+            <td><a href="SEARCHB.html" data-auto-update-caption="true">SEARCHB</a></td>
+
+            <td><a href="SEC.html" data-auto-update-caption="true">SEC</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="SECH.html" data-auto-update-caption="true">SECH</a></td>
+
+            <td><a href="SECOND.html" data-auto-update-caption="true">SECOND</a></td>
+
+            <td><a href="SERIESSUM.html" data-auto-update-caption="true">SERIESSUM</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="sequence.html" data-auto-update-caption="true">SEQUENCE</a></td>
+
+            <td><a href="SIGN.html" data-auto-update-caption="true">SIGN</a></td>
+
+            <td><a href="SIN.html" data-auto-update-caption="true">SIN</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="SINH.html" data-auto-update-caption="true">SINH</a></td>
+
+            <td><a href="single.html" data-auto-update-caption="true">SINGLE</a></td>
+
+            <td><a href="SKEW.html" data-auto-update-caption="true">SKEW</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="SKEW.P.html" data-auto-update-caption="true">SKEW.P</a></td>
+
+            <td><a href="SLN.html" data-auto-update-caption="true">SLN</a></td>
+
+            <td><a href="SLOPE.html" data-auto-update-caption="true">SLOPE</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="SMALL.html" data-auto-update-caption="true">SMALL</a></td>
+
+            <td><a href="sort.html" data-auto-update-caption="true">SORT</a></td>
+
+            <td><a href="sortby.html" data-auto-update-caption="true">SORTBY</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="SQRT.html" data-auto-update-caption="true">SQRT</a></td>
+
+            <td><a href="SQRTPI.html" data-auto-update-caption="true">SQRTPI</a></td>
+
+            <td><a href="STANDARDIZE.html" data-auto-update-caption="true">STANDARDIZE</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="STDEV.html" data-auto-update-caption="true">STDEV</a></td>
+
+            <td><a href="STDEVA.html" data-auto-update-caption="true">STDEVA</a></td>
+
+            <td><a href="STDEVP.html" data-auto-update-caption="true">STDEVP</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="STDEV.P.html" data-auto-update-caption="true">STDEV.P</a></td>
+
+            <td><a href="STDEVPA.html" data-auto-update-caption="true">STDEVPA</a></td>
+
+            <td><a href="STDEV.S.html" data-auto-update-caption="true">STDEV.S</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="STEYX.html" data-auto-update-caption="true">STEYX</a></td>
+
+            <td><a href="SUBSTITUTE.html" data-auto-update-caption="true">SUBSTITUTE</a></td>
+
+            <td><a href="SUBTOTAL.html" data-auto-update-caption="true">SUBTOTAL</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="SUM.html" data-auto-update-caption="true">SUM</a></td>
+
+            <td><a href="SUMIF.html" data-auto-update-caption="true">SUMIF</a></td>
+
+            <td><a href="SUMIFS.html" data-auto-update-caption="true">SUMIFS</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="SUMPRODUCT.html" data-auto-update-caption="true">SUMPRODUCT</a></td>
+
+            <td><a href="SUMSQ.html" data-auto-update-caption="true">SUMSQ</a></td>
+
+            <td><a href="SUMX2MY2.html" data-auto-update-caption="true">SUMX2MY2</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="SUMX2PY2.html" data-auto-update-caption="true">SUMX2PY2</a></td>
+
+            <td><a href="SUMXMY2.html" data-auto-update-caption="true">SUMXMY2</a></td>
+
+            <td><a href="SYD.html" data-auto-update-caption="true">SYD</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="SWITCH.html" data-auto-update-caption="true">SWITCH</a></td>
+
+            <td><a href="T.html" data-auto-update-caption="true">T</a></td>
+
+            <td><a href="TAN.html" data-auto-update-caption="true">TAN</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="TANH.html" data-auto-update-caption="true">TANH</a></td>
+
+            <td><a href="TBILLEQ.html" data-auto-update-caption="true">TBILLEQ</a></td>
+
+            <td><a href="TBILLPRICE.html" data-auto-update-caption="true">TBILLPRICE</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="TBILLYIELD.html" data-auto-update-caption="true">TBILLYIELD</a></td>
+
+            <td><a href="TDIST.html" data-auto-update-caption="true">TDIST</a></td>
+
+            <td><a href="T.DIST.html" data-auto-update-caption="true">T.DIST</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="T.DIST.2T.html" data-auto-update-caption="true">T.DIST.2T</a></td>
+
+            <td><a href="T.DIST.RT.html" data-auto-update-caption="true">T.DIST.RT</a></td>
+
+            <td><a href="TEXT.html" data-auto-update-caption="true">TEXT</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="TEXTJOIN.html" data-auto-update-caption="true">TEXTJOIN</a></td>
+
+            <td><a href="TIME.html" data-auto-update-caption="true">TIME</a></td>
+
+            <td><a href="TIMEVALUE.html" data-auto-update-caption="true">TIMEVALUE</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="TINV.html" data-auto-update-caption="true">TINV</a></td>
+
+            <td><a href="T.INV.html" data-auto-update-caption="true">T.INV</a></td>
+
+            <td><a href="T.INV.2T.html" data-auto-update-caption="true">T.INV.2T</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="TODAY.html" data-auto-update-caption="true">TODAY</a></td>
+
+            <td><a href="TRANSPOSE.html" data-auto-update-caption="true">TRANSPOSE</a></td>
+
+            <td><a href="TREND.html" data-auto-update-caption="true">TREND</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="TRIM.html" data-auto-update-caption="true">TRIM</a></td>
+
+            <td><a href="TRIMMEAN.html" data-auto-update-caption="true">TRIMMEAN</a></td>
+
+            <td><a href="TRUE.html" data-auto-update-caption="true">TRUE</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="TRUNC.html" data-auto-update-caption="true">TRUNC</a></td>
+
+            <td><a href="TTEST.html" data-auto-update-caption="true">TTEST</a></td>
+
+            <td><a href="T.TEST.html" data-auto-update-caption="true">T.TEST</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="TYPE.html" data-auto-update-caption="true">TYPE</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td><a href="unique.html" data-auto-update-caption="true">UNIQUE</a></td>
+
+            <td><a href="UNICHAR.html" data-auto-update-caption="true">UNICHAR</a></td>
+
+            <td><a href="UNICODE.html" data-auto-update-caption="true">UNICODE</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="UPPER.html" data-auto-update-caption="true">UPPER</a></td>
+
+            <td height="17"><a href="VALUE.html" data-auto-update-caption="true">VALUE</a></td>
+
+            <td height="17"><a href="VAR.html" data-auto-update-caption="true">VAR</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="VARA.html" data-auto-update-caption="true">VARA</a></td>
+
+            <td><a href="VARP.html" data-auto-update-caption="true">VARP</a></td>
+
+            <td><a href="VAR.P.html" data-auto-update-caption="true">VAR.P</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="VARPA.html" data-auto-update-caption="true">VARPA</a></td>
+
+            <td><a href="VAR.S.html" data-auto-update-caption="true">VAR.S</a></td>
+
+            <td><a href="VDB.html" data-auto-update-caption="true">VDB</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="VLOOKUP.html" data-auto-update-caption="true">VLOOKUP</a></td>
+
+            <td><a href="WEEKDAY.html" data-auto-update-caption="true">WEEKDAY</a></td>
+
+            <td><a href="WEEKNUM.html" data-auto-update-caption="true">WEEKNUM</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="WEIBULL.html" data-auto-update-caption="true">WEIBULL</a></td>
+
+            <td><a href="WEIBULL.DIST.html" data-auto-update-caption="true">WEIBULL.DIST</a></td>
+
+            <td><a href="WORKDAY.html" data-auto-update-caption="true">WORKDAY</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="WORKDAY.INTL.html" data-auto-update-caption="true">WORKDAY.INTL</a></td>
+
+            <td><a href="XIRR.html" data-auto-update-caption="true">XIRR</a></td>
+
+            <td><a href="XNPV.html" data-auto-update-caption="true">XNPV</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="XOR.html" data-auto-update-caption="true">XOR</a></td>
+
+            <td><a href="YEAR.html" data-auto-update-caption="true">YEAR</a></td>
+
+            <td><a href="YEARFRAC.html" data-auto-update-caption="true">YEARFRAC</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="YIELD.html" data-auto-update-caption="true">YIELD</a></td>
+
+            <td><a href="YIELDDISC.html" data-auto-update-caption="true">YIELDDISC</a></td>
+
+            <td><a href="YIELDMAT.html" data-auto-update-caption="true">YIELDMAT</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="ZTEST.html" data-auto-update-caption="true">ZTEST</a></td>
+
+            <td><a href="Z.TEST.html" data-auto-update-caption="true">Z.TEST</a></td>
+
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table><!--DXMETADATA end-->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORISED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""%%phrase:name=SeeAlso%%%%designlist:tagidentifier=seealso,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><!--DXMETADATA end-->
+            
+            <div id="i-footer-content" class="i-footer-content">
+                <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p><p>Copyright © 2019 GrapeCity, Inc. All rights reserved.</p>
+<p><a href="https://www.grapecity.com/en/forums/winforms-edition" target="_blank">Product Support Forum</a> | <a href="javascript:window.print()">Print this page</a></p>
+<ul class="social">
+<li><a href="https://www.facebook.com/GrapeCityUS/" target="_blank" class="facebook">&nbsp;</a></li>
+<li><a href="https://twitter.com/GrapeCityUS" target="_blank" class="twitter">&nbsp;</a></li>
+<li><a href="https://www.linkedin.com/company/grapecity" target="_blank" class="linkedin">&nbsp;</a></li>
+</ul>
+</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end-->
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

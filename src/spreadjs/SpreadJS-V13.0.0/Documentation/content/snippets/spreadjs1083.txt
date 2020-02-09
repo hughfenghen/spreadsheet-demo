@@ -1,0 +1,13 @@
+//Not valid in V11
+activeSheet.setArray(0, 0, [1, 2, 3, 4, 5]);
+var fbx = new GC.Spread.Sheets.FormulaTextBox.FormulaTextBox(document.getElementById("formulaTextBox"));
+fbx.workbook(spread);
+fbx.startSelectMode();
+
+$("#button1").click(function(){
+    fbx.endSelectMode();
+   });
+
+....
+<input type="text" id="formulaTextBox" style="width: 200px" />
+<input type="button" id="button1" value="Button 1" />

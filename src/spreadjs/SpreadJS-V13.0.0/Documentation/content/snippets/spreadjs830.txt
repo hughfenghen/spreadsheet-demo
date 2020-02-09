@@ -1,0 +1,1 @@
+activeSheet.getRange(-1, 2, -1, 1).imeMode(GC.Spread.Sheets.ImeMode.auto);

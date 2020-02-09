@@ -1,0 +1,33 @@
+<h3>GC-Column</h3>
+<div>
+    <p>以下示例展示如何绑定列上的属性。</p>
+</div>
+
+<div>
+    <gc-spread-sheets [hostStyle]="hostStyle" hostClass="spreadContainer">
+        <gc-worksheet [dataSource]="data" [autoGenerateColumns]="autoGenerateColumns">
+            <gc-column [width]="width" [formatter]="formatter" [visible]="visible" [resizable]="resizable"></gc-column>
+        </gc-worksheet>
+    </gc-spread-sheets>
+</div>
+
+<div class="settingContainer">
+    <table>
+        <tr>
+            <td>
+                <label><input type="checkbox" [(ngModel)]="visible" />可见</label>
+            </td>
+            <td>
+                <label><input type="checkbox" [(ngModel)]="resizable" />可改变列宽</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label><input type="text" [(ngModel)]="width" />列宽</label>
+            </td>
+            <td>
+                <label><input type="text" [(ngModel)]="formatter" />数据格式</label>
+            </td>
+        </tr>
+    </table>
+</div>

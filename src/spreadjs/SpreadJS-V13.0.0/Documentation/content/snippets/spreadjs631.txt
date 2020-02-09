@@ -1,0 +1,12 @@
+activeSheet.setValue(0, 2, 5);
+activeSheet.setValue(1, 2, 4);
+activeSheet.setValue(2, 2, 5);
+
+spread.options.highlightInvalidData = true;
+var dv = GC.Spread.Sheets.DataValidation.createFormulaListValidator("$C$1:$C$3");
+dv.showInputMessage(true);
+dv.inputMessage("Pick a value from the list.");
+dv.inputTitle("tip");
+activeSheet.setDataValidator(1, 1, 1, 1, dv, GC.Spread.Sheets.SheetArea.viewport);
+var validList = activeSheet.getDataValidator(1, 1).getValidList(activeSheet, 1, 1);
+alert(validList);

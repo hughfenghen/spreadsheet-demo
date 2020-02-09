@@ -1,0 +1,28 @@
+﻿(function () { Innovasys.DynamicToc.injectNodeInfo("n5076", "c177", [
+{"id":"n5077","t":"compareType","u":"SpreadJS~GC.Spread.Sheets.ConditionalFormatting.Condition~compareType.html"},
+{"id":"n5079","t":"evaluate","u":"SpreadJS~GC.Spread.Sheets.ConditionalFormatting.Condition~evaluate.html"},
+{"id":"n5081","t":"expected","u":"SpreadJS~GC.Spread.Sheets.ConditionalFormatting.Condition~expected.html"},
+{"id":"n5083","t":"formula","u":"SpreadJS~GC.Spread.Sheets.ConditionalFormatting.Condition~formula.html"},
+{"id":"n5085","t":"fromDay","u":"SpreadJS~GC.Spread.Sheets.ConditionalFormatting.Condition~fromDay.html"},
+{"id":"n5087","t":"fromFormula","u":"SpreadJS~GC.Spread.Sheets.ConditionalFormatting.Condition~fromFormula.html"},
+{"id":"n5089","t":"fromMonth","u":"SpreadJS~GC.Spread.Sheets.ConditionalFormatting.Condition~fromMonth.html"},
+{"id":"n5091","t":"fromQuarter","u":"SpreadJS~GC.Spread.Sheets.ConditionalFormatting.Condition~fromQuarter.html"},
+{"id":"n5093","t":"fromSource","u":"SpreadJS~GC.Spread.Sheets.ConditionalFormatting.Condition~fromSource.html"},
+{"id":"n5095","t":"fromWeek","u":"SpreadJS~GC.Spread.Sheets.ConditionalFormatting.Condition~fromWeek.html"},
+{"id":"n5097","t":"fromYear","u":"SpreadJS~GC.Spread.Sheets.ConditionalFormatting.Condition~fromYear.html"},
+{"id":"n5099","t":"getExpected","u":"SpreadJS~GC.Spread.Sheets.ConditionalFormatting.Condition~getExpected.html"},
+{"id":"n5101","t":"getValidList","u":"SpreadJS~GC.Spread.Sheets.ConditionalFormatting.Condition~getValidList.html"},
+{"id":"n5103","t":"ignoreBlank","u":"SpreadJS~GC.Spread.Sheets.ConditionalFormatting.Condition~ignoreBlank.html"},
+{"id":"n5105","t":"ignoreCase","u":"SpreadJS~GC.Spread.Sheets.ConditionalFormatting.Condition~ignoreCase.html"},
+{"id":"n5107","t":"item1","u":"SpreadJS~GC.Spread.Sheets.ConditionalFormatting.Condition~item1.html"},
+{"id":"n5109","t":"item2","u":"SpreadJS~GC.Spread.Sheets.ConditionalFormatting.Condition~item2.html"},
+{"id":"n5111","t":"ranges","u":"SpreadJS~GC.Spread.Sheets.ConditionalFormatting.Condition~ranges.html"},
+{"id":"n5113","t":"reset","u":"SpreadJS~GC.Spread.Sheets.ConditionalFormatting.Condition~reset.html"},
+{"id":"n5115","t":"treatNullValueAsZero","u":"SpreadJS~GC.Spread.Sheets.ConditionalFormatting.Condition~treatNullValueAsZero.html"},
+{"id":"n5117","t":"useWildCards","u":"SpreadJS~GC.Spread.Sheets.ConditionalFormatting.Condition~useWildCards.html"},
+])})();
+(function () { Innovasys.DynamicToc.injectNodeInfo("n5071", "c0", [
+{"id":"n5072","t":"Overview","u":"SpreadJS~GC.Spread.Sheets.ConditionalFormatting.Condition.html"},
+{"id":"n5074","t":"Condition Constructor","u":"SpreadJS~GC.Spread.Sheets.ConditionalFormatting.Condition~_ctor.html"},
+{"id":"n5076","t":"Methods","cc":"c177"},
+])})();

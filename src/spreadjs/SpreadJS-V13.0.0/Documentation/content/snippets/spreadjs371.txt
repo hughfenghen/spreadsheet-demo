@@ -1,0 +1,23 @@
+sheet.setValue(0,0,"112");
+sheet.setValue(1,0,"10");
+sheet.setValue(2,0,"223");
+sheet.setValue(3,0,"20");
+sheet.setValue(4,0,"334");
+sheet.setValue(5,0,"30");
+sheet.sortRange(0, 0, 6, 1, true, [
+                {index:0, ascending:true}
+                  ]);
+
+function fn() {
+    this.name = "fn";
+    this.minArgs = 0;
+    this.maxArgs = 0;
+}
+fn.prototype = new GC.Spread.CalcEngine.Functions.Function();
+fn.prototype.evaluate = function(args){
+    return 100;
+}
+fn.prototype.description = function(){
+    return {name:"fn",description:"This is my first function"};
+}
+spread.addCustomFunction(new fn());

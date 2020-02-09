@@ -1,0 +1,3 @@
+activeSheet.bind(GC.Spread.Sheets.Events.RangeChanged, function (sender, args) {
+  console.log(args.sheetName, args.action);
+});

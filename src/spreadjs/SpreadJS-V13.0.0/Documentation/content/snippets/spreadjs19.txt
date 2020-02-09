@@ -1,0 +1,30 @@
+activeSheet.setRowCount(7);
+activeSheet.setValue(0, 0, "North");
+activeSheet.setValue(1, 0, "South");
+activeSheet.setValue(2, 0, "East");
+activeSheet.setValue(3, 0, "South");
+activeSheet.setValue(4, 0, "North");
+activeSheet.setValue(5, 0, "North");
+activeSheet.setValue(6, 0, "West");
+activeSheet.setColumnWidth(0, 80);
+
+//Set a row Filter.
+activeSheet.rowFilter(new GC.Spread.Sheets.Filter.HideRowFilter(new GC.Spread.Sheets.Range(0, 0, 7, 1)));
+
+$("#button1").click(function () {
+    //Hide the filter indicator.   
+    var rowFilter = activeSheet.rowFilter();
+    rowFilter.filterButtonVisible(0,false);
+    activeSheet.repaint();
+});
+
+$("#button2").click(function () {
+    //Display the filter indicator again.    
+    var rowFilter = activeSheet.rowFilter();
+    rowFilter.filterButtonVisible(0, true);
+    activeSheet.repaint();
+});
+
+//Add button controls to page
+<input type="button" id="button1" value="button1"/>
+<input type="button" id="button2" value="button2"/>

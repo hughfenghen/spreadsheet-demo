@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%ProjectTitle%% - %%ItemTitle%%</title>" --><title>SpreadJS Documentation - Month Sparkline</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ProjectTitle%% - %%ItemTitleNoQuotes%%""/>" --><meta name="Title" content="SpreadJS Documentation - Month Sparkline"/><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n432","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="light" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="You can create a month sparkline using the MonthSparkline formula and cell values." /><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-topics/topics.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-topics/topics.mshv1.css"" data-responsive-mobile=""template/packages/core-topics/topics.mobile.css"" data-responsive-tablet=""template/packages/core-topics/topics.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="script"--><script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="script"--><script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="e6d56717-ccb4-46b1-8950-e3fcbc023a17"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="fd9cab4f-16bf-437c-a370-bbba7f456cf3"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocOrdinal" format="<meta name=""Microsoft.Help.TocOrder"" content=""%%TocOrdinal%%""/>" --><meta name="Microsoft.Help.TocOrder" content="17"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/hs-simpletab.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="StylePropertyValues" format="<style>%%StylePropertyValues%%</style>" --><style>.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+    <!--DXMETADATA start type="CustomHeadContent" --><link rel="stylesheet" type="text/css" href="template/packages/core-web/css/SP.css">
+<script type="text/javascript">
+var currentHeader = function() {
+    return "spjs";
+}
+</script>
+<script src="template/packages/core-web/script/topNavigation.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WT462SJ"></script>
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime()
+                , event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WT462SJ');
+    </script>
+<!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->SpreadJS Documentation<!--DXMETADATA end--></div>
+            <div class="i-search-container">
+                <!--DXMETADATA start type="outputfileextension" format="<form action=""websearch%%outputfileextension%%"">" --><form action="websearch.html"><!--DXMETADATA end-->
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                <!--DXMETADATA start type="Literal" value="</form>" --></form><!--DXMETADATA end-->
+            </div>
+            <!--DXMETADATA start type="outputfileextension" format="<a id=""i-index-button"" href=""webindex%%outputfileextension%%""></a>" --><a id="i-index-button" href="webindex.html"></a><!--DXMETADATA end-->
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container">
+<a href="overview.html">SpreadJS Documentation</a>
+ / <a href="devguide.html">Developer's Guide</a>
+ / <a href="features.html">Features</a>
+ / <a href="ManagingDataVisualizationAndObjects.html">Manage Data Visualization and Objects</a>
+ / <a href="sparkmain.html">Sparklines</a>
+ / Month Sparkline</div><!--DXMETADATA end --></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="ItemTitle" -->Month Sparkline<!--DXMETADATA end--></div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+            </div>
+            <!--DXMETADATA start type="TopicSection" name="BodyText"--><p>You can create a month sparkline using the <strong>MonthSparkline</strong> formula and cell values.</p>
+
+<p><img border="0" alt="" src="images/sparkmonth.png" /></p>
+
+<p>A month sparkline has 6*7 squares. The horizontal direction is the week of the month (from left to right, from 1st to 6th). The vertical direction is the week day (from top to bottom, from Sunday to Saturday).</p>
+
+<p>The month sparkline formula has the following options:</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td><strong>Option</strong></td>
+
+            <td><strong>Description</strong></td>
+        </tr>
+
+        <tr>
+            <td>year</td>
+
+            <td>A full year number, such as 2017.</td>
+        </tr>
+
+        <tr>
+            <td>month</td>
+
+            <td>A month number, such as 3. The month is 1-based (Jan = 1).</td>
+        </tr>
+
+        <tr>
+            <td>dataRange</td>
+
+            <td>A reference that represents a range where the first column is a date and the second column is a number, such as "A1:B400".</td>
+        </tr>
+
+        <tr>
+            <td>emptyColor</td>
+
+            <td>A color string that represents days with no value or zero value, such as "lightgray".</td>
+        </tr>
+
+        <tr>
+            <td>startColor</td>
+
+            <td>A color string that represents the minimum day value, such as "lightgreen".</td>
+        </tr>
+
+        <tr>
+            <td>middleColor</td>
+
+            <td>A color string that represents the day with the average minimum and maximum value, such as "green".</td>
+        </tr>
+
+        <tr>
+            <td>endColor</td>
+
+            <td>A color string that represents the day with the maximum value, such as "darkgreen".</td>
+        </tr>
+
+        <tr>
+            <td>colorRange</td>
+
+            <td>A reference that represents a range where the data is a color string.</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>The month sparkline formula has the following formats:</p>
+
+<p><code>=MONTHSPARKLINE(year, month, dataRange, emptyColor, startColor, middleColor, endColor)</code></p>
+
+<p><code>=MONTHSPARKLINE(year, month, dataRange, colorRange)</code></p>
+
+<h4>Using Code</h4>
+
+<p>This example creates a month sparkline.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">for (var rowIndex = 1; rowIndex &lt;= 31; rowIndex++) {<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; activeSheet.setValue(rowIndex, 0, new Date(2017, 0, rowIndex));<br />
+                }<br />
+                activeSheet.setValue(1,1,10, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(2,1,5, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(3,1,98, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(4,1,50, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(5,1,75, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(6,1,25, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(7,1,65, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(8,1,30, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(9,1,22, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(10,1,82, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(11,1,89, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(12,1,43, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(13,1,15, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(14,1,12, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(15,1,63, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(16,1,54, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(17,1,77, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(18,1,39, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(19,1,20, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(20,1,65, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(21,1,20, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(22,1,20, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(23,1,20, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(24,1,18, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(25,1,20, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(26,1,42, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(27,1,21, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(28,1,20, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(29,1,99, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(30,1,20, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setValue(31,1,9, GC.Spread.Sheets.SheetArea.viewport);<br />
+                activeSheet.setFormula(6, 2, '=MONTHSPARKLINE(2017,1,A2:B32,"yellow","lightgreen","green","darkgreen")');<br />
+                spread.resumePaint();</td>
+            </tr>
+        </tbody>
+    </table>
+</div><!--DXMETADATA end-->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORISED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""%%phrase:name=SeeAlso%%%%designlist:tagidentifier=seealso,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><!--DXMETADATA end-->
+            
+            <div id="i-footer-content" class="i-footer-content">
+                <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p><p>Copyright © 2019 GrapeCity, Inc. All rights reserved.</p>
+<p><a href="https://www.grapecity.com/en/forums/winforms-edition" target="_blank">Product Support Forum</a> | <a href="javascript:window.print()">Print this page</a></p>
+<ul class="social">
+<li><a href="https://www.facebook.com/GrapeCityUS/" target="_blank" class="facebook">&nbsp;</a></li>
+<li><a href="https://twitter.com/GrapeCityUS" target="_blank" class="twitter">&nbsp;</a></li>
+<li><a href="https://www.linkedin.com/company/grapecity" target="_blank" class="linkedin">&nbsp;</a></li>
+</ul>
+</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end-->
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

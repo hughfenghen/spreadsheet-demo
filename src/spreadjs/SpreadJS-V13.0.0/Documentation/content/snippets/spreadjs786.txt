@@ -1,0 +1,7 @@
+var comment = new GC.Spread.Sheets.Comments.Comment();
+comment.text("new comment!");
+comment.backColor("yellow");
+comment.foreColor("green");
+comment.displayMode(GC.Spread.Sheets.Comments.DisplayMode.alwaysShown);
+comment.autoSize(true);
+activeSheet.getCell(5,5).comment(comment);

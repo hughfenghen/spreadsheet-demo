@@ -1,0 +1,2 @@
+rvisible = activeSheet.getRowVisible(1,GC.Spread.Sheets.SheetArea.viewport);
+alert(rvisible);

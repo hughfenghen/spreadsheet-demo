@@ -1,0 +1,4 @@
+spread.bind(GC.Spread.Sheets.Events.ActiveSheetChanging, function (sender, args) {
+    //Cancel sheet switching.
+    args.cancel = true;
+});

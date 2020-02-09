@@ -1,0 +1,9 @@
+// Use IE to see the console log text
+var activeSheet = spread.getActiveSheet();
+
+activeSheet.bind(GC.Spread.Sheets.Events.DragDropBlock, function (e, args) {
+        console.log("From Column:" + args.fromCol);
+        console.log("From Row:" + args.fromRow);
+        console.log("To Column:" + args.toCol);
+        console.log("To Row:" + args.toRow);
+    });

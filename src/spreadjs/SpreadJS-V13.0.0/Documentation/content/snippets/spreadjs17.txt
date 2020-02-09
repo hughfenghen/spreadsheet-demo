@@ -1,0 +1,74 @@
+activeSheet.setRowCount(7);
+activeSheet.setValue(0, 0, "North");
+activeSheet.setValue(1, 0, "South");
+activeSheet.setValue(2, 0, "East");
+activeSheet.setValue(3, 0, "South");
+activeSheet.setValue(4, 0, "North");
+activeSheet.setValue(5, 0, "North");
+activeSheet.setValue(6, 0, "West");
+activeSheet.setColumnWidth(0, 80);
+
+//Set a rowFilter.
+activeSheet.rowFilter(new GC.Spread.Sheets.Filter.HideRowFilter(new GC.Spread.Sheets.Range(0, 0, 7, 1)));
+
+$("#button1").click(function () {
+    var rowFilter = spread.getActiveSheet().rowFilter();
+    //*********************************************
+    //Exit if Column1 has not been filtered.
+    //*********************************************
+    if (!rowFilter.isFiltered(0)) {
+        return;
+    }
+
+    //*********************************************
+    //Filtered strings
+    //*********************************************
+    var filterItems = rowFilter.getFilterItems(0);
+    var str = "Filtered strings:";
+    filterItems.forEach(function (item) {
+        str += " " + item.expected();
+    });
+
+    console.log(str);
+    console.log(" ");
+
+    //*********************************************
+    //Number of Filtered-In (displayed) rows
+    //*********************************************
+    var range = rowFilter.range;
+    var filteredInRows = [], filteredOutRows = [];
+    for (var i = range.row, last = range.row + range.rowCount; i < last; i++) {
+        if (rowFilter.isRowFilteredOut(i)) {
+filteredOutRows.push(i);
+        } else {
+filteredInRows.push(i);
+        }
+    }
+    console.log("Number of Filtered-In (displayed) rows: " + filteredInRows.length);
+    console.log(" ");
+
+    //*********************************************
+    //Number of Filtered-Out (hidden) rows
+    //*********************************************
+    console.log("Number of Filtered-Out (hidden) rows: " + filteredOutRows.length);
+    console.log("");
+
+    filteredOutRows.forEach(function (item) {
+        console.log("Filtered-Out (hidden) row index: " + item);
+    });
+    console.log(" ");
+
+    //*********************************************
+    //Filtered-In (displayed)/Filtered-Out (hidden) rows
+    //*********************************************
+    filteredOutRows.forEach(function (item) {
+        console.log("Data of Filtered-Out (hidden) row: " + activeSheet.getValue(item, 0));
+    });
+    console.log(" ");
+    filteredInRows.forEach(function (item) {
+        console.log("Data of Filtered-In (displayed) row: " + activeSheet.getValue(item, 0));
+    });
+});
+
+//Add button controls to page
+<input type="button" id="button1" value="button1"/>

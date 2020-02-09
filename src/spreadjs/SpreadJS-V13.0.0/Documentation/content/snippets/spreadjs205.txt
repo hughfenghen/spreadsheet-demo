@@ -1,0 +1,6 @@
+var style = new GC.Spread.Sheets.Style();
+style.backColor = "red";
+var ranges=[new GC.Spread.Sheets.Range(0,0,5,1)];
+activeSheet.conditionalFormats.addCellValueRule(GC.Spread.Sheets.ConditionalFormatting.ComparisonOperators.between, 2, 100, style, ranges);
+activeSheet.setValue(0,0,1,3);
+activeSheet.setValue(1,0,45,3); 

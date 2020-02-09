@@ -1,0 +1,5 @@
+sheet.setRowCount(2,GC.Spread.Sheets.SheetArea.colHeader);
+sheet.setColumnCount(2,GC.Spread.Sheets.SheetArea.rowHeader);
+sheet.setValue(0, 2,"Column",GC.Spread.Sheets.SheetArea.colHeader);
+sheet.options.rowHeaderAutoTextIndex = 1;
+sheet.options.colHeaderAutoText = GC.Spread.Sheets.HeaderAutoText.letters;

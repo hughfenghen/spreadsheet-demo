@@ -1,0 +1,22 @@
+//create a table
+datas = [
+    ["1", "NewYork", "1968/6/8", "80", "180"],
+    ["4", "NewYork", "1972/7/3", "72", "168"],
+    ["4", "NewYork", "1964/3/2", "71", "179"],
+    ["5", "Washington", "1972/8/8","80", "171"],
+    ["6", "Washington", "1986/2/2", "89", "161"],
+    ["7", "Washington", "2012/2/15", "71", "240"]];
+var table = activeSheet.tables.addFromDataSource("table1", 2, 2, datas);
+dataColumns = ["Name", "City", "Birthday", "Weight", "Height"];
+table.setColumnName(0, dataColumns[0]);
+table.setColumnName(1, dataColumns[1]);
+table.setColumnName(2, dataColumns[2]);
+table.setColumnName(3, dataColumns[3]);
+table.setColumnName(4, dataColumns[4]);
+
+var style1 = new GC.Spread.Sheets.Slicers.SlicerStyles.dark6();
+//create a slicer
+//add the slicer to the sheet
+var slicer = activeSheet.slicers.add("slicer1", table.name(),"Height");
+slicer.position(new GC.Spread.Sheets.Point(100, 200));
+slicer.style(style1);

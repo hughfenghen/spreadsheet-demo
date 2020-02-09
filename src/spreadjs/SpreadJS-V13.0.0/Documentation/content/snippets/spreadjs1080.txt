@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SpreadSheets</title>
+<link href="./css/gc.spread.sheets.12.0.0.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="./scripts/gc.spread.sheets.all.12.0.0.min.js"></script>
+
+<script type="text/javascript">
+window.onload = function(){
+                var spread = new GC.Spread.Sheets.Workbook(document.getElementById("ss"),{sheetCount:3});
+                var activeSheet = spread.getActiveSheet(); 
+activeSheet.setArray(0, 0, [1, 2, 3, 4, 5]);
+var fbx = new GC.Spread.Sheets.FormulaTextBox.FormulaTextBox(document.getElementById("formulaTextBox"));
+fbx.workbook(spread);
+                      }
+    </script>
+</head>
+<body>
+<div id="ss" style="height: 500px; width: 600px"></div>
+ <input type="text" id="formulaTextBox" />
+</body>
+</html>

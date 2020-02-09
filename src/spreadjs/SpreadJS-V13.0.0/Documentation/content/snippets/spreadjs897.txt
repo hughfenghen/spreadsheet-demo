@@ -1,0 +1,1 @@
+spread.commandManager().setShortcutKey('navigationEnd', GC.Spread.Commands.Key.tab,  false, false, false, false); // Tab key

@@ -1,0 +1,339 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%ProjectTitle%% - %%ItemTitle%%</title>" --><title>SpreadJS Documentation - Range Template Cell</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ProjectTitle%% - %%ItemTitleNoQuotes%%""/>" --><meta name="Title" content="SpreadJS Documentation - Range Template Cell"/><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n126","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="light" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="SpreadJS provides support for creating a range celltype that allows users to specify a cell range in the worksheet as a template." /><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-topics/topics.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-topics/topics.mshv1.css"" data-responsive-mobile=""template/packages/core-topics/topics.mobile.css"" data-responsive-tablet=""template/packages/core-topics/topics.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="script"--><script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="script"--><script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="71331a01-76e9-4c1b-8fe0-1add56512578"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="0766f934-9f27-46c7-9689-95ccbc9232f4"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocOrdinal" format="<meta name=""Microsoft.Help.TocOrder"" content=""%%TocOrdinal%%""/>" --><meta name="Microsoft.Help.TocOrder" content="6"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/hs-simpletab.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="StylePropertyValues" format="<style>%%StylePropertyValues%%</style>" --><style>.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+    <!--DXMETADATA start type="CustomHeadContent" --><link rel="stylesheet" type="text/css" href="template/packages/core-web/css/SP.css">
+<script type="text/javascript">
+var currentHeader = function() {
+    return "spjs";
+}
+</script>
+<script src="template/packages/core-web/script/topNavigation.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WT462SJ"></script>
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime()
+                , event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WT462SJ');
+    </script>
+<!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->SpreadJS Documentation<!--DXMETADATA end--></div>
+            <div class="i-search-container">
+                <!--DXMETADATA start type="outputfileextension" format="<form action=""websearch%%outputfileextension%%"">" --><form action="websearch.html"><!--DXMETADATA end-->
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                <!--DXMETADATA start type="Literal" value="</form>" --></form><!--DXMETADATA end-->
+            </div>
+            <!--DXMETADATA start type="outputfileextension" format="<a id=""i-index-button"" href=""webindex%%outputfileextension%%""></a>" --><a id="i-index-button" href="webindex.html"></a><!--DXMETADATA end-->
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container">
+<a href="overview.html">SpreadJS Documentation</a>
+ / <a href="devguide.html">Developer's Guide</a>
+ / <a href="features.html">Features</a>
+ / <a href="interface.html">Manage User Interface</a>
+ / <a href="celltypes.html">Cell Types</a>
+ / Range Template Cell</div><!--DXMETADATA end --></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="ItemTitle" -->Range Template Cell<!--DXMETADATA end--></div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+            </div>
+            <!--DXMETADATA start type="TopicSection" name="BodyText"--><p>SpreadJS provides support for creating a range celltype that allows users to specify a cell range in the worksheet as a template.</p>
+
+<h3 id="a">Usage Scenario</h3>
+
+<p>Range celltype is a very powerful feature that enables users and developers to define a template of cell ranges as a single celltype and apply that template to a cell to load different types of data into the template (including multiple rows and/or columns). Once the celltype is applied to a cell or a cell range, then the&nbsp;range template will use the cell value (or values) as a data source to resolve the binding path of the specified range.</p>
+
+<p>Using range templates is beneficial especially in the following scenarios:</p>
+
+<ul>
+    <li>When users want to display some specific ranges of data with identical structures easily and quickly (as shown in the screenshot shared below) without having to configure the same style for each and every range one by one.<br />
+    <br />
+    <img style="MAX-WIDTH: 100%; HEIGHT: auto" border="0" alt="" src="images/spreadjsv13images/template.png" /><br />
+    <img style="MAX-WIDTH: 100%; HEIGHT: auto" border="0" alt="" src="images/spreadjsv13images/range-template.png" /><br />
+    <br /></li>
+
+    <li>When users want to use range cell type to create custom sparklines, as shown in the example of data analytics report shared below:<br />
+    <br />
+    <img style="MAX-WIDTH: 100%; HEIGHT: auto" border="0" alt="" src="images/spreadjsv13images/sparkline.png" /><br />
+    <br /></li>
+
+    <li>When users want to use range template celltype to&nbsp;create KPI blocks (for example - financial KPI) as shown in the below screenshot.<br />
+    <br />
+    <img style="MAX-WIDTH: 100%; HEIGHT: auto" border="0" alt="" src="images/spreadjsv13images/range8.png" /><br />
+    <br /></li>
+
+    <li>When users want to define a range template and use it as a shape as shown in the image shared below. This will insert a shape that renders as a template based on the specific task, which can help users to create a work based schedule for project management while working with spreadsheets.<br />
+    <br />
+    <img style="MAX-WIDTH: 100%; HEIGHT: auto" border="0" alt="" src="images/spreadjsv13images/range9.png" /><br />
+    <br /></li>
+
+    <li>When users want to combine array functions to create&nbsp;a dashboard block that shows top product sales in a specific region. For example - the template can be created in such a way that it takes the region parameter and then uses array functions to filter out a dataset and show top product sales captured by the range template.&nbsp;</li>
+</ul>
+
+<h3 id="b">How Range Templates Work?</h3>
+
+<p>Creating range cell types and configuring range templates in spreadsheets allows users to modify the display mode of the batch fragments and tweak its appearance simply by changing the template.&nbsp;</p>
+
+<p>A range-cell type can be set as a normal celltype&nbsp;using&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Style_namespace.html">GC.Spread.Sheets.Style</a>&nbsp;to create an instance of a range celltype. This object is used for resolving data&nbsp;and providing range layout information along with the cell style in the designated range.</p>
+
+<p>The following images depict the workflow for a range celltype in a spreadsheet:</p>
+
+<p><img style="MAX-WIDTH: 100%; HEIGHT: auto" border="0" alt="" src="images/spreadjsv13images/range4.png" /></p>
+
+<p>&nbsp;</p>
+
+<p><img style="MAX-WIDTH: 100%; HEIGHT: auto" border="0" alt="" src="images/spreadjsv13images/range3.png" />&nbsp;</p>
+
+<p>The following steps must be performed for creating a range template celltype in the worksheet:</p>
+
+<ol>
+    <li><strong>Create a&nbsp;Template</strong> - A template&nbsp;can be created&nbsp;by designing a range in the worksheet. To bind data to the template, you can&nbsp;use the setBindingPath() method.</li>
+
+    <li><strong>Configure Data</strong> -&nbsp;Next, users need to configure a DataSource in the worksheet to be binded to the template.</li>
+
+    <li><strong>Create &amp; Apply&nbsp;Range Template Celltype -</strong> Now, create a RangeTemplate celltype using a range of cells from TemplateSheet and apply this RangeTemplate celltype in RenderSheet. RangeTemplate celltype can be set using the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.CellRange~cellType.html">cellType()</a> method of&nbsp;the <a href="SpreadJS~GC.Spread.Sheets.CellRange.html" data-auto-update-caption="true">CellRange class</a>. Here, a range template celltype is created by resolving the binding path to include the template information (provided in Step 1) and then using the data source (provided in Step 2) to configure the celltype in a range.</li>
+</ol>
+
+<h3 id="c">Using Code</h3>
+
+<p>Refer to the following example code for creating and adding range template celltype&nbsp;in the worksheet.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <p>// Initializing Spread<br />
+                    var spread = new GC.Spread.Sheets.Workbook(document.getElementById('ss'), { sheetCount: 1 });</p>
+
+                    <p>// Get the activesheet as renderSheet<br />
+                    var renderSheet = spread.getActiveSheet();<br /></p>
+
+                    <p>// Step 1. Create a new Worksheet as templateSheet<br />
+                    var templateSheet = new GC.Spread.Sheets.Worksheet();<br /></p>
+
+                    <p>// This templateSheet is used to create a template for RangeTemplate CellType<br />
+                    templateSheet.suspendPaint();<br />
+                    templateSheet.addSpan(0, 0, 1, 4);<br />
+                    templateSheet.getCell(0, 0).font("20px Arial").hAlign(GC.Spread.Sheets.HorizontalAlign.center).vAlign(GC.Spread.Sheets.VerticalAlign.center);<br />
+                    templateSheet.setBindingPath(0, 0, "name");<br />
+                    templateSheet.setValue(1, 0, "Asset Type");<br />
+                    templateSheet.setValue(1, 1, "Amount");<br />
+                    templateSheet.setValue(1, 2, "Diagram");<br />
+                    templateSheet.setValue(1, 3, "Note");<br />
+                    templateSheet.setValue(2, 0, "Savings");<br />
+                    templateSheet.setBindingPath(2, 1, "savings");<br />
+                    templateSheet.setValue(3, 0, "Shares");<br />
+                    templateSheet.setBindingPath(3, 1, "shares");<br />
+                    templateSheet.setValue(4, 0, "Stocks");<br />
+                    templateSheet.setBindingPath(4, 1, "stocks");<br />
+                    templateSheet.setValue(5, 0, "House");<br />
+                    templateSheet.setBindingPath(5, 1, "house");<br />
+                    templateSheet.setValue(6, 0, "Bonds");<br />
+                    templateSheet.setBindingPath(6, 1, "bonds");<br />
+                    templateSheet.setValue(7, 0, "Car");<br />
+                    templateSheet.setBindingPath(7, 1, "car");<br />
+                    templateSheet.setFormatter(-1, 1, "$#,##0");<br />
+                    templateSheet.addSpan(2, 2, 6, 1);<br />
+                    templateSheet.addSpan(8, 1, 1, 3);<br />
+                    templateSheet.setValue(8, 0, "Total");<br />
+                    templateSheet.getCell(8, 0).font("14px Arial");<br />
+                    templateSheet.setFormula(8, 1, "=SUM(B3:B8)");<br />
+                    templateSheet.getCell(8, 1).hAlign(GC.Spread.Sheets.HorizontalAlign.center);<br />
+                    templateSheet.setFormula(2, 2, '=PIESPARKLINE(B3:B8,"#919F81","#D7913E","CEA722","#B58091","#8974A9","#728BAD")');<br />
+                    templateSheet.getCell(2, 3).backColor("#919F81").formula("=B3$B$9");<br />
+                    templateSheet.getCell(3, 3).backColor("#D7913E").formula("=B4$B$9");<br />
+                    templateSheet.getCell(4, 3).backColor("#CEA722").formula("=B5$B$9");<br />
+                    templateSheet.getCell(5, 3).backColor("#B58091").formula("=B6$B$9");<br />
+                    templateSheet.getCell(6, 3).backColor("#8974A9").formula("=B7$B$9");<br />
+                    templateSheet.getCell(7, 3).backColor("#728BAD").formula("=B8$B$9");<br />
+                    templateSheet.setFormatter(-1, 3, "0.00%");<br />
+                    templateSheet.setRowHeight(0, 50);<br />
+                    for (var i = 1; i &lt; 8; i++) {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; templateSheet.setRowHeight(i, 25);<br />
+                    }<br />
+                    templateSheet.setColumnWidth(0, 100);<br />
+                    templateSheet.setColumnWidth(1, 100);<br />
+                    templateSheet.setColumnWidth(2, 200);</p>
+
+                    <p>templateSheet.resumePaint();</p>
+
+                    <p>// Step&nbsp;2. Configure &amp; Add Data to renderSheet<br />
+                    // Configure Data<br />
+                    var data = [{<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "name": "Peyton's Assets",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "savings": 25000,<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "shares": 55000,<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "stocks": 15000,<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "house": 250000,<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "bonds": 11000,<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "car": 7500<br />
+                    }, {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "name": "Icey's Assets",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "savings": 30000,<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "shares": 45000,<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "stocks": 25000,<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "house": 20000,<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "bonds": 18000,<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "car": 75000<br />
+                    }, {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "name": "Walter's Assets",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "savings": 20000,<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "shares": 4000,<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "stocks": 95000,<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "house": 30000,<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "bonds": 10000,<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "car": 56000<br />
+                    }, {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "name": "Chris's Assets",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "savings": 70000,<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "shares": 85000,<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "stocks": 35000,<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "house": 20000,<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "bonds": 15000,<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; "car": 45000<br />
+                    }];</p>
+
+                    <p>// Add Data to renderSheet<br />
+                    renderSheet.setValue(0, 0, data[0]);<br />
+                    renderSheet.setValue(0, 1, data[1]);<br />
+                    renderSheet.setValue(1, 0, data[2]);<br />
+                    renderSheet.setValue(1, 1, data[3]);</p>
+
+                    <p>// Step&nbsp;3. Create RangeTemplate CellType using range of cells[0,0,9,4] from templateSheet<br />
+                    var rangeTemplateCelltype = new GC.Spread.Sheets.CellTypes.RangeTemplate(templateSheet, 0, 0, 9, 4);</p>
+
+                    <p>// Apply RangeTemplate CellType to a range of cells in renderSheet<br />
+                    renderSheet.getRange(0, 0, 2, 2).cellType(rangeTemplateCelltype);</p>
+
+                    <p>renderSheet.setColumnWidth(0, 400);<br />
+                    renderSheet.setRowHeight(0, 250);<br />
+                    renderSheet.setColumnWidth(1, 400);<br />
+                    renderSheet.setRowHeight(1, 250);<br />
+                    renderSheet.resumePaint();</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div><!--DXMETADATA end-->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORISED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""%%phrase:name=SeeAlso%%%%designlist:tagidentifier=seealso,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><!--DXMETADATA end-->
+            
+            <div id="i-footer-content" class="i-footer-content">
+                <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p><p>Copyright © 2019 GrapeCity, Inc. All rights reserved.</p>
+<p><a href="https://www.grapecity.com/en/forums/winforms-edition" target="_blank">Product Support Forum</a> | <a href="javascript:window.print()">Print this page</a></p>
+<ul class="social">
+<li><a href="https://www.facebook.com/GrapeCityUS/" target="_blank" class="facebook">&nbsp;</a></li>
+<li><a href="https://twitter.com/GrapeCityUS" target="_blank" class="twitter">&nbsp;</a></li>
+<li><a href="https://www.linkedin.com/company/grapecity" target="_blank" class="linkedin">&nbsp;</a></li>
+</ul>
+</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end-->
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

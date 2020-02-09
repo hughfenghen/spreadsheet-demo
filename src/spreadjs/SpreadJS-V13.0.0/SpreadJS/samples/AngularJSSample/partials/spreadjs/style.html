@@ -1,0 +1,26 @@
+﻿<h3>SpreadJS Style</h3>
+
+<p>
+    The sample below shows how to ceate style for column header cells, row header cells and viewport cells.
+</p>
+
+<gc-spread-sheets id="ss" newtabvisible="false">
+    <worksheets>
+        <worksheet datasource="employees">
+            <column-header-default-style borderright="#9BBB59" borderbottom="#9BBB59" font="bold 10pt Arial"></column-header-default-style>
+            <row-header-default-style borderright="#9BBB59" borderbottom="#9BBB59" font="italic 10pt Arial"></row-header-default-style>
+            <default-style backcolor="#EBF1DE" borderright="#9BBB59" borderbottom="#9BBB59"></default-style>
+            <columns>
+                <column autofit="true" datafield="name" headertext="Name"></column>
+                <column autofit="true" datafield="phone" headertext="Phone">
+                    <default-style backcolor="white"></default-style>
+                </column>
+                <column autofit="true" datafield="country" headertext="Country"></column>
+                <column autofit="true" datafield="email" headertext="Email">
+                    <default-style backcolor="white"></default-style>
+                </column>
+                <column autofit="true" datafield="onJob" headertext="OnJob"></column>
+            </columns>
+        </worksheet>
+    </worksheets>
+</gc-spread-sheets>

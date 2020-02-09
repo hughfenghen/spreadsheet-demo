@@ -1,0 +1,6 @@
+var tts = new GC.Spread.Sheets.Touch.TouchToolStripItem();
+tts.image("cut.png");
+tts.name("C");
+tts.text("Delete");
+spread.touchToolStrip.add(tts, function(){ });
+spread.touchToolStrip.getItem("C").font("15px Arial").foreColor("red");

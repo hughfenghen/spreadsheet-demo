@@ -1,0 +1,29 @@
+<h3>分组</h3>
+
+<div>
+    <p>以下示例展示如何使用分组。</p>
+</div>
+
+<div>
+    <gc-spread-sheets [hostStyle]="hostStyle" hostClass="spreadContainer">
+        <gc-worksheet [showRowOutline]="showRowOutline" [showColumnOutline]="showColumnOutline"
+                      [rowOutlineInfo]="rowOutlineInfo" [columnOutlineInfo]="columnOutlineInfo" [dataSource]="data" [autoGenerateColumns]="autoGenerateColumns">
+            <gc-column width=150 dataField="Name"></gc-column>
+            <gc-column width=150 dataField="CountryRegionCode"></gc-column>
+            <gc-column width=100 dataField="City"></gc-column>
+            <gc-column width=200 dataField="AddressLine"></gc-column>
+            <gc-column width=100 dataField="PostalCode"></gc-column>
+        </gc-worksheet>
+    </gc-spread-sheets>
+</div>
+
+<div class="settingContainer">
+    <tr>
+        <td>
+            <label><input type="checkbox" [(ngModel)]="showRowOutline" />显示行分组</label>
+        </td>
+        <td>
+            <label><input type="checkbox" [(ngModel)]="showColumnOutline" />显示列分组</label>
+        </td>
+    </tr>
+</div>

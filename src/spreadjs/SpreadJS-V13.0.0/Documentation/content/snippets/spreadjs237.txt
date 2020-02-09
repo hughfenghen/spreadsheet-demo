@@ -1,0 +1,2 @@
+//use Control+Shift+m
+spread.commandManager().setShortcutKey('navigationLeft',"M".charCodeAt(0),true,true,false,false);

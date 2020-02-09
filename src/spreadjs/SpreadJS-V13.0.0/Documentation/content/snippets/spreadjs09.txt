@@ -1,0 +1,4 @@
+//Set cell (3,3) as the active cell
+activeSheet.setActiveCell(3, 3);
+//Display the active cell at top left
+activeSheet.showCell(3, 3, GC.Spread.Sheets.VerticalPosition.top, GC.Spread.Sheets.HorizontalPosition.left);

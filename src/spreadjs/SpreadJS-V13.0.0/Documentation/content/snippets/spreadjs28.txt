@@ -1,0 +1,12 @@
+ var sheet1 = spread.getSheet(0),
+  sheet2 = spread.getSheet(1);
+
+sheet1.bind(GC.Spread.Sheets.Events.TopRowChanged, function (sender, args) {
+    //Set the displayed top row of sheet1 to sheet2 (vertical scroll synchronization).
+    sheet2.showRow(args.newTopRow, GC.Spread.Sheets.VerticalPosition.top);
+});
+
+sheet1.bind(GC.Spread.Sheets.Events.LeftColumnChanged, function (sender, args) {
+    //Set the displayed left column of sheet1 to sheet2 (Horizontal scroll synchronization).
+    sheet2.showColumn(args.newLeftCol, GC.Spread.Sheets.HorizontalPosition.left);
+});

@@ -1,0 +1,4 @@
+activeSheet.setValue(0, 0, 5);
+var start = new GC.Spread.Sheets.Range(0, 0, 1, 1);
+var r3 = new GC.Spread.Sheets.Range(0, 0, 4, 1);
+activeSheet.fillAuto(start,r3, {fillType:GC.Spread.Sheets.Fill.FillType.auto, series:GC.Spread.Sheets.Fill.FillSeries.column, fillDirection:GC.Spread.Sheets.Fill.FillDirection.down});

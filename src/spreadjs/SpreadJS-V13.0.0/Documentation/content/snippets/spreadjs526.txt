@@ -1,0 +1,15 @@
+//Add data
+for (var col = 1; col < 6; col++) {
+    for (var row = 2; row < 11; row++) {
+        activeSheet.setValue(row, col, row + col);
+    }
+}
+activeSheet.setRowHeight(3, 90.0,GC.Spread.Sheets.SheetArea.viewport);
+
+$("#button1").click(function () {
+spread.options.allowUndo = true;
+var rows = [ { row: 3 } ];
+spread.commandManager().execute({cmd: "autoFitRow", sheetName: "Sheet1", rows: rows, isColHeader: false, autoFitType: GC.Spread.Sheets.AutoFitType.cell});
+    });
+
+<input type="button" id="button1" value="button1"/>

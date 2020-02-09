@@ -1,0 +1,75 @@
+<h3>GC-Worksheet</h3>
+<div>
+    <p>以下示例展示如何使用表单上的属性。</p>
+</div>
+
+<div>
+    <gc-spread-sheets [hostStyle]="hostStyle" hostClass="spreadContainer">
+        <gc-worksheet [rowCount]="rowCount | toNumber" [colCount]="columnCount | toNumber"
+                      [frozenRowCount]="frozenRowCount | toNumber" [frozenColumnCount]="frozenColumnCount | toNumber"
+                      [rowHeaderVisible]="rowHeaderVisible" [colHeaderVisible]="columnHeaderVisible"
+                      [frozenTrailingRowCount]="frozenTrailingRowCount | toNumber"
+                      [frozenTrailingColumnCount]="frozenTrailingColumnCount | toNumber" [sheetTabColor]="sheetTabColor"
+                      [frozenlineColor]="frozenlineColor" [selectionBackColor]="selectionBackColor"
+                      [selectionBorderColor]="selectionBorderColor" [dataSource]="data" [autoGenerateColumns]="autoGenerateColumns">
+            <gc-column width=150 dataField="Name"></gc-column>
+            <gc-column width=150 dataField="CountryRegionCode"></gc-column>
+            <gc-column width=100 dataField="City"></gc-column>
+            <gc-column width=200 dataField="AddressLine"></gc-column>
+            <gc-column width=100 dataField="PostalCode"></gc-column>
+        </gc-worksheet>
+    </gc-spread-sheets>
+</div>
+
+<div class="settingContainer">
+    <table>
+        <tr>
+            <td>
+                <label><input type="checkbox" [(ngModel)]="rowHeaderVisible" />显示行头</label>
+            </td>
+            <td>
+                <label><input type="checkbox" [(ngModel)]="columnHeaderVisible" />显示列头</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label><input type="text" [(ngModel)]="rowCount" />行数</label>
+            </td>
+            <td>
+                <label><input type="text" [(ngModel)]="columnCount" />列数</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" [(ngModel)]="frozenRowCount" />冻结行数
+            </td>
+            <td>
+                <input type="text" [(ngModel)]="frozenColumnCount" />冻结列数
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" [(ngModel)]="frozenTrailingRowCount" />末尾冻结行数
+            </td>
+            <td>
+                <input type="text" [(ngModel)]="frozenTrailingColumnCount" />末尾冻结列数
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="color" [(ngModel)]="sheetTabColor" /> 标签色
+            </td>
+            <td>
+                <input type="color" [(ngModel)]="frozenlineColor" /> 冻结线色
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="color" [(ngModel)]="selectionBackColor" /> 选择背景色
+            </td>
+            <td>
+                <input type="color" [(ngModel)]="selectionBorderColor" /> 选择边框色
+            </td>
+        </tr>
+    </table>
+</div>

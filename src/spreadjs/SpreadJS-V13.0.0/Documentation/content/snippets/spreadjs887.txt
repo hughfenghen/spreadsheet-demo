@@ -1,0 +1,2 @@
+spread.commandManager().setShortcutKey('selectNextControl', GC.Spread.Commands.Key.tab, false, false, false, false); // Tab key
+spread.commandManager().setShortcutKey('selectPreviousControl', GC.Spread.Commands.Key.tab, false, true, false, false); // Shift key and Tab key

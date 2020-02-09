@@ -1,0 +1,25 @@
+﻿(function () { Innovasys.DynamicToc.injectNodeInfo("n6818", "c244", [
+{"id":"n6819","t":"firstColumnStripSize","u":"SpreadJS~GC.Spread.Sheets.Tables.TableTheme~firstColumnStripSize.html"},
+{"id":"n6821","t":"firstColumnStripStyle","u":"SpreadJS~GC.Spread.Sheets.Tables.TableTheme~firstColumnStripStyle.html"},
+{"id":"n6823","t":"firstFooterCellStyle","u":"SpreadJS~GC.Spread.Sheets.Tables.TableTheme~firstFooterCellStyle.html"},
+{"id":"n6825","t":"firstHeaderCellStyle","u":"SpreadJS~GC.Spread.Sheets.Tables.TableTheme~firstHeaderCellStyle.html"},
+{"id":"n6827","t":"firstRowStripSize","u":"SpreadJS~GC.Spread.Sheets.Tables.TableTheme~firstRowStripSize.html"},
+{"id":"n6829","t":"firstRowStripStyle","u":"SpreadJS~GC.Spread.Sheets.Tables.TableTheme~firstRowStripStyle.html"},
+{"id":"n6831","t":"footerRowStyle","u":"SpreadJS~GC.Spread.Sheets.Tables.TableTheme~footerRowStyle.html"},
+{"id":"n6833","t":"headerRowStyle","u":"SpreadJS~GC.Spread.Sheets.Tables.TableTheme~headerRowStyle.html"},
+{"id":"n6835","t":"highlightFirstColumnStyle","u":"SpreadJS~GC.Spread.Sheets.Tables.TableTheme~highlightFirstColumnStyle.html"},
+{"id":"n6837","t":"highlightLastColumnStyle","u":"SpreadJS~GC.Spread.Sheets.Tables.TableTheme~highlightLastColumnStyle.html"},
+{"id":"n6839","t":"lastFooterCellStyle","u":"SpreadJS~GC.Spread.Sheets.Tables.TableTheme~lastFooterCellStyle.html"},
+{"id":"n6841","t":"lastHeaderCellStyle","u":"SpreadJS~GC.Spread.Sheets.Tables.TableTheme~lastHeaderCellStyle.html"},
+{"id":"n6843","t":"name","u":"SpreadJS~GC.Spread.Sheets.Tables.TableTheme~name.html"},
+{"id":"n6845","t":"secondColumnStripSize","u":"SpreadJS~GC.Spread.Sheets.Tables.TableTheme~secondColumnStripSize.html"},
+{"id":"n6847","t":"secondColumnStripStyle","u":"SpreadJS~GC.Spread.Sheets.Tables.TableTheme~secondColumnStripStyle.html"},
+{"id":"n6849","t":"secondRowStripSize","u":"SpreadJS~GC.Spread.Sheets.Tables.TableTheme~secondRowStripSize.html"},
+{"id":"n6851","t":"secondRowStripStyle","u":"SpreadJS~GC.Spread.Sheets.Tables.TableTheme~secondRowStripStyle.html"},
+{"id":"n6853","t":"wholeTableStyle","u":"SpreadJS~GC.Spread.Sheets.Tables.TableTheme~wholeTableStyle.html"},
+])})();
+(function () { Innovasys.DynamicToc.injectNodeInfo("n6813", "c0", [
+{"id":"n6814","t":"Overview","u":"SpreadJS~GC.Spread.Sheets.Tables.TableTheme.html"},
+{"id":"n6816","t":"TableTheme Constructor","u":"SpreadJS~GC.Spread.Sheets.Tables.TableTheme~_ctor.html"},
+{"id":"n6818","t":"Methods","cc":"c244"},
+])})();

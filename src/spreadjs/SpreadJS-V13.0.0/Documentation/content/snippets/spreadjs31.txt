@@ -1,0 +1,4 @@
+// Use IE to see the console log text
+spread.bind(GC.Spread.Sheets.Events.ActiveSheetChanged, function (sender, args) {
+    console.log("Active sheet has been switched.");
+});

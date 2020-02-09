@@ -1,0 +1,7 @@
+activeSheet.getCell(0,0).value(123);
+var jsonStr = null;
+//export
+jsonStr = JSON.stringify(activeSheet.toJSON());
+//import
+activeSheet.fromJSON(JSON.parse(jsonStr));
+alert(jsonStr);

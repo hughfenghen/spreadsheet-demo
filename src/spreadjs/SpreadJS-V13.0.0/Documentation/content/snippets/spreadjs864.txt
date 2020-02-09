@@ -1,0 +1,9 @@
+activeSheet.bind(GC.Spread.Sheets.Events.CellChanged, function (sender, args) {
+    if (args.propertyName === "value") {
+        alert(activeSheet.getValue(args.row, args.col));
+    }
+});
+activeSheet.suspendEvent();
+activeSheet.setValue(0, 0, "111");
+activeSheet.resumeEvent();
+activeSheet.setValue(1, 1, "222");

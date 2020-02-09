@@ -1,0 +1,2 @@
+spread.focus();
+spread.commandManager().setShortcutKey('selectionFirst', GC.Spread.Commands.Key.a, false, false, false, false);

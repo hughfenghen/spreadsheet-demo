@@ -1,0 +1,589 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%ProjectTitle%% - %%ItemTitle%%</title>" --><title>SpreadJS Documentation - Cell Buttons</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ProjectTitle%% - %%ItemTitleNoQuotes%%""/>" --><meta name="Title" content="SpreadJS Documentation - Cell Buttons"/><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n143","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="light" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="SpreadJS provides button capabilities within the cells to enhance the usability of spreadsheets." /><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-topics/topics.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-topics/topics.mshv1.css"" data-responsive-mobile=""template/packages/core-topics/topics.mobile.css"" data-responsive-tablet=""template/packages/core-topics/topics.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="script"--><script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="script"--><script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="6a477c95-8900-4794-8472-ba8df4395727"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="3ff39078-fb0f-471b-a3ec-25d37e40d683"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocOrdinal" format="<meta name=""Microsoft.Help.TocOrder"" content=""%%TocOrdinal%%""/>" --><meta name="Microsoft.Help.TocOrder" content="7"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/hs-simpletab.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="StylePropertyValues" format="<style>%%StylePropertyValues%%</style>" --><style>.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+    <!--DXMETADATA start type="CustomHeadContent" --><link rel="stylesheet" type="text/css" href="template/packages/core-web/css/SP.css">
+<script type="text/javascript">
+var currentHeader = function() {
+    return "spjs";
+}
+</script>
+<script src="template/packages/core-web/script/topNavigation.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WT462SJ"></script>
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime()
+                , event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WT462SJ');
+    </script>
+<!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->SpreadJS Documentation<!--DXMETADATA end--></div>
+            <div class="i-search-container">
+                <!--DXMETADATA start type="outputfileextension" format="<form action=""websearch%%outputfileextension%%"">" --><form action="websearch.html"><!--DXMETADATA end-->
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                <!--DXMETADATA start type="Literal" value="</form>" --></form><!--DXMETADATA end-->
+            </div>
+            <!--DXMETADATA start type="outputfileextension" format="<a id=""i-index-button"" href=""webindex%%outputfileextension%%""></a>" --><a id="i-index-button" href="webindex.html"></a><!--DXMETADATA end-->
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container">
+<a href="overview.html">SpreadJS Documentation</a>
+ / <a href="devguide.html">Developer's Guide</a>
+ / <a href="features.html">Features</a>
+ / <a href="interface.html">Manage User Interface</a>
+ / Cell Buttons</div><!--DXMETADATA end --></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="ItemTitle" -->Cell Buttons<!--DXMETADATA end--></div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+            </div>
+            <!--DXMETADATA start type="TopicSection" name="BodyText"--><p>SpreadJS provides button capabilities within the cells to enhance the usability of spreadsheets.</p>
+
+<h3 id="a">What are Cell Buttons?</h3>
+
+<p>Cell buttons are a set of predefined buttons (like drop-down buttons, undo/redo buttons, enable/disable buttons, spin buttons etc.) that can be added to cell margins to configure additional functionalities&nbsp;in&nbsp;the cells of the worksheet. For instance- The dropdown cell buttons can launch a drop-down menu for accepting various data inputs from the user.</p>
+
+<p>Integrating buttons in cells allows users to enhance the functionality of the workbook. Moreover, users can code specific behavior for cell buttons to execute specific operations when a user clicks on it, edits a cell or hovers over a cell etc.</p>
+
+<p><strong>Example</strong>&nbsp;- Users can create a button with color picker drop-down by defining a custom color-picker named style for the cell. Now, any cell can easily become a color picker (or date picker, ...) by applying a style.</p>
+
+<h3 id="b">Adding a Cell Button</h3>
+
+<p>Users can add the following types of cell buttons while working with spreadsheets in SpreadJS:</p>
+
+<ul>
+    <li>Basic button with caption.</li>
+
+    <li>Button with different configuration settings (position, style, enabled/disabled etc.)</li>
+
+    <li>Button with built-in and custom image.</li>
+
+    <li>Dropdown Button with command action and command function.</li>
+</ul>
+
+<h3 id="c">Configuring Cell Buttons</h3>
+
+<p>Users can configure cell buttons by using different properties available for cell buttons as described in the table shared below:</p>
+
+<table>
+    <tbody>
+        <tr>
+            <th>Property</th>
+
+            <th>Description</th>
+        </tr>
+
+        <tr>
+            <td>ButtonPosition</td>
+
+            <td>
+                This property is of type ButtonPosition enumeration that specifies the position of the cell button. Users can set the position of the cell button to left or right and create a custom style for displaying these buttons depending upon their requirements using the following values:
+
+                <ul>
+                    <li>left = 0; indicates cell button is at the left of the cell.</li>
+
+                    <li>right =1; indicates the cell button appears at the right of the cell.</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>CaptionAlignment</td>
+
+            <td>
+                This property is of type CaptionAlignment enumeration that specifies the position of the caption in the cell button. Users can configure the position of the caption to left or right as per their specific requirements using the following values:
+
+                <ul>
+                    <li>left = 0; indicates the caption of the cell button is at the left of the cell.</li>
+
+                    <li>right =1; indicates the caption of the cell button appears at the right of the cell.</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>ButtonImageType</td>
+
+            <td>
+                This property is of type ButtonImageType enumeration that specifies the image type of the cell button. Users can configure the button image type as per their specific preferences using the following values:
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Value</th>
+
+                            <th>Description</th>
+                        </tr>
+
+                        <tr>
+                            <td>none = 0</td>
+
+                            <td>Indicates the cell button image type is none.</td>
+                        </tr>
+
+                        <tr>
+                            <td>custom=1</td>
+
+                            <td>Indicates the cell button image type is custom.</td>
+                        </tr>
+
+                        <tr>
+                            <td>clear=2</td>
+
+                            <td>Indicates the cell button image type is clear</td>
+                        </tr>
+
+                        <tr>
+                            <td>cancel = 3</td>
+
+                            <td>Indicates the cell button image type is cancel.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Ok = 4</td>
+
+                            <td>Indicates the cell button image type is Ok.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Dropdown = 5</td>
+
+                            <td>Indicates the cell button image type is dropdown.</td>
+                        </tr>
+
+                        <tr>
+                            <td>ellipsis = 6</td>
+
+                            <td>Indicates the cell button image type is ellipsis.</td>
+                        </tr>
+
+                        <tr>
+                            <td>left =7</td>
+
+                            <td>Indicates the cell button image type is left.</td>
+                        </tr>
+
+                        <tr>
+                            <td>right=8</td>
+
+                            <td>Indicates the cell button image type is right.</td>
+                        </tr>
+
+                        <tr>
+                            <td>plus=9</td>
+
+                            <td>Indicates the cell button image type is "plus".</td>
+                        </tr>
+
+                        <tr>
+                            <td>minus =10</td>
+
+                            <td>Indicates the cell button image type is "minus".</td>
+                        </tr>
+
+                        <tr>
+                            <td>undo=11</td>
+
+                            <td>Indicates the cell button image type is "undo".</td>
+                        </tr>
+
+                        <tr>
+                            <td>redo =12</td>
+
+                            <td>Indicates the cell button image type is "redo".</td>
+                        </tr>
+
+                        <tr>
+                            <td>search =13</td>
+
+                            <td>Indicates the cell button image type is search.</td>
+                        </tr>
+
+                        <tr>
+                            <td>separator =14</td>
+
+                            <td>Indicates the cell button image type is separator.</td>
+                        </tr>
+
+                        <tr>
+                            <td>spinLeft=15</td>
+
+                            <td>Indicates the cell button image type is spin left..</td>
+                        </tr>
+
+                        <tr>
+                            <td>spinRight=16</td>
+
+                            <td>Indicates the cell button image type is spinRight.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>ButtonVisibility</td>
+
+            <td>
+                This property is of type ButtonVisibility enumeration that specifies the visibility of the cell button. Users can choose whether to show or hide the cell buttons on different cell states using the following values:
+
+                <ul>
+                    <li>always =0; indicates the cell button is always visible.</li>
+
+                    <li>onSelected =1; indicates that the cell button is visible only when the cell is in active state.</li>
+
+                    <li>onEditing =2; indicates that the cell button is visible only when the cell enters in the edit mode.</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>caption</td>
+
+            <td>This property specifies the text of the button that will be displayed in the caption.</td>
+        </tr>
+
+        <tr>
+            <td>position</td>
+
+            <td>This property specifies the position of the button in the cell.</td>
+        </tr>
+
+        <tr>
+            <td>enabled</td>
+
+            <td>This property specifies whether the cell button will respond to the user actions. The default value is set to true.</td>
+        </tr>
+
+        <tr>
+            <td>useButtonStyle</td>
+
+            <td>This property specifies whether the cell button is a button style. The default value is false.</td>
+        </tr>
+
+        <tr>
+            <td>width</td>
+
+            <td>This property specifies the width of the button. If users set this property to "null" or "undefined" then the button fit will automatically adjust itself based on the caption and the size of the image.</td>
+        </tr>
+
+        <tr>
+            <td>visibility</td>
+
+            <td>This property specifies the visibility of the button. Three options are available ("always", "onselect" and "edit").</td>
+        </tr>
+
+        <tr>
+            <td>imageType</td>
+
+            <td>This property specifies the type of the image that users want to display in the button. The default value for this property is "custom".</td>
+        </tr>
+
+        <tr>
+            <td>command</td>
+
+            <td>This property allows users to execute a spread command or a callback when the cell button is clicked.</td>
+        </tr>
+
+        <tr>
+            <td>imageSrc</td>
+
+            <td>This property allows users to upload an image by providing the source of the image when the imageType is set to custom.</td>
+        </tr>
+
+        <tr>
+            <td>captionAlign</td>
+
+            <td>This property specifies the position of the image and the caption. The available options are "left" and "right".</td>
+        </tr>
+
+        <tr>
+            <td>imageSize</td>
+
+            <td>This property specifies the image size. The default value is 16px.</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3 id="d">Defining Button Commands</h3>
+
+<p>After creating the cell button, users can specify different command actions&nbsp;to associate different functionalities to the buttons&nbsp;as per the options provided in the following table.</p>
+
+<table>
+    <tbody>
+        <tr>
+            <th width="192">Command Option</th>
+
+            <th>Description</th>
+        </tr>
+
+        <tr>
+            <td width="192">openColorPicker</td>
+
+            <td>This option can be used when users want to open a color picker on button click event.</td>
+        </tr>
+
+        <tr>
+            <td width="192">openDateTimePicker</td>
+
+            <td>This option can be used when users want to open a date time picker on button click event.</td>
+        </tr>
+
+        <tr>
+            <td width="192">openTimePicker&nbsp;</td>
+
+            <td>This option can be used when users want to open a time picker on button click event.</td>
+        </tr>
+
+        <tr>
+            <td width="192">openMonthPicker</td>
+
+            <td>This option can be used when users want to open a month picker on button click event.</td>
+        </tr>
+
+        <tr>
+            <td width="192">openSlider</td>
+
+            <td>This option can be used when users want to open a slider control on button click event.</td>
+        </tr>
+
+        <tr>
+            <td width="192">openWorkflowList</td>
+
+            <td>This option can be used when users want to open a workflow list&nbsp;on button click event.</td>
+        </tr>
+
+        <tr>
+            <td width="192">openCalculator</td>
+
+            <td>This option can be used when users want to open a calculator on button click event.</td>
+        </tr>
+
+        <tr>
+            <td width="192">openList</td>
+
+            <td>This option can be used when users want to open a&nbsp;list on button click event.</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3 id="e">Using Code</h3>
+
+<p>Refer to the following example code for adding different types of cell buttons in the worksheet.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <p>$(document).ready(function ()</p>
+
+                    <p>{<br />
+                    // Configure Workbook and Worksheet<br />
+                    var spread = new GC.Spread.Sheets.Workbook($("#sampleDiv")[0]);<br />
+                    var activeSheet = spread.getActiveSheet();<br />
+                    activeSheet.setColumnWidth(3, 300);<br />
+                    activeSheet.setColumnWidth(4, 200);</p>
+
+                    <p>// Add a basic button with caption<br />
+                    var basicButttonStyle = new GC.Spread.Sheets.Style();<br />
+                    basicButttonStyle.cellButtons = [<br />
+                    {<br />
+                    caption: "Insert"<br />
+                    }<br />
+                    ];<br />
+                    activeSheet.setText(2, 3, "Basic button with caption");<br />
+                    activeSheet.setStyle(2, 4, basicButttonStyle);</p>
+
+                    <p>// Add button with different configuration settings such as position, style, enabled/disabled<br />
+                    var customButtonStyle = new GC.Spread.Sheets.Style();<br />
+                    customButtonStyle.cellButtons = [<br />
+                    {<br />
+                    caption: "enable",<br />
+                    useButtonStyle: true,<br />
+                    enabled: true,<br />
+                    position: GC.Spread.Sheets.ButtonPosition.left<br />
+                    },<br />
+                    {<br />
+                    caption: "disabled",<br />
+                    useButtonStyle: false,<br />
+                    enabled: false,<br />
+                    position: GC.Spread.Sheets.ButtonPosition.right<br />
+                    }<br />
+                    ];<br />
+                    activeSheet.setText(4, 3, "enabled/disabled buttons");<br />
+                    activeSheet.setStyle(4, 4, customButtonStyle);</p>
+
+                    <p>// Add button with built-in and custom image<br />
+                    var ImageStyle = new GC.Spread.Sheets.Style();<br />
+                    ImageStyle.cellButtons = [<br />
+                    {<br />
+                    useButtonStyle: true,<br />
+                    imageSize: {<br />
+                    height: 8,<br />
+                    width: 8<br />
+                    },<br />
+                    imageType: GC.Spread.Sheets.ButtonImageType.ellipsis<br />
+                    },<br />
+                    {<br />
+                    useButtonStyle: true,<br />
+                    imageType: GC.Spread.Sheets.ButtonImageType.custom,<br />
+                    imageSrc: "data:image/bmp;base64,Qk1eAAAAAAAAAD4AAAAoAAAACAAAAAgAAAABAAEAAAAAACAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAP///wB+AAAApQAAANsAAAClAAAApQAAANsAAAClAAAAfgAAAA=="<br />
+                    }<br />
+                    ];<br />
+                    activeSheet.setText(6, 3, "Image Buttons");<br />
+                    activeSheet.setStyle(6, 4, ImageStyle);</p>
+
+                    <p>// Add Dropdown button with command action<br />
+                    var dropdownStylecommand = new GC.Spread.Sheets.Style();<br />
+                    dropdownStylecommand.cellButtons = [<br />
+                    {<br />
+                    imageType: GC.Spread.Sheets.ButtonImageType.dropdown,<br />
+                    command: "openColorPicker"<br />
+                    }<br />
+                    ];<br />
+                    activeSheet.setText(8, 3, "Dropdown button with command");<br />
+                    activeSheet.setStyle(8, 4, dropdownStylecommand);</p>
+
+                    <p>// Add Dropdown button with command function<br />
+                    var dropdownStylefunction = new GC.Spread.Sheets.Style();<br />
+                    dropdownStylefunction.cellButtons = [<br />
+                    {<br />
+                    imageType: GC.Spread.Sheets.ButtonImageType.search,<br />
+                    command: (sheet, row, col, option) =&gt; {<br />
+                    if (sheet.zoom() === 1) {<br />
+                    sheet.zoom(1.5);<br />
+                    } else {<br />
+                    sheet.zoom(1);<br />
+                    }<br />
+                    }<br />
+                    }<br />
+                    ];<br />
+                    activeSheet.setText(10, 3, "Dropdown button with command funcation");<br />
+                    activeSheet.setStyle(10, 4, dropdownStylefunction);<br />
+                    });</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div><!--DXMETADATA end-->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORISED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""%%phrase:name=SeeAlso%%%%designlist:tagidentifier=seealso,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><!--DXMETADATA end-->
+            
+            <div id="i-footer-content" class="i-footer-content">
+                <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p><p>Copyright © 2019 GrapeCity, Inc. All rights reserved.</p>
+<p><a href="https://www.grapecity.com/en/forums/winforms-edition" target="_blank">Product Support Forum</a> | <a href="javascript:window.print()">Print this page</a></p>
+<ul class="social">
+<li><a href="https://www.facebook.com/GrapeCityUS/" target="_blank" class="facebook">&nbsp;</a></li>
+<li><a href="https://twitter.com/GrapeCityUS" target="_blank" class="twitter">&nbsp;</a></li>
+<li><a href="https://www.linkedin.com/company/grapecity" target="_blank" class="linkedin">&nbsp;</a></li>
+</ul>
+</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end-->
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

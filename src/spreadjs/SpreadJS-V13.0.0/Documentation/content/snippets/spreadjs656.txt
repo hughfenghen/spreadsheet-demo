@@ -1,0 +1,22 @@
+activeSheet.setValue(0, 0, 1);
+activeSheet.setValue(0, 1, 2);
+activeSheet.setValue(0, 2, 3);
+activeSheet.addCustomName("customName1", "=12", 0, 0);
+activeSheet.addCustomName("customName2", "Average(20,45)", 0, 0);
+activeSheet.addCustomName("customName3", "=$A$1:$C$1");
+activeSheet.setFormula(1, 0, "customName1");
+activeSheet.setFormula(1, 1, "customName2");
+activeSheet.setFormula(1, 2, "sum(customName3)");
+ 
+$("#button1").click(function () {
+    var cname = activeSheet.getCustomName("customName2");
+    if (cname instanceof GC.Spread.Sheets.NameInfo) {
+        //get CustomName
+        var name = cname.getName();
+        //get Expression
+        var expression = cname.getExpression();
+        //get Expression String
+        var expStr = GC.Spread.Sheets.CalcEngine.expressionToFormula(activeSheet, expression, 0, 0);
+        alert("Name:" + name + ";Expression: =" + expStr);
+    }
+});

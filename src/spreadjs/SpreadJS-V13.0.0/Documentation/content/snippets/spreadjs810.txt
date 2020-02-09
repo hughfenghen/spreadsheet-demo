@@ -1,0 +1,18 @@
+var namedStyle1 = new GC.Spread.Sheets.Style();
+namedStyle1.name = "style2";
+namedStyle1.backColor = "blue";
+
+var namedStyle = new GC.Spread.Sheets.Style();
+namedStyle.name = "style1";
+namedStyle.backColor = "green";
+spread.addNamedStyle(namedStyle);
+spread.addNamedStyle(namedStyle1);
+activeSheet.setStyleName(1, 1, "style1"); 
+activeSheet.setStyleName(2, 1, "style1");
+ activeSheet.setStyleName(3, 0, "style2");
+activeSheet.getCell(1,1).value("test");
+
+var sname = spread.getNamedStyles();
+for(var i = 0; i < sname.length; i++){
+alert(sname[i].name);
+}

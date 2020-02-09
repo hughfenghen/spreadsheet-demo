@@ -1,0 +1,7 @@
+var person = {name: "Wang feng", age: 25, address: {postcode: "710075"}};
+var source = new GC.Spread.Sheets.Bindings.CellBindingSource(person);
+activeSheet.setBindingPath(0, 0, "name");
+activeSheet.setBindingPath(1, 1, "age");
+activeSheet.setBindingPath(3, 3, "address.postcode");
+activeSheet.setDataSource(source);
+alert(activeSheet.getBindingPath(0, 0, GC.Spread.Sheets.SheetArea.viewport));

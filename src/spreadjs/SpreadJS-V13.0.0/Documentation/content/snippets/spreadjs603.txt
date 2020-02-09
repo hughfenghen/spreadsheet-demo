@@ -1,0 +1,7 @@
+<input type="button" id="button1" value="button1"/>
+
+activeSheet.pictures.add("f2","tsoutline.png",100,60,200,100);
+
+$("#button1").click(function () {
+var pic = activeSheet.pictures.get("f2");
+    });

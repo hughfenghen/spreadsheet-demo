@@ -1,0 +1,12 @@
+sheet.setRowCount(10);
+sheet.setColumnCount(7);
+sheet.setValue(0, 0,"Western");
+sheet.setValue(0, 1,"Western");
+sheet.setValue(0, 2,"Western");
+sheet.setValue(1, 0,"A");
+sheet.setValue(1, 1,"B");
+sheet.setValue(1, 2,"C");
+sheet.setColumnResizable(0,true, GC.Spread.Sheets.SheetArea.colHeader);
+sheet.setRowResizable(0,true, GC.Spread.Sheets.SheetArea.rowHeader);
+alert( sheet.getColumnResizable(0));
+alert( sheet.getRowResizable(0, GC.Spread.Sheets.SheetArea.rowHeader));

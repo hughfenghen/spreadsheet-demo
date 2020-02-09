@@ -1,0 +1,2 @@
+activeSheet.getRange(-1,2, -1, 1, GC.Spread.Sheets.SheetArea.viewport).shrinkToFit(true);
+activeSheet.setText(0,2,"This is a test");

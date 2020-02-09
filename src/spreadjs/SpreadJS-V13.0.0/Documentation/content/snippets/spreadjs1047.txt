@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+     <title>Spread.Sheets Development Sample</title>
+     <link href="./css/gc.spread.sheets.excel2013white.12.0.0.css" rel="stylesheet" type="text/css" />
+    <script src="http://code.jquery.com/jquery-2.0.2.js" type="text/javascript"></script>
+     <script src="./scripts/gc.spread.sheets.all.12.0.0.min.js"></script>
+     <script type="text/javascript">
+         //Define data source.
+         data = [
+             { "Name": "Bob", "City": "NewYork", "Birthday": "1968/6/8" },
+             { "Name": "Bob", "City": "NewYork", "Birthday": "1968/6/8" },
+             { "Name": "Bob", "City": "NewYork", "Birthday": "1968/6/8" },
+             { "Name": "Bob", "City": "NewYork", "Birthday": "1968/6/8" },
+             { "Name": "Betty", "City": "Washington", "Birthday": "1972/7/3" },
+             { "Name": "Betty", "City": "Washington", "Birthday": "1972/7/3" },
+             { "Name": "Betty", "City": "Washington", "Birthday": "1972/7/3" },
+             { "Name": "Alice", "City": "NewYork", "Birthday": "1964/3/2" },
+             { "Name": "Alice", "City": "NewYork", "Birthday": "1964/3/2" },
+             { "Name": "Alice", "City": "NewYork", "Birthday": "1964/3/2" }];
+
+        //Define custom slicer.
+         function MySlicer(container) {
+             this.container = container;
+             this.slicerData = null;
+             this.columnName = null;
+         }
+         MySlicer.prototype.setData = function (slicerData, columnName) {
+             this.slicerData = slicerData;
+             this.columnName = columnName;
+             this.slicerData.attachListener(this);
+             this.onDataLoaded();
+         }
+         MySlicer.prototype.onDataLoaded = function () {
+             //create slicer dom tree.
+             var columnName = this.columnName,
+             exclusiveData = this.slicerData.getExclusiveData(columnName);
+             $(this.container).append($('<span>' + this.columnName + ':</span>' + '<br />'));
+             var domString = "";
+             for (var i = 0; i < exclusiveData.length; i++) {
+                 domString += '<input type="checkbox" name="' + columnName + '" value="' + exclusiveData[i] + '">';
+                 domString += '<span>' + exclusiveData[i] + '</span>';
+                 domString += '<br />';
+             }
+             $(this.container).append($(domString));
+             //attach events to dom.
+             var self = this;
+             $("[name='" + self.columnName + "']").change(function () {
+                 var slicer = self,
+                 exclusiveData = slicer.slicerData.getExclusiveData(slicer.columnName),
+                 parent = $(this).parent(),
+                 items = parent.children(),
+                 indexes = [];
+                 for (var i = 0, length = items.length; i < length; i++) {
+                     if (items[i].checked) {
+                         var value = items[i].value;
+                         if (!isNaN(parseInt(value))) {
+                             value = parseInt(value);
+                         }
+                         indexes.push(exclusiveData.indexOf(value))
+                     }
+                 }
+                 if (indexes.length === 0) {
+                     slicer.slicerData.doUnfilter(slicer.columnName);
+                 } else {
+                     slicer.slicerData.doFilter(slicer.columnName, { exclusiveRowIndexes: indexes });
+                 }
+             });
+         };
+         MySlicer.prototype.onFiltered = function () {
+             //Sync the status if the data has been filtered by the Spread.Sheets table.
+             var slicerdata = this.slicerData;
+             var exclusiveIndexes = slicerdata.getFilteredIndexes(this.columnName);
+             $.each($("#slicerContainer").children("input"), function (i,input) {
+            });
+         }
+
+        $(document).ready(function () {             
+             var spread = new GC.Spread.Sheets.Workbook(document.getElementById("ss"),{sheetCount:1});
+             var sheet = spread.getActiveSheet();
+
+            //create a custom slicer and add this slicer to the "slicerContainer" div.
+             var slicer = new MySlicer($("#slicerContainer")[0]);
+             var table = sheet.tables.addFromDataSource("table1", 1, 1, data);
+             var slicerData = table.getSlicerData();
+             slicer.setData(slicerData, "Name");
+        });
+     </script>
+</head>
+ <body>
+     <div id="slicerContainer" style="border:1px solid gray;width:190px"></div>
+     <hr />
+     <div id="ss" style="width:500px;height:500px;border:1px solid gray"></div>
+ </body>
+ </html>

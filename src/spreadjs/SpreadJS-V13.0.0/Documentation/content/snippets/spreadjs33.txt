@@ -1,0 +1,9 @@
+var activeSheet = spread.getActiveSheet();
+
+var people = [
+    {name: "Albert", isAdult: false, country: "American", website: "albert.com"},
+    {name: "Alice", isAdult: true, country: "China", website: "alice.com"},
+    {name: "Bob", isAdult: false, country: "Canada", website: "bob.com"}
+];
+
+activeSheet.setDataSource(people);

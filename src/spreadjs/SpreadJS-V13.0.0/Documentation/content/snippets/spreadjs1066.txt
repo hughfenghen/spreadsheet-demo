@@ -1,0 +1,43 @@
+var myCulture = new GC.Spread.Common.CultureInfo();
+myCulture.NumberFormat.currencySymbol = "€"
+myCulture.NumberFormat.numberDecimalSeparator = ",";
+myCulture.NumberFormat.NumberFormatumberGroupSeparator = ".";
+myCulture.NumberFormat.arrayGroupSeparator = ";";
+myCulture.NumberFormat.arrayListSeparator = "\\";
+myCulture.NumberFormat.listSeparator = ";";
+
+myCulture.DateTimeFormat.amDesignator = "";
+myCulture.DateTimeFormat.pmDesignator = "";
+myCulture.DateTimeFormat.abbreviatedMonthNames = ["Jan", "Feb", "Mrz", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez", ""];
+myCulture.DateTimeFormat.abbreviatedDayNames = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
+myCulture.DateTimeFormat.abbreviatedMonthGenitiveNames = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
+myCulture.DateTimeFormat.dayNames = ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"];
+myCulture.DateTimeFormat.fullDateTimePattern = "dddd, d. MMMM yyyy HH:mm:ss";
+myCulture.DateTimeFormat.longDatePattern = "dddd, d. MMMM yyyy";
+myCulture.DateTimeFormat.longTimePattern = "HH:mm:ss";
+myCulture.DateTimeFormat.monthDayPattern = "dd MMMM";
+myCulture.DateTimeFormat.monthNames = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember", ""];
+myCulture.DateTimeFormat.monthGenitiveNames = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember", ""];
+myCulture.DateTimeFormat.shortDatePattern = "dd.MM.yyyy";
+myCulture.DateTimeFormat.shortTimePattern = "HH:mm";
+myCulture.DateTimeFormat.yearMonthPattern = "MMMM yyyy";
+
+//add one culture
+GC.Spread.Common.CultureManager.addCultureInfo("de-DE", myCulture);
+//switch to "de-DE" culture
+GC.Spread.Common.CultureManager.culture("de-DE");
+var d = new Date();
+//With culture
+activeSheet.setValue(1, 0, new Date(d.setDate(d.getDate() + 1)));
+activeSheet.getCell(1, 0).formatter("mmm");
+var dvalue = 12345.6789;
+activeSheet.setColumnWidth(0, 200);
+activeSheet.setColumnWidth(1, 200);
+activeSheet.setColumnWidth(2, 200);
+activeSheet.setValue(0, 0, dvalue);
+activeSheet.getCell(0, 0).formatter("###,###.00");
+
+activeSheet.setValue(2, 0, new Date(d.setDate(d.getDate() + 1)));
+//With culture
+activeSheet.getCell(3, 0).formatter("yyyy/mmm/dddd");
+activeSheet.setValue(3, 0, new Date());

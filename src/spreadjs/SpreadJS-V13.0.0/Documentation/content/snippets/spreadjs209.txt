@@ -1,0 +1,16 @@
+sheet.setRowCount(34);
+sheet.setValue(0,0,"Western");
+sheet.setValue(0,1,"Western");
+sheet.setValue(0,2,"Western");
+sheet.setValue(1,0,"A");
+sheet.setValue(1,1,"B");
+sheet.setValue(1,2,"C");
+sheet.setValue(2,0,"A");
+sheet.setValue(2,1,"B");
+sheet.setValue(2,2,"C");
+sheet.rowOutlines.group(0,2);
+sheet.columnOutlines.group(0,1);
+sheet.rowOutlines.expand(0,false);
+sheet.columnOutlines.expand(0,false);
+spread.invalidateLayout();
+spread.repaint();

@@ -1,0 +1,2 @@
+spread.commandManager().setShortcutKey("navigationNextSheet", GC.Spread.Commands.Key.a, false, false, false, false);
+spread.commandManager().setShortcutKey("navigationPreviousSheet", GC.Spread.Commands.Key.c, false, false, false, false);

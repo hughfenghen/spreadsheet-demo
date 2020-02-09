@@ -1,0 +1,2 @@
+spread.options.allowCopyPasteExcelStyle = true;
+activeSheet.getCell(1, 0, GC.Spread.Sheets.SheetArea.viewport).backColor("Yellow");

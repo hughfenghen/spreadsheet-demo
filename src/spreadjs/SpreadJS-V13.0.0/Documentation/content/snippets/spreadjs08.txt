@@ -1,0 +1,18 @@
+//Set values to Text property
+activeSheet.getCell(0, 0).text("10");
+//Set values by calling SetText method
+activeSheet.setText(1, 0, "10");
+//Set values to Value property.
+activeSheet.getCell(0, 1).value(10);
+//Set values by calling SetValue method.
+activeSheet.setValue(1, 1, 10);
+
+    $("#button1").click(function(){
+        alert("Obtaining cell values by referring to Text property: " + activeSheet.getCell(0, 0).text() + "\n" +
+            "Obtaining cell values by calling GetText method: " + activeSheet.getText(1, 0) + "\n" +
+            "Obtaining cell values by referring to Value property: " + activeSheet.getCell(0, 1).value() + "\n" +
+            "Obtaining cell values by calling GetValue method: " + activeSheet.getValue(1, 1));
+});
+
+//Add button control to page
+<input type="button" id="button1" value="button1"/>

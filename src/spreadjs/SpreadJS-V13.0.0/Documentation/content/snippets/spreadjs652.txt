@@ -1,0 +1,3 @@
+activeSheet.bind(GC.Spread.Sheets.Events.TouchToolStripOpening, function (e, info) {    
+        alert(info.x);
+});

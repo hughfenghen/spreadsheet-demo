@@ -1,0 +1,8 @@
+// Use IE to see the console log text
+spread.bind(GC.Spread.Sheets.Events.SheetNameChanging, function (sender, args) {
+   console.log(args.oldValue);
+});
+
+spread.bind(GC.Spread.Sheets.Events.SheetNameChanged, function (sender, args) {
+   console.log(args.newValue);
+});

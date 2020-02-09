@@ -1,0 +1,2 @@
+var spread = new GC.Spread.Sheets.Workbook(document.getElementById("ss"),{sheetCount:3});
+var sheet = spread.getActiveSheet(); 

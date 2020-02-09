@@ -1,0 +1,11 @@
+$("#button1").click(function () {    
+    activeSheet.showRow(9, GC.Spread.Sheets.VerticalPosition.top);
+});
+
+$("#button2").click(function(){
+    activeSheet.showColumn(9, GC.Spread.Sheets.HorizontalPosition.left);
+});
+
+//Add button controls to page
+<input type="button" id="button1" value="button1"/>
+<input type="button" id="button2" value="button2"/>

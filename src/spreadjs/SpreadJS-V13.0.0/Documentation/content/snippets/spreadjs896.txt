@@ -1,0 +1,2 @@
+// clear selected cells with the tab key
+spread.commandManager().setShortcutKey('clear', GC.Spread.Commands.Key.tab, false, false, false, false); // Tab key

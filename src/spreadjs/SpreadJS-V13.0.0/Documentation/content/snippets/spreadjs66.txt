@@ -1,0 +1,9 @@
+var test = [
+        {"Series0":2,"Series1":1},
+        {"Series0":4,"Series1":2},
+        {"Series0":3,"Series1":4}
+    ];
+
+activeSheet.setDataSource(test);
+activeSheet.bindColumn(1,"Series0");
+activeSheet.bindColumn(0,"Series1");

@@ -1,0 +1,2 @@
+spread.touchToolStrip.add(new GC.Spread.Sheets.Touch.TouchToolStripItem("Cut", "Delete", "cut.png", function(){ }))
+spread.touchToolStrip.getItem("Cut").image("cut1.png");

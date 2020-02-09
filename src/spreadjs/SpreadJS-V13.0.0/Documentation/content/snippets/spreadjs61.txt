@@ -1,0 +1,2 @@
+var rheight = activeSheet.getRowHeight(1,GC.Spread.Sheets.SheetArea.viewport);
+alert(rheight);

@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%ProjectTitle%% - %%ItemTitle%%</title>" --><title>SpreadJS Documentation - Set Table Styles</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ProjectTitle%% - %%ItemTitleNoQuotes%%""/>" --><meta name="Title" content="SpreadJS Documentation - Set Table Styles"/><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n490","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="light" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="SpreadJS allows users to customize tables by configuring and applying different styles to the table while working with spreadsheets." /><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-topics/topics.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-topics/topics.mshv1.css"" data-responsive-mobile=""template/packages/core-topics/topics.mobile.css"" data-responsive-tablet=""template/packages/core-topics/topics.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="script"--><script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="script"--><script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="b4a3fbed-100e-4c4a-8555-1e4bf496ec99"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="9d25871c-c47e-4700-a8b5-50b17e2a631f"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocOrdinal" format="<meta name=""Microsoft.Help.TocOrder"" content=""%%TocOrdinal%%""/>" --><meta name="Microsoft.Help.TocOrder" content="2"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/hs-simpletab.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="StylePropertyValues" format="<style>%%StylePropertyValues%%</style>" --><style>.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+    <!--DXMETADATA start type="CustomHeadContent" --><link rel="stylesheet" type="text/css" href="template/packages/core-web/css/SP.css">
+<script type="text/javascript">
+var currentHeader = function() {
+    return "spjs";
+}
+</script>
+<script src="template/packages/core-web/script/topNavigation.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WT462SJ"></script>
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime()
+                , event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WT462SJ');
+    </script>
+<!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->SpreadJS Documentation<!--DXMETADATA end--></div>
+            <div class="i-search-container">
+                <!--DXMETADATA start type="outputfileextension" format="<form action=""websearch%%outputfileextension%%"">" --><form action="websearch.html"><!--DXMETADATA end-->
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                <!--DXMETADATA start type="Literal" value="</form>" --></form><!--DXMETADATA end-->
+            </div>
+            <!--DXMETADATA start type="outputfileextension" format="<a id=""i-index-button"" href=""webindex%%outputfileextension%%""></a>" --><a id="i-index-button" href="webindex.html"></a><!--DXMETADATA end-->
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container">
+<a href="overview.html">SpreadJS Documentation</a>
+ / <a href="devguide.html">Developer's Guide</a>
+ / <a href="features.html">Features</a>
+ / <a href="ManagingDataVisualizationAndObjects.html">Manage Data Visualization and Objects</a>
+ / <a href="tablegen.html">Tables</a>
+ / Set Table Styles</div><!--DXMETADATA end --></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="ItemTitle" -->Set Table Styles<!--DXMETADATA end--></div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+            </div>
+            <!--DXMETADATA start type="TopicSection" name="BodyText"--><p>SpreadJS allows users to customize tables by configuring and applying&nbsp;different&nbsp;styles&nbsp;to the table while working with spreadsheets.</p>
+
+<p>Some style properties apply to areas that are not visible or do not have a style setting by default. For example, the <a href="SpreadJS~GC.Spread.Sheets.Tables.TableTheme~lastFooterCellStyle.html">lastFooterCellStyle</a> is not displayed unless <a href="SpreadJS~GC.Spread.Sheets.Tables.Table~showFooter.html">showFooter</a> is true.</p>
+
+<p>The following table lists the <a href="SpreadJS~GC.Spread.Sheets.Tables.Table.html">Table</a> method that must be true so that the associated table styles&nbsp;are displayed in the table.</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td><strong>Table</strong></td>
+
+            <td><strong>TableTheme</strong></td>
+        </tr>
+
+        <tr>
+            <td><a href="SpreadJS~GC.Spread.Sheets.Tables.Table~bandColumns.html">bandColumns</a></td>
+
+            <td><a href="SpreadJS~GC.Spread.Sheets.Tables.TableTheme~firstColumnStripSize.html">firstColumnStripSize</a>,&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Tables.TableTheme~firstColumnStripStyle.html">firstColumnStripStyle</a>,&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Tables.TableTheme~secondColumnStripSize.html">secondColumnStripSize</a>,&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Tables.TableTheme~secondColumnStripStyle.html">secondColumnStripStyle</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="SpreadJS~GC.Spread.Sheets.Tables.Table~bandRows.html">bandRows</a></td>
+
+            <td><a href="SpreadJS~GC.Spread.Sheets.Tables.TableTheme~firstRowStripSize.html">firstRowStripSize</a>,&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Tables.TableTheme~firstRowStripStyle.html">firstRowStripStyle</a>,&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Tables.TableTheme~secondRowStripSize.html">secondRowStripSize</a>,&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Tables.TableTheme~secondRowStripStyle.html">secondRowStripStyle</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="SpreadJS~GC.Spread.Sheets.Tables.Table~highlightFirstColumn.html">highlightFirstColumn</a></td>
+
+            <td><a href="SpreadJS~GC.Spread.Sheets.Tables.TableTheme~highlightFirstColumnStyle.html">highlightFirstColumnStyle</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="SpreadJS~GC.Spread.Sheets.Tables.Table~highlightLastColumn.html">highlightLastColumn</a></td>
+
+            <td><a href="SpreadJS~GC.Spread.Sheets.Tables.TableTheme~highlightLastColumnStyle.html">highlightLastColumnStyle</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="SpreadJS~GC.Spread.Sheets.Tables.Table~showHeader.html">showHeader</a></td>
+
+            <td><a href="SpreadJS~GC.Spread.Sheets.Tables.TableTheme~firstHeaderCellStyle.html">firstHeaderCellStyle</a>,&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Tables.TableTheme~lastHeaderCellStyle.html">lastHeaderCellStyle</a>,&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Tables.TableTheme~headerRowStyle.html">headerRowStyle</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="SpreadJS~GC.Spread.Sheets.Tables.Table~showFooter.html">showFooter</a></td>
+
+            <td><a href="SpreadJS~GC.Spread.Sheets.Tables.TableTheme~headerRowStyle.html">footerRowStyle</a>,&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Tables.TableTheme~firstFooterCellStyle.html">firstFooterCellStyle</a>,&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Tables.TableTheme~lastFooterCellStyle.html">lastFooterCellStyle</a>,&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Tables.Table~useFooterDropDownList.html" data-auto-update-caption="true">useFooterDropDownList</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<h3 id="a">Set Table Style</h3>
+
+<p>Users can use a built-in style for the entire table or can also set styles for specific areas of the table such as rows or columns. You can refer to the <a href="SpreadJS~GC.Spread.Sheets.Tables.TableThemes.html">TableThemes</a> class for a list of built-in styles and the <a href="SpreadJS~GC.Spread.Sheets.Tables.TableTheme.html">TableTheme</a> class for styles that can be set for specific areas.</p>
+
+<p>The following image shows a built-in style (with Dark Theme)&nbsp;applied to the table.</p>
+
+<p><img style="MAX-WIDTH: 100%; HEIGHT: auto" border="0" alt="" src="images/spreadjsv13images/table1.png" /></p>
+
+<p>The following&nbsp;example code&nbsp;creates a table and sets the table style using a built-in style.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">activeSheet.tables.add("Table1", 0, 0, 3, 3, GC.Spread.Sheets.Tables.TableThemes.dark1);<br />
+                activeSheet.getCell(0,0).text("Name");<br />
+                activeSheet.getCell(0,1).text("Value");<br />
+                activeSheet.getCell(0,2).text("T/F");<br />
+                activeSheet.getCell(1,0).text("AW");<br />
+                activeSheet.getCell(1,1).text("5");<br />
+                activeSheet.getCell(1,2).text("T");</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h3 id="b">Set Table Footer Style</h3>
+
+<p>Users can configure a custom table footer style easily and quickly by defining a new table style and then setting different properties for the background color, foreground color, borders and fonts.</p>
+
+<p>The following image depicts a custom style for table footer along with the table styling.</p>
+
+<p><img style="MAX-WIDTH: 100%; HEIGHT: auto" border="0" alt="" src="images/spreadjsv13images/table2.png" /></p>
+
+<p>The following&nbsp;example code&nbsp;displays a spreadsheet with custom&nbsp;style applied to the table footer.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    window.onload = function(){<br />
+                    var spread = new GC.Spread.Sheets.Workbook(document.getElementById("ss"),{sheetCount:3});<br />
+                    var activeSheet = spread.getActiveSheet();<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <p>// Add data<br />
+                    &nbsp;for (var col = 1; col &lt; 6; col++) {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; for (var row = 2; row &lt; 11; row++) {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; activeSheet.setValue(row, col, row + col);<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; }<br />
+                    &nbsp;}<br />
+                    var tableStyle = new GC.Spread.Sheets.Tables.TableTheme();<br />
+                    var thinBorder = new GC.Spread.Sheets.LineBorder("black", GC.Spread.Sheets.LineStyle.dotted);<br />
+                    tableStyle.wholeTableStyle(new GC.Spread.Sheets.Tables.TableStyle("aliceblue", "green", "bold 10pt arial", thinBorder, thinBorder, thinBorder, thinBorder, thinBorder, thinBorder, GC.Spread.Sheets.TextDecorationType.none));<br />
+                    &nbsp;<br />
+                    var tStyleInfo = new GC.Spread.Sheets.Tables.TableStyle();<br />
+                    tStyleInfo.backColor = "green";<br />
+                    tStyleInfo.foreColor = "red";<br />
+                    tStyleInfo.borderBottom = new GC.Spread.Sheets.LineBorder("green", GC.Spread.Sheets.LineStyle.thin);<br />
+                    tStyleInfo.borderLeft = new GC.Spread.Sheets.LineBorder("yellow", GC.Spread.Sheets.LineStyle.medium);<br />
+                    tStyleInfo.borderTop = new GC.Spread.Sheets.LineBorder("green", GC.Spread.Sheets.LineStyle.thin);<br />
+                    tStyleInfo.borderRight = new GC.Spread.Sheets.LineBorder("green", GC.Spread.Sheets.LineStyle.thin);<br />
+                    tStyleInfo.font = "bold 11pt arial";<br />
+                    tableStyle.footerRowStyle(tStyleInfo);<br />
+                    var sTable = activeSheet.tables.add("Custom", 1, 1, 10, 5, tableStyle);<br />
+                    sTable.showFooter(true);<br /></p>
+
+                    <p>// Set footer value<br />
+                    sTable.setColumnValue(0, "Total");<br /></p>
+
+                    <p>// Set footer formula<br />
+                    sTable.setColumnFormula(4, "SUM(F3:F11)");<br />
+                    }<br />
+                    &lt;div id="ss" style="height: 500px; width: 800px"&gt;&lt;/div&gt;</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h3 id="b">Display Table Footer Dropdown</h3>
+
+<p>Apart from setting table footer style, users can also display a dropdown list in the table footer using the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Tables.Table~useFooterDropDownList.html" data-auto-update-caption="true">useFooterDropDownList</a>&nbsp;method. This method shows a complete dropdown list (with several options -"None", "Average", "Count", "Count Numbers", "Max", "Min", "Sum", "StdDev' and Var etc.)&nbsp;when the dropdown indicator in the footer cell is clicked, as depicted in the image shared below:</p>
+
+<p><img style="MAX-WIDTH: 100%; HEIGHT: auto" border="0" alt="" src="images/spreadjsv13images/table3.png" /></p>
+
+<p>The following&nbsp;example code&nbsp;shows how to display a table footer dropdown list in the spreadsheet.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <p>// Initializing Spread<br />
+                    var spread = new GC.Spread.Sheets.Workbook(document.getElementById('ss'), { sheetCount: 1 });<br /></p>
+
+                    <p>// Get the activesheet<br />
+                    var activeSheet = spread.getActiveSheet();</p>
+
+                    <p>// Add Table<br />
+                    var table = activeSheet.tables.add("table1", 1, 1, 4, 4, GC.Spread.Sheets.Tables.TableThemes.light1);<br /></p>
+
+                    <p>// Enable table's footer using showFooter method<br />
+                    table.showFooter(true);<br /></p>
+
+                    <p>// Enable table's useFooterDropDownList to true<br />
+                    table.useFooterDropDownList(true);</p>
+
+                    <p>activeSheet.getCell(1, 1).text("First Name");<br />
+                    activeSheet.getCell(1, 2).text("Last Name");<br />
+                    activeSheet.getCell(1, 3).text("Score");<br />
+                    activeSheet.getCell(1, 4).text("Position");<br />
+                    activeSheet.getCell(2, 1).text("Alexa");<br />
+                    activeSheet.getCell(2, 2).text("Wilder");<br />
+                    activeSheet.getCell(2, 3).text("90");<br />
+                    activeSheet.getCell(2, 4).text("Web Developer");<br />
+                    activeSheet.getCell(3, 1).text("Victor");<br />
+                    activeSheet.getCell(3, 2).text("Wooten");<br />
+                    activeSheet.getCell(3, 3).text("70");<br />
+                    activeSheet.getCell(3, 4).text(".NET Developer");<br />
+                    activeSheet.getCell(4, 1).text("Ifeoma");<br />
+                    activeSheet.getCell(4, 2).text("Mays");<br />
+                    activeSheet.getCell(4, 3).text("85");<br />
+                    activeSheet.getCell(4, 4).text("Sales Manager");<br />
+                    for (var i = 0; i &lt; 3; i++)<br />
+                    activeSheet.setColumnWidth(i, 90.0, GC.Spread.Sheets.SheetArea.viewport);<br />
+                    activeSheet.setColumnWidth(4, 120);</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div><!--DXMETADATA end-->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORISED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""%%phrase:name=SeeAlso%%%%designlist:tagidentifier=seealso,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><!--DXMETADATA end-->
+            
+            <div id="i-footer-content" class="i-footer-content">
+                <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p><p>Copyright © 2019 GrapeCity, Inc. All rights reserved.</p>
+<p><a href="https://www.grapecity.com/en/forums/winforms-edition" target="_blank">Product Support Forum</a> | <a href="javascript:window.print()">Print this page</a></p>
+<ul class="social">
+<li><a href="https://www.facebook.com/GrapeCityUS/" target="_blank" class="facebook">&nbsp;</a></li>
+<li><a href="https://twitter.com/GrapeCityUS" target="_blank" class="twitter">&nbsp;</a></li>
+<li><a href="https://www.linkedin.com/company/grapecity" target="_blank" class="linkedin">&nbsp;</a></li>
+</ul>
+</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end-->
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

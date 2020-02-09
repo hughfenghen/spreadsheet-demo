@@ -1,0 +1,8 @@
+var h1 = new GC.Spread.Sheets.CellTypes.HyperLink();
+h1.text("GrapeCity");
+h1.linkToolTip("link to GrapeCity Web page");
+h1.linkColor("rgb(0, 100, 200)");
+h1.visitedLinkColor("rgb(0, 200, 100)");
+h1.moveActiveCellOnClick(true);
+activeSheet.setCellType(1, 1, h1);
+activeSheet.getCell(1, 1, GC.Spread.Sheets.SheetArea.viewport).value("http://spread.grapecity.com/").hAlign(GC.Spread.Sheets.HorizontalAlign.center);

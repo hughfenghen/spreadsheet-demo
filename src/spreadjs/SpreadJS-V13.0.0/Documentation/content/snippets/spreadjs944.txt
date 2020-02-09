@@ -1,0 +1,3 @@
+activeSheet.currentTheme("Metro");
+activeSheet.resumePaint();
+activeSheet.repaint();

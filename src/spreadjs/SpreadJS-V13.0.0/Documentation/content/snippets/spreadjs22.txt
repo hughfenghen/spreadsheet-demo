@@ -1,0 +1,3 @@
+var manager = spread.commandManager();
+var upKey = manager.setShortcutKey(undefined, GC.Spread.Commands.Key.up, false, false, false, false);
+var downKey = manager.setShortcutKey(undefined, GC.Spread.Commands.Key.down, false, false, false, false);

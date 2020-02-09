@@ -1,0 +1,5 @@
+var style = new GC.Spread.Sheets.Style();
+style.backColor = "lightgreen";
+style.backgroundImage = "./css/images/quarter1.png";
+style.backgroundImageLayout  = GC.Spread.Sheets.ImageLayout.center;
+activeSheet.setStyle(1,1,style,GC.Spread.Sheets.SheetArea.viewport);

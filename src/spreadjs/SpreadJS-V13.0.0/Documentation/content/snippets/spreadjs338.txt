@@ -1,0 +1,1 @@
+activeSheet.getRange(2, -1, 1, -1, GC.Spread.Sheets.SheetArea.viewport).borderBottom(new GC.Spread.Sheets.LineBorder("green", GC.Spread.Sheets.LineStyle.mediumDashed));

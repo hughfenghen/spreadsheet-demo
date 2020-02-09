@@ -1,0 +1,6 @@
+sheet.setDataContext(new GC.Spread.Sheets.DataContext(
+            '@Url.Action("Load", "Home")',
+            '@Url.Action("Create", "Home")',
+            '@Url.Action("Update", "Home")',
+            '@Url.Action("Delete", "Home")'
+        ));

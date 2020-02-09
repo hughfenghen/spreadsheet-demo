@@ -1,0 +1,21 @@
+// Press Ctrl key to merge
+$(document).keydown(function (e) {
+                if (e.keyCode === 17) {
+                    spread.options.allowUserDragMerge = true;
+                }
+            });
+            $(document).keyup(function (e) {
+                if (e.keyCode === 17) {
+                    spread.options.allowUserDragMerge = false;
+                }
+            });
+
+activeSheet.bind(GC.Spread.Sheets.Events.DragMerging, function (e, data) {
+var mergeRange = data.mergeRange;
+alert(mergeRange.row);   
+            });
+
+activeSheet.bind(GC.Spread.Sheets.Events.DragMerged, function (e, data) {
+var mergeRange = data.mergeRange;
+alert(mergeRange.row);   
+            });

@@ -1,0 +1,5 @@
+var cellrange =new GC.Spread.Sheets.Range(0, 0, 5, 1);
+var hideRowFilter =new GC.Spread.Sheets.Filter.HideRowFilter(cellrange);
+sheet.rowFilter(hideRowFilter);
+sheet.resumePaint();
+sheet.repaint();

@@ -1,0 +1,2 @@
+activeSheet.options.isProtected = true;
+alert(activeSheet.options.isProtected);

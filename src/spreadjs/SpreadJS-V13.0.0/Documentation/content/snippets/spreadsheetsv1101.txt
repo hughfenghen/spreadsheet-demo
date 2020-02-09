@@ -1,0 +1,43 @@
+  <script type="text/javascript">
+      window.onload = function(){
+          var spread = new GC.Spread.Sheets.Workbook(document.getElementById("ss"),{sheetCount:3});
+          var activeSheet = spread.getActiveSheet(); 
+
+          $("#ss").click(function (e) {
+              //Acquire cell index from mouse-clicked point of regular cells which are neither fixed rows/columns nor row/column headers.
+              var offset = $("#ss").offset();
+              var x = e.pageX - offset.left;
+              var y = e.pageY - offset.top;
+              var target = spread.hitTest(x, y);
+
+              if(target.worksheetHitInfo) {
+                  if(target.worksheetHitInfo.hitTestType === 0) {
+                      str = 'corner';
+                  } else if (target.worksheetHitInfo.hitTestType === 1) {
+                      str = 'colHeader';
+                  } else if (target.worksheetHitInfo.hitTestType === 2) {
+                      str = 'rowHeader';
+                  } else {
+                      str = 'viewport';
+                  }
+              } else if(target.tabStripHitInfo) {
+                  if(target.tabStripHitInfo.navButton){
+                      str = target.tabStripHitInfo.navButton;
+                  } else if(target.tabStripHitInfo.sheetTab) {
+                      str = target.tabStripHitInfo.sheetTab.sheetName;
+                  } else if(target.tabStripHitInfo.resize === true) {
+                      str = "resize";
+                  } else {
+                      str = "blank";
+                  }
+              } else if(target.horizontalScrollBarHitInfo) {
+                  str = target.horizontalScrollBarHitInfo.element;
+              } else if(target.verticalScrollBarHitInfo) {
+                  str = target.verticalScrollBarHitInfo.element;
+              } else if(target.footerCornerHitInfo) {
+                  str = target.footerCornerHitInfo.element;
+              }
+        alert(str);                             
+});
+}
+</script>

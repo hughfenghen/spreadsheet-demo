@@ -1,0 +1,11 @@
+var activeSheet = spread.getActiveSheet();
+
+spread.commandManager().register('myCmd',
+                function ColorAction() {                    
+                    //Click on a cell and press the Enter key.
+                    activeSheet.getCell(activeSheet.getActiveRowIndex(), activeSheet.getActiveColumnIndex()).backColor("red");
+                }
+            );
+
+//Map the created action to the Enter key.
+spread.commandManager().setShortcutKey('myCmd', GC.Spread.Commands.Key.enter, false, false, false, false);

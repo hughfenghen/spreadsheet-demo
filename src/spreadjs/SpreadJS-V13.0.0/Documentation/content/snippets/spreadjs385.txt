@@ -1,0 +1,11 @@
+var style = new GC.Spread.Sheets.Style();
+style.backColor = "green";
+var rule = new GC.Spread.Sheets.ConditionalFormatting.NormalConditionRule();
+rule.ruleType(GC.Spread.Sheets.ConditionalFormatting.RuleType.uniqueRule);
+rule.ranges([new GC.Spread.Sheets.Range(0, 0, 10, 1)]);
+rule.style(style);
+activeSheet.conditionalFormats.addRule(rule);
+activeSheet.setValue(0, 0, 50);
+activeSheet.setValue(1, 0, 50);
+activeSheet.setValue(2, 0, 11);
+activeSheet.setValue(3, 0, 5);

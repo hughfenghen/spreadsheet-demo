@@ -1,0 +1,12 @@
+var customFloatingObject = new GC.Spread.Sheets.FloatingObjects.FloatingObject("f1", 10, 10, 60, 64);
+var btn = document.createElement('button');
+btn.style.width = "60px";
+btn.style.height = "30px";
+btn.innerText = "button";
+customFloatingObject.content(btn);
+activeSheet.floatingObjects.add(customFloatingObject);
+//takes effect when added into the sheet.
+customFloatingObject.startRow(2);
+customFloatingObject.startColumn(2);
+customFloatingObject.startRowOffset(10);
+customFloatingObject.startColumnOffset(10);

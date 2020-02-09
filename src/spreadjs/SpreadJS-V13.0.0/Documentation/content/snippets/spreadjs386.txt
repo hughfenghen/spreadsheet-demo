@@ -1,0 +1,8 @@
+var style = new GC.Spread.Sheets.Style();
+style.backColor = "yellow";
+var ranges=[new GC.Spread.Sheets.Range(0,0,10,1)];
+activeSheet.conditionalFormats.addDuplicateRule(style, ranges);
+activeSheet.setValue(0, 0, 50);
+activeSheet.setValue(1, 0, 50);
+activeSheet.setValue(2, 0, 11);
+activeSheet.setValue(3, 0, 5);

@@ -1,0 +1,2 @@
+spread.options.allowUserDragDrop = true;
+spread.options.allowUserDragFill = true;

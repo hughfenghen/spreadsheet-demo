@@ -1,0 +1,4 @@
+activeSheet.suspendPaint();
+activeSheet.defaults.rowHeight = 40;
+activeSheet.defaults.colWidth = 30;
+activeSheet.resumePaint();

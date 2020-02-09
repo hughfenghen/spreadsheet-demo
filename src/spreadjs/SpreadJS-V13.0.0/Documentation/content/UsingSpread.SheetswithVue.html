@@ -1,0 +1,421 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%ProjectTitle%% - %%ItemTitle%%</title>" --><title>SpreadJS Documentation - SpreadJS with Vue</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ProjectTitle%% - %%ItemTitleNoQuotes%%""/>" --><meta name="Title" content="SpreadJS Documentation - SpreadJS with Vue"/><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n572","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="light" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="SpreadJS supports Vue - a JavaScript framework that provides developers with distinct tools in order to help them build complex user interfaces and web applications." /><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-topics/topics.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-topics/topics.mshv1.css"" data-responsive-mobile=""template/packages/core-topics/topics.mobile.css"" data-responsive-tablet=""template/packages/core-topics/topics.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="script"--><script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="script"--><script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="f1897dbf-4c75-4a8a-9191-0803d2341ec4"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="634a0351-9d0d-4a01-be54-29ccda776eb9"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocOrdinal" format="<meta name=""Microsoft.Help.TocOrder"" content=""%%TocOrdinal%%""/>" --><meta name="Microsoft.Help.TocOrder" content="6"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/hs-simpletab.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="StylePropertyValues" format="<style>%%StylePropertyValues%%</style>" --><style>.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+    <!--DXMETADATA start type="CustomHeadContent" --><link rel="stylesheet" type="text/css" href="template/packages/core-web/css/SP.css">
+<script type="text/javascript">
+var currentHeader = function() {
+    return "spjs";
+}
+</script>
+<script src="template/packages/core-web/script/topNavigation.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WT462SJ"></script>
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime()
+                , event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WT462SJ');
+    </script>
+<!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->SpreadJS Documentation<!--DXMETADATA end--></div>
+            <div class="i-search-container">
+                <!--DXMETADATA start type="outputfileextension" format="<form action=""websearch%%outputfileextension%%"">" --><form action="websearch.html"><!--DXMETADATA end-->
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                <!--DXMETADATA start type="Literal" value="</form>" --></form><!--DXMETADATA end-->
+            </div>
+            <!--DXMETADATA start type="outputfileextension" format="<a id=""i-index-button"" href=""webindex%%outputfileextension%%""></a>" --><a id="i-index-button" href="webindex.html"></a><!--DXMETADATA end-->
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container">
+<a href="overview.html">SpreadJS Documentation</a>
+ / <a href="devguide.html">Developer's Guide</a>
+ / <a href="JavaScript Frameworks.html">JavaScript Frameworks</a>
+ / SpreadJS with Vue</div><!--DXMETADATA end --></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="ItemTitle" -->SpreadJS with Vue<!--DXMETADATA end--></div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+            </div>
+            <!--DXMETADATA start type="TopicSection" name="BodyText"--><p>SpreadJS supports Vue - a JavaScript framework that provides developers&nbsp;with distinct tools&nbsp;in order to help&nbsp;them build complex user interfaces&nbsp;and web applications.</p>
+
+<p>SpreadJS can be used with Vue in the following two ways:</p>
+
+<ol>
+    <li><a href="#a">Using Node Package Manager</a></li>
+
+    <li><a href="#b">Using Traditional HTML</a></li>
+</ol>
+
+<h3 id="a">Using Node Package Manager</h3>
+
+<p>This method involves the following steps:</p>
+
+<ol>
+    <li>
+        <strong>Create a Vue Project</strong>
+
+        <p>Open the command prompt window and type the following commands in order to create a simple Vue project with vue init webpack.</p>
+
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>&nbsp;$ npm install --global vue-cli<br /></p>
+
+                        <p># create a new project using the "webpack" template<br />
+                        $ vue init webpack my-project<br /></p>
+
+                        <p># install dependencies and go!<br />
+                        $ cd my-project<br />
+                        $ npm run dev &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>After you finish, the&nbsp;Vue project will be created at the specified location in the directory. For more information on how to create a Vue project, refer to <a href="https://vuejs.org/v2/guide/installation.html">https://vuejs.org/v2/guide/installation.html</a>.</p>
+    </li>
+
+    <li>
+        <strong>Import SpreadJS Vue Module in Project</strong>
+
+        <p>Next, you need to install @grapecity/spread-sheets-vue in your project using the following command:</p>
+
+        <table>
+            <tbody>
+                <tr>
+                    <td>$ npm install @grapecity/spread-sheets-vue</td>
+                </tr>
+            </tbody>
+        </table>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </li>
+
+    <li>
+        <strong>Use SpreadJS in Vue application</strong>
+
+        <p>Now, you can modify the App.vue file as per your requirements. Changes will be reflected when the browser window is refreshed. As an example, you can use the sample code given below:</p>
+
+        <div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+            <table class="i-syntax-table">
+                <tbody>
+                    <tr>
+                        <th>JavaScript</th>
+
+                        <th>
+                            <div class="i-copy-code-wrapper">
+                                <span class="i-copy-code">Copy Code</span>
+                            </div>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td class="i-code" colspan="2">
+                            <p>&lt;template&gt;<br />
+                            &nbsp; &lt;div&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;gc-spread-sheets<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :hostClass='hostClass'<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;gc-worksheet<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :dataSource="dataTable"<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :autoGenerateColumns = 'autoGenerateColumns'<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;gc-column<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :width="width"<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :dataField="'price'"<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :visible = 'visible'<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :formatter = 'formatter'<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :resizable = 'resizable'<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &gt;&lt;/gc-column&gt;</p>
+
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/gc-worksheet&gt;</p>
+
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/gc-spread-sheets&gt;<br />
+                            &nbsp; &lt;/div&gt;<br />
+                            &lt;/template&gt;<br />
+                            &lt;script&gt;<br />
+                            &nbsp; import <a href="mailto:'@grapecity/spread-sheets/styles/gc.spread.sheets.excel2016colorful.css'">'@grapecity/spread-sheets/styles/gc.spread.sheets.excel2016colorful.css'</a><br />
+                            &nbsp; import&nbsp; <a href="mailto:'@grapecity/spread-sheets-vue'">'@grapecity/spread-sheets-vue'</a><br />
+                            &nbsp; export default {<br />
+                            &nbsp;&nbsp;&nbsp; data(){<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return {<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hostClass:'spread-host',<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; autoGenerateColumns:true,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; width:300,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; visible:true,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resizable:true,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; formatter:"$ #.00"<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+                            &nbsp;&nbsp;&nbsp; },<br />
+                            &nbsp;&nbsp;&nbsp; computed:{<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dataTable(){<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; let dataTable = [];<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (let i = 0; i &lt; 42; i++) {<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dataTable.push({price: i + 0.56})<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return dataTable<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+                            &nbsp;&nbsp;&nbsp; }<br />
+                            &nbsp; }<br />
+                            &lt;/script&gt;<br />
+                            &lt;style scoped&gt;<br />
+                            .spread-host {<br />
+                            &nbsp;&nbsp;&nbsp; width: 500px;<br />
+                            &nbsp;&nbsp;&nbsp; height: 600px;<br />
+                            }<br />
+                            &lt;/style&gt;</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="InnovaContentWidget" contenteditable="false" style="BORDER-TOP: white 2px solid; MARGIN-TOP: 2px; BORDER-BOTTOM: white 1px solid" data-widget-layout="block" data-source-widget-type="Language Filtered Code Box" data-widget-type="Language Filtered Code Box"></p>
+    </li>
+</ol>
+
+<h3 id="a">Using Traditional HTML</h3>
+
+<p>This method involves the following steps:</p>
+
+<ol>
+    <li>
+        <strong>Create a HTML page</strong>
+
+        <p>As the first step, you need to create a HTML page.</p>
+    </li>
+
+    <li>
+        <strong>Add SpreadJS and Vue-SpreadJS to HTML template</strong>
+
+        <p>Add references to&nbsp;the <strong>gc.spread.sheets.all.*.*.*.min.js,&nbsp; gc.SpreadJS.*.*.*.css and&nbsp; gc.spread.sheets.vue.*.*.*.js</strong>&nbsp;files in the HTML template (i.e. your&nbsp;index.html file).</p>
+    </li>
+
+    <li>
+        <strong>Use SpreadJS in Vue application</strong>
+
+        <p>Now, you can use SpreadJS in your Vue application. As an example, you can use the sample code given below:</p>
+
+        <div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+            <table class="i-syntax-table">
+                <tbody>
+                    <tr>
+                        <th>JavaScript</th>
+
+                        <th>
+                            <div class="i-copy-code-wrapper">
+                                <span class="i-copy-code">Copy Code</span>
+                            </div>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td class="i-code" colspan="2">
+                            <p>&lt;!DOCTYPE html&gt;<br />
+                            &lt;html lang="en"&gt;<br />
+                            &lt;head&gt;<br />
+                            &nbsp;&nbsp;&nbsp; &lt;meta charset="UTF-8"&gt;<br />
+                            &nbsp;&nbsp;&nbsp; &lt;title&gt;Hello SpreadJS Vue&lt;/title&gt;<br />
+                            &nbsp;&nbsp;&nbsp; &lt;link rel="stylesheet" href="lib/gc.spread.sheets.excel2016colorful.0.0.0.css" type="text/css"/&gt;<br />
+                            &nbsp;&nbsp;&nbsp; &lt;style&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #app{<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; width: 100%;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; height:100%;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .vue-demo{<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; width: 800px;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; height:400px;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin: 0 auto;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+                            &nbsp;&nbsp;&nbsp; &lt;/style&gt;<br />
+                            &lt;/head&gt;<br />
+                            &lt;body&gt;<br />
+                            &lt;div id="app"&gt;<br />
+                            &nbsp;&lt;app&gt;&lt;/app&gt;<br />
+                            &lt;/div&gt;</p>
+
+                            <p>&lt;script src="<a href="https://cdn.jsdelivr.net/npm/vue/dist/vue.js%22%3E%3C/script">https://cdn.jsdelivr.net/npm/vue/dist/vue.js"&gt;&lt;/script</a>&gt;<br />
+                            &lt;script src="lib/gc.spread.sheets.all.0.0.0.js"&gt;&lt;/script&gt;<br />
+                            &lt;script src="lib/gc.spread.sheets.vue.js"&gt;&lt;/script&gt;<br />
+                            &lt;script type="text/x-template" id="app-template"&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;div&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;gc-spread-sheets<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; v-bind:hostClass='hostClass'<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @workbookInitialized='spreadInitHandle'<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;gc-worksheet&nbsp; &gt;</p>
+
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/gc-worksheet&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/gc-spread-sheets&gt;</p>
+
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br />
+                            &lt;/script&gt;<br />
+                            &lt;script type="text/javascript"&gt;<br />
+                            &nbsp;&nbsp;&nbsp; window.onload = function () {<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Vue.component('app', {<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; template: '#app-template',<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; data:function () {<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return {<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hostClass: "vue-demo"<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; methods: {<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; spreadInitHandle: function (spread) {<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; window.mySpread = spread;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; console.log('now you can also get spread from window');<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; });<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new Vue({<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; el:"#app",<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; })<br />
+                            &nbsp;&nbsp;&nbsp; }<br />
+                            &lt;/script&gt;</p>
+
+                            <p>&lt;/body&gt;<br />
+                            &lt;/html&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="InnovaContentWidget" contenteditable="false" style="BORDER-TOP: white 2px solid; MARGIN-TOP: 2px; BORDER-BOTTOM: white 1px solid" data-widget-layout="block" data-source-widget-type="Language Filtered Code Box" data-widget-type="Language Filtered Code Box"></p>
+    </li>
+</ol>
+
+<p>The SpreadSheets, Worksheet, and Column are the basic elements with tag hierarchy. Other elements work by setting them. The main tag hierarchy is:</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td>&lt;gc-spread-sheets&gt;<br />
+            &lt;gc-worksheet&gt;<br />
+            &lt;gc-column&gt;&lt;/gc-column&gt;<br />
+            &nbsp;&nbsp;&nbsp; ...<br />
+            &lt;/gc-worksheet&gt;<br />
+            &nbsp; ...<br />
+            &lt;/gc-spread-sheets&gt;</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>The following topics list the element directives.</p>
+
+<ul>
+    <li><a href="UsingtheGC-spread-sheetselement.html" data-auto-update-caption="true">Gc-spread-sheets Element</a></li>
+
+    <li><a href="UsingtheGC-worksheetElement.html" data-auto-update-caption="true">Gc-worksheet Element</a></li>
+
+    <li><a href="UsingtheGc-columnElement.html" data-auto-update-caption="true">Gc-column Element</a> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</li>
+</ul><!--DXMETADATA end-->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORISED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""%%phrase:name=SeeAlso%%%%designlist:tagidentifier=seealso,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><!--DXMETADATA end-->
+            
+            <div id="i-footer-content" class="i-footer-content">
+                <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p><p>Copyright © 2019 GrapeCity, Inc. All rights reserved.</p>
+<p><a href="https://www.grapecity.com/en/forums/winforms-edition" target="_blank">Product Support Forum</a> | <a href="javascript:window.print()">Print this page</a></p>
+<ul class="social">
+<li><a href="https://www.facebook.com/GrapeCityUS/" target="_blank" class="facebook">&nbsp;</a></li>
+<li><a href="https://twitter.com/GrapeCityUS" target="_blank" class="twitter">&nbsp;</a></li>
+<li><a href="https://www.linkedin.com/company/grapecity" target="_blank" class="linkedin">&nbsp;</a></li>
+</ul>
+</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end-->
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

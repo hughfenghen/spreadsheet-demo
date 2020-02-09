@@ -1,0 +1,27 @@
+sheet.setValue(0, 0, "Data Range is A2-A9");
+sheet.setValue(1, 0, 1);
+sheet.setValue(2, 0, -2);
+sheet.setValue(3, 0, -1);
+sheet.setValue(4, 0, 6);
+sheet.setValue(5, 0, 4);
+sheet.setValue(6, 0, -4);
+sheet.setValue(7, 0, 3);
+sheet.setValue(8, 0, 8);
+var data = new GC.Spread.Sheets.Range(1, 0, 8, 1);
+var setting = new GC.Spread.Sheets.Sparklines.SparklineSetting();
+var s1=  sheet.setSparkline(13, 0, data
+        , GC.Spread.Sheets.Sparklines.DataOrientation.vertical
+        , GC.Spread.Sheets.Sparklines.SparklineType.line
+        , setting
+        );
+var s2 =sheet.setSparkline(13, 3, data
+        , GC.Spread.Sheets.Sparklines.DataOrientation.vertical
+        , GC.Spread.Sheets.Sparklines.SparklineType.column
+        , setting
+        );
+var s3=  sheet.setSparkline(13, 6, data
+        , GC.Spread.Sheets.Sparklines.DataOrientation.vertical
+        , GC.Spread.Sheets.Sparklines.SparklineType.winloss
+        , setting
+        );
+var group = sheet.groupSparkline([s1,s2,s3]);

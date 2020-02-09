@@ -1,0 +1,1 @@
+activeSheet.geCell(-1, 2).locked(false);

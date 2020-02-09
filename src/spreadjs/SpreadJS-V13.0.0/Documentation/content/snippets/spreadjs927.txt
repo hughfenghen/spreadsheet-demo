@@ -1,0 +1,7 @@
+var custom = new GC.Spread.Sheets.Theme("CustomTheme");
+custom.colors().accent1("red");
+custom.colors().accent6("green");
+custom.colors().textColor1("orange");
+activeSheet.currentTheme(custom);
+activeSheet.getCell(0, 0).backColor("accent 1");
+activeSheet.getCell(1, 0).backColor("accent 1 30");

@@ -1,0 +1,78 @@
+[class^="spread-border-icon"], [class^="spread-formatter-icon"] {
+     background-image: url(images/icons.png); 
+}
+
+.spread-border-icon-bottomborder {
+  background-position: 0 -416px;
+}
+.spread-border-icon-topborder {
+  background-position: 0 -3264px;
+}
+.spread-border-icon-leftborder {
+  background-position: 0 -1728px;
+}
+.spread-border-icon-rightborder {
+  background-position: 0 -2560px;
+}
+.spread-border-icon-noborder {
+  background-position: 0 -1952px;
+}
+.spread-border-icon-allborder {
+  background-position: 0 -128px;
+}
+.spread-border-icon-outsideborder {
+  background-position: 0 -2016px;
+}
+.spread-border-icon-thickborder {
+  background-position: 0 -3184px;
+}
+.spread-border-icon-bdborder {
+  background-position: 0 -448px;
+}
+.spread-border-icon-tbborder {
+  background-position: 0 -3200px;
+}
+.spread-border-icon-tb2border {
+  background-position: 0 -3216px;
+}
+.spread-border-icon-ttbborder {
+  background-position: 0 -3248px;
+}
+.spread-border-icon-tdbborder {
+  background-position: 0 -3232px;
+}
+.spread-border-icon-moreborder {
+  background-position: 0 -1856px;
+}
+.spread-border-icon-insideborder {
+  background-position: 0 -1664px;
+}
+.spread-border-icon-innerhorizontal {
+  background-position: 0 -1680px;
+}
+.spread-border-icon-innervertical {
+  background-position: 0 -1696px;
+}
+.spread-formatter-icon-percent {
+  background-position: 0 -2064px;
+}
+.spread-formatter-icon-comma {
+  background-position: 0 -720px;
+}
+.spread-formatter-icon-increase-decimal {
+  background-position: 0 -800px;
+}
+.spread-formatter-icon-decrease-decimal {
+  background-position: 0 -1520px;
+}
+.spread-border-icon-diagonal-up-line {
+  background-position: 0 -4240px;
+}
+.spread-border-icon-diagonal-down-line {
+  background-position: 0 -4256px;
+}
+
+.sheetTabEditor {
+  z-index: 10000;
+  font: 10pt arial;
+}

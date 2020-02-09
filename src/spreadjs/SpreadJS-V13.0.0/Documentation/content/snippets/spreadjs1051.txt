@@ -1,0 +1,7 @@
+activeSheet.getCell(0, 0).backColor("yellow");
+activeSheet.getCell(0, 0).value(10);
+activeSheet.setValue(0, 2, 15);            
+var sourceRange = new GC.Spread.Sheets.Range(0, 0, 1, 1);
+var targetRange = new GC.Spread.Sheets.Range(0, 1, 1, 3);
+spread.options.allowUndo = true;
+spread.commandManager().execute({cmd: "fill", sheetName: "Sheet1", startRange:sourceRange, fillRange: targetRange, autoFillType: GC.Spread.Sheets.Fill.AutoFillType.fillFormattingOnly, fillDirection: GC.Spread.Sheets.Fill.FillDirection.right});

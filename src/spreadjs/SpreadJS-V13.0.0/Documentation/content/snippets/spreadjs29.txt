@@ -1,0 +1,10 @@
+// Use IE to see the console log text
+var activeSheet = spread.getActiveSheet();
+
+activeSheet.bind(GC.Spread.Sheets.Events.EditStarting, function (sender, args) {
+    console.log("Start cell editing.");
+});
+
+activeSheet.bind(GC.Spread.Sheets.Events.EditEnded, function (sender, args) {
+    console.log("Finish cell editing.");
+});

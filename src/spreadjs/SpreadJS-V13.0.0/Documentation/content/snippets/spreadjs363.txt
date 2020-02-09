@@ -1,0 +1,4 @@
+spread.options.tabStripVisible = true;
+spread.options.tabEditable = true;
+spread.options.newTabVisible = true;
+spread.options.tabStripRatio = 1;

@@ -1,0 +1,10 @@
+<input type="button" id="button1" value="button1"/>
+
+activeSheet.pictures.add("f2","Event.png",2,2,6,6);
+activeSheet.pictures.add("f1","tsoutline.png",3,0,6,6);
+var picture = activeSheet.pictures.get("f2");
+picture.pictureStretch(GC.Spread.Sheets.ImageLayout.center);
+
+$("#button1").click(function () {
+alert(picture.getOriginalWidth());
+    });

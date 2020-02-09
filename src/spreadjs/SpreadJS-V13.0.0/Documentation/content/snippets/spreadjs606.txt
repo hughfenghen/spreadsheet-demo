@@ -1,0 +1,17 @@
+<input type="button" id="button1" value="button1"/>
+
+var namedStyle = new GC.Spread.Sheets.Style();
+namedStyle.name = "style1";
+namedStyle.backColor = "green";
+activeSheet.addNamedStyle(namedStyle);
+activeSheet.setStyleName(1, 1, "style1"); // cell(1,1)'s backColor is  green.
+activeSheet.setStyleName(2, 1, "style1");
+ 
+var style = activeSheet.getNamedStyle("style1");
+style.foreColor = "red";    // the namedStyle's foreColor is red.
+activeSheet.repaint(); // the foreColor of the cell(1,1) and cell(2,1) is red.
+activeSheet.getCell(1,1).value("test");
+
+$("#button1").click(function () {
+activeSheet.removeNamedStyle("style1");
+    });

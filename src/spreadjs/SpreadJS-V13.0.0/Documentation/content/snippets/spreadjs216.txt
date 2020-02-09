@@ -1,0 +1,9 @@
+sheet.setValue(0, 0, 1);
+sheet.setValue(0, 1, 2);
+sheet.setValue(0, 2, 3);
+sheet.addCustomName("customName1","=12", 0, 0);
+sheet.addCustomName("customName2","Average(20,45)", 0, 0);
+sheet.addCustomName("customName3", "=$A$1:$C$1", 0, 0);
+sheet.setFormula(1, 0, "customName1");
+sheet.setFormula(1, 1, "customName2");
+sheet.setFormula(1, 2, "sum(customName3)");

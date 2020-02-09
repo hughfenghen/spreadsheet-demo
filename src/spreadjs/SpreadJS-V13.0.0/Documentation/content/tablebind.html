@@ -1,0 +1,417 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%ProjectTitle%% - %%ItemTitle%%</title>" --><title>SpreadJS Documentation - Bind Tables</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ProjectTitle%% - %%ItemTitleNoQuotes%%""/>" --><meta name="Title" content="SpreadJS Documentation - Bind Tables"/><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n492","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="light" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="SpreadJS allows users to bind a table to a data source using cell level binding." /><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-topics/topics.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-topics/topics.mshv1.css"" data-responsive-mobile=""template/packages/core-topics/topics.mobile.css"" data-responsive-tablet=""template/packages/core-topics/topics.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="script"--><script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="script"--><script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="571551ff-00d1-4798-bf86-7b9a1d027850"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="9d25871c-c47e-4700-a8b5-50b17e2a631f"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocOrdinal" format="<meta name=""Microsoft.Help.TocOrder"" content=""%%TocOrdinal%%""/>" --><meta name="Microsoft.Help.TocOrder" content="3"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/hs-simpletab.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="StylePropertyValues" format="<style>%%StylePropertyValues%%</style>" --><style>.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+    <!--DXMETADATA start type="CustomHeadContent" --><link rel="stylesheet" type="text/css" href="template/packages/core-web/css/SP.css">
+<script type="text/javascript">
+var currentHeader = function() {
+    return "spjs";
+}
+</script>
+<script src="template/packages/core-web/script/topNavigation.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WT462SJ"></script>
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime()
+                , event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WT462SJ');
+    </script>
+<!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->SpreadJS Documentation<!--DXMETADATA end--></div>
+            <div class="i-search-container">
+                <!--DXMETADATA start type="outputfileextension" format="<form action=""websearch%%outputfileextension%%"">" --><form action="websearch.html"><!--DXMETADATA end-->
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                <!--DXMETADATA start type="Literal" value="</form>" --></form><!--DXMETADATA end-->
+            </div>
+            <!--DXMETADATA start type="outputfileextension" format="<a id=""i-index-button"" href=""webindex%%outputfileextension%%""></a>" --><a id="i-index-button" href="webindex.html"></a><!--DXMETADATA end-->
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container">
+<a href="overview.html">SpreadJS Documentation</a>
+ / <a href="devguide.html">Developer's Guide</a>
+ / <a href="features.html">Features</a>
+ / <a href="ManagingDataVisualizationAndObjects.html">Manage Data Visualization and Objects</a>
+ / <a href="tablegen.html">Tables</a>
+ / Bind Tables</div><!--DXMETADATA end --></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="ItemTitle" -->Bind Tables<!--DXMETADATA end--></div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+            </div>
+            <!--DXMETADATA start type="TopicSection" name="BodyText"--><p>SpreadJS allows users to&nbsp;bind a table to a data source using cell level binding.</p>
+
+<p>Table binding can be done in two ways. Users can either use the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Tables.Table~bindColumns.html">bindColumns()</a>&nbsp;method or the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Worksheet~bind.html">bind()</a> method to bind a tble to a data source while working with spreadsheets.&nbsp;</p>
+
+<p>The following rules must be kept in mind while carrying out the table binding operations in the worksheets:</p>
+
+<ul>
+    <li>Setting a value changes the data source.</li>
+
+    <li>Adding or deleting rows changes the data source.</li>
+
+    <li>Adding or deleting columns does not change the data source.</li>
+
+    <li>Removing, clearing, moving, or resizing the table does not change the data source.</li>
+
+    <li>Binding adjusts the table row count automatically (but column count stays the same).</li>
+
+    <li>Formulas are not saved to the data source.</li>
+</ul>
+
+<h3 id="a">Bind Table Columns&nbsp;</h3>
+
+<p>For binding all&nbsp;the&nbsp;table columns in a worksheet, simply bind the sheet to a data source and then&nbsp;set&nbsp;the <a href="SpreadJS~GC.Spread.Sheets.Tables.Table~bindColumns.html">bindColumns()</a>&nbsp;and&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Tables.Table~bindingPath.html">bindingPath()</a>&nbsp;methods in the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Tables.Table.html">Table</a> class. Users can also&nbsp;specify information for the table column with&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Tables.TableColumn~dataField.html">dataField</a>&nbsp;and&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Tables.TableColumn~name.html">name</a>&nbsp;methods in the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Tables.TableColumn.html">TableColumn</a>&nbsp;class.</p>
+
+<h3 id="b">Using&nbsp;the bindColumns() method</h3>
+
+<p>The following code binds a data source to the table using the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Tables.Table~bindColumns.html">bindColumns()</a>&nbsp;method and the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Tables.Table~bindingPath.html">bindingPath()</a>&nbsp;method.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <p>$(function ()</p>
+
+                    <p>{<br />
+                    // Generate two data sources<br />
+                    function Company(name, logo, slogan, address, city, phone, email) {<br />
+                    this.name = name;<br />
+                    this.logo = logo;<br />
+                    this.slogan = slogan;<br />
+                    this.address = address;<br />
+                    this.city = city;<br />
+                    this.phone = phone;<br />
+                    this.email = email;<br />
+                    }</p>
+
+                    <p>function Customer(id, name, company) {<br />
+                    this.id = id;<br />
+                    this.name = name;<br />
+                    this.company = company;<br />
+                    }</p>
+
+                    <p>function Record(description, quantity, amount) {<br />
+                    this.description = description;<br />
+                    this.quantity = quantity;<br />
+                    this.amount = amount;<br />
+                    }</p>
+
+                    <p>function Invoice(company, number, date, customer, receiverCustomer, records) {<br />
+                    this.company = company;<br />
+                    this.number = number;<br />
+                    this.date = date;<br />
+                    this.customer = customer;<br />
+                    this.receiverCustomer = receiverCustomer;<br />
+                    this.records = records;<br />
+                    }</p>
+
+                    <p>var company1 = new Company("Baidu", null, "We know everything!", "Beijing 1st road", "Beijing", "010-12345678", "<a href="mailto:baidu@baidu.com">baidu@baidu.com</a>"),<br />
+                    company2 = new Company("Tecent", null, "We have everything!", "Shenzhen 2st road", "Shenzhen", "0755-12345678", "<a href="mailto:tecent@qq.com">tecent@qq.com</a>"),<br />
+                    company3 = new Company("Alibaba", null, "We sell everything!", "Hangzhou 3rd road", "Hangzhou", "0571-12345678", "<a href="mailto:alibaba@alibaba.com">alibaba@alibaba.com</a>"),<br />
+                    customer1 = new Customer("A1", "employee 1", company2),<br />
+                    customer2 = new Customer("A2", "employee 2", company3),<br />
+                    records1 = [new Record("Finance charge on overdue balance at 1.5%", 1, 150), new Record("Invoice #100 for $1000 on 2014/1/1", 1, 150)],<br />
+                    records2 = [new Record("Purchase server device", 2, 15000), new Record("Company travel", 100, 1500), new Record("Company Dinner", 100, 200)],<br />
+                    invoice1 = new Invoice(company1, "00001", new Date(2014, 0, 1), customer1, customer1, records1),<br />
+                    invoice2 = new Invoice(company2, "00002", new Date(2014, 6, 6), customer2, customer2, records2),<br />
+                    dataSource1 = new GC.Spread.Sheets.Bindings.CellBindingSource(invoice1),<br />
+                    dataSource2 = new GC.Spread.Sheets.Bindings.CellBindingSource(invoice2);</p>
+
+                    <p>function BindingPathCellType() {<br />
+                    GC.Spread.Sheets.CellTypes.Text.call(this);<br />
+                    }</p>
+
+                    <p>BindingPathCellType.prototype = new GC.Spread.Sheets.CellTypes.Text();<br />
+                    BindingPathCellType.prototype.paint = function (ctx, value, x, y, w, h, style, context) {<br />
+                    if (value === null || value === undefined) {<br />
+                    var sheet = context.sheet, row = context.row, col = context.col;<br />
+                    if (sheet &amp;&amp; (row === 0 || !!row) &amp;&amp; (col === 0 || !!col)) {<br />
+                    var bindingPath = sheet.getBindingPath(context.row, context.col);<br />
+                    if (bindingPath) {<br />
+                    value = "[" + bindingPath + "]";<br />
+                    }<br />
+                    }<br />
+                    }<br />
+                    GC.Spread.Sheets.CellTypes.Text.prototype.paint.apply(this, arguments);<br />
+                    };</p>
+
+                    <p>var spread = new GC.Spread.Sheets.Workbook(document.getElementById("ss"), {sheetCount: 1});<br />
+                    activeSheet = spread.getActiveSheet();<br />
+                    spread.suspendPaint();<br />
+                    activeSheet.name("FINANCE CHARGE");<br />
+                    var bindingPathCellType = new BindingPathCellType();<br />
+                    activeSheet.getCell(1, 2).bindingPath("company.slogan").cellType(bindingPathCellType).vAlign(GC.Spread.Sheets.VerticalAlign.bottom);<br />
+                    activeSheet.getCell(1, 4).value("INVOICE").foreColor("#58B6C0").font("33px Arial");<br />
+                    activeSheet.getCell(3, 1).bindingPath("company.name").cellType(bindingPathCellType).foreColor("#58B6C0").font("bold 20px Arial");<br />
+                    activeSheet.getCell(5, 1).bindingPath("company.address").cellType(bindingPathCellType);<br />
+                    activeSheet.getCell(5, 3).value("INVOICE NO.").font("bold 15px Arial");<br />
+                    activeSheet.getCell(5, 4).bindingPath("number").cellType(bindingPathCellType);<br />
+                    activeSheet.getCell(6, 1).bindingPath("company.city").cellType(bindingPathCellType);<br />
+                    activeSheet.getCell(6, 3).value("DATE").font("bold 15px Arial");<br />
+                    activeSheet.getCell(6, 4).bindingPath("date").cellType(bindingPathCellType).formatter("MM/dd/yyyy").hAlign(GC.Spread.Sheets.HorizontalAlign.left);<br />
+                    activeSheet.getCell(7, 1).bindingPath("company.phone").cellType(bindingPathCellType);<br />
+                    activeSheet.getCell(7, 3).value("CUSTOMER ID").font("bold 15px Arial");<br />
+                    activeSheet.getCell(7, 4).bindingPath("customer.id").cellType(bindingPathCellType);<br />
+                    activeSheet.getCell(8, 1).bindingPath("company.email").cellType(bindingPathCellType);<br />
+                    activeSheet.getCell(10, 1).value("TO").font("bold 15px Arial");<br />
+                    activeSheet.getCell(10, 3).value("SHIP TO").font("bold 15px Arial");<br />
+                    activeSheet.getCell(11, 1).bindingPath("customer.name").cellType(bindingPathCellType).textIndent(10);<br />
+                    activeSheet.getCell(12, 1).bindingPath("customer.company.name").cellType(bindingPathCellType).textIndent(10);<br />
+                    activeSheet.getCell(13, 1).bindingPath("customer.company.address").cellType(bindingPathCellType).textIndent(10);<br />
+                    activeSheet.getCell(14, 1).bindingPath("customer.company.city").cellType(bindingPathCellType).textIndent(10);<br />
+                    activeSheet.getCell(15, 1).bindingPath("customer.company.phone").cellType(bindingPathCellType).textIndent(10);<br />
+                    activeSheet.getCell(11, 4).bindingPath("receiverCustomer.name").cellType(bindingPathCellType);<br />
+                    activeSheet.getCell(12, 4).bindingPath("receiverCustomer.company.name").cellType(bindingPathCellType);<br />
+                    activeSheet.getCell(13, 4).bindingPath("receiverCustomer.company.address").cellType(bindingPathCellType);<br />
+                    activeSheet.getCell(14, 4).bindingPath("receiverCustomer.company.city").cellType(bindingPathCellType);<br />
+                    activeSheet.getCell(15, 4).bindingPath("receiverCustomer.company.phone").cellType(bindingPathCellType);<br />
+                    activeSheet.addSpan(17, 1, 1, 2);<br />
+                    activeSheet.getCell(17, 1).value("JOB").foreColor("#58B6C0").font("bold 12px Arial");<br />
+                    activeSheet.addSpan(17, 3, 1, 2);<br />
+                    activeSheet.getCell(17, 3).value("PAYMENT TERMS").foreColor("#58B6C0").font("bold 12px Arial");<br />
+                    activeSheet.addSpan(18, 1, 1, 2);<br />
+                    activeSheet.getCell(18, 1).backColor("#DDF0F2");<br />
+                    activeSheet.addSpan(18, 3, 1, 2);<br />
+                    activeSheet.getCell(18, 3).value("Due on receipt").backColor("#DDF0F2").foreColor("#58B6C0").font("12px Arial");</p>
+
+                    <p>activeSheet.getRange(17, 1, 2, 4, GC.Spread.Sheets.SheetArea.viewport).setBorder(new GC.Spread.Sheets.LineBorder("#58B6C0", GC.Spread.Sheets.LineStyle.thin), {<br />
+                    top: true,<br />
+                    bottom: true,<br />
+                    innerHorizontal: true<br />
+                    });</p>
+
+                    <p>var table = activeSheet.tables.add("tableRecords", 20, 1, 4, 4, GC.Spread.Sheets.Tables.TableThemes.light6);<br />
+                    table.autoGenerateColumns(false);<br />
+                    var tableColumn1 = new GC.Spread.Sheets.Tables.TableColumn();<br />
+                    tableColumn1.name("DESCRIPTION");<br />
+                    tableColumn1.dataField("description");<br />
+                    var tableColumn2 = new GC.Spread.Sheets.Tables.TableColumn();<br />
+                    tableColumn2.name("QUANTITY");<br />
+                    tableColumn2.dataField("quantity");<br />
+                    var tableColumn3 = new GC.Spread.Sheets.Tables.TableColumn();<br />
+                    tableColumn3.name("AMOUNT");<br />
+                    tableColumn3.dataField("amount");<br />
+                    table.bindColumns([tableColumn1, tableColumn2, tableColumn3]);<br />
+                    table.bindingPath("records");<br />
+                    table.showFooter(true);<br />
+                    table.setColumnName(3, "TOTAL");<br />
+                    table.setColumnValue(2, "TOTAL DUE");<br />
+                    table.setColumnDataFormula(3, "=[@QUANTITY]*[@AMOUNT]");<br />
+                    table.setColumnFormula(3, "=SUBTOTAL(109,[TOTAL])");<br />
+                    activeSheet.getCell(26, 1).formula('="Make all checks payable to "&amp;B4&amp;". THANK YOU FOR YOUR BUSINESS!"').foreColor("gray").font("italic 14px Arial");<br />
+                    activeSheet.options.allowCellOverflow = true;<br />
+                    //Adjust row height and column width<br />
+                    activeSheet.setColumnWidth(0, 5);<br />
+                    activeSheet.setColumnWidth(1, 300);<br />
+                    activeSheet.setColumnWidth(2, 115);<br />
+                    activeSheet.setColumnWidth(3, 125);<br />
+                    activeSheet.setColumnWidth(4, 155);<br />
+                    activeSheet.setRowHeight(0, 5);<br />
+                    activeSheet.setRowHeight(1, 40);<br />
+                    activeSheet.setRowHeight(2, 10);<br />
+                    activeSheet.setRowHeight(17, 0);<br />
+                    activeSheet.setRowHeight(18, 0);<br />
+                    activeSheet.setRowHeight(19, 0);<br />
+                    activeSheet.setRowHeight(25, 10);<br />
+                    activeSheet.options.gridline = {showVerticalGridline: false, showHorizontalGridline: false};<br />
+                    //Set a data source<br />
+                    //activeSheet.setDataSource(dataSource1);<br />
+                    activeSheet.setDataSource(dataSource2);<br />
+                    spread.resumePaint();<br />
+                    })</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h3 id="c">Bind Formatter and Cell Types To Table Columns</h3>
+
+<p>With the advanced column binding feature&nbsp;provided by&nbsp;SpreadJS, users can also bind formatter and various cell types with table columns along with the data fields and names. Further, users can also convert formula functions inside a table column.</p>
+
+<p>The&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Tables.Table~bind.html">bind()</a> method can be used to bind the table to a field containing multiple&nbsp;records and the table columns to the data fields of their corresponding records. When users set a different data source for populating the table data, then the table will automatically bind to their corresponding records.</p>
+
+<h3 id="d">Using&nbsp;the bind() method</h3>
+
+<p>The following code shows how to use the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Tables.Table~bind.html">bind()</a> method for binding data in table columns.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <p>// Initializing Spread<br />
+                    var spread = new GC.Spread.Sheets.Workbook(document.getElementById('ss'), { sheetCount: 1 });<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+                    <p>// Get the activesheet<br />
+                    var activeSheet = spread.getActiveSheet();<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+                    <p>// Data<br />
+                    var data = {<br />
+                    name: 'Jones', region: 'East',<br />
+                    sales: [<br />
+                    { orderDate: '1/6/2013', item: 'Pencil', units: 95, cost: 1.99, isMakeMoney: true },<br />
+                    { orderDate: '4/1/2013', item: 'Binder', units: 60, cost: 4.99, isMakeMoney: false },<br />
+                    { orderDate: '6/8/2013', item: 'Pen Set', units: 16, cost: 15.99, isMakeMoney: false }<br />
+                    ]<br />
+                    };<br /></p>
+
+                    <p>var convert = function (item) {<br />
+                    return item['cost'] + '$';<br />
+                    }<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+                    <p>// Add table<br />
+                    var table = activeSheet.tables.add('tableSales', 0, 0, 5, 5);<br />
+                    var tableColumn1 = new GC.Spread.Sheets.Tables.TableColumn(1, "orderDate", "Order Date", "d/M/yy");<br />
+                    var tableColumn2 = new GC.Spread.Sheets.Tables.TableColumn(2, "item", "Item");<br />
+                    var tableColumn3 = new GC.Spread.Sheets.Tables.TableColumn(3, "units", "Units");<br />
+                    var tableColumn4 = new GC.Spread.Sheets.Tables.TableColumn(4, "cost", "Cost", null, null, convert);<br />
+                    var tableColumn5 = new GC.Spread.Sheets.Tables.TableColumn(5, "isMakeMoney", "IsMakeMoney", null, new GC.Spread.Sheets.CellTypes.CheckBox());<br />
+                    &nbsp;&nbsp;<br />
+                    table.autoGenerateColumns(false);<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+                    <p>// Bind table using the bind() method<br />
+                    table.bind([tableColumn1, tableColumn2, tableColumn3, tableColumn4, tableColumn5], 'sales', data);</p>
+
+                    <p>for (var i = 0; i &lt; 5; i++)<br />
+                    activeSheet.setColumnWidth(i, 110.0, GC.Spread.Sheets.SheetArea.viewport);</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div><!--DXMETADATA end-->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORISED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""%%phrase:name=SeeAlso%%%%designlist:tagidentifier=seealso,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><!--DXMETADATA end-->
+            
+            <div id="i-footer-content" class="i-footer-content">
+                <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p><p>Copyright © 2019 GrapeCity, Inc. All rights reserved.</p>
+<p><a href="https://www.grapecity.com/en/forums/winforms-edition" target="_blank">Product Support Forum</a> | <a href="javascript:window.print()">Print this page</a></p>
+<ul class="social">
+<li><a href="https://www.facebook.com/GrapeCityUS/" target="_blank" class="facebook">&nbsp;</a></li>
+<li><a href="https://twitter.com/GrapeCityUS" target="_blank" class="twitter">&nbsp;</a></li>
+<li><a href="https://www.linkedin.com/company/grapecity" target="_blank" class="linkedin">&nbsp;</a></li>
+</ul>
+</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end-->
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

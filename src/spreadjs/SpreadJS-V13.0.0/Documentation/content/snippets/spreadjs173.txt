@@ -1,0 +1,1 @@
+spread.options.referenceStyle = GC.Spread.Sheets.ReferenceStyle.r1c1;

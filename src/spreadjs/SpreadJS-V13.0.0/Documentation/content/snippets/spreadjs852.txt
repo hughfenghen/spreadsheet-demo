@@ -1,0 +1,14 @@
+var customFormatterTest = {};
+customFormatterTest.prototype = GC.Spread.Formatter.FormatterBase;
+customFormatterTest.format = function (obj, conditionalForeColor) {
+    conditionalForeColor.value = "blue";
+    return "My format result : " + obj.toString();
+};
+customFormatterTest.parse = function (str) {
+    if (!str) {
+        return "";
+    }
+    return str;
+}
+activeSheet.getCell(1, 0).formatter(customFormatterTest);
+activeSheet.getCell(1, 0).value("Test");

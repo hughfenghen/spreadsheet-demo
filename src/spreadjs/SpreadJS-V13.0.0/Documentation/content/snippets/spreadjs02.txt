@@ -1,0 +1,23 @@
+//setDefaultStyle
+activeSheet.setRowCount(5, GC.Spread.Sheets.SheetArea.viewport);
+activeSheet.setColumnCount(5, GC.Spread.Sheets.SheetArea.viewport);
+
+    //Set the default styles.
+    var defaultStyle = new GC.Spread.Sheets.Style();
+    defaultStyle.backColor = "LemonChiffon";
+    defaultStyle.foreColor = "Red";
+    defaultStyle.formatter = "0.00";
+    defaultStyle.hAlign = GC.Spread.Sheets.HorizontalAlign.center;
+    defaultStyle.borderLeft = new GC.Spread.Sheets.LineBorder("Green",GC.Spread.Sheets.LineStyle.medium);
+    defaultStyle.borderTop = new GC.Spread.Sheets.LineBorder("Green",GC.Spread.Sheets.LineStyle.medium);
+    defaultStyle.borderRight = new GC.Spread.Sheets.LineBorder("Green",GC.Spread.Sheets.LineStyle.medium);
+    defaultStyle.borderBottom = new GC.Spread.Sheets.LineBorder("Green",GC.Spread.Sheets.LineStyle.medium);
+    activeSheet.setDefaultStyle(defaultStyle, GC.Spread.Sheets.SheetArea.viewport);
+
+    var rowCount = activeSheet.getRowCount();
+    var colCount = activeSheet.getColumnCount();
+    for(var i = 0; i < rowCount; i++){
+        for(var j = 0; j < colCount; j++){
+            activeSheet.setValue(i, j, i+j, GC.Spread.Sheets.SheetArea.viewport);
+        }
+    }

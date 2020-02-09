@@ -1,0 +1,24 @@
+<input type="button" id="button1" value="button1"/>
+
+var customFloatingObject = new GC.Spread.Sheets.FloatingObjects.FloatingObject("f1", 10, 10, 60, 64);
+customFloatingObject.isSelected(true);
+var btn = document.createElement('button');
+btn.style.width = "60px";
+btn.style.height = "30px";
+btn.innerText = "button";
+customFloatingObject.content(btn);
+activeSheet.floatingObjects.add(customFloatingObject);
+
+var customFloatingObject1 = new GC.Spread.Sheets.FloatingObjects.FloatingObject("f2", 10, 80, 60, 64);
+var btn1 = document.createElement('button');
+btn1.style.width = "60px";
+btn1.style.height = "30px";
+btn1.innerText = "button1";
+customFloatingObject1.content(btn1);
+activeSheet.floatingObjects.add(customFloatingObject1);
+
+$("#button1").click(function () {
+activeSheet.resumePaint();
+activeSheet.floatingObjects.remove("f2");
+activeSheet.repaint();
+    });

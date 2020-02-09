@@ -1,0 +1,2 @@
+var sheet1 = spread.getSheet(1);
+sheet1.getCell(0,0).value("A1").foreColor("red");

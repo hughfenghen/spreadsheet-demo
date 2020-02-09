@@ -1,0 +1,3 @@
+var test = {name: "John"};
+activeSheet.getCell(0,0).bindingPath( "name");
+activeSheet.setDataSource(new GC.Spread.Sheets.Bindings.CellBindingSource(test));

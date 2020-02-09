@@ -1,0 +1,15 @@
+activeSheet.setRowCount(5);
+activeSheet.setColumnCount(5);
+ $("#button1").click(function(){
+        //Acquiring selection ranges
+        var selectedRanges = activeSheet.getSelections();      
+for(var i = 0; i < selectedRanges.length; i++){
+alert(selectedRanges[i].row);
+alert(selectedRanges[i].rowCount);
+alert(selectedRanges[i].col);
+alert(selectedRanges[i].colCount);
+}
+});  
+
+//Add button control to page
+<input type="button" id="button1" value="button1"/>

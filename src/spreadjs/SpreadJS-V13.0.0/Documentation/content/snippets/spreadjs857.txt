@@ -1,0 +1,5 @@
+activeSheet.bind(GC.Spread.Sheets.Events.EditChange, function (sender,args) {
+                if (args.editingText === "123") {
+                    activeSheet.endEdit(true);
+                }
+            });

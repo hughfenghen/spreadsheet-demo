@@ -1,0 +1,7 @@
+sheet.setValue(0, 0, "value");
+sheet.addRows(0, 2);
+sheet.addColumns(0, 2);
+sheet.setRowHeight(0, 50.0,GC.Spread.Sheets.SheetArea.viewport);
+sheet.setColumnWidth(0, 150.0,GC.Spread.Sheets.SheetArea.viewport);
+sheet.getRange(0, -1, 1, -1, GC.Spread.Sheets.SheetArea.viewport).backColor("Gray");
+sheet.getRange(-1, 0, -1, 1, GC.Spread.Sheets.SheetArea.viewport).backColor ("Brown");

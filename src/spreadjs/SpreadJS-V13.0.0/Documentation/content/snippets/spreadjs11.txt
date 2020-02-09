@@ -1,0 +1,14 @@
+
+            $("#ss").click(function (e) {
+                //Acquire cell index from mouse-clicked point of regular cells which are neither fixed rows/columns nor row/column headers.
+                var offset = $("#ss").offset();
+                var x = e.pageX - offset.left;
+                var y = e.pageY - offset.top;
+                var target = activeSheet.hitTest(x, y);
+
+                if (target &&
+                    (target.rowViewportIndex === 0 || target.rowViewportIndex === 1) &&
+                    (target.colViewportIndex === 0 || target.colViewportIndex === 1)) {
+                    alert("Row index of mouse-clicked cells: " + target.row + "\n" + "Column index of mouse-clicked cells: " + target.col);
+                }
+            });

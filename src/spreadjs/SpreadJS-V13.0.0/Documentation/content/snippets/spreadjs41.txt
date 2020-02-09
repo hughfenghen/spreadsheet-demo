@@ -1,0 +1,1 @@
+activeSheet.getRange(2, 2, 2, 2, GC.Spread.Sheets.SheetArea.viewport).setBorder(new GC.Spread.Sheets.LineBorder("#8A2BE2", GC.Spread.Sheets.LineStyle.medium), {all:true},3);

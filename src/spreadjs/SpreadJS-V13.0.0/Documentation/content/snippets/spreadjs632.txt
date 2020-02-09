@@ -1,0 +1,6 @@
+spread.options.highlightInvalidData = true;
+var dv = GC.Spread.Sheets.DataValidation.createNumberValidator(GC.Spread.Sheets.ConditionalFormatting.ComparisonOperators.between, "5", "20", true);
+dv.showInputMessage(true);
+dv.inputMessage("Value must be between 5 and 20.");
+dv.inputTitle("tip");
+activeSheet.setDataValidator(1, 1, 1, 1, dv, GC.Spread.Sheets.SheetArea.viewport);

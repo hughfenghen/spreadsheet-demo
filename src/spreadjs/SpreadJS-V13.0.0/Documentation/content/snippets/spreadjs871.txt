@@ -1,0 +1,9 @@
+var nCondition = new GC.Spread.Sheets.ConditionalFormatting.Condition(GC.Spread.Sheets.ConditionalFormatting.ConditionType.areaCondition, {expected: 4});
+nCondition.formula("$C$1");
+nCondition.ignoreBlank(true);
+var validator = new GC.Spread.Sheets.DataValidation.DefaultDataValidator(nCondition);
+activeSheet.getCell(1, 2, GC.Spread.Sheets.SheetArea.viewport).validator(validator);
+validator.type(GC.Spread.Sheets.DataValidation.CriteriaType.custom);
+spread.options.highlightInvalidData = true;
+activeSheet.setValue(0, 2, 3);
+activeSheet.setValue(1, 2, 5);

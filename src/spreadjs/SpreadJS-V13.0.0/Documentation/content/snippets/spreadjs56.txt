@@ -1,0 +1,4 @@
+activeSheet.getCell(0, 1).formatter("M");
+activeSheet.setValue(0, 1, new Date(2011, 2, 9));
+var style = activeSheet.getFormatter(0,1,GC.Spread.Sheets.SheetArea.viewport);
+alert(style);

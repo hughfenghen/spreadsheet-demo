@@ -1,0 +1,6 @@
+var type = new GC.Spread.Sheets.Style();
+type.watermark = "User name";
+sheet.setStyle(0, 1, type);
+var type = new GC.Spread.Sheets.Style();
+type.watermark = "Password";
+sheet.setStyle(1, 1, type);

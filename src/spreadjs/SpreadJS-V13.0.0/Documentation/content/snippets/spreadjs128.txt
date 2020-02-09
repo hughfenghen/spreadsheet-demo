@@ -1,0 +1,13 @@
+var style = new GC.Spread.Sheets.Style();
+style.backColor = "red";
+var rule = new GC.Spread.Sheets.ConditionalFormatting.NormalConditionRule();
+rule.ruleType(GC.Spread.Sheets.ConditionalFormatting.RuleType.specificTextRule);
+rule.style(style);
+rule.text("test");
+rule.operator(GC.Spread.Sheets.ConditionalFormatting.TextComparisonOperators.contains);
+rule.ranges([new GC.Spread.Sheets.Range(0, 0, 10, 1)]);
+activeSheet.conditionalFormats.addRule(rule);
+activeSheet.setValue(0, 0, "testing");
+activeSheet.setValue(1, 0, "test");
+activeSheet.setValue(2, 0, "a");
+activeSheet.setValue(3, 0, "t");

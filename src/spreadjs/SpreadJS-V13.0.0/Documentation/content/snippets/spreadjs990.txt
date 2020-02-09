@@ -1,0 +1,6 @@
+activeSheet.getRange(-1,2, -1, 1, GC.Spread.Sheets.SheetArea.viewport).backColor("blue").locked(false);
+activeSheet.options.protectionOptions = {
+    allowSelectLockedCells:false,
+    allowSelectUnlockedCells: true,
+};
+activeSheet.options.isProtected = true;

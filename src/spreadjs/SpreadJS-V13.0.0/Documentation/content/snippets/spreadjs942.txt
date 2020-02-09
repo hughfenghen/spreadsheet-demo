@@ -1,0 +1,3 @@
+activeSheet.currentTheme("Flow");
+activeSheet.resumePaint();
+activeSheet.repaint();

@@ -1,0 +1,6 @@
+activeSheet.tables.add("Table1", 0, 0, 3, 3, GC.Spread.Sheets.Tables.TableTheme.dark1);
+activeSheet.tables.add("Table2", 4, 0, 3, 3, GC.Spread.Sheets.Tables.TableTheme.medium1);
+var tables = activeSheet.tables.all();
+for (var i = 0; i < tables.length; i++) {
+    alert(tables[i].name());
+}

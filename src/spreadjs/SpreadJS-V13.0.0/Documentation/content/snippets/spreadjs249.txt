@@ -1,0 +1,5 @@
+sheet.addSpan(0,0,3,3,GC.Spread.Sheets.SheetArea.viewport);
+var spans =sheet.getSpans();
+for(var i=0;i<spans.length;i++) {
+  alert(spans[i].row.toString() + spans[i].col.toString());
+ }

@@ -1,0 +1,1 @@
+activeSheet.setRowVisible(1,false,GC.Spread.Sheets.SheetArea.viewport);

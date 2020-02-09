@@ -1,0 +1,35 @@
+// Use IE to see the console log text
+
+activeSheet.bind(GC.Spread.Sheets.Events.CellClick, function (sender, args) {
+    if(args.sheetArea === GC.Spread.Sheets.SheetArea.colHeader){
+        console.log("The column header was clicked.");
+    }
+
+    if(args.sheetArea === GC.Spread.Sheets.SheetArea.rowHeader){
+        console.log("The row header was clicked.");
+    }
+
+    if(args.sheetArea === GC.Spread.Sheets.SheetArea.corner){
+        console.log("The corner header was clicked.");
+    }
+
+    console.log("Clicked column index: " + args.col);
+    console.log("Clicked row index: " + args.row);
+});
+
+activeSheet.bind(GC.Spread.Sheets.Events.CellDoubleClick, function (sender, args) {
+    if(args.sheetArea === GC.Spread.Sheets.SheetArea.colHeader){
+        console.log("The column header was double clicked.");
+    }
+
+    if(args.sheetArea === GC.Spread.Sheets.SheetArea.rowHeader){
+        console.log("The row header was double clicked.");
+    }
+
+    if(args.sheetArea === GC.Spread.Sheets.SheetArea.corner){
+        console.log("The corner header was double clicked.");
+    }
+
+    console.log("Double clicked column index: " + args.col);
+    console.log("Double clicked row index: " + args.row);
+});

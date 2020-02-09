@@ -1,0 +1,10 @@
+// Add Custom function
+// Type =myfunc(1)
+// in a cell to see the result
+function myfunc() {}
+myfunc.prototype = new GC.Spread.CalcEngine.Functions.Function("myfunc", 0, 0, {name: "myfunc",description: "This is my first function"});
+myfunc.prototype.evaluate = function (args) {
+    return 100;
+}
+spread.addCustomFunction(new myfunc());
+//spread.removeCustomFunction("myfunc");

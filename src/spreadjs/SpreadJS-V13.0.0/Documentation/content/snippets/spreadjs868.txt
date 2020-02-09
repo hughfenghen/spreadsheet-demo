@@ -1,0 +1,11 @@
+activeSheet.bind(GC.Spread.Sheets.Events.CellChanged, function (sender, args) {
+    if (args.propertyName === "value") {
+        alert(activeSheet.getValue(args.row, args.col));
+    }
+});
+activeSheet.setValue(0, 0, "111");
+spread.unbind(GC.Spread.Sheets.Events.CellChanged);
+//spread.unbindAll(); //cancel monitoring of all events.
+activeSheet.setValue(1, 0, "222");
+activeSheet.setValue(2, 0, "333");
+activeSheet.setValue(3, 0, "444");

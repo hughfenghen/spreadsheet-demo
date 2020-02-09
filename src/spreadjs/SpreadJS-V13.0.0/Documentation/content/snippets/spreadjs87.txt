@@ -1,0 +1,4 @@
+spread.options.showDragDropTip = true;
+spread.options.showDragFillTip = true;
+spread.options.showScrollTip = GC.Spread.Sheets.ShowScrollTip.both;
+spread.options.showResizeTip = GC.Spread.Sheets.ShowResizeTip.both;

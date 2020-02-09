@@ -1,0 +1,10 @@
+var cellImage = document.getElementById("circle").src;
+var rowImage = "./css/images/quarter1.png";
+var colImage = document.getElementById("logo").src;
+sheet.getCell(3, 3).backgroundImage(cellImage);
+sheet.getCell(1, -1).backgroundImage(rowImage);
+sheet.getCell(-1, 1).backgroundImage(colImage);
+sheet.getCell(1, -1).backgroundImageLayout(GC.Spread.Sheets.ImageLayout.center);
+
+<img src="./css/images/box3.png" id="logo"/>
+<img src="./css/images/greencircle.png" id="circle"/>

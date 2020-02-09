@@ -1,0 +1,11 @@
+$("#button1").click(function () {
+                if(spread.undoManager().canUndo()){
+                    spread.undoManager().undo();
+                }
+            });
+
+            $("#button2").click(function () {
+                if(spread.undoManager().canRedo()){
+                    spread.undoManager().redo();
+                }
+            });

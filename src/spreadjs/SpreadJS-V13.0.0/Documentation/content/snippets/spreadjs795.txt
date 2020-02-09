@@ -1,0 +1,12 @@
+var style = new GC.Spread.Sheets.Style();
+style.backColor = "red";
+
+var d = new Date();
+activeSheet.setValue(0, 0, d);
+activeSheet.setValue(1, 0, new Date(d.setDate(d.getDate()+1)));
+activeSheet.setValue(2, 0, new Date(d.setDate(d.getDate()+5)));
+activeSheet.setValue(3, 0,new Date(d.setDate(d.getDate()+6)));
+activeSheet.setValue(4, 0,new Date(d.setDate(d.getDate()+7)));
+activeSheet.setValue(5, 0, new Date(d.setDate(d.getDate()+8)));
+
+activeSheet.conditionalFormats.addDateOccurringRule(GC.Spread.Sheets.ConditionalFormatting.DateOccurringType.nextWeek, style, [new GC.Spread.Sheets.Range(0,0,10,1)]);

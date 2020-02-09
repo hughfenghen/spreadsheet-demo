@@ -1,0 +1,4 @@
+activeSheet.getCell(0,0).value("A1");
+activeSheet.getCell(0,4).value("Test")
+activeSheet.deleteColumns(0,2);
+activeSheet.deleteRows(3,1);

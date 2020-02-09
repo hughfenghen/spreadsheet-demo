@@ -1,0 +1,2 @@
+activeSheet.getCell(-1, 0).formatter("0.000%");
+activeSheet.getCell(0,0).value("2");

@@ -1,0 +1,6 @@
+var style = new GC.Spread.Sheets.Style();
+style.font = "8pt Arial";
+style.hAlign = GC.Spread.Sheets.HorizontalAlign.center;
+style.vAlign = GC.Spread.Sheets.VerticalAlign.center;
+activeSheet.setStyle(1,1,style,GC.Spread.Sheets.SheetArea.viewport);
+activeSheet.getCell(1,1).value("B2");

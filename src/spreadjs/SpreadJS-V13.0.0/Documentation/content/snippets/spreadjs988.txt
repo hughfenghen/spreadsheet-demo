@@ -1,0 +1,35 @@
+var asum = function () {}
+//Define a class "ASUM" that extends AsyncFunction
+asum.prototype = new GC.Spread.CalcEngine.Functions.AsyncFunction("ASUM", 1, 255);
+//Set default value to "Loading..."
+asum.prototype.defaultValue = function () { return "Loading..."; };
+//Override the evaluateAsync function
+asum.prototype.evaluateAsync = function (context) {
+var args = arguments;
+//Use a timeout to simulate the server side evaluate or use an ajax post
+    setTimeout(function () {
+//Evaluation logic
+        var result = 0;
+        for (var i = 0; i < args.length; i++) {
+            result += args[i];
+        }
+        result *= 2;
+//Set the async evaluate result to CalcEngine
+        context.setAsyncResult(result);
+    }, 2000);
+}
+//Or use Ajax post
+/$.ajax({
+    //url: '@Url.Action("ASUM", "Home")',
+    //type: "POST",
+    //data: JSON.stringify(args),
+    //contentType: "application/json,charset=UTF-8",
+    //success: function (data) {
+    //context.SetAsyncResult(data.result);
+    //}
+//});
+//Add the ASUM function to spread and set the formula
+activeSheet.addCustomFunction(new asum());
+activeSheet.setValue(0, 0, 5);
+activeSheet.setValue(0, 1, 15);
+activeSheet.setFormula(1, 1, "ASUM(A1,B1)");

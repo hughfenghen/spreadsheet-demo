@@ -1,0 +1,2 @@
+spread.commandManager().setShortcutKey('moveToNextCellThenControl', GC.Spread.Commands.Key.tab, false, false, false, false); // Tab key
+spread.commandManager().setShortcutKey('moveToPreviousCellThenControl', GC.Spread.Commands.Key.tab, false, true, false, false); // Shift key and Tab key

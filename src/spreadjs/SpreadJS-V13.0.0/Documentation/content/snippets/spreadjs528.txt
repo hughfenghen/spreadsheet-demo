@@ -1,0 +1,15 @@
+//Add data
+for (var col = 1; col < 6; col++) {
+    for (var row = 2; row < 11; row++) {
+        activeSheet.setValue(row, col, row + col);
+    }
+}
+
+$("#button1").click(function () {
+spread.options.allowUndo = true;
+var srange = new GC.Spread.Sheets.Range(10, 5, 1, 1);
+var frange = new GC.Spread.Sheets.Range(11, 5, 5, 1);
+spread.commandManager().execute({cmd: "fill", sheetName: "Sheet1", startRange: srange, fillRange: frange, autoFillType: GC.Spread.Sheets.Fill.AutoFillType.fillSeries, fillDirection: GC.Spread.Sheets.Fill.FillDirection.down });
+});
+
+<input type="button" id="button1" value="button1"/>

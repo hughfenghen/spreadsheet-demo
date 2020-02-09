@@ -1,0 +1,4 @@
+activeSheet.frozenTrailingRowCount(1);
+activeSheet.frozenTrailingColumnCount(1);
+activeSheet.frozenRowCount(1);
+activeSheet.frozenColumnCount(1);

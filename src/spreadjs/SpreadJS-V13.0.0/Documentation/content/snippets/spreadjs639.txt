@@ -1,0 +1,6 @@
+spread.touchToolStrip.add(new GC.Spread.Sheets.Touch.TouchToolStripItem("C", "Delete", "tsoutline.png", function(){ }))
+spread.touchToolStrip.getItem("C").font("15px Arial").foreColor("red");
+spread.touchToolStrip.imageAreaHeight(30);
+spread.touchToolStrip.itemHeight(80);
+spread.touchToolStrip.itemWidth(50);
+spread.touchToolStrip.add(new GC.Spread.Sheets.Touch.TouchToolStripSeparator());

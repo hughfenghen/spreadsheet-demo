@@ -1,0 +1,13 @@
+sheet.setValue(0,0, 1,3);
+sheet.setValue(1,0, 50,3);
+sheet.setValue(2,0, 100,3);
+sheet.setValue(3,0, 2,3);
+sheet.setValue(4,0, 60,3);
+sheet.setValue(5,0, 90,3);
+sheet.setValue(6,0, 3,3);
+sheet.setValue(7,0, 40,3);
+sheet.setValue(8,0, 70,3);
+sheet.setValue(9,0, 5,3);
+sheet.setValue(10,0, 35,3);
+sheet.setSelection(0,0,11,1);
+sheet.conditionalFormats.add3ScaleRule(1, 10, "red", 0, 50, "blue",2, 100, "yellow", sheet.getSelections());

@@ -1,0 +1,5 @@
+var cellType2 = new GC.Spread.Sheets.CellTypes.ComboBox();
+cellType2.items(["a", "b", "c", "d", "e", "f", "g", "h"]);
+cellType2.maxDropDownItems(3);
+activeSheet.getCell(2, 2).cellType(cellType2);
+});

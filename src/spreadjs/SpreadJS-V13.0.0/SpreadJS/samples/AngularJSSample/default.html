@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html ng-app="waxApp">
+<head>
+    <meta charset="utf-8">
+
+    <title>AngularJS Directive Gallery</title>
+    <meta name="spreadjs culture" content="zh-cn" />
+    <!-- Bootstrap CSS -->
+    <link href="styles/bootstrap/3.2.0/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="styles/bootstrap/3.2.0/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- jQuery -->
+    <script src="scripts/jquery-2.1.1.min.js" type="text/javascript"></script>
+
+    <!-- AngularJS (after jQuery) -->
+    <script src="scripts/angularjs/1.2.22/angular.js" type="text/javascript"></script>
+    <script src="scripts/angularjs/1.2.22/angular-route.js" type="text/javascript"></script>
+
+    <!-- SpreadJS Reference -->
+    <script type="text/javascript" src="scripts/spreadjs/gc.spread.sheets.all.13.0.0.min.js"></script>
+    <script type="text/javascript" src="scripts/spreadjs/gc.spread.sheets.angularjs.13.0.0.min.js"></script>
+    <script type="text/javascript" src="scripts/spreadjs/gc.spread.sheets.resources.zh.13.0.0.min.js"></script>
+	<script type="text/javascript" src="scripts/license.js"></script>
+
+    <!-- app scripts and styles -->
+    <script src="scripts/waxApp.js" type="text/javascript"></script>
+    <script src="scripts/waxCtrl.js" type="text/javascript"></script>
+    <link href="styles/app.css" rel="stylesheet" type="text/css" />
+    <link href="styles/fonts.css" rel="stylesheet" type="text/css">
+
+    <!-- SpreadJS CSS -->
+    <link href="styles/spreadjs/gc.spread.sheets.excel2016colorful.13.0.0.css" rel="stylesheet" type="text/css" />   
+</head>
+<body ng-controller="waxCtrl">
+    <div class="mainContainer">
+        <div class="contentContainer">
+            <h1 class="content">
+                <img class="logo" src="img/logo.png" alt="logo" />
+                AngularJS Directive Gallery
+            </h1>
+        </div>
+        <div class="contentContainer">
+            <div class="leftContainer content">
+                <h4>SpreadJS</h4>
+                <ul>
+                    <li><a href="#/spreadjs/databinding">Data Binding</a></li>
+                    <li><a href="#/spreadjs/layout">Layout</a></li>
+                    <li><a href="#/spreadjs/style">Style</a></li>
+                    <li><a href="#/spreadjs/celltype">Cell Type</a></li>
+                    <li><a href="#/spreadjs/datavalidation">Data Validation</a></li>
+                </ul>
+            </div>
+            <div class="rightContainer content">
+                <div ng-view></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

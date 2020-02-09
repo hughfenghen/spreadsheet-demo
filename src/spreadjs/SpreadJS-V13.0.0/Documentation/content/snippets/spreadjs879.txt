@@ -1,0 +1,4 @@
+activeSheet.bind(GC.Spread.Sheets.Events.SelectionChanging, function (e, info) {    
+//Use IE to see console
+        console.log("Name (" + info.sheetName + ")");
+});

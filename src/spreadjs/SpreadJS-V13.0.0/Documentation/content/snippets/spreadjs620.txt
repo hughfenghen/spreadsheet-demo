@@ -1,0 +1,4 @@
+spread.touchToolStrip.add(new GC.Spread.Sheets.Touch.TouchToolStripItem("Cut", "Delete", "cut.png", function(){ }))
+spread.touchToolStrip.getItem("Cut").font("15px Arial").foreColor("red");
+spread.touchToolStrip.separatorHeight(33);
+spread.touchToolStrip.add(new GC.Spread.Sheets.Touch.TouchToolStripSeparator());

@@ -1,0 +1,2 @@
+activeSheet.getCell(0,0).value("1");
+activeSheet.copyTo(0,0,1,1,2,2,GC.Spread.Sheets.CopyToOptions.value);

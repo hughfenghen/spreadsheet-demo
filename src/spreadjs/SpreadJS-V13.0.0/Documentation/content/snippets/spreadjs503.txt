@@ -1,0 +1,9 @@
+//Add data
+for (var col = 1; col < 6; col++) {
+    for (var row = 2; row < 11; row++) {
+        activeSheet.setValue(row, col, row + col);
+    }
+}
+
+var sTable = activeSheet.tables.add("table1", 1, 1, 10, 5, GC.Spread.Sheets.Tables.TableThemes.medium2);
+sTable.showHeader(true);

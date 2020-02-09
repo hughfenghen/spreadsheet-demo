@@ -1,0 +1,7 @@
+activeSheet.setValue(0, 0, 'abc');
+activeSheet.setValue(1, 0, 'ac');
+activeSheet.setValue(2, 0, 'a*');
+ 
+activeSheet.getCell(0, 1).formula('COUNTIF(A1:A3,"a*")');  //start with a
+activeSheet.getCell(1, 1).formula('COUNTIF(A1:A3,"a?")');  //"a" and only one other character
+activeSheet.getCell(2, 1).formula('COUNTIF(A1:A3,"a~*")'); // should be "a*"

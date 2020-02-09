@@ -1,0 +1,16 @@
+activeSheet.getRange(0, -1, 1, -1).backColor("Red");
+activeSheet.setValue(0, 0, "value");
+activeSheet.addRows(0, 1);
+
+$("#button1").click(function () {
+
+             var insertRows = activeSheet.getInsertRows();
+            var len = insertRows.length;
+            for(var i = 0; i < len; i++){
+                var r = insertRows[i];
+             alert("rowIndex:" + r.row);       
+}        
+   });
+
+// Add button control to page
+<input type="button" id="button1" value="button1"/>

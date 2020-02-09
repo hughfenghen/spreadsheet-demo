@@ -1,0 +1,8 @@
+var cellType1 = new GC.Spread.Sheets.CellTypes.CheckBox();
+cellType1.caption("caption");
+cellType1.textTrue("true");
+cellType1.textFalse("false");
+cellType1.textIndeterminate("indeterminate");
+cellType1.textAlign(GC.Spread.Sheets.CellTypes.CheckBoxTextAlign.bottom);
+cellType1.isThreeState(true);
+activeSheet.getCell(1, 1).cellType(cellType1);

@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%ProjectTitle%% - %%ItemTitle%%</title>" --><title>SpreadJS Documentation - Formula Auditing</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ProjectTitle%% - %%ItemTitleNoQuotes%%""/>" --><meta name="Title" content="SpreadJS Documentation - Formula Auditing"/><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n176","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="light" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="SpreadJS provides extensive support for formula auditing by allowing users to display relationships between formulas and cells. This can be done by tracing the precedent and dependent cells in the worksheet." /><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-topics/topics.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-topics/topics.mshv1.css"" data-responsive-mobile=""template/packages/core-topics/topics.mobile.css"" data-responsive-tablet=""template/packages/core-topics/topics.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="script"--><script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="script"--><script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="e44a746d-02a4-48c6-830e-9dcde3e9cd3f"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="20ec19b6-d22d-41ba-a05b-c2910bd90ae6"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocOrdinal" format="<meta name=""Microsoft.Help.TocOrder"" content=""%%TocOrdinal%%""/>" --><meta name="Microsoft.Help.TocOrder" content="7"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/hs-simpletab.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="StylePropertyValues" format="<style>%%StylePropertyValues%%</style>" --><style>.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+    <!--DXMETADATA start type="CustomHeadContent" --><link rel="stylesheet" type="text/css" href="template/packages/core-web/css/SP.css">
+<script type="text/javascript">
+var currentHeader = function() {
+    return "spjs";
+}
+</script>
+<script src="template/packages/core-web/script/topNavigation.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WT462SJ"></script>
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime()
+                , event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WT462SJ');
+    </script>
+<!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->SpreadJS Documentation<!--DXMETADATA end--></div>
+            <div class="i-search-container">
+                <!--DXMETADATA start type="outputfileextension" format="<form action=""websearch%%outputfileextension%%"">" --><form action="websearch.html"><!--DXMETADATA end-->
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                <!--DXMETADATA start type="Literal" value="</form>" --></form><!--DXMETADATA end-->
+            </div>
+            <!--DXMETADATA start type="outputfileextension" format="<a id=""i-index-button"" href=""webindex%%outputfileextension%%""></a>" --><a id="i-index-button" href="webindex.html"></a><!--DXMETADATA end-->
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container">
+<a href="overview.html">SpreadJS Documentation</a>
+ / <a href="devguide.html">Developer's Guide</a>
+ / <a href="features.html">Features</a>
+ / <a href="interface.html">Manage User Interface</a>
+ / <a href="formulas.html">Formulas</a>
+ / Formula Auditing</div><!--DXMETADATA end --></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="ItemTitle" -->Formula Auditing<!--DXMETADATA end--></div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+            </div>
+            <!--DXMETADATA start type="TopicSection" name="BodyText"--><p>SpreadJS provides extensive support for formula auditing by allowing users to display relationships between formulas and cells. This can be done by tracing the precedent and dependent cells in the worksheet.</p>
+
+<h2 id="a">Benefits of Formula Auditing</h2>
+
+<p>Formula Auditing helps users in identifying calculation bottlenecks, debugging formulas and validating the accuracy of results&nbsp;while working with spreadsheets.&nbsp;Further, this feature helps users to:</p>
+
+<ul>
+    <li><strong>Maintain Regulatory Compliance</strong> - While working with financial, accounting and other complex applications, the formula auditing feature is useful for maintaining regulatory compliances.&nbsp;&nbsp;&nbsp;<br />
+    <br /></li>
+
+    <li><strong>Check Errors</strong> -&nbsp;Formula Auditing assists users in identifying the source of an error, which is otherwise an extremely difficult task especially if the formulas in the worksheet use precedent or dependent cells.<br />
+    <br /></li>
+
+    <li><strong>Locate Circular References</strong> - With formula auditing, users can quickly find all the circular references by tracing precedents and dependents within the worksheet to save hours of time.<br />
+    <br /></li>
+
+    <li><strong>Detect Inconsistency</strong> - In a large worksheet, users can speculate columns for any inconsistency in the formulas without having to manually review every formula while validating data.<br /></li>
+</ul>
+
+<h2 id="b">Trace Precedents and Dependents</h2>
+
+<p>Precedent cells are the cells that are referred to by a formula lying in another cell.&nbsp;Dependent cells are the cells that contain formulas and refer to other cells.</p>
+
+<p>For example, if cell D10 contains the formula "=B5", then the cell B5 will be considered as a precedent to cell D10 and&nbsp;the cell D10 will be considered as a dependent of cell B5.</p>
+
+<p>While auditing formulas in worksheets, you can trace precedents using the <strong>getPrecedents()</strong> method&nbsp;and track dependents using the <strong>getDependents()</strong> method&nbsp;to visualize and display cells related to the selected formula cell.</p>
+
+<h2 id="c">Usage Scenario</h2>
+
+<p>For instance - Let's say you're working on a finance or banking application where the monthly transactions (credits &amp; debits) are analyzed using formulas in spreadsheets and a monthly report is generated for each customer. In this scenario, a single evaluation error can directly result in losses and hence, it becomes a pre-requisite to audit formulas before sharing the monthly accounting reports with the customers.&nbsp;&nbsp;</p>
+
+<p>The following image illustrates a small financial application where the balance amount is calculated for every transaction using formulas and the precedent cells and dependent cells are highlighted upon clicking any cell in the last column.</p>
+
+<p><img style="MAX-WIDTH: 100%; HEIGHT: auto" border="0" alt="" src="images/spreadjsv13images/formula-tracing-gif.gif" /></p>
+
+<h2 id="d">Using Code</h2>
+
+<p>The following example&nbsp;code highlights the precedent and dependent cells in the worksheet.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <p>&lt;script type="text/javascript"&gt;<br />
+                    var oldPrecedentCells, oldDependentCells;<br />
+                    $(document).ready(function () {</p>
+
+                    <p>// Initializing Spread<br />
+                    var spread = new GC.Spread.Sheets.Workbook($("#sampleDiv")[0], { autoFitType: GC.Spread.Sheets.AutoFitType.cellWithHeader });</p>
+
+                    <p>// Set datasource for the sheet<br />
+                    var jsonArray = [<br />
+                    {<br />
+                    &nbsp; " DATE ": " 3-Oct-17 ",<br />
+                    &nbsp; " TRANSACTION DETAILS ": " INDO GIBL Indiaforensic STL28091 ",<br />
+                    &nbsp; " WITHDRAWAL AMOUNT ": 12106.00,<br />
+                    &nbsp; " DEPOSIT AMOUNT ": 1000000.00,<br />
+                    &nbsp; " BALANCE AMOUNT ": ""<br />
+                    },<br />
+                    {<br />
+                    &nbsp; " DATE ": " 3-Oct-17 ",<br />
+                    &nbsp; " TRANSACTION DETAILS ": " INDO GIBL Indiaforensic STL29091 ",<br />
+                    &nbsp; " WITHDRAWAL AMOUNT ": 12611.00,<br />
+                    &nbsp; " DEPOSIT AMOUNT ": 1000000.0,<br />
+                    &nbsp; " BALANCE AMOUNT ": ""<br />
+                    },<br />
+                    {<br />
+                    &nbsp; " DATE ": " 5-Oct-17 ",<br />
+                    &nbsp; " TRANSACTION DETAILS ": " INDO GIBL Indiaforensic STL04101 ",<br />
+                    &nbsp; " WITHDRAWAL AMOUNT ": 61400.00,<br />
+                    &nbsp; " DEPOSIT AMOUNT ": null,<br />
+                    &nbsp; " BALANCE AMOUNT ": ""<br />
+                    },<br />
+                    {<br />
+                    &nbsp; " DATE ": " 16-Oct-17 ",<br />
+                    &nbsp; " TRANSACTION DETAILS ": " FDRL/INTERNAL FUND TRANSFE ",<br />
+                    &nbsp; " WITHDRAWAL AMOUNT ": null,<br />
+                    &nbsp; " DEPOSIT AMOUNT ": 500000.00,<br />
+                    &nbsp; " BALANCE AMOUNT ": "",<br />
+                    },<br />
+                    {<br />
+                    &nbsp; " DATE ": " 17-Oct-17 ",<br />
+                    &nbsp; " TRANSACTION DETAILS ": " INDO GIBL Indiaforensic STL06101 ",<br />
+                    &nbsp; " WITHDRAWAL AMOUNT ": 6000.00,<br />
+                    &nbsp; " DEPOSIT AMOUNT ": null,<br />
+                    &nbsp; " BALANCE AMOUNT ": "",<br />
+                    },<br />
+                    {<br />
+                    &nbsp; " DATE ": " 17-Oct-17 ",<br />
+                    &nbsp; " TRANSACTION DETAILS ": " INDO GIBL Indiaforensic STL07101 ",<br />
+                    &nbsp; " WITHDRAWAL AMOUNT ": 97950.00,<br />
+                    &nbsp; " DEPOSIT AMOUNT ": null,<br />
+                    &nbsp; " BALANCE AMOUNT ": ""<br />
+                    },<br />
+                    {<br />
+                    &nbsp; " DATE ": " 18-Oct-17 ",<br />
+                    &nbsp; " TRANSACTION DETAILS ": " INDO GIBL Indiaforensic STL17101 ",<br />
+                    &nbsp; " WITHDRAWAL AMOUNT ": 206501.00,<br />
+                    &nbsp; " DEPOSIT AMOUNT ": null,<br />
+                    &nbsp; " BALANCE AMOUNT ": ""<br />
+                    },<br />
+                    {<br />
+                    &nbsp; " DATE ": " 21-Oct-17 ",<br />
+                    &nbsp; " TRANSACTION DETAILS ": " FDRL/INTERNAL FUND TRANSFE ",<br />
+                    &nbsp; " WITHDRAWAL AMOUNT ": null,<br />
+                    &nbsp; " DEPOSIT AMOUNT ": 500000.00,<br />
+                    &nbsp; " BALANCE AMOUNT ": ""<br />
+                    },<br />
+                    {<br />
+                    &nbsp; " DATE ": " 23-Oct-17 ",<br />
+                    &nbsp; " TRANSACTION DETAILS ": " INDO GIBL Indiaforensic STL21101 ",<br />
+                    &nbsp; " WITHDRAWAL AMOUNT ": 39000.00,<br />
+                    &nbsp; " DEPOSIT AMOUNT ": null,<br />
+                    &nbsp; " BALANCE AMOUNT ": ""<br />
+                    },<br />
+                    {<br />
+                    &nbsp; " DATE ": " 26-Oct-17 ",<br />
+                    &nbsp; " TRANSACTION DETAILS ": " INDO GIBL Indiaforensic STL25101 ",<br />
+                    &nbsp; " WITHDRAWAL AMOUNT ": 170125.00,<br />
+                    &nbsp; " DEPOSIT AMOUNT ": null,<br />
+                    &nbsp; " BALANCE AMOUNT ": ""<br />
+                    },<br />
+                    {<br />
+                    &nbsp; " DATE ": " 27-Oct-17 ",<br />
+                    &nbsp; " TRANSACTION DETAILS ": "INDO GIBL Indiaforensic STL26101",<br />
+                    &nbsp; " WITHDRAWAL AMOUNT ": 208000.00,<br />
+                    &nbsp; " DEPOSIT AMOUNT ": null,<br />
+                    &nbsp; " BALANCE AMOUNT ": ""<br />
+                    },<br />
+                    {<br />
+                    &nbsp; " DATE ": " 30-Oct-17 ",<br />
+                    &nbsp; " TRANSACTION DETAILS ": " FDRL/INTERNAL FUND TRANSFE ",<br />
+                    &nbsp; " WITHDRAWAL AMOUNT ": null,<br />
+                    &nbsp; " DEPOSIT AMOUNT ": 500000.00,<br />
+                    &nbsp; " BALANCE AMOUNT ": ""<br />
+                    }<br />
+                    ];<br />
+                    &nbsp;&nbsp; var activeSheet = spread.getActiveSheet();<br />
+                    &nbsp;&nbsp; activeSheet.setDataSource(jsonArray);</p>
+
+                    <p>&nbsp;&nbsp; // Configure the sheet settings<br />
+                    &nbsp;&nbsp; activeSheet.getRange(0, 2, 12, 3).formatter('* #.00');<br />
+                    &nbsp;&nbsp; for (var c = 0; c &lt; activeSheet.getColumnCount(); c++)<br />
+                    {<br />
+                    &nbsp;&nbsp; activeSheet.autoFitColumn(c);<br />
+                    }</p>
+
+                    <p>&nbsp;&nbsp; // Set cell formulas<br />
+                    &nbsp;&nbsp; activeSheet.setFormula(0, 4, "D2");<br />
+                    &nbsp;&nbsp; for (var r = 1; r &lt; activeSheet.getRowCount(); r++) {<br />
+                    &nbsp;&nbsp; activeSheet.setFormula(r, 4, "E" + r.toString() + "+ D" + (r + 1).toString() + "- C" + (r + 1).toString());<br />
+                    }</p>
+
+                    <p>&nbsp;&nbsp; // Trace precedents and dependents for the active cell<br />
+                    &nbsp;&nbsp; activeSheet.bind(GC.Spread.Sheets.Events.SelectionChanging, function (e, info)<br />
+                    {<br />
+                    &nbsp;&nbsp; spread.suspendPaint();<br />
+                    &nbsp;&nbsp; var newRow = info.newSelections[0].row;<br />
+                    &nbsp;&nbsp; var newCol = info.newSelections[0].col;<br />
+                    &nbsp;&nbsp; ColorPrecedents(activeSheet, newRow, newCol);<br />
+                    &nbsp;&nbsp; ColorDependents(activeSheet, newRow, newCol);<br />
+                    &nbsp;&nbsp; spread.resumePaint();<br />
+                    });<br />
+                    });</p>
+
+                    <p>&nbsp; // Paint precedent cells in yellow color<br />
+                    &nbsp; function ColorPrecedents(sheet, row, col)<br />
+                    {<br />
+                    &nbsp; if (oldPrecedentCells)<br />
+                    {<br />
+                    &nbsp; oldPrecedentCells.forEach(function (node)<br />
+                    {<br />
+                    &nbsp; sheet.getCell(node.row, node.col).backColor(undefined);<br />
+                    });<br />
+                    }<br />
+                    &nbsp; var precedentCells = sheet.getPrecedents(row, col);<br />
+                    &nbsp; if (precedentCells)<br />
+                    {<br />
+                    &nbsp; setTimeout(function ()<br />
+                    {<br />
+                    &nbsp; oldPrecedentCells = precedentCells;<br />
+                    &nbsp; precedentCells.forEach(function (node) {<br />
+                    &nbsp; sheet.getCell(node.row, node.col).backColor("yellow");});}, 10);<br />
+                    }<br />
+                    }</p>
+
+                    <p>&nbsp; // Paint dependent cells in green color<br />
+                    &nbsp; function ColorDependents(sheet, row, col)<br />
+                    {<br />
+                    &nbsp; if (oldDependentCells)<br />
+                    {<br />
+                    &nbsp; oldDependentCells.forEach(function (node) {<br />
+                    &nbsp; sheet.getCell(node.row, node.col).backColor(undefined);<br />
+                    });<br />
+                    }<br />
+                    &nbsp; var dependentCells = sheet.getDependents(row, col);<br />
+                    &nbsp; oldDependentCells = dependentCells;<br />
+                    &nbsp; if (dependentCells) {<br />
+                    &nbsp; dependentCells.forEach(function (node) {<br />
+                    &nbsp; sheet.getCell(node.row, node.col).backColor("green");<br />
+                    });<br />
+                    }<br />
+                    }<br />
+                    &lt;/script&gt;&nbsp;</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div><!--DXMETADATA end-->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORISED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""%%phrase:name=SeeAlso%%%%designlist:tagidentifier=seealso,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><!--DXMETADATA end-->
+            
+            <div id="i-footer-content" class="i-footer-content">
+                <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p><p>Copyright © 2019 GrapeCity, Inc. All rights reserved.</p>
+<p><a href="https://www.grapecity.com/en/forums/winforms-edition" target="_blank">Product Support Forum</a> | <a href="javascript:window.print()">Print this page</a></p>
+<ul class="social">
+<li><a href="https://www.facebook.com/GrapeCityUS/" target="_blank" class="facebook">&nbsp;</a></li>
+<li><a href="https://twitter.com/GrapeCityUS" target="_blank" class="twitter">&nbsp;</a></li>
+<li><a href="https://www.linkedin.com/company/grapecity" target="_blank" class="linkedin">&nbsp;</a></li>
+</ul>
+</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end-->
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

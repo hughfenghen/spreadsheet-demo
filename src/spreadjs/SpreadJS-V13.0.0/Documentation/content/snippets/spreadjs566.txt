@@ -1,0 +1,17 @@
+var cellrange = new GC.Spread.Sheets.Range();
+cellrange.col = 0;
+cellrange.row = 1;
+cellrange.colCount = 1;
+cellrange.rowCount = 8;
+
+activeSheet.setValue(1, 0, 1);
+activeSheet.setValue(2, 0, -2);
+activeSheet.setValue(3, 0, -1);
+activeSheet.setValue(4, 0, 6);
+activeSheet.setValue(5, 0, 4);
+activeSheet.setValue(6, 0, -4);
+activeSheet.setValue(7, 0, 3);
+activeSheet.setValue(8, 0, 8);
+var setting = new GC.Spread.Sheets.Sparklines.SparklineSetting();
+setting.options.showMarkers = true;
+activeSheet.setSparkline(13, 0, cellrange, GC.Spread.Sheets.Sparklines.DataOrientation.vertical, GC.Spread.Sheets.Sparklines.SparklineType.line, setting);

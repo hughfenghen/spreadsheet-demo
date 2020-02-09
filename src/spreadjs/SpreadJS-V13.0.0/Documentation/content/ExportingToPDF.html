@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%ProjectTitle%% - %%ItemTitle%%</title>" --><title>SpreadJS Documentation - Export to PDF</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ProjectTitle%% - %%ItemTitleNoQuotes%%""/>" --><meta name="Title" content="SpreadJS Documentation - Export to PDF"/><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n309","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="light" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="SpreadJS supports PDF file export i.e. exporting a workbook (excel files with .xlsx extension) to PDF format (files with .pdf extension) via the savePDF method of the Workbook class." /><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-topics/topics.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-topics/topics.mshv1.css"" data-responsive-mobile=""template/packages/core-topics/topics.mobile.css"" data-responsive-tablet=""template/packages/core-topics/topics.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="script"--><script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="script"--><script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="8b2e70b5-d17e-46a5-9082-e3875390926f"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="da8d5ee2-66da-499e-ac0f-b91757afe8e7"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocOrdinal" format="<meta name=""Microsoft.Help.TocOrder"" content=""%%TocOrdinal%%""/>" --><meta name="Microsoft.Help.TocOrder" content="6"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/hs-simpletab.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="StylePropertyValues" format="<style>%%StylePropertyValues%%</style>" --><style>.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+    <!--DXMETADATA start type="CustomHeadContent" --><link rel="stylesheet" type="text/css" href="template/packages/core-web/css/SP.css">
+<script type="text/javascript">
+var currentHeader = function() {
+    return "spjs";
+}
+</script>
+<script src="template/packages/core-web/script/topNavigation.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WT462SJ"></script>
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime()
+                , event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WT462SJ');
+    </script>
+<!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->SpreadJS Documentation<!--DXMETADATA end--></div>
+            <div class="i-search-container">
+                <!--DXMETADATA start type="outputfileextension" format="<form action=""websearch%%outputfileextension%%"">" --><form action="websearch.html"><!--DXMETADATA end-->
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                <!--DXMETADATA start type="Literal" value="</form>" --></form><!--DXMETADATA end-->
+            </div>
+            <!--DXMETADATA start type="outputfileextension" format="<a id=""i-index-button"" href=""webindex%%outputfileextension%%""></a>" --><a id="i-index-button" href="webindex.html"></a><!--DXMETADATA end-->
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container">
+<a href="overview.html">SpreadJS Documentation</a>
+ / <a href="devguide.html">Developer's Guide</a>
+ / <a href="features.html">Features</a>
+ / <a href="managedata.html">Manage Data</a>
+ / Export to PDF</div><!--DXMETADATA end --></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="ItemTitle" -->Export to PDF<!--DXMETADATA end--></div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+            </div>
+            <!--DXMETADATA start type="TopicSection" name="BodyText"--><p>SpreadJS supports PDF file export i.e. exporting a workbook (excel files with .xlsx extension) to PDF format (files with .pdf extension) via the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Workbook~savePDF.html" data-auto-update-caption="true">savePDF</a>&nbsp;method of the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Workbook.html" data-auto-update-caption="true">Workbook class</a>.</p>
+
+<p>The&nbsp;following table lists the parameters of the <a href="SpreadJS~GC.Spread.Sheets.Workbook~savePDF.html" data-auto-update-caption="true">savePDF</a>&nbsp;method:</p>
+
+<table>
+    <tbody>
+        <tr>
+            <th>Parameter</th>
+
+            <th>Description</th>
+        </tr>
+
+        <tr>
+            <td>successCallback</td>
+
+            <td>Call this function&nbsp;after export to pdf operation is successful.</td>
+        </tr>
+
+        <tr>
+            <td>errorCallback</td>
+
+            <td>Call this function&nbsp;when an error occurs.</td>
+        </tr>
+
+        <tr>
+            <td>options</td>
+
+            <td>
+                <p>You can choose from&nbsp;the following options while exporting to a&nbsp;PDF file:</p>
+
+                <ol>
+                    <li>options.creator - You can specify the name of the application (for example : Adobe Framemaker) that created the original document from which it was converted.</li>
+
+                    <li>options.title - You can specify the title of the document</li>
+
+                    <li>options.author - You can specify the name of the person who created that document</li>
+
+                    <li>options.keywords - You can specify the keywords associated with the document</li>
+
+                    <li>options.subject - You can specify the subject of the document.</li>
+                </ol>
+            </td>
+        </tr>
+
+        <tr>
+            <td>sheetIndex</td>
+
+            <td>You can export&nbsp;specific sheets in a workbook to PDF by specifying the sheet index of the sheet you want to export. If this argument is not given, all visible sheets will be exported by default.</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>The Export to PDF operation uses <strong>printInfo</strong> object for page setting and provides support for all the printing features that are available in SpreadJS.</p>
+
+<p>For more information on custom export of PDF files, see&nbsp;<a href="CustomPDFExport.html" data-auto-update-caption="true">Custom PDF Export</a>.</p>
+
+<p>While exporting to a PDF file, you can specify the font you want to embed in your PDF document. Users can&nbsp;embed both standard fonts (listed below)&nbsp;and the custom fonts (via registering a new font) for PDF export.</p>
+
+<p>For more information on how to embed custom fonts while performing the Export to PDF operation, see&nbsp;<a href="UseCustomFontforPDFExport.html" data-auto-update-caption="true">Use Custom Font for PDF Export</a>.</p>
+
+<p>The following table lists the fourteen standard fonts that are supported in a PDF document:</p>
+
+<p>&nbsp;</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td>Courier</td>
+
+            <td>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Courier</td>
+                        </tr>
+
+                        <tr>
+                            <td>Courier-Bold</td>
+                        </tr>
+
+                        <tr>
+                            <td>Courier-Oblique</td>
+                        </tr>
+
+                        <tr>
+                            <td>Courier-BoldOblique</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Times</td>
+
+            <td>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Times-Roman</td>
+                        </tr>
+
+                        <tr>
+                            <td>Times-Bold</td>
+                        </tr>
+
+                        <tr>
+                            <td>Times-Italic</td>
+                        </tr>
+
+                        <tr>
+                            <td>Times-BoldItalic</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <p>Helvetica</p>
+            </td>
+
+            <td>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Helvetica</td>
+                        </tr>
+
+                        <tr>
+                            <td>Helvetica-Bold</td>
+                        </tr>
+
+                        <tr>
+                            <td>Helvetica-Oblique</td>
+                        </tr>
+
+                        <tr>
+                            <td>Helvetica-BoldOblique</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Symbol</td>
+
+            <td>Symbol</td>
+        </tr>
+
+        <tr>
+            <td>ZapfDingbats</td>
+
+            <td>ZapfDingbats</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h4>Using Code</h4>
+
+<p>This example shows how to use the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Workbook~savePDF.html" data-auto-update-caption="true">savePDF</a>&nbsp;method to export Excel files to PDF files. The exported files&nbsp;are&nbsp;saved with a .pdf extension.</p>
+
+<p>The first section of code lists the dependencies for executing the Export to&nbsp;PDF operation.</p>
+
+<p>The second section of code illustrates how <a href="SpreadJS~GC.Spread.Sheets.Workbook~savePDF.html" data-auto-update-caption="true">savePDF</a>&nbsp;method can be used for exporting to PDF format.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <pre>
+&lt;script src=<span style="COLOR: #800000">'.../spreadjs/gc.spread.sheets.all.x.xx.xxxxx.x.min.js' type='text/javascript'&gt;&lt;/script&gt;
+&lt;script src='.../spreadjs/plugins/gc.spread.sheets.print.x.xx.xxxxx.x.min.js' type='text/javascript'&gt;&lt;/script&gt;
+&lt;script src='.../spreadjs/plugins/gc.spread.sheets.pdf.x.xx.xxxxx.x.min.js' type='text/javascript'&gt;&lt;/script&gt;
+       </span>
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <p>spread.savePDF(function (blob) {<br />
+                    &nbsp;&nbsp;&nbsp; var fileName = $('#fileName').val() || 'download';<br />
+                    &nbsp;&nbsp;&nbsp; saveAs(blob, fileName + '.pdf');<br />
+                    }, function (error) {<br />
+                    &nbsp;&nbsp;&nbsp; console.log(error);<br />
+                    }, {<br />
+                    &nbsp;&nbsp;&nbsp; title: 'Test Title',<br />
+                    &nbsp;&nbsp;&nbsp; author: 'Test Author',<br />
+                    &nbsp;&nbsp;&nbsp; subject: 'Test Subject',<br />
+                    &nbsp;&nbsp;&nbsp; keywords: 'Test Keywords',<br />
+                    &nbsp;&nbsp;&nbsp; creator: 'test Creator'<br />
+                    });</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="i-box i-box-note">
+    <p><strong>Note:</strong> The following points should be kept in mind while exporting to PDF:</p>
+
+    <p>1) In order to export to an excel file, users need to reference the<br />
+    &nbsp;&nbsp;&nbsp; file: gc.spread.sheets.pdf.*.*.*.min.js</p>
+
+    <p>2) Images are not base64 encoded. Hence,&nbsp;they may not be exported when a user makes use of file&nbsp;protocol schemes. It is necessary that users should use http or https protocol schemes while performing the export&nbsp;operation.</p>
+</div><!--DXMETADATA end-->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORISED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""%%phrase:name=SeeAlso%%%%designlist:tagidentifier=seealso,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><!--DXMETADATA end-->
+            
+            <div id="i-footer-content" class="i-footer-content">
+                <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p><p>Copyright © 2019 GrapeCity, Inc. All rights reserved.</p>
+<p><a href="https://www.grapecity.com/en/forums/winforms-edition" target="_blank">Product Support Forum</a> | <a href="javascript:window.print()">Print this page</a></p>
+<ul class="social">
+<li><a href="https://www.facebook.com/GrapeCityUS/" target="_blank" class="facebook">&nbsp;</a></li>
+<li><a href="https://twitter.com/GrapeCityUS" target="_blank" class="twitter">&nbsp;</a></li>
+<li><a href="https://www.linkedin.com/company/grapecity" target="_blank" class="linkedin">&nbsp;</a></li>
+</ul>
+</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end-->
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

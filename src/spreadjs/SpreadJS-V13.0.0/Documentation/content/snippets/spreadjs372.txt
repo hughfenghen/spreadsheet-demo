@@ -1,0 +1,11 @@
+sheet.setActiveCell(5,5);
+alert(sheet.getActiveColumnIndex());
+alert(sheet.getActiveRowIndex());
+spread.bind(GC.Spread.Sheets.Events.EnterCell, function (event, data) {
+    alert(data.col);
+    alert(data.row);
+  });
+spread.bind(GC.Spread.Sheets.Events.LeaveCell, function (event, data) {
+    alert(data.col);
+    alert(data.row);
+  });

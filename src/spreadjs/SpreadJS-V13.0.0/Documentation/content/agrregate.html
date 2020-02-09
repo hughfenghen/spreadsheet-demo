@@ -1,0 +1,451 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%ProjectTitle%% - %%ItemTitle%%</title>" --><title>SpreadJS Documentation - AGGREGATE</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ProjectTitle%% - %%ItemTitleNoQuotes%%""/>" --><meta name="Title" content="SpreadJS Documentation - AGGREGATE"/><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n698","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="light" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="The AGGREGATE function returns an aggregate in a list or database. Users can apply different aggregate functions like COUNT, AVERAGE, SUM, MAX, MIN etc. to a list while ignoring &quot;error values&quot; and &quot;hidden rows&quot; in the spreadsheets." /><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-topics/topics.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-topics/topics.mshv1.css"" data-responsive-mobile=""template/packages/core-topics/topics.mobile.css"" data-responsive-tablet=""template/packages/core-topics/topics.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="script"--><script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="script"--><script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="2b3547f2-677d-4faf-84e0-f825b3e8354b"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="f00c213a-31d9-4eac-87f4-d899b4be3a44"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocOrdinal" format="<meta name=""Microsoft.Help.TocOrder"" content=""%%TocOrdinal%%""/>" --><meta name="Microsoft.Help.TocOrder" content="9"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/hs-simpletab.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="StylePropertyValues" format="<style>%%StylePropertyValues%%</style>" --><style>.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+    <!--DXMETADATA start type="CustomHeadContent" --><link rel="stylesheet" type="text/css" href="template/packages/core-web/css/SP.css">
+<script type="text/javascript">
+var currentHeader = function() {
+    return "spjs";
+}
+</script>
+<script src="template/packages/core-web/script/topNavigation.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WT462SJ"></script>
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime()
+                , event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WT462SJ');
+    </script>
+<!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->SpreadJS Documentation<!--DXMETADATA end--></div>
+            <div class="i-search-container">
+                <!--DXMETADATA start type="outputfileextension" format="<form action=""websearch%%outputfileextension%%"">" --><form action="websearch.html"><!--DXMETADATA end-->
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                <!--DXMETADATA start type="Literal" value="</form>" --></form><!--DXMETADATA end-->
+            </div>
+            <!--DXMETADATA start type="outputfileextension" format="<a id=""i-index-button"" href=""webindex%%outputfileextension%%""></a>" --><a id="i-index-button" href="webindex.html"></a><!--DXMETADATA end-->
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container">
+<a href="overview.html">SpreadJS Documentation</a>
+ / <a href="formulareference.html">Formula Reference</a>
+ / <a href="FormulaFunctions.html">Formula Functions</a>
+ / AGGREGATE</div><!--DXMETADATA end --></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="ItemTitle" -->AGGREGATE<!--DXMETADATA end--></div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+            </div>
+            <!--DXMETADATA start type="TopicSection" name="BodyText"--><p>The AGGREGATE&nbsp;function returns an aggregate in a list or database.&nbsp;Users can apply different aggregate&nbsp;functions like COUNT, AVERAGE, SUM, MAX, MIN etc. to a list&nbsp;while ignoring "error values" and&nbsp;"hidden rows" in the spreadsheets.</p>
+
+<p>Aggregate function is useful especially when:</p>
+
+<ul>
+    <li>Users want to&nbsp;apply filters in the data and it is necessary to ignore the cells that were hidden with the filter while&nbsp;adding all the values together.</li>
+
+    <li>Users want to&nbsp;stop propogating errors throughout the worksheet.</li>
+
+    <li>Users want to manipulate data such as&nbsp;finding the average of the results of multiple formulas while ignoring errors like "returning invalid numbers" or other type of errors etc.</li>
+</ul>
+
+<h4>Syntax</h4>
+
+<p>While working with AGGREGATE function, users can use the following syntax:&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<ul>
+    <li><strong><u>Syntax-1</u>:</strong> <strong>AGGREGATE(function_num, options, ref1, [ref2], …)</strong> - This syntax is applicable only&nbsp;when the "Function_num" argument contains values ranging from 1 to 13. For details, refer to the table shown&nbsp;below.</li>
+</ul>
+
+<ul>
+    <li><strong><u>Syntax-2</u>:</strong> <strong>AGGREGATE(function_num, options, array, k)</strong> - This syntax is applicable only&nbsp;when the "Function_num" argument contains values ranging from 14 to 19. For details, refer to the table shown&nbsp;below.</li>
+</ul>
+
+<h4>Arguments</h4>
+
+<p>This function has the following arguments:</p>
+
+<table>
+    <tbody>
+        <tr>
+            <th>Argument</th>
+
+            <th>Description</th>
+        </tr>
+
+        <tr>
+            <td>
+                <p>&nbsp;</p>
+
+                <p><i>Function_num</i></p>
+            </td>
+
+            <td>
+                <p>[Required], Refers to the number (within the range 1-19) to specify the function that is being&nbsp;used.&nbsp;</p>
+
+                <div class="i-box i-box-note">
+                    <p><strong>Note:</strong>&nbsp;It is important to note that when "function_num" contains values ranging from 1 to 13, the syntax applicable is :&nbsp;AGGREGATE(function_num, options, ref1, [ref2], …)&nbsp; and when the "function_num" contains values ranging from 14 to 19, the syntax applicable is&nbsp;AGGREGATE(function_num, options, array, k).</p>
+
+                    <p></p>
+                </div>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td width="95"><strong>Function_Num</strong></td>
+
+                            <td><strong>Function</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td width="95">1</td>
+
+                            <td>AVERAGE</td>
+                        </tr>
+
+                        <tr>
+                            <td width="95">2</td>
+
+                            <td>COUNT</td>
+                        </tr>
+
+                        <tr>
+                            <td width="95">3</td>
+
+                            <td>COUNTA</td>
+                        </tr>
+
+                        <tr>
+                            <td width="95">4</td>
+
+                            <td>MAX</td>
+                        </tr>
+
+                        <tr>
+                            <td width="95">5</td>
+
+                            <td>MIN</td>
+                        </tr>
+
+                        <tr>
+                            <td width="95">6</td>
+
+                            <td>PRODUCT</td>
+                        </tr>
+
+                        <tr>
+                            <td width="95">7</td>
+
+                            <td>STDEV.S</td>
+                        </tr>
+
+                        <tr>
+                            <td width="95">8</td>
+
+                            <td>STDEV.P</td>
+                        </tr>
+
+                        <tr>
+                            <td width="95">9</td>
+
+                            <td>SUM</td>
+                        </tr>
+
+                        <tr>
+                            <td width="95">10</td>
+
+                            <td>VAR.S</td>
+                        </tr>
+
+                        <tr>
+                            <td width="95">11</td>
+
+                            <td>VAR.P</td>
+                        </tr>
+
+                        <tr>
+                            <td width="95">12</td>
+
+                            <td>MEDIAN</td>
+                        </tr>
+
+                        <tr>
+                            <td width="95">13</td>
+
+                            <td>MODE.SNGL</td>
+                        </tr>
+
+                        <tr>
+                            <td width="95">14</td>
+
+                            <td>LARGE</td>
+                        </tr>
+
+                        <tr>
+                            <td width="95">15</td>
+
+                            <td>SMALL</td>
+                        </tr>
+
+                        <tr>
+                            <td width="95">16</td>
+
+                            <td>PERCENTILE.INC</td>
+                        </tr>
+
+                        <tr>
+                            <td width="95">17</td>
+
+                            <td>QUARTILE.INC</td>
+                        </tr>
+
+                        <tr>
+                            <td width="95">18</td>
+
+                            <td>PERCENTILE.EXC</td>
+                        </tr>
+
+                        <tr>
+                            <td width="95">19</td>
+
+                            <td>QUARTILE.EXC</td>
+                        </tr>
+                    </tbody>
+                </table>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+        </tr>
+
+        <tr>
+            <td><em>Options</em></td>
+
+            <td>
+                <p>[Required], Refers to a particular number that specifies the options to ignore values in the function.</p>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><strong>Option</strong></td>
+
+                            <td><strong>Behavior</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td><span style='FONT-SIZE: 14px; FONT-FAMILY: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(23,43,77); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial'>0 or omitted</span></td>
+
+                            <td>Ignore nested SUBTOTAL and AGGREGATE functions</td>
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+
+                            <td>Ignore hidden rows, nested SUBTOTAL and AGGREGATE functions</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+
+                            <td>Ignore error values, nested SUBTOTAL and AGGREGATE functions</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+
+                            <td>Ignore hidden rows, error values, nested SUBTOTAL and AGGREGATE functions</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+
+                            <td>Ignore nothing</td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+
+                            <td>Ignore hidden rows</td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+
+                            <td>Ignore error values</td>
+                        </tr>
+
+                        <tr>
+                            <td>7</td>
+
+                            <td>Ignore hidden rows and error values</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Ref1</td>
+
+            <td>[Required], Specifies the reference to a range of cells.</td>
+        </tr>
+
+        <tr>
+            <td>Ref2</td>
+
+            <td>[Optional], Specifies the reference to a range of cells.</td>
+        </tr>
+
+        <tr>
+            <td>array</td>
+
+            <td>[Required but only when "function_num" argument above contains values ranging from 14 to 19], Specifies an array, an array formula, or a reference to a range of cells.</td>
+        </tr>
+
+        <tr>
+            <td>k</td>
+
+            <td>[Required], This argument is required to specify the functions when the "function_num" values&nbsp;are ranging from 14-19.</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="i-box i-box-note">
+    <p><strong>Note:</strong> The following things must be kept in mind while using the AGGREGATE function:</p>
+
+    <ul>
+        <li>If the arguments array, k or&nbsp;ref1 is not provided,&nbsp;AGGREGATE function&nbsp;will return the #VALUE! error.</li>
+
+        <li>If argument k is provided as an array, then the&nbsp;first value is used. If argument k is provided as a cell reference with one column, the value in last row is used.&nbsp;( For&nbsp;e.g. {1,2,3,4}=&gt;1,&nbsp;&nbsp; A1:A23&nbsp; =&gt; A23, A1:B23 =&gt; #VALUE!,&nbsp;A1:C1 =&gt; #VALUE)</li>
+
+        <li>References don't support 3-D reference. The function will returns #VALUE! if 3-D references are used&nbsp;(For e.g: "Sheet1:Sheet3!B3" will return #VALUE error.).</li>
+
+        <li>Ignore hidden doesn't support hidden columns.</li>
+
+        <li>The rows hidden&nbsp;by filter/ hide/group operations&nbsp;will support the ignore feature.</li>
+
+        <li>If the array includes a calculation, AGGREGATE function will not ignore hidden rows. (eg: "=AGGREGATE(14,3,A1:A6*123,1)")</li>
+    </ul>
+</div>
+
+<h4>Data Types</h4>
+
+<p>Accepts a list or a database of numeric values. Returns aggregate calculation like&nbsp;AVERAGE, COUNT, MIN, MAX etc.&nbsp;while ignoring hidden rows and errors.</p>
+
+<h4>Examples</h4>
+
+<p>The following image depicts four different examples of the AGGREGATE function:</p>
+
+<p>Let's say you have a spreadsheet with some values in column A and the aggregate functions are applied to cells B1, B2, B3, and B4 as shown in the column B below.</p>
+
+<p><img style="MAX-WIDTH: 100%; HEIGHT: auto" border="0" alt="" src="images/spreadjsv13images/aggregate.png" />&nbsp;</p>
+
+<p>The formula output results are displayed in column C and the description of the formula used is mentioned in column D.</p>
+
+<p>Clearly, the AGGREGATE formula in the cells B1 and B2 used multiple cell references [Syntax 1 explained above]&nbsp;but the formula in the cells B3 and B4 used the array form of the function [Syntax 2 explained above].</p><!--DXMETADATA end-->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORISED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""%%phrase:name=SeeAlso%%%%designlist:tagidentifier=seealso,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><!--DXMETADATA end-->
+            
+            <div id="i-footer-content" class="i-footer-content">
+                <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p><p>Copyright © 2019 GrapeCity, Inc. All rights reserved.</p>
+<p><a href="https://www.grapecity.com/en/forums/winforms-edition" target="_blank">Product Support Forum</a> | <a href="javascript:window.print()">Print this page</a></p>
+<ul class="social">
+<li><a href="https://www.facebook.com/GrapeCityUS/" target="_blank" class="facebook">&nbsp;</a></li>
+<li><a href="https://twitter.com/GrapeCityUS" target="_blank" class="twitter">&nbsp;</a></li>
+<li><a href="https://www.linkedin.com/company/grapecity" target="_blank" class="linkedin">&nbsp;</a></li>
+</ul>
+</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end-->
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

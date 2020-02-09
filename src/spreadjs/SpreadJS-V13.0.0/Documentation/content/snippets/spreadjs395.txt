@@ -1,0 +1,9 @@
+sheet.getCell(0, 0).backColor("accent 1");
+sheet.getCell(1, 0).backColor("accent 6");
+
+$("#btn").click(function () {
+    var custom = new GC.Spread.Sheets.Theme("Custom");
+    custom.colors().accent1("red");
+    custom.colors().accent6("green");
+    sheet.currentTheme(custom);
+})

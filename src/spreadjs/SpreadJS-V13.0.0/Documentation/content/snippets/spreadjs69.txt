@@ -1,0 +1,1 @@
+activeSheet.setColumnVisible(2,false,GC.Spread.Sheets.SheetArea.viewport);

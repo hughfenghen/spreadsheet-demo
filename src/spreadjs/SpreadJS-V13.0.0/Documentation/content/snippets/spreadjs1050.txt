@@ -1,0 +1,18 @@
+var nCondition = new GC.Spread.Sheets.ConditionalFormatting.Condition(GC.Spread.Sheets.ConditionalFormatting.ConditionType.cellValueCondition);
+nCondition.compareType(GC.Spread.Sheets.ConditionalFormatting.ComparisonOperators.equalsTo);
+nCondition.expected(0);
+//When the option is false, the validation fails and the red alert is displayed.
+//When the option is true, the blank cell is treated as zero and the validation is successful.
+nCondition.treatNullValueAsZero(false);
+var validator = new GC.Spread.Sheets.DataValidation.DefaultDataValidator(nCondition)
+validator.ignoreBlank(false);
+validator.type(GC.Spread.Sheets.DataValidation.CriteriaType.wholeNumber)
+activeSheet.getCell(0, 0, GC.Spread.Sheets.SheetArea.viewport).validator(validator);
+spread.options.highlightInvalidData = true;
+activeSheet.setValue(0, 0, null);
+
+//Type different values in cell (0,0). This event fires if the user types an invalid value.
+activeSheet.bind("ValidationError", vError);
+ function vError(sender, args) {
+alert("error");
+            }

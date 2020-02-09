@@ -1,0 +1,78 @@
+<h3>GC-Spread-Sheets</h3>
+<div>
+    <p>以下示例展示如何绑定 Workbook 上的属性。</p>
+</div>
+
+<div>
+    <gc-spread-sheets [hostStyle]="hostStyle" [newTabVisible]="newTabVisible"
+                      [tabStripVisible]="tabStripVisible"
+                      [tabStripRatio]="tabStripRatio"
+                      [tabNavigationVisible]="tabNavigationVisible"
+                      [scrollbarShowMax]="scrollbarShowMax"
+                      [scrollbarMaxAlign]="scrollbarMaxAlign"
+                      [showHorizontalScrollbar]="showHorizontalScrollbar"
+                      [showVerticalScrollbar]="showVerticalScrollbar" [backColor]="spreadBackColor"
+                      [grayAreaBackColor]="grayAreaBackColor" [allowUserZoom]="allowUserZoom"
+                      [allowUserResize]="allowUserResize" hostClass="spreadContainer">
+        <gc-worksheet [dataSource]="data" [autoGenerateColumns]="autoGenerateColumns">
+            <gc-column width=150 dataField="Name"></gc-column>
+            <gc-column width=150 dataField="CountryRegionCode"></gc-column>
+            <gc-column width=100 dataField="City"></gc-column>
+            <gc-column width=200 dataField="AddressLine"></gc-column>
+            <gc-column width=100 dataField="PostalCode"></gc-column>
+        </gc-worksheet>
+    </gc-spread-sheets>
+</div>
+
+<div class="settingContainer">
+    <table>
+        <tr>
+            <td>
+                <label><input type="checkbox" [(ngModel)]="newTabVisible" />显示 new 标签页</label>
+            </td>
+            <td>
+                <label><input type="checkbox" [(ngModel)]="tabStripVisible" />显示标签页</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label><input type="checkbox" [(ngModel)]="tabStripRatio"/>水平滚动条宽度比率</label>
+            </td>
+            <td>
+                <label><input type="checkbox" [(ngModel)]="tabNavigationVisible"/>显示或隐藏表单标签导航项</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label><input type="checkbox" [(ngModel)]="scrollbarShowMax"/>基于表单全部的行列总数显示滚动条</label>
+            </td>
+            <td>
+                <label><input type="checkbox" [(ngModel)]="scrollbarMaxAlign"/>滚动条对齐视图中表单的最后一行或一列</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label><input type="checkbox" [(ngModel)]="showHorizontalScrollbar" />显示横向滚动条</label>
+            </td>
+            <td>
+                <label><input type="checkbox" [(ngModel)]="showVerticalScrollbar" />显示竖向滚动条</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label><input type="checkbox" [(ngModel)]="allowUserZoom">允许用户缩放</label>
+            </td>
+            <td>
+                <label><input type="checkbox" [(ngModel)]="allowUserResize">允许用户改变行列宽高</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="color" [(ngModel)]="spreadBackColor" /> 背景色
+            </td>
+            <td>
+                <input type="color" [(ngModel)]="grayAreaBackColor" /> 灰色区域背景色
+            </td>
+        </tr>
+    </table>
+</div>

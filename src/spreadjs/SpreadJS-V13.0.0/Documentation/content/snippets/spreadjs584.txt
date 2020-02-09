@@ -1,0 +1,13 @@
+var textLengthCondition = new GC.Spread.Sheets.ConditionalFormatting.Condition(GC.Spread.Sheets.ConditionalFormatting.ConditionType.textLengthCondition);
+textLengthCondition.compareType(GC.Spread.Sheets.ConditionalFormatting.GeneralComparisonOperators.greaterThan);
+textLengthCondition.formula("$C$1"); // formula used to calculate a number.
+var validator = new GC.Spread.Sheets.DataValidation.DefaultDataValidator(textLengthCondition);
+validator.type(GC.Spread.Sheets.DataValidation.CriteriaType.custom);
+activeSheet.getCell(0, 0, GC.Spread.Sheets.SheetArea.viewport).validator(validator);
+spread.options.highlightInvalidData = true;
+activeSheet.setValue(0, 0, "abcf");
+ 
+//Set value 3 to $C$1, after this code, the value in Cell(0,0) is valid.
+activeSheet.setValue(0, 2, 3);
+//Set value 5 to $C$1, after this code, the value in Cel(0,0) is invalid.
+// activeSheet.setValue(0, 2, 5);

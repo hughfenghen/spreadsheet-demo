@@ -1,0 +1,411 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%ProjectTitle%% - %%ItemTitle%%</title>" --><title>SpreadJS Documentation - Add Error Bars In Charts</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ProjectTitle%% - %%ItemTitleNoQuotes%%""/>" --><meta name="Title" content="SpreadJS Documentation - Add Error Bars In Charts"/><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n386","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="light" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="SpreadJS allows users to add, modify, and remove error bars in a chart. Error Bars can be added on top of a regular data series while working with charts. Users can show error bars on all data points or data markers in a data series as a standard err" /><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-topics/topics.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-topics/topics.mshv1.css"" data-responsive-mobile=""template/packages/core-topics/topics.mobile.css"" data-responsive-tablet=""template/packages/core-topics/topics.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="script"--><script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="script"--><script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="27875652-1e01-4d89-b9b4-a2d7ef0f2bbe"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="bdba97c4-037f-4cd7-ae56-830374286ef0"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocOrdinal" format="<meta name=""Microsoft.Help.TocOrder"" content=""%%TocOrdinal%%""/>" --><meta name="Microsoft.Help.TocOrder" content="4"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/hs-simpletab.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="StylePropertyValues" format="<style>%%StylePropertyValues%%</style>" --><style>.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+    <!--DXMETADATA start type="CustomHeadContent" --><link rel="stylesheet" type="text/css" href="template/packages/core-web/css/SP.css">
+<script type="text/javascript">
+var currentHeader = function() {
+    return "spjs";
+}
+</script>
+<script src="template/packages/core-web/script/topNavigation.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WT462SJ"></script>
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime()
+                , event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WT462SJ');
+    </script>
+<!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->SpreadJS Documentation<!--DXMETADATA end--></div>
+            <div class="i-search-container">
+                <!--DXMETADATA start type="outputfileextension" format="<form action=""websearch%%outputfileextension%%"">" --><form action="websearch.html"><!--DXMETADATA end-->
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                <!--DXMETADATA start type="Literal" value="</form>" --></form><!--DXMETADATA end-->
+            </div>
+            <!--DXMETADATA start type="outputfileextension" format="<a id=""i-index-button"" href=""webindex%%outputfileextension%%""></a>" --><a id="i-index-button" href="webindex.html"></a><!--DXMETADATA end-->
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container">
+<a href="overview.html">SpreadJS Documentation</a>
+ / <a href="devguide.html">Developer's Guide</a>
+ / <a href="features.html">Features</a>
+ / <a href="ManagingDataVisualizationAndObjects.html">Manage Data Visualization and Objects</a>
+ / <a href="Charts.html">Charts</a>
+ / Add Error Bars In Charts</div><!--DXMETADATA end --></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="ItemTitle" -->Add Error Bars In Charts<!--DXMETADATA end--></div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+            </div>
+            <!--DXMETADATA start type="TopicSection" name="BodyText"--><p>SpreadJS allows users to add, modify, and remove error bars in a chart. Error Bars can be added on top of a regular data series while working with charts. Users can show error bars on all data points or data markers in a data series as a standard error amount, a percentage, or a standard deviation.&nbsp;</p>
+
+<h3 id="a">Usage Scenario</h3>
+
+<p>Error bars act as an extremely useful tool for scientists, statisticians, and research analysts to showcase data variability and measurement accuracy.</p>
+
+<p>Incorporating error bars in charts is beneficial especially when users need to:</p>
+
+<ul>
+    <li>Identify and analyse margins of error and standard deviations at a glance.</li>
+
+    <li>Indicate errors or quantify uncertainty about single or multiple data points in a data series.</li>
+
+    <li>Work on applications that require utmost precision. In this scenario, error bars ensure accuracy without risking the data analysis and research outcomes even by slight percentages.</li>
+</ul>
+
+<p><strong>Example</strong>: Let's say you want to show a 15% positive and negative error amount in the results of a scientific experiment or an accounting application, you can configure error bars in your chart to depict such data.</p>
+
+<p><img style="MAX-WIDTH: 100%; HEIGHT: auto" border="0" alt="" src="images/spreadjsv13images/error-bar.png" />&nbsp;</p>
+
+<p>Besides calculating and displaying confidence intervals, margins of error, and standard deviations; error bars also provide an effective way to enhance the overall data visualization of the chart.</p>
+
+<h3 id="b">Supported Chart Types</h3>
+
+<p>The following chart types are supported while adding error bars in charts:</p>
+
+<ul>
+    <li>Column Charts</li>
+
+    <li>Bar Charts</li>
+
+    <li>Line Charts</li>
+
+    <li>xyScatter Charts</li>
+
+    <li>Area Charts</li>
+
+    <li>Bubble Charts</li>
+</ul>
+
+<h3 id="c">Direction and Order Rules</h3>
+
+<p>The direction of the error bar is automatically determined by the chart type that you're using and this property cannot be set and modified by the users.</p>
+
+<ul>
+    <li>For column, line or area charts, the error bars will be displayed in vertical direction.</li>
+
+    <li>For bar charts, the error bars will be displayed in horizontal direction.</li>
+
+    <li>For xyScatter or bubble charts, the error bars can be displayed in horizontal direction, vertical direction and both the horizontal and vertical directions simultaneously.</li>
+</ul>
+
+<p>The order in which the error bars and other chart elements are drawn depends upon the chart type selected by the user.</p>
+
+<ul>
+    <li>When your chart type is area, column and bar; then the error bars are drawn in the front.</li>
+
+    <li>When your chart type is line, scatter and bubble; then the error bars are drawn in the back.</li>
+</ul>
+
+<h3 id="d">Error Bar Types</h3>
+
+<p>Users can add three different types of error bars in the charts. This includes "Plus", "Minus", and "Both".</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+
+            <td><strong>Description</strong></td>
+        </tr>
+
+        <tr>
+            <td>Plus</td>
+
+            <td>This type of error bar depicts only the positive values.</td>
+        </tr>
+
+        <tr>
+            <td>Minus</td>
+
+            <td>This value represents the error as a percentage of the data value in the same direction axis.</td>
+        </tr>
+
+        <tr>
+            <td>Both</td>
+
+            <td>This value represents the error as a number of standard deviations (along with a calculating value which dependents on the set deviations and chart data values)</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3 id="e">Error Bar End Styles</h3>
+
+<p>Users can tweak the default appearance of the error bars by toggling the visibility of end-caps on the lines. The available options are "No Cap" and "Cap".</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+
+            <td><strong>Description</strong></td>
+        </tr>
+
+        <tr>
+            <td>No Cap</td>
+
+            <td>This option is used to hide end caps on the error bar lines.</td>
+        </tr>
+
+        <tr>
+            <td>Cap&nbsp;</td>
+
+            <td>This option is used to show end caps on the error bar lines.</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3 id="f">Error Bar Amounts</h3>
+
+<p>Users can set their own values to display the exact error amounts that they want. The available options are "Fixed Value", "Percentage", "Standard Deviation", "Standard Error", and Custom.</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+
+            <td><strong>Description</strong></td>
+        </tr>
+
+        <tr>
+            <td>Fixed Value</td>
+
+            <td>This value represents the error as an absolute value.</td>
+        </tr>
+
+        <tr>
+            <td>Percentage</td>
+
+            <td>This value represents the error as a percentage of the data value in the same direction axis.</td>
+        </tr>
+
+        <tr>
+            <td>Standard Deviation</td>
+
+            <td>This value represents the error as a number of standard deviations (along with a calculating value which dependents on the set deviations and chart data values)</td>
+        </tr>
+
+        <tr>
+            <td>Standard Error</td>
+
+            <td>This refers to the standard error of the mean (value property is not used).</td>
+        </tr>
+
+        <tr>
+            <td>Custom</td>
+
+            <td>Custom error amounts refer to the error values that are bound through the binding property or set to an object with 'positive' and 'negative' values respectively by formulas or fixed values.</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3 id="g">Using Code</h3>
+
+<p>The following example code depicts how to use different error bars in the chart.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <p>var activeSheet = spread.getActiveSheet();<br />
+                    activeSheet.suspendPaint();</p>
+
+                    <p>//prepare data for chart<br />
+                    activeSheet.setValue(0, 1, "Y-2016");<br />
+                    activeSheet.setValue(0, 2, "Y-2017");<br />
+                    activeSheet.setValue(0, 3, "Y-2018");<br />
+                    activeSheet.setValue(1, 0, "Mobile Phones");<br />
+                    activeSheet.setValue(2, 0, "Laptops");<br />
+                    activeSheet.setValue(3, 0, "Tablets");<br />
+                    for (var r = 1; r &lt;= 3; r++) {<br />
+                    for (var c = 1; c &lt;= 3; c++) {<br />
+                    activeSheet.setValue(r, c, parseInt(Math.random() * 5000));<br />
+                    }<br />
+                    }</p>
+
+                    <p>// Add columnClustered chart<br />
+                    chart_columnClustered = activeSheet.charts.add('chart_columnClustered', GC.Spread.Sheets.Charts.ChartType.columnClustered, 50, 100, 600, 400, "A1:D4");<br />
+                    // Adding ErrorBars on series[0] i.e. Mobile Phones<br />
+                    var series1 = chart_columnClustered.series().get(0);<br />
+                    series1.errorBars = {<br />
+                    vertical: {<br />
+                    type: 1, // minus<br />
+                    valueType: 2, // percentage<br />
+                    value: 70, // 70%<br />
+                    noEndCap: false, // no end cap<br />
+                    style: {<br />
+                    &nbsp; color: 'red', // line color<br />
+                    &nbsp; width: 1.5 // width of line<br />
+                    }<br />
+                    }<br />
+                    };<br />
+                    // Adding ErrorBars on series[1] i.e. Laptops<br />
+                    var series2 = chart_columnClustered.series().get(1);<br />
+                    series2.errorBars = {</p>
+
+                    <p>vertical: {<br />
+                    type: 1, // minus<br />
+                    valueType: 2, // percentage<br />
+                    value: 70, // 70%<br />
+                    noEndCap: false, // no end cap<br />
+                    style: {<br />
+                    &nbsp; color: 'blue', // line color<br />
+                    &nbsp; width: 1.5 // width of line<br />
+                    }<br />
+                    }<br />
+                    };<br />
+                    // Adding ErrorBars on series[2] i.e. Tablets<br />
+                    var series3 = chart_columnClustered.series().get(2);<br />
+                    series3.errorBars = {</p>
+
+                    <p>vertical: {<br />
+                    type: 1, // minus<br />
+                    valueType: 2, // percentage<br />
+                    value: 70, // 70%<br />
+                    noEndCap: false, // no end cap<br />
+                    style: {<br />
+                    &nbsp; color: 'green',// line color<br />
+                    &nbsp; width: 1.5 // width of line<br />
+                    }<br />
+                    }<br />
+                    };</p>
+
+                    <p>chart_columnClustered.series().set(0, series1);<br />
+                    chart_columnClustered.series().set(1, series2);<br />
+                    chart_columnClustered.series().set(2, series3);</p>
+
+                    <p>// Configure Chart Title<br />
+                    var title = chart_columnClustered.title();<br />
+                    title.text = "Error Bars for Annual Sales Record";<br />
+                    title.fontFamily = "Cambria";<br />
+                    title.fontSize = 28;<br />
+                    title.color = "Red";<br />
+                    chart_columnClustered.title(title);<br />
+                    activeSheet.resumePaint();</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div><!--DXMETADATA end-->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORISED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""%%phrase:name=SeeAlso%%%%designlist:tagidentifier=seealso,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><!--DXMETADATA end-->
+            
+            <div id="i-footer-content" class="i-footer-content">
+                <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p><p>Copyright © 2019 GrapeCity, Inc. All rights reserved.</p>
+<p><a href="https://www.grapecity.com/en/forums/winforms-edition" target="_blank">Product Support Forum</a> | <a href="javascript:window.print()">Print this page</a></p>
+<ul class="social">
+<li><a href="https://www.facebook.com/GrapeCityUS/" target="_blank" class="facebook">&nbsp;</a></li>
+<li><a href="https://twitter.com/GrapeCityUS" target="_blank" class="twitter">&nbsp;</a></li>
+<li><a href="https://www.linkedin.com/company/grapecity" target="_blank" class="linkedin">&nbsp;</a></li>
+</ul>
+</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end-->
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

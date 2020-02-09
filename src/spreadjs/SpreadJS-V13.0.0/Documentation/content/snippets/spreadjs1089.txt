@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SpreadJS V11 Development Sample</title>
+    <link href="http://cdn.grapecity.com/spreadjs/hosted/css/gc.spread.sheets.excel2016colorful.12.0.0.css" rel="stylesheet" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://cdn.grapecity.com/spreadjs/hosted/scripts/gc.spread.sheets.all.12.0.0.min.js"></script>
+    <script type="text/javascript">
+        function CustomFunctionWithoutContext() {
+            this.name = "FactorialAfterSum";
+            this.maxArgs = 255;
+            this.minArgs = 1;
+        }
+        CustomFunctionWithoutContext.prototype = new GC.Spread.CalcEngine.Functions.Function();
+        CustomFunctionWithoutContext.prototype.description = function () {
+            return {
+                description: "The function returns the factorial of the sum result",
+                parameters: [{
+                    name: "value",
+                    repeatable: true,
+                    optional: true
+                }],
+            }
+        }
+        CustomFunctionWithoutContext.prototype.evaluate = function () {
+            //If the isContextSensitive return false.
+            //The arguments of evaluate will be the real function args.
+            //For example, =XXXFunction(1,2,3,4,5), the arguments will be 1,2,3,4,5.
+            //Hence, for this case, if you use =FactorialAfterSum(1,2,3), the arguments will be 1,2,3
+            if (arguments.length > 0) {
+                var sum = 0, factoral = 1;
+                //Calc Sum
+                for (var i = 0; i < arguments.length; i++) {
+                    if (!isNaN(arguments[i])) {
+                        sum += parseInt(arguments[i]);
+                    }
+                }
+                //Calc factoral
+                do {
+                    factoral *= sum;
+                } while (--sum >= 1)
+                return factoral;
+            }
+            return GC.Spread.CalcEngine.CalcError.parse("#Value!");
+        }
+
+
+
+
+
+        function CustomFunctionWithContext() {
+            this.name = "FactorialAfterSum2";
+            this.maxArgs = 255;
+            this.minArgs = 1;
+        }
+        CustomFunctionWithContext.prototype = new GC.Spread.CalcEngine.Functions.Function();
+        CustomFunctionWithContext.prototype.description = function () {
+            return {
+                description: "The function returns the factorial of sum result",
+                parameters: [{
+                    name: "value",
+                    repeatable: true,
+                    optional: true
+                }],
+            }
+        }
+        CustomFunctionWithContext.prototype.evaluate = function () {
+            //If the isContextSensitive return true.
+            //The first argument will be evaluateContext, used for function calculation.
+            //The following arguments will be the real function args.
+            //For example, =XXXFunction(1,2,3,4,5), the arguments will be context, 1, 2, 3, 4, 5.
+            //Hence, for this case, if customer use =FactorialAfterSum2(1,2,3), the arguments will be context, 1,2,3
+            if (arguments.length >= 1) {
+                var sum = 0, factoral = 1, context = arguments[0];
+                //Calc Sum
+                for (var i = 1; i < arguments.length; i++) {
+                    if (!isNaN(arguments[i]) && arguments[i] !== null) {
+                        sum += parseInt(arguments[i]);
+                    }
+                }
+                //Calc factoral
+                do {
+                    factoral *= sum;
+                } while (--sum >= 1)
+                return factoral;
+            }
+            return GC.Spread.CalcEngine.CalcError.parse("#Value!");
+        }
+        CustomFunctionWithContext.prototype.isContextSensitive = function () {
+            return true;
+        }
+
+
+        $(document).ready(function () {
+            var spread = new GC.Spread.Sheets.Workbook(document.getElementById("ss"));
+            var sheet = spread.getActiveSheet();
+            sheet.addCustomFunction(new CustomFunctionWithContext());
+            sheet.addCustomFunction(new CustomFunctionWithoutContext());
+
+            sheet.setValue(0,0,1);
+            sheet.setValue(1,0,2);
+            sheet.setValue(2,0,3);
+            sheet.setFormula(4,1,"=FactorialAfterSum2(1,2,3)");
+            sheet.setFormula(5,1,"=FactorialAfterSum2(A1,A2,A3)");
+        });
+    </script>
+</head>
+<body>
+<div id="ss" style="width:70%;height:500px;border: 1px solid gray;font-size:10.5pt"></div>
+</body>
+</html>

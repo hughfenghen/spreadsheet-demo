@@ -1,0 +1,1 @@
+activeSheet.showRow(10, GC.Spread.Sheets.VerticalPosition.center);

@@ -1,0 +1,147 @@
+$(function () {
+//Generate two data sources
+function Company(name, logo, slogan, address, city, phone, email) {
+    this.name = name;
+    this.logo = logo;
+    this.slogan = slogan;
+    this.address = address;
+    this.city = city;
+    this.phone = phone;
+    this.email = email;
+}
+
+function Customer(id, name, company) {
+    this.id = id;
+    this.name = name;
+    this.company = company;
+}
+
+function Record(description, quantity, amount) {
+    this.description = description;
+    this.quantity = quantity;
+    this.amount = amount;
+}
+
+function Invoice(company, number, date, customer, receiverCustomer, records) {
+    this.company = company;
+    this.number = number;
+    this.date = date;
+    this.customer = customer;
+    this.receiverCustomer = receiverCustomer;
+    this.records = records;
+}
+
+var company1 = new Company("Baidu", null, "We know everything!", "Beijing 1st road", "Beijing", "010-12345678", "baidu@baidu.com"),
+        company2 = new Company("Tecent", null, "We have everything!", "Shenzhen 2st road", "Shenzhen", "0755-12345678", "tecent@qq.com"),
+        company3 = new Company("Alibaba", null, "We sell everything!", "Hangzhou 3rd road", "Hangzhou", "0571-12345678", "alibaba@alibaba.com"),
+        customer1 = new Customer("A1", "employee 1", company2),
+        customer2 = new Customer("A2", "employee 2", company3),
+        records1 = [new Record("Finance charge on overdue balance at 1.5%", 1, 150), new Record("Invoice #100 for $1000 on 2014/1/1", 1, 150)],
+        records2 = [new Record("Purchase server device", 2, 15000), new Record("Company travel", 100, 1500), new Record("Company Dinner", 100, 200)],
+        invoice1 = new Invoice(company1, "00001", new Date(2014, 0, 1), customer1, customer1, records1),
+        invoice2 = new Invoice(company2, "00002", new Date(2014, 6, 6), customer2, customer2, records2),
+        dataSource1 = new GC.Spread.Sheets.Bindings.CellBindingSource(invoice1),
+        dataSource2 = new GC.Spread.Sheets.Bindings.CellBindingSource(invoice2);
+
+function BindingPathCellType() {
+    GC.Spread.Sheets.CellTypes.Text.call(this);
+}
+
+BindingPathCellType.prototype = new GC.Spread.Sheets.CellTypes.Text();
+BindingPathCellType.prototype.paint = function (ctx, value, x, y, w, h, style, context) {
+    if (value === null || value === undefined) {
+        var sheet = context.sheet, row = context.row, col = context.col;
+        if (sheet && (row === 0 || !!row) && (col === 0 || !!col)) {
+var bindingPath = sheet.getBindingPath(context.row, context.col);
+if (bindingPath) {
+    value = "[" + bindingPath + "]";
+}
+        }
+    }
+    GC.Spread.Sheets.CellTypes.Text.prototype.paint.apply(this, arguments);
+};
+
+var spread = new GC.Spread.Sheets.Workbook(document.getElementById("ss"), {sheetCount: 1});
+activeSheet = spread.getActiveSheet();
+spread.suspendPaint();
+activeSheet.name("FINANCE CHARGE");
+var bindingPathCellType = new BindingPathCellType();
+activeSheet.getCell(1, 2).bindingPath("company.slogan").cellType(bindingPathCellType).vAlign(GC.Spread.Sheets.VerticalAlign.bottom);
+activeSheet.getCell(1, 4).value("INVOICE").foreColor("#58B6C0").font("33px Arial");
+activeSheet.getCell(3, 1).bindingPath("company.name").cellType(bindingPathCellType).foreColor("#58B6C0").font("bold 20px Arial");
+activeSheet.getCell(5, 1).bindingPath("company.address").cellType(bindingPathCellType);
+activeSheet.getCell(5, 3).value("INVOICE NO.").font("bold 15px Arial");
+activeSheet.getCell(5, 4).bindingPath("number").cellType(bindingPathCellType);
+activeSheet.getCell(6, 1).bindingPath("company.city").cellType(bindingPathCellType);
+activeSheet.getCell(6, 3).value("DATE").font("bold 15px Arial");
+activeSheet.getCell(6, 4).bindingPath("date").cellType(bindingPathCellType).formatter("MM/dd/yyyy").hAlign(GC.Spread.Sheets.HorizontalAlign.left);
+activeSheet.getCell(7, 1).bindingPath("company.phone").cellType(bindingPathCellType);
+activeSheet.getCell(7, 3).value("CUSTOMER ID").font("bold 15px Arial");
+activeSheet.getCell(7, 4).bindingPath("customer.id").cellType(bindingPathCellType);
+activeSheet.getCell(8, 1).bindingPath("company.email").cellType(bindingPathCellType);
+activeSheet.getCell(10, 1).value("TO").font("bold 15px Arial");
+activeSheet.getCell(10, 3).value("SHIP TO").font("bold 15px Arial");
+activeSheet.getCell(11, 1).bindingPath("customer.name").cellType(bindingPathCellType).textIndent(10);
+activeSheet.getCell(12, 1).bindingPath("customer.company.name").cellType(bindingPathCellType).textIndent(10);
+activeSheet.getCell(13, 1).bindingPath("customer.company.address").cellType(bindingPathCellType).textIndent(10);
+activeSheet.getCell(14, 1).bindingPath("customer.company.city").cellType(bindingPathCellType).textIndent(10);
+activeSheet.getCell(15, 1).bindingPath("customer.company.phone").cellType(bindingPathCellType).textIndent(10);
+activeSheet.getCell(11, 4).bindingPath("receiverCustomer.name").cellType(bindingPathCellType);
+activeSheet.getCell(12, 4).bindingPath("receiverCustomer.company.name").cellType(bindingPathCellType);
+activeSheet.getCell(13, 4).bindingPath("receiverCustomer.company.address").cellType(bindingPathCellType);
+activeSheet.getCell(14, 4).bindingPath("receiverCustomer.company.city").cellType(bindingPathCellType);
+activeSheet.getCell(15, 4).bindingPath("receiverCustomer.company.phone").cellType(bindingPathCellType);
+activeSheet.addSpan(17, 1, 1, 2);
+activeSheet.getCell(17, 1).value("JOB").foreColor("#58B6C0").font("bold 12px Arial");
+activeSheet.addSpan(17, 3, 1, 2);
+activeSheet.getCell(17, 3).value("PAYMENT TERMS").foreColor("#58B6C0").font("bold 12px Arial");
+activeSheet.addSpan(18, 1, 1, 2);
+activeSheet.getCell(18, 1).backColor("#DDF0F2");
+activeSheet.addSpan(18, 3, 1, 2);
+activeSheet.getCell(18, 3).value("Due on receipt").backColor("#DDF0F2").foreColor("#58B6C0").font("12px Arial");
+
+activeSheet.getRange(17, 1, 2, 4, GC.Spread.Sheets.SheetArea.viewport).setBorder(new GC.Spread.Sheets.LineBorder("#58B6C0", GC.Spread.Sheets.LineStyle.thin), {
+    top: true,
+    bottom: true,
+    innerHorizontal: true
+});
+
+var table = activeSheet.tables.add("tableRecords", 20, 1, 4, 4, GC.Spread.Sheets.Tables.TableThemes.light6);
+table.autoGenerateColumns(false);
+var tableColumn1 = new GC.Spread.Sheets.Tables.TableColumn();
+tableColumn1.name("DESCRIPTION");
+tableColumn1.dataField("description");
+var tableColumn2 = new GC.Spread.Sheets.Tables.TableColumn();
+tableColumn2.name("QUANTITY");
+tableColumn2.dataField("quantity");
+var tableColumn3 = new GC.Spread.Sheets.Tables.TableColumn();
+tableColumn3.name("AMOUNT");
+tableColumn3.dataField("amount");
+table.bindColumns([tableColumn1, tableColumn2, tableColumn3]);
+table.bindingPath("records");
+table.showFooter(true);
+table.setColumnName(3, "TOTAL");
+table.setColumnValue(2, "TOTAL DUE");
+table.setColumnDataFormula(3, "=[@QUANTITY]*[@AMOUNT]");
+table.setColumnFormula(3, "=SUBTOTAL(109,[TOTAL])");
+activeSheet.getCell(26, 1).formula('="Make all checks payable to "&B4&". THANK YOU FOR YOUR BUSINESS!"').foreColor("gray").font("italic 14px Arial");
+activeSheet.options.allowCellOverflow = true;
+//Adjust row height and column width
+activeSheet.setColumnWidth(0, 5);
+activeSheet.setColumnWidth(1, 300);
+activeSheet.setColumnWidth(2, 115);
+activeSheet.setColumnWidth(3, 125);
+activeSheet.setColumnWidth(4, 155);
+activeSheet.setRowHeight(0, 5);
+activeSheet.setRowHeight(1, 40);
+activeSheet.setRowHeight(2, 10);
+activeSheet.setRowHeight(17, 0);
+activeSheet.setRowHeight(18, 0);
+activeSheet.setRowHeight(19, 0);
+activeSheet.setRowHeight(25, 10);
+activeSheet.options.gridline = {showVerticalGridline: false, showHorizontalGridline: false};
+//Set a data source
+//activeSheet.setDataSource(dataSource1);
+activeSheet.setDataSource(dataSource2);
+spread.resumePaint();
+        })

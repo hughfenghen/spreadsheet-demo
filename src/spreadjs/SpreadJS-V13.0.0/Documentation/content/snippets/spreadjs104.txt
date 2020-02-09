@@ -1,0 +1,8 @@
+spread.options.highlightInvalidData = true;
+var dv = GC.Spread.Sheets.DataValidation.createDateValidator(GC.Spread.Sheets.ConditionalFormatting.ComparisonOperators.between, new Date(2012, 11, 31), new Date(2013, 11, 31));
+dv.showInputMessage(true);
+dv.inputMessage("Enter a date between 12/31/2012 and 12/31/2013.");
+dv.inputTitle("Tip");
+var style = new GC.Spread.Sheets.Style();
+style.validator = dv;
+activeSheet.setStyle(1,1,style,GC.Spread.Sheets.SheetArea.viewport);

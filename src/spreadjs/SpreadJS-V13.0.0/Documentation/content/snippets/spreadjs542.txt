@@ -1,0 +1,9 @@
+activeSheet.options.isProtected = true;
+var style = new GC.Spread.Sheets.Style();
+style.backColor = "red";
+style.borderLeft =new GC.Spread.Sheets.LineBorder("blue",GC.Spread.Sheets.LineStyle.medium);
+style.borderTop = new GC.Spread.Sheets.LineBorder("blue",GC.Spread.Sheets.LineStyle.medium);
+style.borderRight = new GC.Spread.Sheets.LineBorder("blue",GC.Spread.Sheets.LineStyle.medium);
+style.borderBottom = new GC.Spread.Sheets.LineBorder("blue",GC.Spread.Sheets.LineStyle.medium);
+style.locked = false;
+activeSheet.setStyle(1,1,style,GC.Spread.Sheets.SheetArea.viewport);

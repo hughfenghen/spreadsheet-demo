@@ -1,0 +1,23 @@
+﻿<h3>SpreadJS Data Binding</h3>
+
+<p>
+    The sample below is bound to the list of major US airports and their traffic in 2005-2011.
+    <br />
+    The first sheet is bound all data from data source, and the second sheet is bound 2011 data from data source.
+</p>
+
+<gc-spread-sheets id="ssdb" newtabvisible="false">
+    <worksheets>
+        <worksheet datasource="airports" name="All Data"></worksheet>
+        <worksheet datasource="airports" name="Part Data">
+            <columns>
+                <column datafield="name" headertext="Name"></column>
+                <column datafield="city" headertext="City"></column>
+                <column datafield="state" headertext="State"></column>
+                <column datafield="lat" headertext="Lat"></column>
+                <column datafield="lon" headertext="Lon"></column>
+                <column datafield="vol2011" headertext="Vol2011"></column>
+            </columns>
+        </worksheet>
+    </worksheets>
+</gc-spread-sheets>

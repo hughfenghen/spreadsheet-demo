@@ -1,0 +1,5 @@
+// Use IE to see the console log text
+activeSheet.bind(GC.Spread.Sheets.Events.LeaveCell, function (sender, args) {
+    console.log("The column index before moving: " + args.col);
+    console.log("The row index before moving: " + args.row); 
+});

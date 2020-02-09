@@ -1,0 +1,2 @@
+spread.options.allowUndo = true;
+spread.commandManager().execute({cmd: "outlineRow", sheetName: "Sheet1", index: 3, count: 5});

@@ -1,0 +1,345 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PageItemTitle" format="<title>%%PageItemTitle%%</title>" --><title>autoGenerateColumns Method</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitleNoQuotes" format="<meta name=""Title"" content=""%%ItemTitleNoQuotes%%""/>" --><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n6675","initialNodeContainer":"c240","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="light" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-javascript" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-javascript/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-javascript" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-javascript/dx.javascript.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-javascript/dx.javascript.mshv1.css"" data-responsive-mobile=""template/packages/core-javascript/dx.javascript.mobile.css"" data-responsive-tablet=""template/packages/core-javascript/dx.javascript.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-javascript/css/dx.javascript.css"  data-mshv2-stylesheet="/template/packages/core-javascript/dx.javascript.mshv2.css" data-mshv1-stylesheet="/template/packages/core-javascript/dx.javascript.mshv1.css" data-responsive-mobile="template/packages/core-javascript/dx.javascript.mobile.css" data-responsive-tablet="template/packages/core-javascript/dx.javascript.tablet.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-javascript" filetype="script"--><script src="template/packages/plugins-javascript/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-javascript" filetype="script"--><script src="template/packages/core-javascript/script/dx.javascript.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="SpreadJS~GC.Spread.Sheets.Tables.Table~autoGenerateColumns"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="Gets or sets whether to generate columns automatically while binding to a data source." /><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="SpreadJS~GC.Spread.Sheets.Tables.Table_methods"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.ContentType" content="Reference" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/hs-simpletab.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="StylePropertyValues" format="<style>%%StylePropertyValues%%</style>" --><style>.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+    <!--DXMETADATA start type="CustomHeadContent" --><link rel="stylesheet" type="text/css" href="template/packages/core-web/css/SP.css">
+<script type="text/javascript">
+var currentHeader = function() {
+    return "spjs";
+}
+</script>
+<script src="template/packages/core-web/script/topNavigation.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WT462SJ"></script>
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime()
+                , event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WT462SJ');
+    </script>
+<!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->SpreadJS Documentation<!--DXMETADATA end--></div>
+            <div class="i-search-container">
+                <!--DXMETADATA start type="outputfileextension" format="<form action=""websearch%%outputfileextension%%"">" --><form action="websearch.html"><!--DXMETADATA end-->
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                <!--DXMETADATA start type="Literal" value="</form>" --></form><!--DXMETADATA end-->
+            </div>
+            <!--DXMETADATA start type="outputfileextension" format="<a id=""i-index-button"" href=""webindex%%outputfileextension%%""></a>" --><a id="i-index-button" href="webindex.html"></a><!--DXMETADATA end-->
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container">
+<a href="SpreadJS~GC.Spread.Sheets.Tables_namespace.html">GC.Spread.Sheets.Tables Namespace</a>
+ / <a href="SpreadJS~GC.Spread.Sheets.Tables.Table.html">Table type</a>
+ / autoGenerateColumns Method</div><!--DXMETADATA end --></div>
+
+    <!--DXMETADATA start type="FilteredItemList" scrap="PARAMETERS_BUBBLES" namespace="parameter" source="Item" -->
+<div id="valuePopupContent" class="i-popup-content">
+Whether to generate columns automatically while binding to a data source.
+</div>
+<!--DXMETADATA end -->
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="PageItemTitle" -->autoGenerateColumns Method<!--DXMETADATA end--></div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+            </div>
+            <!--DXMETADATA start type="Description" source="Item" format="<div class=""i-description-content"">%%description%%</div>" --><div class="i-description-content">Gets or sets whether to generate columns automatically while binding to a data source.</div><!--DXMETADATA end -->
+            <!--DXMETADATA start type="SyntaxSection" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=syntax,caption=$$Syntax$$%%%%SyntaxSection%%" --><div class="i-section-heading" id="i-syntax-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Syntax</span></div><div id="i-syntax-section-content" class="i-section-content">
+      <div class="i-tab-container i-tab-container">
+      <ul>
+      
+      <li class="i-filtered-content-Javascript_Usage"><a href="#i-syntax-Javascript_Usage">Javascript (Usage)</a></li>
+    
+
+      <li class="i-filtered-content-Javascript"><a href="#i-syntax-Javascript">Javascript (Specification)</a></li>
+    
+
+      </ul>
+      
+      <div id="i-syntax-Javascript_Usage" class="i-filtered-content-Javascript_Usage">
+      <pre>var instance = new <a href="SpreadJS~GC.Spread.Sheets.Tables.Table.html">GC.Spread.Sheets.Tables.Table</a>(name, row, col, rowCount, colCount, style, options);
+var returnValue; // Type: any
+returnValue = instance.autoGenerateColumns(value);</pre>
+      </div>
+    
+
+      <div id="i-syntax-Javascript" class="i-filtered-content-Javascript">
+      <pre>function autoGenerateColumns( 
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="valuePopupLink" data-popup-contentsource="#valuePopupContent" data-popup-showevent="click mouseenter">value</a></i> : boolean
+) : any;</pre>
+      </div>
+    
+
+      </div>
+    <!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="PARAMETERS_LIST" namespace="parameter" source="Item" filter="" NoCr="True" format="<h4 class=dxh4>$$ParameterList$$</h4>%%filtereditemlist%%" --><h4 class=dxh4>Parameters</h4><dl><dt><I>value</I></dt>
+<dd>Whether to generate columns automatically while binding to a data source.</dd></dl><!--DXMETADATA end -->
+
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##RETURNS" format="<h4 class=dxh4>$$Return_Type$$</h4><div class=""i-returns-content"">%%comment%%</div></div>" blankformat="</div>" --><h4 class=dxh4>Return Value</h4><div class="i-returns-content">If no value is set, returns whether to generate columns automatically while binding to a data source; otherwise, returns the table.</div></div><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="EXCEPTION_LIST" namespace="exception" source="Item" filter="" designtime="true" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=exceptions,caption=""$$Exceptions$$%%designlist:tagidentifier=##EXCEPTION,itemtype=Exception%%""%%%%filtereditemlist%%</div>" --><!--DXMETADATA end -->
+
+            <a name="exampleBookmark"></a>
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##EXAMPLEINTRO" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=example,caption=""$$Example$$%%designlist:tagidentifier=##EXAMPLECODE,itemtype=Example%%""%%%%comment%%" --><div class="i-section-heading" id="i-example-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Example</span></div><div id="i-example-section-content" class="i-section-content">This example binds a table and sets the autoGenerateColumns method.<!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="EXAMPLEGROUP_LIST" namespace="ExampleGroup" source="Item" filter="type=inline" condition="content:content=""%%GroupExamples%%"",operator=""="",value=""True""" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%taggedcomment:source=item,id=##EXAMPLEINTRO,blankformat=""%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=example,caption=$$Example$$%%"",format= %%%%filtereditemlist%%</div>" blankformat="%%taggedcomment:source=item,id=##EXAMPLEINTRO,format=</div>%%" --><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="INLINE_EXAMPLE" namespace="Example" source="Item" filter="type=inline" condition="content:content=""%%GroupExamples%%"",operator=""<>"",value=""True""" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%taggedcomment:source=item,id=##EXAMPLEINTRO,blankformat=""%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=example,caption=$$Example$$%%"",format= %%%%filtereditemlist%%</div>" blankformat="%%taggedcomment:source=item,id=##EXAMPLEINTRO,format=</div>%%" --> <div class="i-filtered-content-Javascript">
+    
+	<div class="i-tab-container">
+	    <ul>
+	        <li><a href="#i-tab-content-1f5b0b7f-73e8-4327-9ea5-f1a6afbc11e3">Javascript</a></li>
+	    </ul>
+	    <div id="i-tab-content-1f5b0b7f-73e8-4327-9ea5-f1a6afbc11e3" class="i-filtered-content-Javascript i-code"><pre>$(<span style="color: #0000FF; ">function</span> () {
+<span style="color: #008000; ">//Generate two data sources
+</span><span style="color: #0000FF; ">function</span> Company(name, logo, slogan, address, city, phone, email) {
+    <span style="color: #0000FF; ">this</span>.name = name;
+    <span style="color: #0000FF; ">this</span>.logo = logo;
+    <span style="color: #0000FF; ">this</span>.slogan = slogan;
+    <span style="color: #0000FF; ">this</span>.address = address;
+    <span style="color: #0000FF; ">this</span>.city = city;
+    <span style="color: #0000FF; ">this</span>.phone = phone;
+    <span style="color: #0000FF; ">this</span>.email = email;
+}
+
+<span style="color: #0000FF; ">function</span> Customer(id, name, company) {
+    <span style="color: #0000FF; ">this</span>.id = id;
+    <span style="color: #0000FF; ">this</span>.name = name;
+    <span style="color: #0000FF; ">this</span>.company = company;
+}
+
+<span style="color: #0000FF; ">function</span> Record(description, quantity, amount) {
+    <span style="color: #0000FF; ">this</span>.description = description;
+    <span style="color: #0000FF; ">this</span>.quantity = quantity;
+    <span style="color: #0000FF; ">this</span>.amount = amount;
+}
+
+<span style="color: #0000FF; ">function</span> Invoice(company, number, date, customer, receiverCustomer, records) {
+    <span style="color: #0000FF; ">this</span>.company = company;
+    <span style="color: #0000FF; ">this</span>.number = number;
+    <span style="color: #0000FF; ">this</span>.date = date;
+    <span style="color: #0000FF; ">this</span>.customer = customer;
+    <span style="color: #0000FF; ">this</span>.receiverCustomer = receiverCustomer;
+    <span style="color: #0000FF; ">this</span>.records = records;
+}
+
+<span style="color: #0000FF; ">var</span> company1 = <span style="color: #0000FF; ">new</span> Company(<span style="color: #800000; ">&quot;Baidu&quot;</span>, <span style="color: #0000FF; ">null</span>, <span style="color: #800000; ">&quot;We know everything!&quot;</span>, <span style="color: #800000; ">&quot;Beijing 1st road&quot;</span>, <span style="color: #800000; ">&quot;Beijing&quot;</span>, <span style="color: #800000; ">&quot;010-12345678&quot;</span>, <span style="color: #800000; ">&quot;baidu@baidu.com&quot;</span>),
+        company2 = <span style="color: #0000FF; ">new</span> Company(<span style="color: #800000; ">&quot;Tecent&quot;</span>, <span style="color: #0000FF; ">null</span>, <span style="color: #800000; ">&quot;We have everything!&quot;</span>, <span style="color: #800000; ">&quot;Shenzhen 2st road&quot;</span>, <span style="color: #800000; ">&quot;Shenzhen&quot;</span>, <span style="color: #800000; ">&quot;0755-12345678&quot;</span>, <span style="color: #800000; ">&quot;tecent@qq.com&quot;</span>),
+        company3 = <span style="color: #0000FF; ">new</span> Company(<span style="color: #800000; ">&quot;Alibaba&quot;</span>, <span style="color: #0000FF; ">null</span>, <span style="color: #800000; ">&quot;We sell everything!&quot;</span>, <span style="color: #800000; ">&quot;Hangzhou 3rd road&quot;</span>, <span style="color: #800000; ">&quot;Hangzhou&quot;</span>, <span style="color: #800000; ">&quot;0571-12345678&quot;</span>, <span style="color: #800000; ">&quot;alibaba@alibaba.com&quot;</span>),
+        customer1 = <span style="color: #0000FF; ">new</span> Customer(<span style="color: #800000; ">&quot;A1&quot;</span>, <span style="color: #800000; ">&quot;employee 1&quot;</span>, company2),
+        customer2 = <span style="color: #0000FF; ">new</span> Customer(<span style="color: #800000; ">&quot;A2&quot;</span>, <span style="color: #800000; ">&quot;employee 2&quot;</span>, company3),
+        records1 = [<span style="color: #0000FF; ">new</span> Record(<span style="color: #800000; ">&quot;Finance charge on overdue balance at 1.5%&quot;</span>, 1, 150), <span style="color: #0000FF; ">new</span> Record(<span style="color: #800000; ">&quot;Invoice #100 for $1000 on 2014/1/1&quot;</span>, 1, 150)],
+        records2 = [<span style="color: #0000FF; ">new</span> Record(<span style="color: #800000; ">&quot;Purchase server device&quot;</span>, 2, 15000), <span style="color: #0000FF; ">new</span> Record(<span style="color: #800000; ">&quot;Company travel&quot;</span>, 100, 1500), <span style="color: #0000FF; ">new</span> Record(<span style="color: #800000; ">&quot;Company Dinner&quot;</span>, 100, 200)],
+        invoice1 = <span style="color: #0000FF; ">new</span> Invoice(company1, <span style="color: #800000; ">&quot;00001&quot;</span>, <span style="color: #0000FF; ">new</span> Date(2014, 0, 1), customer1, customer1, records1),
+        invoice2 = <span style="color: #0000FF; ">new</span> Invoice(company2, <span style="color: #800000; ">&quot;00002&quot;</span>, <span style="color: #0000FF; ">new</span> Date(2014, 6, 6), customer2, customer2, records2),
+        dataSource1 = <span style="color: #0000FF; ">new</span> GC.Spread.Sheets.Bindings.CellBindingSource(invoice1),
+        dataSource2 = <span style="color: #0000FF; ">new</span> GC.Spread.Sheets.Bindings.CellBindingSource(invoice2);
+
+<span style="color: #0000FF; ">function</span> BindingPathCellType() {
+    GC.Spread.Sheets.CellTypes.Text.call(<span style="color: #0000FF; ">this</span>);
+}
+
+BindingPathCellType.prototype = <span style="color: #0000FF; ">new</span> GC.Spread.Sheets.CellTypes.Text();
+BindingPathCellType.prototype.paint = <span style="color: #0000FF; ">function</span> (ctx, value, x, y, w, h, style, context) {
+    <span style="color: #0000FF; ">if</span> (value === <span style="color: #0000FF; ">null</span> || value === undefined) {
+        <span style="color: #0000FF; ">var</span> sheet = context.sheet, row = context.row, col = context.col;
+        <span style="color: #0000FF; ">if</span> (sheet &amp;&amp; (row === 0 || !!row) &amp;&amp; (col === 0 || !!col)) {
+<span style="color: #0000FF; ">var</span> bindingPath = sheet.getBindingPath(context.row, context.col);
+<span style="color: #0000FF; ">if</span> (bindingPath) {
+    value = <span style="color: #800000; ">&quot;[&quot;</span> + bindingPath + <span style="color: #800000; ">&quot;]&quot;</span>;
+}
+        }
+    }
+    GC.Spread.Sheets.CellTypes.Text.prototype.paint.apply(<span style="color: #0000FF; ">this</span>, arguments);
+};
+
+<span style="color: #0000FF; ">var</span> spread = <span style="color: #0000FF; ">new</span> GC.Spread.Sheets.Workbook(document.getElementById(<span style="color: #800000; ">&quot;ss&quot;</span>), {sheetCount: 1});
+activeSheet = spread.getActiveSheet();
+spread.suspendPaint();
+activeSheet.name(<span style="color: #800000; ">&quot;FINANCE CHARGE&quot;</span>);
+<span style="color: #0000FF; ">var</span> bindingPathCellType = <span style="color: #0000FF; ">new</span> BindingPathCellType();
+activeSheet.getCell(1, 2).bindingPath(<span style="color: #800000; ">&quot;company.slogan&quot;</span>).cellType(bindingPathCellType).vAlign(GC.Spread.Sheets.VerticalAlign.bottom);
+activeSheet.getCell(1, 4).value(<span style="color: #800000; ">&quot;INVOICE&quot;</span>).foreColor(<span style="color: #800000; ">&quot;#58B6C0&quot;</span>).font(<span style="color: #800000; ">&quot;33px Arial&quot;</span>);
+activeSheet.getCell(3, 1).bindingPath(<span style="color: #800000; ">&quot;company.name&quot;</span>).cellType(bindingPathCellType).foreColor(<span style="color: #800000; ">&quot;#58B6C0&quot;</span>).font(<span style="color: #800000; ">&quot;bold 20px Arial&quot;</span>);
+activeSheet.getCell(5, 1).bindingPath(<span style="color: #800000; ">&quot;company.address&quot;</span>).cellType(bindingPathCellType);
+activeSheet.getCell(5, 3).value(<span style="color: #800000; ">&quot;INVOICE NO.&quot;</span>).font(<span style="color: #800000; ">&quot;bold 15px Arial&quot;</span>);
+activeSheet.getCell(5, 4).bindingPath(<span style="color: #800000; ">&quot;number&quot;</span>).cellType(bindingPathCellType);
+activeSheet.getCell(6, 1).bindingPath(<span style="color: #800000; ">&quot;company.city&quot;</span>).cellType(bindingPathCellType);
+activeSheet.getCell(6, 3).value(<span style="color: #800000; ">&quot;DATE&quot;</span>).font(<span style="color: #800000; ">&quot;bold 15px Arial&quot;</span>);
+activeSheet.getCell(6, 4).bindingPath(<span style="color: #800000; ">&quot;date&quot;</span>).cellType(bindingPathCellType).formatter(<span style="color: #800000; ">&quot;MM/dd/yyyy&quot;</span>).hAlign(GC.Spread.Sheets.HorizontalAlign.left);
+activeSheet.getCell(7, 1).bindingPath(<span style="color: #800000; ">&quot;company.phone&quot;</span>).cellType(bindingPathCellType);
+activeSheet.getCell(7, 3).value(<span style="color: #800000; ">&quot;CUSTOMER ID&quot;</span>).font(<span style="color: #800000; ">&quot;bold 15px Arial&quot;</span>);
+activeSheet.getCell(7, 4).bindingPath(<span style="color: #800000; ">&quot;customer.id&quot;</span>).cellType(bindingPathCellType);
+activeSheet.getCell(8, 1).bindingPath(<span style="color: #800000; ">&quot;company.email&quot;</span>).cellType(bindingPathCellType);
+activeSheet.getCell(10, 1).value(<span style="color: #800000; ">&quot;TO&quot;</span>).font(<span style="color: #800000; ">&quot;bold 15px Arial&quot;</span>);
+activeSheet.getCell(10, 3).value(<span style="color: #800000; ">&quot;SHIP TO&quot;</span>).font(<span style="color: #800000; ">&quot;bold 15px Arial&quot;</span>);
+activeSheet.getCell(11, 1).bindingPath(<span style="color: #800000; ">&quot;customer.name&quot;</span>).cellType(bindingPathCellType).textIndent(10);
+activeSheet.getCell(12, 1).bindingPath(<span style="color: #800000; ">&quot;customer.company.name&quot;</span>).cellType(bindingPathCellType).textIndent(10);
+activeSheet.getCell(13, 1).bindingPath(<span style="color: #800000; ">&quot;customer.company.address&quot;</span>).cellType(bindingPathCellType).textIndent(10);
+activeSheet.getCell(14, 1).bindingPath(<span style="color: #800000; ">&quot;customer.company.city&quot;</span>).cellType(bindingPathCellType).textIndent(10);
+activeSheet.getCell(15, 1).bindingPath(<span style="color: #800000; ">&quot;customer.company.phone&quot;</span>).cellType(bindingPathCellType).textIndent(10);
+activeSheet.getCell(11, 4).bindingPath(<span style="color: #800000; ">&quot;receiverCustomer.name&quot;</span>).cellType(bindingPathCellType);
+activeSheet.getCell(12, 4).bindingPath(<span style="color: #800000; ">&quot;receiverCustomer.company.name&quot;</span>).cellType(bindingPathCellType);
+activeSheet.getCell(13, 4).bindingPath(<span style="color: #800000; ">&quot;receiverCustomer.company.address&quot;</span>).cellType(bindingPathCellType);
+activeSheet.getCell(14, 4).bindingPath(<span style="color: #800000; ">&quot;receiverCustomer.company.city&quot;</span>).cellType(bindingPathCellType);
+activeSheet.getCell(15, 4).bindingPath(<span style="color: #800000; ">&quot;receiverCustomer.company.phone&quot;</span>).cellType(bindingPathCellType);
+activeSheet.addSpan(17, 1, 1, 2);
+activeSheet.getCell(17, 1).value(<span style="color: #800000; ">&quot;JOB&quot;</span>).foreColor(<span style="color: #800000; ">&quot;#58B6C0&quot;</span>).font(<span style="color: #800000; ">&quot;bold 12px Arial&quot;</span>);
+activeSheet.addSpan(17, 3, 1, 2);
+activeSheet.getCell(17, 3).value(<span style="color: #800000; ">&quot;PAYMENT TERMS&quot;</span>).foreColor(<span style="color: #800000; ">&quot;#58B6C0&quot;</span>).font(<span style="color: #800000; ">&quot;bold 12px Arial&quot;</span>);
+activeSheet.addSpan(18, 1, 1, 2);
+activeSheet.getCell(18, 1).backColor(<span style="color: #800000; ">&quot;#DDF0F2&quot;</span>);
+activeSheet.addSpan(18, 3, 1, 2);
+activeSheet.getCell(18, 3).value(<span style="color: #800000; ">&quot;Due on receipt&quot;</span>).backColor(<span style="color: #800000; ">&quot;#DDF0F2&quot;</span>).foreColor(<span style="color: #800000; ">&quot;#58B6C0&quot;</span>).font(<span style="color: #800000; ">&quot;12px Arial&quot;</span>);
+
+activeSheet.getRange(17, 1, 2, 4, GC.Spread.Sheets.SheetArea.viewport).setBorder(<span style="color: #0000FF; ">new</span> GC.Spread.Sheets.LineBorder(<span style="color: #800000; ">&quot;#58B6C0&quot;</span>, GC.Spread.Sheets.LineStyle.thin), {
+    top: <span style="color: #0000FF; ">true</span>,
+    bottom: <span style="color: #0000FF; ">true</span>,
+    innerHorizontal: <span style="color: #0000FF; ">true</span>
+});
+
+<span style="color: #0000FF; ">var</span> table = activeSheet.tables.add(<span style="color: #800000; ">&quot;tableRecords&quot;</span>, 20, 1, 4, 4, GC.Spread.Sheets.Tables.TableThemes.light6);
+table.autoGenerateColumns(<span style="color: #0000FF; ">false</span>);
+<span style="color: #0000FF; ">var</span> tableColumn1 = <span style="color: #0000FF; ">new</span> GC.Spread.Sheets.Tables.TableColumn();
+tableColumn1.name(<span style="color: #800000; ">&quot;DESCRIPTION&quot;</span>);
+tableColumn1.dataField(<span style="color: #800000; ">&quot;description&quot;</span>);
+<span style="color: #0000FF; ">var</span> tableColumn2 = <span style="color: #0000FF; ">new</span> GC.Spread.Sheets.Tables.TableColumn();
+tableColumn2.name(<span style="color: #800000; ">&quot;QUANTITY&quot;</span>);
+tableColumn2.dataField(<span style="color: #800000; ">&quot;quantity&quot;</span>);
+<span style="color: #0000FF; ">var</span> tableColumn3 = <span style="color: #0000FF; ">new</span> GC.Spread.Sheets.Tables.TableColumn();
+tableColumn3.name(<span style="color: #800000; ">&quot;AMOUNT&quot;</span>);
+tableColumn3.dataField(<span style="color: #800000; ">&quot;amount&quot;</span>);
+table.bindColumns([tableColumn1, tableColumn2, tableColumn3]);
+table.bindingPath(<span style="color: #800000; ">&quot;records&quot;</span>);
+table.showFooter(<span style="color: #0000FF; ">true</span>);
+table.setColumnName(3, <span style="color: #800000; ">&quot;TOTAL&quot;</span>);
+table.setColumnValue(2, <span style="color: #800000; ">&quot;TOTAL DUE&quot;</span>);
+table.setColumnDataFormula(3, <span style="color: #800000; ">&quot;=[@QUANTITY]*[@AMOUNT]&quot;</span>);
+table.setColumnFormula(3, <span style="color: #800000; ">&quot;=SUBTOTAL(109,[TOTAL])&quot;</span>);
+activeSheet.getCell(26, 1).formula(<span style="color: #800000; ">'=&quot;Make all checks payable to &quot;&amp;B4&amp;&quot;. THANK YOU FOR YOUR BUSINESS!&quot;').foreColor(&quot;gray&quot;).font(&quot;italic 14px Arial&quot;);
+activeSheet.options.allowCellOverflow = true;
+//Adjust row height and column width
+activeSheet.setColumnWidth(0, 5);
+activeSheet.setColumnWidth(1, 300);
+activeSheet.setColumnWidth(2, 115);
+activeSheet.setColumnWidth(3, 125);
+activeSheet.setColumnWidth(4, 155);
+activeSheet.setRowHeight(0, 5);
+activeSheet.setRowHeight(1, 40);
+activeSheet.setRowHeight(2, 10);
+activeSheet.setRowHeight(17, 0);
+activeSheet.setRowHeight(18, 0);
+activeSheet.setRowHeight(19, 0);
+activeSheet.setRowHeight(25, 10);
+activeSheet.options.gridline = {showVerticalGridline: false, showHorizontalGridline: false};
+//Set a data source
+//activeSheet.setDataSource(dataSource1);
+activeSheet.setDataSource(dataSource2);
+spread.resumePaint();
+        })</span></pre></div>
+	</div>
+</div>
+</div><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="MENU_LINK" namespace="example" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=example,caption=$$Example$$%%%%filtereditemlist%%</div>" --><!--DXMETADATA end -->
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##REMARKS" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=remarks,caption=$$Remarks$$%%%%comment%%</div>" --><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="BROWSER_COMPATIBILITY_LIST" namespace="Browser Compatibility" source="Item" filter="" condition="content:content=""%%IncludeBrowserCompatibility%%"",operator=""="",value=""True""" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=browsercompatibility,caption=$$Browser_Compatibility$$%%%%filtereditemlist%%</div>" blankformat="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=browsercompatibility,caption=$$Browser_Compatibility$$%%%%filtereditemlist%%</div>"--><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORIZED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""$$See_Also$$%%designlist:tagidentifier=##SEEALSO,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><h4 class="dxh4">Reference</h4><p><a href="SpreadJS~GC.Spread.Sheets.Tables.Table.html">Table type</a>
+</p>
+</div><!--DXMETADATA end-->
+            <div id="i-footer-content" class="i-footer-content">
+                <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p><p>Copyright © 2019 GrapeCity, Inc. All rights reserved.</p>
+<p><a href="https://www.grapecity.com/en/forums/winforms-edition" target="_blank">Product Support Forum</a> | <a href="javascript:window.print()">Print this page</a></p>
+<ul class="social">
+<li><a href="https://www.facebook.com/GrapeCityUS/" target="_blank" class="facebook">&nbsp;</a></li>
+<li><a href="https://twitter.com/GrapeCityUS" target="_blank" class="twitter">&nbsp;</a></li>
+<li><a href="https://www.linkedin.com/company/grapecity" target="_blank" class="linkedin">&nbsp;</a></li>
+</ul>
+</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><a href="mailto:support@company.com?subject=Documentation Feedback: SpreadJS~GC.Spread.Sheets.Tables.Table~autoGenerateColumns.html">Send comments</a> on this topic.<!--DXMETADATA end-->
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

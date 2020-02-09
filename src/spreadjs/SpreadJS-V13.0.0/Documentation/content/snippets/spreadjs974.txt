@@ -1,0 +1,13 @@
+var nCondition = new GC.Spread.Sheets.ConditionalFormatting.Condition(GC.Spread.Sheets.ConditionalFormatting.ConditionType.cellValueCondition);
+nCondition.compareType(GC.Spread.Sheets.ConditionalFormatting.GeneralComparisonOperators.equalsTo);
+nCondition.expected(0);
+//When the option is false, the validation fails and the red alert is displayed.
+//When the option is true, the blank cell is treated as zero and the validation is successful.
+nCondition.treatNullValueAsZero(false);
+var validator = new GC.Spread.Sheets.DataValidation.DefaultDataValidator(nCondition);
+validator.type(GC.Spread.Sheets.DataValidation.CriteriaType.custom);
+validator.ignoreBlank(false);
+activeSheet.getCell(0, 0, GC.Spread.Sheets.SheetArea.viewport).validator(validator);
+spread.options.highlightInvalidData = true;
+activeSheet.setValue(0, 0, null);
+alert(validator.value2());

@@ -1,0 +1,1 @@
+activeSheet.getCell(1,1).vAlign(GC.Spread.Sheets.VerticalAlign.center);

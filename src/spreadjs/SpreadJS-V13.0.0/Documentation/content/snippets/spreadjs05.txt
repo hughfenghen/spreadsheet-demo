@@ -1,0 +1,20 @@
+// Set the number of rows to 3.
+    activeSheet.setRowCount(3, GC.Spread.Sheets.SheetArea.viewport);
+    activeSheet.setValue(0, 0, "The 1st row", GC.Spread.Sheets.SheetArea.viewport);
+    activeSheet.setValue(1, 0, "The 2st row", GC.Spread.Sheets.SheetArea.viewport);
+    activeSheet.setValue(2, 0, "The 3st row", GC.Spread.Sheets.SheetArea.viewport);
+    activeSheet.setColumnWidth(0, 90.0, GC.Spread.Sheets.SheetArea.viewport);
+
+    $("#button1").click(function(){
+        //Delete Row 2.
+activeSheet.deleteRows(1, 1);
+    });
+
+    $("#button2").click(function(){
+        //Delete Column 2.
+ activeSheet.deleteColumns(1, 1);
+    });
+
+//Add button controls to page
+<input type="button" id="button1" value="button1"/>
+<input type="button" id="button2" value="button2"/>

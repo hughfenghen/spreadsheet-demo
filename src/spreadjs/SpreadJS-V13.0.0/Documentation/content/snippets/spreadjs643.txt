@@ -1,0 +1,35 @@
+<script type="text/javascript">
+    window.onload = function () {
+        var spread = new GC.Spread.Sheets.Workbook(document.getElementById("ss"));
+        var activeSheet = spread.getActiveSheet();
+
+spread.commandManager().register("startEditing", {
+            canUndo: false,
+            execute: function (context, options) {
+                var sheet = context.getSheetFromName(options.sheetName);
+                if (sheet && !sheet.isEditing()) {
+                    sheet.startEdit();
+                }
+            }
+        }, 113, false, false, false, false);
+
+        setstatus(activeSheet);
+        activeSheet.bind(GC.Spread.Sheets.Events.EditorStatusChanged,function(e,args){
+            setstatus(activeSheet, args.status);
+        });
+    }
+
+    function setstatus(activeSheet,status) {
+        var statusnow = status || activeSheet.editorStatus();
+        if (statusnow === GC.Spread.Sheets.EditorStatus.ready) {
+            $("#status").text("Ready");
+        } else if (statusnow === GC.Spread.Sheets.EditorStatus.enter) {
+            $("#status").text("Enter");
+        } else if (statusnow === GC.Spread.Sheets.EditorStatus.edit) {
+            $("#status").text("Edit");
+        }
+    }
+</script>
+
+// This creates the status label
+<label id="status" style="margin: 10px">

@@ -1,0 +1,3 @@
+activeSheet.bind(GC.Spread.Sheets.Events.EditorStatusChanged, function (e, info) {    
+        alert("Column (" + info.newStatus + ")");
+});

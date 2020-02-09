@@ -1,0 +1,1 @@
+spread.commandManager().setShortcutKey("navigationFirst", GC.Spread.Commands.Key.a, false, false, false, false);

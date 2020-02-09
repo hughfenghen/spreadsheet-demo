@@ -1,0 +1,6 @@
+var activeSheet = spread.getActiveSheet();
+
+//Change the default Up arrow key action to "Page Up" for the active cell.
+spread.commandManager().setShortcutKey('navigationPageUp', GC.Spread.Commands.Key.up, false, false, false, false);
+//Change the default Down arrow key action to "Page Down" for the active cell.
+spread.commandManager().setShortcutKey('navigationPageDown', GC.Spread.Commands.Key.down, false, false, false, false);

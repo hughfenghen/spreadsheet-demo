@@ -1,0 +1,3 @@
+var cellType2 = new GC.Spread.Sheets.CellTypes.ComboBox();
+cellType2.items(["a","b","c"]);
+activeSheet.getCell(2, 2).cellType(cellType2);

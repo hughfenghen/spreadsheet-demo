@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/handsontable@7.3.0/dist/handsontable.full.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/handsontable@7.3.0/dist/handsontable.full.min.css" rel="stylesheet"
+    media="screen">
+  <style>
+    #example {
+      width: 100%;
+      height: 800px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="example"></div>
+  <script>
+
+    const data = []
+    for (let i = 0; i < 1e6; i++) {
+      const row = []
+      for (let j = 0; j < 100; j++) {
+        row.push(i)
+      }
+      data.push(row)
+    }
+
+    var container = document.getElementById('example');
+    let s = Date.now()
+    var hot = new Handsontable(container, {
+      data: data,
+      rowHeaders: true,
+      colHeaders: true,
+      // filters: true,
+      // dropdownMenu: true,
+      height: 800,
+      autoRowSize: false,
+      autoColumnSize: false,
+    });
+    console.log(1111111, Date.now() - s);
+    // 1e4: 新页面670ms 刷新页面365ms
+    // 1e5: 新页面4400ms 刷新页面2300ms
+      // 启动页面时拖动滚动条很卡
+    // 1e6: OOM
+
+    // 固定行高、列宽
+    // 1e4: 新页面220ms 刷新页面118ms
+    // 1e5: 新页面235ms 刷新页面130ms
+    // 1e6: 新页面320ms 刷新页面261ms
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+sheet.getCell(3, 3).backColor("Background 1");
+sheet.getCell(3, 4).backColor("Text 1");
+sheet.getCell(3, 5).backColor("Background 2");
+sheet.getCell(3, 6).backColor("Text 2");
+sheet.getCell(3, 7).backColor("Accent 1");
+sheet.getCell(3, 8).backColor("Accent 2");
+sheet.getCell(3, 9).backColor("Accent 3");
+sheet.getCell(3, 10).backColor("Accent 4");
+sheet.getCell(3, 11).backColor("Accent 5");
+sheet.getCell(3, 12).backColor("Accent 6");
+sheet.getCell(5, 1).themeFont("Body");

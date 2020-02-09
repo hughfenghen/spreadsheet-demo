@@ -1,0 +1,4 @@
+sheet.setRowResizable(3,false,GC.Spread.Sheets.SheetArea.viewport);
+sheet.setColumnResizable(3,false,GC.Spread.Sheets.SheetArea.viewport);
+sheet.getRange(1,-1, 1, -1, GC.Spread.Sheets.SheetArea.viewport).resizable(false);
+sheet.getRange(-1, 1, -1, 1, GC.Spread.Sheets.SheetArea.viewport).resizable(false);

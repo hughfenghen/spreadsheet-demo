@@ -1,0 +1,8 @@
+var source = [
+                { LastName: "Freehafer", FirstName: "Nancy", Title: "Sales Representative", Phone: "(123)555-0100"},
+                { LastName: "Cencini", FirstName: "Andrew", Title: "Vice President, Sales", Phone: "(123)555-0101"},
+                { LastName: "Kotas", FirstName: "Jan", Title: "Sales Representative", Phone: "(123)555-0102"},
+                { LastName: "Sergienko", FirstName: "Mariya", Title: "Sales Representative", Phone: "(123)555-0103"},
+            ];
+            
+            activeSheet.tables.addFromDataSource("Table1", 5, 2, source, GC.Spread.Sheets.Tables.TableThemes.dark1);

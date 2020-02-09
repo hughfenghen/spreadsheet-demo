@@ -1,0 +1,12 @@
+var namedStyle = new GC.Spread.Sheets.Style();
+namedStyle.name = "style1";
+namedStyle.backColor = "green";
+activeSheet.addNamedStyle(namedStyle);
+activeSheet.setStyleName(1, 1, "style1"); // cell(1,1)'s backColor is green.
+ 
+var namedStyle1 = new GC.Spread.Sheets.Style();
+namedStyle1.name = "style2";
+namedStyle1.parentName = "style1";
+namedStyle1.foreColor = "red";    // the namedStyle's foreColor is red.
+activeSheet.addNamedStyle(namedStyle1);
+activeSheet.setStyleName(2, 1, "style2");

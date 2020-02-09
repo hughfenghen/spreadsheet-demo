@@ -1,0 +1,10 @@
+var defaultStyle = new GC.Spread.Sheets.Style();
+defaultStyle.backColor = "LemonChiffon";
+defaultStyle.foreColor = "Red";
+defaultStyle.borderLeft = new GC.Spread.Sheets.LineBorder("Green");
+defaultStyle.borderTop = new GC.Spread.Sheets.LineBorder("Green");
+defaultStyle.borderRight = new GC.Spread.Sheets.LineBorder("Green");
+defaultStyle.borderBottom = new GC.Spread.Sheets.LineBorder("Green");
+activeSheet.setDefaultStyle(defaultStyle, GC.Spread.Sheets.SheetArea.viewport);
+var cstyle = activeSheet.getDefaultStyle(GC.Spread.Sheets.SheetArea.viewport);
+alert(cstyle.backColor);

@@ -1,0 +1,533 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%ProjectTitle%% - %%ItemTitle%%</title>" --><title>SpreadJS Documentation - Data Validation</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ProjectTitle%% - %%ItemTitleNoQuotes%%""/>" --><meta name="Title" content="SpreadJS Documentation - Data Validation"/><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n307","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="light" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="SpreadJS allows users to create validators in order to validate the data input and restrict the invalid information. You can display a list of valid values for the user and display an invalid data image as soon as a user enters invalid data in the ce" /><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-topics/topics.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-topics/topics.mshv1.css"" data-responsive-mobile=""template/packages/core-topics/topics.mobile.css"" data-responsive-tablet=""template/packages/core-topics/topics.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="script"--><script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="script"--><script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="7d29f82b-363c-40eb-8cc1-85e4427777d5"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="da8d5ee2-66da-499e-ac0f-b91757afe8e7"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocOrdinal" format="<meta name=""Microsoft.Help.TocOrder"" content=""%%TocOrdinal%%""/>" --><meta name="Microsoft.Help.TocOrder" content="5"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/hs-simpletab.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="StylePropertyValues" format="<style>%%StylePropertyValues%%</style>" --><style>.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+    <!--DXMETADATA start type="CustomHeadContent" --><link rel="stylesheet" type="text/css" href="template/packages/core-web/css/SP.css">
+<script type="text/javascript">
+var currentHeader = function() {
+    return "spjs";
+}
+</script>
+<script src="template/packages/core-web/script/topNavigation.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WT462SJ"></script>
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime()
+                , event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WT462SJ');
+    </script>
+<!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->SpreadJS Documentation<!--DXMETADATA end--></div>
+            <div class="i-search-container">
+                <!--DXMETADATA start type="outputfileextension" format="<form action=""websearch%%outputfileextension%%"">" --><form action="websearch.html"><!--DXMETADATA end-->
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                <!--DXMETADATA start type="Literal" value="</form>" --></form><!--DXMETADATA end-->
+            </div>
+            <!--DXMETADATA start type="outputfileextension" format="<a id=""i-index-button"" href=""webindex%%outputfileextension%%""></a>" --><a id="i-index-button" href="webindex.html"></a><!--DXMETADATA end-->
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container">
+<a href="overview.html">SpreadJS Documentation</a>
+ / <a href="devguide.html">Developer's Guide</a>
+ / <a href="features.html">Features</a>
+ / <a href="managedata.html">Manage Data</a>
+ / Data Validation</div><!--DXMETADATA end --></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="ItemTitle" -->Data Validation<!--DXMETADATA end--></div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+            </div>
+            <!--DXMETADATA start type="TopicSection" name="BodyText"--><p>SpreadJS allows users to create validators in order to validate the data input and restrict the invalid information. You can display a list of valid values for the user and display an invalid data image as soon as&nbsp;a user enters invalid data in&nbsp;the cell.</p>
+
+<p>You can validate the information entered in the speadsheets&nbsp;in the following ways -</p>
+
+<ul>
+    <li><a href="#A">Using Different Types of Data Validation</a></li>
+
+    <li><a href="#B">Using Different Highlight Styles for Data Validation</a></li>
+</ul>
+
+<h2 id="A">Using Different Types of Data Validation</h2>
+
+<p>SpreadJS provides support for the following types of data validation -&nbsp;</p>
+
+<ul>
+    <li><a href="#a">Date Validation</a></li>
+
+    <li><a href="#b">Formula Validation</a></li>
+
+    <li><a href="#c">Formula List Validation</a></li>
+
+    <li><a href="#d">List Validation</a></li>
+
+    <li><a href="#e">Number Validation</a></li>
+
+    <li><a href="#f">Text Length Validation</a></li>
+</ul>
+
+<h3 id="a">Date Validation</h3>
+
+<p>The&nbsp;<a href="SpreadJS~GC.Spread.Sheets.DataValidation~createDateValidator.html">createDateValidator</a> method can be used to validate a specific date criteria for a cell.</p>
+
+<p>Date validation restricts users from entering&nbsp;invalid date&nbsp;information (that doesn't meet the specified date criteria for a particular cell) in the spreadsheet.&nbsp;For example, let's say you create a date validator&nbsp;to allow users to enter&nbsp;any date&nbsp;between 31st December,2017 and 31st December 2018. Any date entry outside this range will be considered as an invalid data entry.</p>
+
+<h4>Using Code</h4>
+
+<p>This example creates a date validator.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">spread.options.highlightInvalidData = true;<br />
+                var dv = GC.Spread.Sheets.DataValidation.createDateValidator(GC.Spread.Sheets.ConditionalFormatting.ComparisonOperators.between, new Date(2017, 12, 31), new Date(2018, 12, 31));<br />
+                dv.showInputMessage(true);<br />
+                dv.inputMessage("Enter a date between 12/31/2017 and 12/31/2018.");<br />
+                dv.inputTitle("Tip");<br />
+                activeSheet.setDataValidator(1, 1, 1, 1, dv, GC.Spread.Sheets.SheetArea.viewport);</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h3 id="b">Formula Validation</h3>
+
+<p>The&nbsp;<a href="SpreadJS~GC.Spread.Sheets.DataValidation~createFormulaValidator.html">createFormulaValidator</a> method can be used to validate the formula entered in a cell.</p>
+
+<h4>Using Code</h4>
+
+<p>This example creates a formula validator.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">spread.options.highlightInvalidData = true;<br />
+                //The formula validator is valid if the formula condition returns true.<br />
+                var dv = GC.Spread.Sheets.DataValidation.createFormulaValidator("A1&gt;0");<br />
+                dv.showInputMessage(true);<br />
+                dv.inputMessage("Enter a value greater than 0 in A1.");<br />
+                dv.inputTitle("Tip");<br />
+                activeSheet.setDataValidator(0, 0, 1, 1, dv, GC.Spread.Sheets.SheetArea.viewport);</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h3 id="c">Formula List Validation</h3>
+
+<p>The&nbsp;<a href="SpreadJS~GC.Spread.Sheets.DataValidation~createFormulaListValidator.html" data-auto-update-caption="true">createFormulaListValidator</a> method can&nbsp;be used to validate the list of formulas in the spreadsheet. The&nbsp;formula list validator uses a range of cells to create the list of valid values.</p>
+
+<p>The formula validator is valid if the formula condition returns true. The&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Events~ValidationError_EV.html">ValidationError</a> event occurs when the applied cell value is invalid.</p>
+
+<h4>Using Code</h4>
+
+<p>This example creates a list of valid&nbsp;values based on a range of cells specified by a formula.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">activeSheet.setValue(0, 2, 5);<br />
+                activeSheet.setValue(1, 2, 4);<br />
+                activeSheet.setValue(2, 2, 5);<br />
+                <br />
+                spread.options.highlightInvalidData = true;<br />
+                var dv = GC.Spread.Sheets.DataValidation.createFormulaListValidator("$C$1:$C$3");<br />
+                dv.showInputMessage(true);<br />
+                dv.inputMessage("Pick a value from the list.");<br />
+                dv.inputTitle("tip");<br />
+                activeSheet.setDataValidator(1, 1, 1, 1, dv, GC.Spread.Sheets.SheetArea.viewport);<br />
+                var validList = activeSheet.getDataValidator(1, 1).getValidList(sheet, 1, 1);</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h3 id="d">List Validation</h3>
+
+<p>The&nbsp;<a href="SpreadJS~GC.Spread.Sheets.DataValidation~createListValidator.html" data-auto-update-caption="true">createListValidator</a> method creates a validator based on a list.</p>
+
+<h4>Using Code</h4>
+
+<p>This example creates a list of valid values, displays an input tip, and displays an invalid data image if the incorrect value is entered.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">spread.options.highlightInvalidData = true;<br />
+                var dv = GC.Spread.Sheets.DataValidation.createListValidator("1,2,3");<br />
+                dv.showInputMessage(true);<br />
+                dv.inputMessage("Value must be 1,2 or 3");<br />
+                dv.inputTitle("tip");<br />
+                activeSheet.setDataValidator(1,1,1,1,dv,GC.Spread.Sheets.SheetArea.viewport);<br />
+                alert(activeSheet.getDataValidator(1,1).getValidList(activeSheet,1,1));</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>SpreadJS also provides support for inserting commas (via escape characters) for each paragraph in the list as shown in the below image. The cell B2 represents a list of numbers and the cell D2 represents a list of operators.</p>
+
+<p>&nbsp;<img style="HEIGHT: 150px; WIDTH: 764px" border="0" alt="" src="images/data-valid-separator.png" width="804" height="160" /></p>
+
+<h4>Using Code</h4>
+
+<p>This example shows list validation using two different lists - one is a list of numbers and the other is a list of operators separated by commas. The two list validation criteria&nbsp;in different cells (B2 and D2) restrict users to choose&nbsp;from the values listed in the drop-down list while entering data in the cells.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <p>// Setting column width<br />
+                    sheet.setColumnWidth(0, 200.0, GC.Spread.Sheets.SheetArea.viewport);<br />
+                    sheet.setColumnWidth(1, 120.0, GC.Spread.Sheets.SheetArea.viewport);<br />
+                    sheet.setColumnWidth(2, 200.0, GC.Spread.Sheets.SheetArea.viewport);<br />
+                    sheet.setColumnWidth(3, 120.0, GC.Spread.Sheets.SheetArea.viewport);</p>
+
+                    <p>// Using comma in Validation Lists<br />
+                    var dv1 = new GC.Spread.Sheets.DataValidation.createListValidator("123\\,456,234\\,567,789\\,564");<br />
+                    sheet.setText(1, 0, "Choose a number from cell B2");<br />
+                    dv1.inputTitle("Please choose a number:");<br />
+                    dv1.inputMessage("Number of money");<br />
+                    sheet.setDataValidator(1, 1, dv1);</p>
+
+                    <p>var dv2 = new GC.Spread.Sheets.DataValidation.createListValidator("<a href="file://,,%3e,%3c,*,/">\\,,&gt;,&lt;,*,/</a>");<br />
+                    sheet.setText(1, 2, "Choose an operator from cell D2");<br />
+                    dv2.inputTitle("Please choose an operator:");<br />
+                    dv2.inputMessage("operator of calculator");<br />
+                    sheet.setDataValidator(1, 3, dv2);</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h3 id="e">Number Validation</h3>
+
+<p>The&nbsp;<a href="SpreadJS~GC.Spread.Sheets.DataValidation~createNumberValidator.html" data-auto-update-caption="true">createNumberValidator</a> method can be used to validate the number entered in a cell.</p>
+
+<p>Number validation restricts users from entering the numeric values that fall outside the validation criteria specified for the cell.</p>
+
+<h4>Using Code</h4>
+
+<p>This example uses a number validator, displays an input tip, and displays an invalid data image if the incorrect value is entered.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">spread.options.highlightInvalidData = true;<br />
+                var dv = GC.Spread.Sheets.DataValidation.createNumberValidator(GC.Spread.Sheets.ConditionalFormatting.ComparisonOperators.between, "5", "20", true);<br />
+                dv.showInputMessage(true);<br />
+                dv.inputMessage("Value must be between 5 and 20.");<br />
+                dv.inputTitle("tip");<br />
+                activeSheet.setDataValidator(1, 1, 1, 1, dv, GC.Spread.Sheets.SheetArea.viewport);</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h3 id="f">Text Length Validation</h3>
+
+<p>The&nbsp;<a href="SpreadJS~GC.Spread.Sheets.DataValidation~createTextLengthValidator.html">createTextLengthValidator</a>&nbsp;method can be used to validate the length of the text entered in a cell.</p>
+
+<p>You can restrict the number of characters entered in a cell using the text length validation.</p>
+
+<h4>Using Code</h4>
+
+<p>This example uses a&nbsp;text validator, displays an input tip, and displays an invalid data image if the incorrect value is entered.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">spread.options.highlightInvalidData = true;<br />
+                var dv = GC.Spread.Sheets.DataValidation.createTextLengthValidator(GC.Spread.Sheets.ConditionalFormatting.ComparisonOperators.greaterThan, "4", "20");<br />
+                dv.showInputMessage(true);<br />
+                dv.inputMessage("Number of characters must be greater than 4.");<br />
+                dv.inputTitle("tip");<br />
+                activeSheet.setDataValidator(1, 1, 1, 1, dv, GC.Spread.Sheets.SheetArea.viewport);</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h2 id="B">Using Different Highlight Styles for Data Validation</h2>
+
+<p>You can indicate invalid information in a cell using different highlight styles including the highlight type, position, color and image. SpreadJS supports three different types of highlight types (circle, dog-ear and icon)&nbsp;and six different types of highlight positions (topLeft, topRight, bottomRight, bottomLeft, outsideLeft and outsideRight) in order to allow users to indicate invalid data in the spreadsheet.&nbsp;By default, the highlight type is "circle", highlight position is "topRight" and the&nbsp;highlight color is "red". For the image in the icon highlight style, you can either specify the image URL or image base64 data.&nbsp;</p>
+
+<p>Along with the different highlight styles,&nbsp;you can&nbsp;also show an input tip for the user&nbsp;and display a drop-down button that displays&nbsp;the list of valid values, as shown&nbsp;in the following images.</p>
+
+<p><img border="0" alt="" src="images/invalidtip.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img border="0" alt="" src="images/invaliddrop.png" /></p>
+
+<p>The <strong>highlightInvalidData</strong> property must be set to true in order to highlight the invalid information. The <strong>highlightStyle</strong> method can be used to control the style of the highlighted error with each type possessing a different style attribute.&nbsp;</p>
+
+<p>In the image shown below, the highlight type in cell B2 represents the circle style, cell D2 represents the dog-ear style and the cell F2 represents the icon style. Also, the highlight position for cell D2 is set to topLeft and cell F2 is set to outsideLeft.</p>
+
+<p>&nbsp;<img border="0" alt="" src="images/data-valid.png" /></p>
+
+<h4>Using Code</h4>
+
+<p>This example shows three different type of highlight styles - circle, dog-ear and icon for validating data in a spreadsheet.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <p>// Setting column width &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+                    <p>sheet.setColumnWidth(1, 100.0, GC.Spread.Sheets.SheetArea.viewport);<br />
+                    sheet.setColumnWidth(3, 100.0, GC.Spread.Sheets.SheetArea.viewport);<br />
+                    sheet.setColumnWidth(5, 100.0, GC.Spread.Sheets.SheetArea.viewport);</p>
+
+                    <p>// Set the option highlightInvalidData method to true</p>
+
+                    <p>spread.options.highlightInvalidData = true;</p>
+
+                    <p>// For circle highlightStyle<br />
+                    sheet.setValue(1, 1, "Juice");<br />
+                    var dv1 = new GC.Spread.Sheets.DataValidation.createListValidator('Fruit,Vegetable,Food');<br />
+                    dv1.highlightStyle({<br />
+                    type: GC.Spread.Sheets.DataValidation.HighlightType.circle,<br />
+                    color: 'red'<br />
+                    });<br />
+                    sheet.setDataValidator(1, 1, dv1);</p>
+
+                    <p>// For dog-ear highlightStyle<br />
+                    sheet.setValue(1, 3, "Juice");<br />
+                    var dv2 = new GC.Spread.Sheets.DataValidation.createListValidator('Fruit,Vegetable,Food');<br />
+                    dv2.highlightStyle({<br />
+                    type: GC.Spread.Sheets.DataValidation.HighlightType.dogEar,<br />
+                    color: 'orange',<br />
+                    position: GC.Spread.Sheets.DataValidation.HighlightPostition.topLeft<br />
+                    });<br />
+                    sheet.setDataValidator(1, 3, dv2);</p>
+
+                    <p>// For icon highlightStyle</p>
+
+                    <p>var imageData =</p>
+
+                    <p>"data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC5ElEQVRYR8WXPUxTURTH//" +<br />
+                    "8nbYE6YIKSCH70lcbEVOOgMTGokw7E2cVVcDQmCrzi0IFQICbGTcXVTRcDiXEiDBojmmifRCgtjYKDYsAQ0g + gx7xXadry0dfyQt / U5J57zu + c23vu /" +<br />
+                    "xAWvx8td + r + OuvbhXKdEJ + AjYQcEkEGxB8KFwB8g8hLt7hGPPFg0oprljKKtGoHU8J + EblBsq6UvbEuIgmSz12UgG8m9HunPdsCCII1uifdDYp" +<br />
+                    "G0m0lcLGNiKxAGPLPOgeJ4NpWPrYE + HK05wAdygiBC5UE3gQCvJXVzLXT3wcWi9c2AUyq930ZrL8BedyO4DkfInEF + 66ejPVF8v0WAIQ9gSYo + Eig2dbgG85E4" +<br />
+                    "o6k69yJn0HjD2t + OYDPTXfditvxjuSpksEFSaG8L8hEeB5Ebam9IphoSCcuHZl7mCgA0FVtEGRXKQfmukjcHwt58m11VZu1fGyCQX + svycHMNXS27zqlBkrGdgEk" +<br />
+                    "HSl1ny++aE58wh0b2AYwE1L2dtRgWygZ / 5ofwe / IujMqKklq03Glgr8b1ZKzNXASVVrz5CjlrO3rwLGDWhnWNUek7xVDQARecKwVxsjeLkaAICMUVcD0yB8VQEQm" +<br />
+                    "WZYDayQqK8KAGSZujewDGB / FQG0CMDWqgAIItRVbRzkxXIARLAE4FHRntskGsr0M17ZNSwnyg625jWsqBHZBGA2omwrTi + WcxPsOAJDN5qtOPsYaU8BdlhObLfPc" +<br />
+                    "fZBGfZHQ50mgKGESMT38jmuZfpYa / TBr5wi0r2BIQD3LFVhtxUQGfLHQt05QWL8MAaPJWfdOImzJSF2I8mATw2pRNsmSWYEnTocbFytTX2wLK1KkhYaCDDvTDjPbCl" +<br />
+                    "KN0wNWb7O9dcE1TL972wuEgflij86MJNvuO1gotQor0C02QEh5QwmGwEn0OlweRq7QOktS67lEVc8muVnbV5RBX17PpwWl3678RxCEcpCbjwHX7gzjlGr4 / k / MV" +<br />
+                    "GWHUHnf3sAAAAASUVORK5CYII = ";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+                    <p>sheet.setValue(1, 5, "Juice");<br />
+                    var dv3 = new GC.Spread.Sheets.DataValidation.createListValidator('Fruit,Vegetable,Food');<br />
+                    dv3.highlightStyle({<br />
+                    type: GC.Spread.Sheets.DataValidation.HighlightType.icon,<br />
+                    color: 'blue',<br />
+                    position: GC.Spread.Sheets.DataValidation.HighlightPostition.outsideLeft,<br />
+                    image: imageData<br />
+                    });<br />
+                    sheet.setDataValidator(1, 5, dv3);</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>&nbsp;</p><!--DXMETADATA end-->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORISED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""%%phrase:name=SeeAlso%%%%designlist:tagidentifier=seealso,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><div class="i-see-also-link">
+<a href="SpreadJS~GC.Spread.Sheets.Worksheet~setDataValidator.html">setDataValidator Method</a></div>
+
+</div><!--DXMETADATA end-->
+            
+            <div id="i-footer-content" class="i-footer-content">
+                <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p><p>Copyright © 2019 GrapeCity, Inc. All rights reserved.</p>
+<p><a href="https://www.grapecity.com/en/forums/winforms-edition" target="_blank">Product Support Forum</a> | <a href="javascript:window.print()">Print this page</a></p>
+<ul class="social">
+<li><a href="https://www.facebook.com/GrapeCityUS/" target="_blank" class="facebook">&nbsp;</a></li>
+<li><a href="https://twitter.com/GrapeCityUS" target="_blank" class="twitter">&nbsp;</a></li>
+<li><a href="https://www.linkedin.com/company/grapecity" target="_blank" class="linkedin">&nbsp;</a></li>
+</ul>
+</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end-->
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+activeSheet.setValue(0, 0, 1);
+activeSheet.setValue(0, 1, 2);
+activeSheet.setValue(0, 2, 3);
+spread.addCustomName("customName1","=12", 0, 0);
+activeSheet.setFormula(1, 0, "customName1");
+//spread.removeCustomName("customName1");

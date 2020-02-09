@@ -1,0 +1,2 @@
+activeSheet.setActiveCell(10,5);
+activeSheet.showCell(10, 5, GC.Spread.Sheets.VerticalPosition.top, GC.Spread.Sheets.HorizontalPosition.center);

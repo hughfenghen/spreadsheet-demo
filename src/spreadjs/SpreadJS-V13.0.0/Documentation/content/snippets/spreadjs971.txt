@@ -1,0 +1,8 @@
+var nCondition = new GC.Spread.Sheets.ConditionalFormatting.Condition(GC.Spread.Sheets.ConditionalFormatting.ConditionType.dateExCondition, {formula:"$C$1"});
+//nCondition.formula = "$C$1";
+var validator = new GC.Spread.Sheets.DataValidation.DefaultDataValidator(nCondition);
+validator.type(GC.Spread.Sheets.DataValidation.CriteriaType.custom);
+activeSheet.getCell(0, 0, GC.Spread.Sheets.SheetArea.viewport).validator(validator);
+spread.options.highlightInvalidData = true;
+activeSheet.setValue(0, 0, new Date(2012, 12, 12));
+activeSheet.setValue(0, 2, new Date(2012, 11, 31));

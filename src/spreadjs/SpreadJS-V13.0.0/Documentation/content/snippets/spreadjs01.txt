@@ -1,0 +1,2 @@
+spread.sheets[0].name("The first sheet");
+spread.sheets[1].name( "The second sheet");

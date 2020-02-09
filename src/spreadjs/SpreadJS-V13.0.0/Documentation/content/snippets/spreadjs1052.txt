@@ -1,0 +1,59 @@
+var datasource = [
+	{ Name: "Apple", Category: "Fruit" },
+	{ Name: "Orange", Category: "Fruit" },
+	{ Name: "Broccoli", Category: "Vegetable" },
+	{ Name: "Kiwi", Category: "Fruit" },
+	{ Name: "Rice", Category: "Cereal" },
+	{ Name: "Strawberry", Category: "Fruit" },
+	{ Name: "Yogurt", Category: "Dairy" },
+	{ Name: "Plum", Category: "Fruit" },
+	{ Name: "Celery", Category: "Vegetable" },
+	{ Name: "Grape", Category: "Fruit" },
+	{ Name: "Oats", Category: "Cereal" },
+	{ Name: "Quinoa", Category: "Cereal" },
+	{ Name: "Maize", Category: "Cereal" },
+	{ Name: "Okra", Category: "Vegetable" },
+	{ Name: "Corn", Category: "Vegetable" },
+	{ Name: "Wheat", Category: "Cereal" },
+	{ Name: "Barley", Category: "Cereal" },
+	{ Name: "Cream", Category: "Dairy" },
+	{ Name: "Millet", Category: "Cereal" },
+	{ Name: "Rye", Category: "Cereal" },
+	{ Name: "Artichoke", Category: "Vegetable" },
+	{ Name: "Buckwheat", Category: "Cereal" },
+	{ Name: "Gooseberry", Category: "Fruit" },
+	{ Name: "Amaranth", Category: "Cereal" },
+	{ Name: "Carrot", Category: "Vegetable" },
+	{ Name: "Cheese", Category: "Dairy" },
+	{ Name: "Fig", Category: "Fruit" },
+	{ Name: "Milk", Category: "Dairy" },
+	{ Name: "Butter", Category: "Dairy" },
+               ];
+
+var table = activeSheet.tables.addFromDataSource("table1", 1, 1, datasource);
+//add a slicer to the sheet and return the slicer instance.
+var slicer = activeSheet.slicers.add("slicer1",table.name(),"Category");
+ //change the slicer properties.
+slicer.width(200);
+slicer.height(200);
+slicer.position(new GC.Spread.Sheets.Point(300, 50));
+
+var hstyle = new GC.Spread.Sheets.Slicers.SlicerStyleInfo();
+hstyle.backColor("red");
+hstyle.borderBottom(new GC.Spread.Sheets.Slicers.SlicerBorder(3, "dashed", "green"));
+var hstyle1 = new GC.Spread.Sheets.Slicers.SlicerStyleInfo();
+hstyle1.borderTop(new GC.Spread.Sheets.Slicers.SlicerBorder(2, "dashed", "blue"));
+hstyle1.backColor("yellow");
+var hstyle2 = new GC.Spread.Sheets.Slicers.SlicerStyleInfo();
+hstyle2.backColor("green");
+
+var style1 = new GC.Spread.Sheets.Slicers.SlicerStyle();
+style1.hoveredSelectedItemWithDataStyle(hstyle);
+style1.hoveredUnSelectedItemWithDataStyle(hstyle);
+style1.unSelectedItemWithDataStyle(hstyle1);
+style1.selectedItemWithDataStyle(hstyle2);
+slicer.style(style1);
+
+activeSheet.getColumn(1).width(100);
+activeSheet.getColumn(2).width(100);
+activeSheet.getColumn(3).width(100);

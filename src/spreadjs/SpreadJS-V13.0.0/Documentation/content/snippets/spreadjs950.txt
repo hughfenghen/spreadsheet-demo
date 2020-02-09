@@ -1,0 +1,3 @@
+activeSheet.currentTheme("Paper");
+activeSheet.resumePaint();
+activeSheet.repaint();

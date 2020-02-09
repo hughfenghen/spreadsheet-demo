@@ -1,0 +1,42 @@
+var data = new GC.Spread.Sheets.Range(1, 0, 8, 1);
+var setting = new GC.Spread.Sheets.Sparklines.SparklineSetting();
+setting.options.showMarkers = true;
+setting.options.lineWeight = 3;
+setting.options.displayXAxis = true;
+setting.options.showFirst = true;
+setting.options.showLast = true;
+setting.options.showLow = true;
+setting.options.showHigh = true;
+setting.options.showNegative = true;
+
+setting.options.seriesColor = "Text 2 1";
+setting.options.firstMarkerColor = "Text 2 3";
+setting.options.negativeColor = "Accent 2 1";
+setting.options.markersColor = "Accent 3 1";
+setting.options.lowMarkerColor = "Accent 4 1";
+setting.options.highMarkerColor = "Accent 6 1";
+setting.options.lastMarkerColor = "Accent 6 6";
+setting.options.axisColor = "Text 1 1";
+
+activeSheet.addSpan(13, 0, 4, 3, null);
+activeSheet.setSparkline(13, 0, data, GC.Spread.Sheets.Sparklines.DataOrientation.vertical, GC.Spread.Sheets.Sparklines.SparklineType.line, setting);
+activeSheet.setValue(1, 0, 1);
+activeSheet.setValue(2, 0, -2);
+activeSheet.setValue(3, 0, -1);
+activeSheet.setValue(4, 0, 6);
+activeSheet.setValue(5, 0, 4);
+activeSheet.setValue(6, 0, -4);
+activeSheet.setValue(7, 0, 3);
+activeSheet.setValue(8, 0, 8);
+
+// Use IE to see the console log text
+activeSheet.bind(GC.Spread.Sheets.Events.SparklineChanged, function (e, info) {    
+console.log("name: " + info.sheetName);  
+});
+
+$("#button1").click(function () {
+activeSheet.removeSparkline(13, 0);
+   });
+
+
+<input type="button" id="button1" value="button1"/>

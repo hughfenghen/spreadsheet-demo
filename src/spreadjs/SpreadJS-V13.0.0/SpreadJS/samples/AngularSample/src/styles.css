@@ -1,0 +1,62 @@
+.logo {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 40px;
+    height: 40px;
+    left: 80px;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+
+body {
+    font-family: 'Gotham SSm A', 'Gotham SSm B';
+    font-size: 14px;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h2, h3, h4, h5, h6 {
+    margin: 10px 0;
+    font-family: 'Forza SSm A', 'Forza SSm B';
+    font-weight: bold;
+    line-height: 20px;
+    color: inherit;
+    text-rendering: optimizelegibility;
+}
+
+td input[type=checkbox] {
+    margin: 5px;
+}
+
+td input[type=text] {
+    margin: 5px;
+    width: 100px;
+}
+
+label {
+    font-weight: normal;
+}
+
+.spreadContainer {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    box-shadow: 0 0 20px gray;
+}
+
+.settingContainer {
+    position: absolute;
+    bottom: 0;
+}

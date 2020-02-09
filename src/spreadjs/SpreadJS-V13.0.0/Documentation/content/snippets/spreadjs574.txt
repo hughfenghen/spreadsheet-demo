@@ -1,0 +1,11 @@
+activeSheet.getCell(5,4).text("testSearch");
+var searchCondition = new GC.Spread.Sheets.Search.SearchCondition();
+searchCondition.searchString = "testSearch";
+searchCondition.startSheetIndex = spread.getActiveSheetIndex();
+searchCondition.endSheetIndex = spread.getActiveSheetIndex();
+searchCondition.searchOrder = GC.Spread.Sheets.Search.SearchOrder.nOrder;
+searchCondition.searchTarget = GC.Spread.Sheets.Search.SearchFoundFlags.cellText;
+searchCondition.searchFlags = GC.Spread.Sheets.Search.SearchFlags.ignoreCase| GC.Spread.Sheets.Search.SearchFlags.useWildCards;
+var searchresult= spread.search(searchCondition);
+var str ="[searchFoundFlag:"+ searchresult.searchFoundFlag+",\r\n foundSheetIndex:"+searchresult.foundSheetIndex+",foundRowIndex:" + searchresult.foundRowIndex+", foundColumnIndex:"+searchresult.foundColumnIndex+", foundString:"+searchresult.foundString+"]";
+alert(str);

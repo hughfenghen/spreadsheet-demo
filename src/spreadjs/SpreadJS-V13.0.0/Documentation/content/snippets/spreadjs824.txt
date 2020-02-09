@@ -1,0 +1,20 @@
+var customFloatingObject = new GC.Spread.Sheets.FloatingObjects.FloatingObject("f1", 20, 20, 60, 64);
+var btn = document.createElement('button');
+btn.style.width = "60px";
+btn.style.height = "30px";
+btn.innerText = "button1";
+customFloatingObject.content(btn);
+activeSheet.floatingObjects.add(customFloatingObject);
+
+var customFloatingObject1 = new GC.Spread.Sheets.FloatingObjects.FloatingObject("f2", 5, 5, 30, 64);
+var btn1 = document.createElement('button');
+btn1.style.width = "60px";
+btn1.style.height = "30px";
+btn1.innerText = "button2";
+customFloatingObject1.content(btn1);
+activeSheet.floatingObjects.add(customFloatingObject1);
+
+var floating = activeSheet.floatingObjects.all();
+for(var i = 0; i < floating.length; i++){
+alert(floating[i].name());
+}

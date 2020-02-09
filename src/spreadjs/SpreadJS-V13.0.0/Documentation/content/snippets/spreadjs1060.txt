@@ -1,0 +1,9 @@
+var comment = new GC.Spread.Sheets.Comments.Comment();
+comment.text("new comment!");
+comment.backColor("orange");
+comment.displayMode(GC.Spread.Sheets.Comments.DisplayMode.alwaysShown);
+activeSheet.getCell(5,5).comment(comment);
+
+activeSheet.bind(GC.Spread.Sheets.Events.CommentRemoving, function (e, info) {    
+      info.cancel = true;
+});

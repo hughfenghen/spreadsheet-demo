@@ -1,0 +1,11 @@
+//set value
+var array = [[1,2,3],[4,5],[6,7,8,9]];
+activeSheet.setArray(1, 2, array);
+//set formula
+var array = [["=1+1","=2+2","=3+3"],["=4+4","=5+5"],["=6+6","=7+7","=8+8","=9+9"]];
+activeSheet.setArray(1, 2, array, true);
+//get value
+var newArray = activeSheet.getArray(1, 2, 3, 4);
+//getformula
+var newArray = activeSheet.getArray(1, 2, 3, 4, true);
+//alert(newArray[0]);

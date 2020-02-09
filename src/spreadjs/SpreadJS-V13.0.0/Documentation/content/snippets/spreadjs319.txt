@@ -1,0 +1,1 @@
+activeSheet.getCell(1,1).borderTop(new GC.Spread.Sheets.LineBorder("red", GC.Spread.Sheets.LineStyle.double));

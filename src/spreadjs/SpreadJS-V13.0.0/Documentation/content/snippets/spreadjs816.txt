@@ -1,0 +1,17 @@
+var data = new GC.Spread.Sheets.Range(1, 0, 8, 1);
+var setting = new GC.Spread.Sheets.Sparklines.SparklineSetting();
+setting.options.showMarkers = true;
+activeSheet.addSpan(13, 0, 4, 3, null);
+activeSheet.setSparkline(13, 0, data, GC.Spread.Sheets.Sparklines.DataOrientation.vertical, GC.Spread.Sheets.Sparklines.SparklineType.line, setting);
+activeSheet.setValue(1, 0, 1);
+activeSheet.setValue(2, 0, -2);
+activeSheet.setValue(3, 0, -1);
+activeSheet.setValue(4, 0, 6);
+activeSheet.setValue(5, 0, 4);
+activeSheet.setValue(6, 0, -4);
+activeSheet.setValue(7, 0, 3);
+activeSheet.setValue(8, 0, 8);
+
+var jsonStr = null;
+jsonStr = JSON.stringify(setting.toJSON());
+alert(jsonStr);

@@ -1,0 +1,3 @@
+var style = new GC.Spread.Sheets.Style();
+style.imeMode = GC.Spread.Sheets.ImeMode.auto;
+activeSheet.setStyle(0, 0, style);

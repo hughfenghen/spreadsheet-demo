@@ -1,0 +1,2 @@
+activeSheet.options.scrollbarMaxAlign =true;
+activeSheet.options.scrollbarShowMax = true;

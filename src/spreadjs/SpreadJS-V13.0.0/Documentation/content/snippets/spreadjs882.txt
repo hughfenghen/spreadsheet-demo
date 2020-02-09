@@ -1,0 +1,5 @@
+var items2 = ["a", "ab", "abc", "apple", "boy", "cat", "dog"];
+var eComboBoxCellType = new GC.Spread.Sheets.CellTypes.ComboBox().items(items2).editable(true);
+activeSheet.getCell(1, 3).cellType(eComboBoxCellType);
+activeSheet.setColumnWidth(0,120);
+activeSheet.setColumnWidth(2,120);

@@ -1,0 +1,3 @@
+activeSheet.bind(GC.Spread.Sheets.Events.DragDropBlockCompleted, function (e, args) {    
+        alert("From Column (" + args.fromCol + ")");
+});

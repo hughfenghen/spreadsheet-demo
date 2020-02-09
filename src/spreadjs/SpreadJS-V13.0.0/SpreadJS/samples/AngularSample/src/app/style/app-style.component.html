@@ -1,0 +1,17 @@
+<h3>样式</h3>
+
+<div>
+    <p>以下示例展示如何使用样式。</p>
+</div>
+
+<div>
+    <gc-spread-sheets [hostStyle]="hostStyle" hostClass="spreadContainer">
+        <gc-worksheet [dataSource]="data" [autoGenerateColumns]="autoGenerateColumns">
+            <gc-column dataField="name" width=150 [style]="style"></gc-column>
+            <gc-column dataField="phone" width=150></gc-column>
+            <gc-column dataField="country" width=100 [cellType]="comboBoxCellType"></gc-column>
+            <gc-column dataField="email" width=240 [cellType]="hyperLinkCelleType"></gc-column>
+            <gc-column dataField="onJob" width=100 [cellType]="checkBoxCellType"></gc-column>
+        </gc-worksheet>
+    </gc-spread-sheets>
+</div>

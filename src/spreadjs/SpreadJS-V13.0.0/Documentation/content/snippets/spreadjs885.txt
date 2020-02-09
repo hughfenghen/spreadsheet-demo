@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SpreadJS Sample</title>
+    <script src="./external/jquery-2.0.2.js" type="text/javascript"></script>
+    <link href="./css/GC.Spread.sheets.12.0.0.css" rel="stylesheet" type="text/css" />
+    <script src="./scripts/GC.Spread.sheets.all.12.0.0.min.js"></script>
+   
+    <script type="text/javascript">
+        $(function () {
+            //Custom tag
+            function MyTag(name, age) {
+                this.name = name;
+                this.age = age;
+                this.typeName = "GC.Spread.Sheets.MyTag";
+            }
+            MyTag.prototype.toJSON = function () {
+                var settings = {};
+                for (var p in this) {
+                    if (this.hasOwnProperty(p)) {
+                        settings[p] = this[p];
+                    }
+                }
+                return settings;
+            };
+            MyTag.prototype.fromJSON = function (settings) {
+                if (!settings) {
+                    return;
+                }
+                for (var p in settings) {
+                    if (settings[p] !== undefined) {
+                        this[p] = settings[p];
+                    }
+                }
+            };
+
+            var oldFun = GC.Spread.Sheets.getTypeFromString;
+            GC.Spread.Sheets.getTypeFromString = function (typeString) {
+                if (typeString === "GC.Spread.Sheets.MyTag") {
+                    return MyTag;
+                } else {
+                    return oldFun.apply(this, arguments);
+                }
+            };
+
+var spread1 = new GC.Spread.Sheets.Workbook(document.getElementById("ss"),{sheetCount:3});
+var spread2 = new GC.Spread.Sheets.Workbook(document.getElementById("ss1"),{sheetCount:3});
+
+           
+            var sheet1 = spread1.getActiveSheet();
+            sheet1.tag(new MyTag("Ivy", 24));
+            sheet1.setTag(0, 0, new MyTag("Yang", 25));
+
+            $("#btn1").click(function () {
+                //Serialize ss to ss1.
+                var jsonStr = JSON.stringify(spread1.toJSON());                
+                spread2.fromJSON(JSON.parse(jsonStr));
+
+                var sheet2 = spread2.getActiveSheet();
+                alert("Tag of sheet:" + JSON.stringify(sheet2.tag()));
+                alert("Tag of Cell[0,0]: " + JSON.stringify(sheet2.getTag(0, 0)));
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <div id="ss" style="height: 200px; width: 500px"></div>
+        <div id="ss1" style="height: 200px; width: 500px"></div>
+    </div>
+    <input type="button" id="btn1" value="Serialization" />
+</body>
+</html>

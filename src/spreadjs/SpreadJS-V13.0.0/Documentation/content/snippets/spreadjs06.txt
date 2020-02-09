@@ -1,0 +1,10 @@
+$("#button1").click(function () {  
+    //Acquire top row (column) index
+    var topRow = activeSheet.getViewportTopRow(1);
+    var leftCol = activeSheet.getViewportLeftColumn(1);
+    alert("Index of top row being displayed: " + topRow + "\n" +
+        "Index of first column being displayed: " + leftCol);
+});
+
+//Add button control to page
+<input type="button" id="button1" value="button1"/>

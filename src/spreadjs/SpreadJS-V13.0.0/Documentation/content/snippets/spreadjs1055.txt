@@ -1,0 +1,11 @@
+var customFloatingObject = new GC.Spread.Sheets.FloatingObjects.FloatingObject("f1", 10, 10, 60, 64);
+var btn = document.createElement('button');
+btn.style.width = "60px";
+btn.style.height = "30px";
+btn.innerText = "button";
+customFloatingObject.content(btn);
+activeSheet.floatingObjects.add(customFloatingObject);
+
+activeSheet.bind(GC.Spread.Sheets.Events.FloatingObjectChanged, function (e, info) {    
+        alert("changed");
+});

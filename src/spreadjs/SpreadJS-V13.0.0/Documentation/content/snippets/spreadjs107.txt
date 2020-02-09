@@ -1,0 +1,1 @@
+activeSheet.options.clipBoardOptions = GC.Spread.Sheets.ClipboardPasteOptions.values;

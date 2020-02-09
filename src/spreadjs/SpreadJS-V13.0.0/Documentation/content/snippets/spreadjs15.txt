@@ -1,0 +1,25 @@
+activeSheet.setRowCount(6);
+activeSheet.setValue(0, 0, 10);
+activeSheet.setValue(1, 0, 100);
+activeSheet.setValue(2, 0, 100);
+activeSheet.setValue(3, 0, 10);
+activeSheet.setValue(4, 0, 5);
+activeSheet.setValue(5, 0, 10);
+activeSheet.setValue(0, 1, 10);
+activeSheet.setValue(1, 1, 40);
+activeSheet.setValue(2, 1, 10);
+activeSheet.setValue(3, 1, 20);
+activeSheet.setValue(4, 1, 10);
+activeSheet.setValue(5, 1, 40);
+
+    $("#button1").click(function(){
+        //Create a SortInfo object where 1st key is column 1 and the 2nd key is column 2.
+        var sortInfo = [
+            {index:0, ascending:true},
+            {index:1, ascending:true}];
+        ///Execute sorting which targets all rows based on the created sorting conditions.
+        activeSheet.sortRange(0, -1, 6, -1, true, sortInfo);
+    });
+
+//Add button control to page
+<input type="button" id="button1" value="button1"/>

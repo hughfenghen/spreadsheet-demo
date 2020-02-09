@@ -1,0 +1,3 @@
+//Note: This code only works with V9 or earlier versions.
+var n = GC.Spread.Sheets.FormatConverter.IsNumber(5);
+alert(n);

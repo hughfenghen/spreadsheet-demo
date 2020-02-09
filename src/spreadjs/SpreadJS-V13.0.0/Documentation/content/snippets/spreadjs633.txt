@@ -1,0 +1,6 @@
+spread.options.highlightInvalidData = true;
+var dv = GC.Spread.Sheets.DataValidation.createTextLengthValidator(GC.Spread.Sheets.ConditionalFormatting.ComparisonOperators.greaterThan, "4", "20");
+dv.showInputMessage(true);
+dv.inputMessage("Number of characters must be greater than 4.");
+dv.inputTitle("tip");
+activeSheet.setDataValidator(1, 1, 1, 1, dv, GC.Spread.Sheets.SheetArea.viewport);

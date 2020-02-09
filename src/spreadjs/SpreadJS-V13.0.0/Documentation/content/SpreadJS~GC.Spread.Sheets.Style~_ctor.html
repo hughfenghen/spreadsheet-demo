@@ -1,0 +1,473 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PageItemTitle" format="<title>%%PageItemTitle%%</title>" --><title>Style Constructor</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitleNoQuotes" format="<meta name=""Title"" content=""%%ItemTitleNoQuotes%%""/>" --><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n3260","initialNodeContainer":"c49","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="light" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-javascript" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-javascript/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-javascript" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-javascript/dx.javascript.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-javascript/dx.javascript.mshv1.css"" data-responsive-mobile=""template/packages/core-javascript/dx.javascript.mobile.css"" data-responsive-tablet=""template/packages/core-javascript/dx.javascript.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-javascript/css/dx.javascript.css"  data-mshv2-stylesheet="/template/packages/core-javascript/dx.javascript.mshv2.css" data-mshv1-stylesheet="/template/packages/core-javascript/dx.javascript.mshv1.css" data-responsive-mobile="template/packages/core-javascript/dx.javascript.mobile.css" data-responsive-tablet="template/packages/core-javascript/dx.javascript.tablet.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-javascript" filetype="script"--><script src="template/packages/plugins-javascript/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-javascript" filetype="script"--><script src="template/packages/core-javascript/script/dx.javascript.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="SpreadJS~GC.Spread.Sheets.Style~_ctor"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="Represents the style for a cell, row, and column." /><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="SpreadJS~GC.Spread.Sheets.Style"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="Microsoft.Help.TocOrder" content="10"/>
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/hs-simpletab.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="StylePropertyValues" format="<style>%%StylePropertyValues%%</style>" --><style>.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+    <!--DXMETADATA start type="CustomHeadContent" --><link rel="stylesheet" type="text/css" href="template/packages/core-web/css/SP.css">
+<script type="text/javascript">
+var currentHeader = function() {
+    return "spjs";
+}
+</script>
+<script src="template/packages/core-web/script/topNavigation.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WT462SJ"></script>
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime()
+                , event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WT462SJ');
+    </script>
+<!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->SpreadJS Documentation<!--DXMETADATA end--></div>
+            <div class="i-search-container">
+                <!--DXMETADATA start type="outputfileextension" format="<form action=""websearch%%outputfileextension%%"">" --><form action="websearch.html"><!--DXMETADATA end-->
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                <!--DXMETADATA start type="Literal" value="</form>" --></form><!--DXMETADATA end-->
+            </div>
+            <!--DXMETADATA start type="outputfileextension" format="<a id=""i-index-button"" href=""webindex%%outputfileextension%%""></a>" --><a id="i-index-button" href="webindex.html"></a><!--DXMETADATA end-->
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container">
+<a href="SpreadJS~GC.Spread.Sheets_namespace.html">GC.Spread.Sheets Namespace</a>
+ / <a href="SpreadJS~GC.Spread.Sheets.Style.html">Style class</a>
+ / Style Constructor</div><!--DXMETADATA end --></div>
+
+    <!--DXMETADATA start type="FilteredItemList" scrap="PARAMETERS_BUBBLES" namespace="parameter" source="Item" -->
+<div id="backColorPopupContent" class="i-popup-content">
+The background color.
+</div>
+<div id="foreColorPopupContent" class="i-popup-content">
+The foreground color.
+</div>
+<div id="hAlignPopupContent" class="i-popup-content">
+The horizontal alignment.
+</div>
+<div id="vAlignPopupContent" class="i-popup-content">
+The vertical alignment.
+</div>
+<div id="fontPopupContent" class="i-popup-content">
+The font.
+</div>
+<div id="themeFontPopupContent" class="i-popup-content">
+The font theme.
+</div>
+<div id="formatterPopupContent" class="i-popup-content">
+The formatting object.
+</div>
+<div id="borderLeftPopupContent" class="i-popup-content">
+The left border.
+</div>
+<div id="borderTopPopupContent" class="i-popup-content">
+The top border.
+</div>
+<div id="borderRightPopupContent" class="i-popup-content">
+The right border.
+</div>
+<div id="borderBottomPopupContent" class="i-popup-content">
+The bottom border.
+</div>
+<div id="diagonalDownPopupContent" class="i-popup-content">
+The diagonal with LeftTop to bottomRight.
+</div>
+<div id="diagonalUpPopupContent" class="i-popup-content">
+The diagonal with topRight to bottomLeft.
+</div>
+<div id="lockedPopupContent" class="i-popup-content">
+Whether the cell, row, or column is locked.
+</div>
+<div id="textIndentPopupContent" class="i-popup-content">
+The text indent amount.
+</div>
+<div id="wordWrapPopupContent" class="i-popup-content">
+Whether words wrap within the cell or cells.
+</div>
+<div id="shrinkToFitPopupContent" class="i-popup-content">
+Whether content shrinks to fit the cell or cells.
+</div>
+<div id="backgroundImagePopupContent" class="i-popup-content">
+The background image to display.
+</div>
+<div id="cellTypePopupContent" class="i-popup-content">
+The cell type.
+</div>
+<div id="backgroundImageLayoutPopupContent" class="i-popup-content">
+The layout for the background image.
+</div>
+<div id="tabStopPopupContent" class="i-popup-content">
+Whether the user can set focus to the cell using the Tab key.
+</div>
+<div id="textDecorationPopupContent" class="i-popup-content">
+Specifies the decoration added to text.
+</div>
+<div id="imeModePopupContent" class="i-popup-content">
+Specifies the input method editor mode.
+</div>
+<div id="namePopupContent" class="i-popup-content">
+Specifies the name.
+</div>
+<div id="parentNamePopupContent" class="i-popup-content">
+Specifies the name of the parent style.
+</div>
+<div id="watermarkPopupContent" class="i-popup-content">
+Specifies the watermark content.
+</div>
+<div id="cellPaddingPopupContent" class="i-popup-content">
+Specifies the cell padding.
+</div>
+<div id="labelOptionsPopupContent" class="i-popup-content">
+Specifies the cell label options.
+</div>
+<!--DXMETADATA end -->
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="PageItemTitle" -->Style Constructor<!--DXMETADATA end--></div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+            </div>
+            <!--DXMETADATA start type="Description" source="Item" format="<div class=""i-description-content"">%%description%%</div>" --><div class="i-description-content">Represents the style for a cell, row, and column.</div><!--DXMETADATA end -->
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##OVERLOADS" format="%%comment%%" --><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="OVERLOAD_LIST" namespace="constructor" source="Item" filter="" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=overloadlist,caption=$$OverloadList$$%%%%filtereditemlist%%</div>" --><!--DXMETADATA end -->
+            <!--DXMETADATA start type="SyntaxSection" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=syntax,caption=$$Syntax$$%%%%SyntaxSection%%" --><div class="i-section-heading" id="i-syntax-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Syntax</span></div><div id="i-syntax-section-content" class="i-section-content">
+      <div class="i-tab-container i-tab-container">
+      <ul>
+      
+      <li class="i-filtered-content-Javascript_Usage"><a href="#i-syntax-Javascript_Usage">Javascript (Usage)</a></li>
+    
+
+      <li class="i-filtered-content-Javascript"><a href="#i-syntax-Javascript">Javascript (Specification)</a></li>
+    
+
+      </ul>
+      
+      <div id="i-syntax-Javascript_Usage" class="i-filtered-content-Javascript_Usage">
+      <pre>var instance = new GC.Spread.Sheets.<a href="SpreadJS~GC.Spread.Sheets.Style.html">Style</a>(backColor,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreColor,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hAlign,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vAlign,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;themeFont,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;formatter,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderLeft,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderTop,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderRight,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderBottom,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;diagonalDown,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;diagonalUp,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;locked,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;textIndent,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wordWrap,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;shrinkToFit,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;backgroundImage,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cellType,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;backgroundImageLayout,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tabStop,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;textDecoration,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;imeMode,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parentName,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watermark,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cellPadding,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;labelOptions);</pre>
+      </div>
+    
+
+      <div id="i-syntax-Javascript" class="i-filtered-content-Javascript">
+      <pre>function Style( 
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="backColorPopupLink" data-popup-contentsource="#backColorPopupContent" data-popup-showevent="click mouseenter">backColor</a></i> : string,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="foreColorPopupLink" data-popup-contentsource="#foreColorPopupContent" data-popup-showevent="click mouseenter">foreColor</a></i> : string,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="hAlignPopupLink" data-popup-contentsource="#hAlignPopupContent" data-popup-showevent="click mouseenter">hAlign</a></i> : <a href="SpreadJS~GC.Spread.Sheets.HorizontalAlign.html">HorizontalAlign</a>,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="vAlignPopupLink" data-popup-contentsource="#vAlignPopupContent" data-popup-showevent="click mouseenter">vAlign</a></i> : <a href="SpreadJS~GC.Spread.Sheets.VerticalAlign.html">VerticalAlign</a>,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="fontPopupLink" data-popup-contentsource="#fontPopupContent" data-popup-showevent="click mouseenter">font</a></i> : string,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="themeFontPopupLink" data-popup-contentsource="#themeFontPopupContent" data-popup-showevent="click mouseenter">themeFont</a></i> : string,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="formatterPopupLink" data-popup-contentsource="#formatterPopupContent" data-popup-showevent="click mouseenter">formatter</a></i> : undefined,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="borderLeftPopupLink" data-popup-contentsource="#borderLeftPopupContent" data-popup-showevent="click mouseenter">borderLeft</a></i> : <a href="SpreadJS~GC.Spread.Sheets.LineBorder.html">LineBorder</a>,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="borderTopPopupLink" data-popup-contentsource="#borderTopPopupContent" data-popup-showevent="click mouseenter">borderTop</a></i> : <a href="SpreadJS~GC.Spread.Sheets.LineBorder.html">LineBorder</a>,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="borderRightPopupLink" data-popup-contentsource="#borderRightPopupContent" data-popup-showevent="click mouseenter">borderRight</a></i> : <a href="SpreadJS~GC.Spread.Sheets.LineBorder.html">LineBorder</a>,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="borderBottomPopupLink" data-popup-contentsource="#borderBottomPopupContent" data-popup-showevent="click mouseenter">borderBottom</a></i> : <a href="SpreadJS~GC.Spread.Sheets.LineBorder.html">LineBorder</a>,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="diagonalDownPopupLink" data-popup-contentsource="#diagonalDownPopupContent" data-popup-showevent="click mouseenter">diagonalDown</a></i> : <a href="SpreadJS~GC.Spread.Sheets.LineBorder.html">LineBorder</a>,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="diagonalUpPopupLink" data-popup-contentsource="#diagonalUpPopupContent" data-popup-showevent="click mouseenter">diagonalUp</a></i> : <a href="SpreadJS~GC.Spread.Sheets.LineBorder.html">LineBorder</a>,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="lockedPopupLink" data-popup-contentsource="#lockedPopupContent" data-popup-showevent="click mouseenter">locked</a></i> : boolean,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="textIndentPopupLink" data-popup-contentsource="#textIndentPopupContent" data-popup-showevent="click mouseenter">textIndent</a></i> : number,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="wordWrapPopupLink" data-popup-contentsource="#wordWrapPopupContent" data-popup-showevent="click mouseenter">wordWrap</a></i> : boolean,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="shrinkToFitPopupLink" data-popup-contentsource="#shrinkToFitPopupContent" data-popup-showevent="click mouseenter">shrinkToFit</a></i> : boolean,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="backgroundImagePopupLink" data-popup-contentsource="#backgroundImagePopupContent" data-popup-showevent="click mouseenter">backgroundImage</a></i> : string,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="cellTypePopupLink" data-popup-contentsource="#cellTypePopupContent" data-popup-showevent="click mouseenter">cellType</a></i> : <a href="SpreadJS~GC.Spread.Sheets.CellTypes.Base.html">Base</a>,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="backgroundImageLayoutPopupLink" data-popup-contentsource="#backgroundImageLayoutPopupContent" data-popup-showevent="click mouseenter">backgroundImageLayout</a></i> : <a href="SpreadJS~GC.Spread.Sheets.ImageLayout.html">ImageLayout</a>,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="tabStopPopupLink" data-popup-contentsource="#tabStopPopupContent" data-popup-showevent="click mouseenter">tabStop</a></i> : boolean,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="textDecorationPopupLink" data-popup-contentsource="#textDecorationPopupContent" data-popup-showevent="click mouseenter">textDecoration</a></i> : <a href="SpreadJS~GC.Spread.Sheets.TextDecorationType.html">TextDecorationType</a>,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="imeModePopupLink" data-popup-contentsource="#imeModePopupContent" data-popup-showevent="click mouseenter">imeMode</a></i> : <a href="SpreadJS~GC.Spread.Sheets.ImeMode.html">ImeMode</a>,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="namePopupLink" data-popup-contentsource="#namePopupContent" data-popup-showevent="click mouseenter">name</a></i> : string,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="parentNamePopupLink" data-popup-contentsource="#parentNamePopupContent" data-popup-showevent="click mouseenter">parentName</a></i> : string,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="watermarkPopupLink" data-popup-contentsource="#watermarkPopupContent" data-popup-showevent="click mouseenter">watermark</a></i> : string,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="cellPaddingPopupLink" data-popup-contentsource="#cellPaddingPopupContent" data-popup-showevent="click mouseenter">cellPadding</a></i> : string,
+&nbsp;&nbsp;&nbsp;<i><a class="i-popup-link" id="labelOptionsPopupLink" data-popup-contentsource="#labelOptionsPopupContent" data-popup-showevent="click mouseenter">labelOptions</a></i> : Object
+) : <a href="SpreadJS~GC.Spread.Sheets.Style.html">Style</a>;</pre>
+      </div>
+    
+
+      </div>
+    <!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="PARAMETERS_LIST" namespace="parameter" source="Item" filter="" NoCr="True" format="<h4 class=dxh4>$$ParameterList$$</h4>%%filtereditemlist%%" --><h4 class=dxh4>Parameters</h4><dl><dt><I>backColor</I></dt>
+<dd>The background color.</dd><dt><I>foreColor</I></dt>
+<dd>The foreground color.</dd><dt><I>hAlign</I></dt>
+<dd>The horizontal alignment.</dd><dt><I>vAlign</I></dt>
+<dd>The vertical alignment.</dd><dt><I>font</I></dt>
+<dd>The font.</dd><dt><I>themeFont</I></dt>
+<dd>The font theme.</dd><dt><I>formatter</I></dt>
+<dd>The formatting object.</dd><dt><I>borderLeft</I></dt>
+<dd>The left border.</dd><dt><I>borderTop</I></dt>
+<dd>The top border.</dd><dt><I>borderRight</I></dt>
+<dd>The right border.</dd><dt><I>borderBottom</I></dt>
+<dd>The bottom border.</dd><dt><I>diagonalDown</I></dt>
+<dd>The diagonal with LeftTop to bottomRight.</dd><dt><I>diagonalUp</I></dt>
+<dd>The diagonal with topRight to bottomLeft.</dd><dt><I>locked</I></dt>
+<dd>Whether the cell, row, or column is locked.</dd><dt><I>textIndent</I></dt>
+<dd>The text indent amount.</dd><dt><I>wordWrap</I></dt>
+<dd>Whether words wrap within the cell or cells.</dd><dt><I>shrinkToFit</I></dt>
+<dd>Whether content shrinks to fit the cell or cells.</dd><dt><I>backgroundImage</I></dt>
+<dd>The background image to display.</dd><dt><I>cellType</I></dt>
+<dd>The cell type.</dd><dt><I>backgroundImageLayout</I></dt>
+<dd>The layout for the background image.</dd><dt><I>tabStop</I></dt>
+<dd>Whether the user can set focus to the cell using the Tab key.</dd><dt><I>textDecoration</I></dt>
+<dd>Specifies the decoration added to text.</dd><dt><I>imeMode</I></dt>
+<dd>Specifies the input method editor mode.</dd><dt><I>name</I></dt>
+<dd>Specifies the name.</dd><dt><I>parentName</I></dt>
+<dd>Specifies the name of the parent style.</dd><dt><I>watermark</I></dt>
+<dd>Specifies the watermark content.</dd><dt><I>cellPadding</I></dt>
+<dd>Specifies the cell padding.</dd><dt><I>labelOptions</I></dt>
+<dd>Specifies the cell label options.</dd></dl><!--DXMETADATA end -->
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##RETURNS" format="<h4 class=dxh4>$$Return_Type$$</h4><div class=""i-returns-content"">%%comment%%</div></div>" blankformat="</div>" --></div><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="EXCEPTION_LIST" namespace="exception" source="Item" filter="" designtime="true" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=exceptions,caption=""$$Exceptions$$%%designlist:tagidentifier=##EXCEPTION,itemtype=Exception%%""%%%%filtereditemlist%%</div>" --><!--DXMETADATA end -->
+
+            <a name="exampleBookmark"></a>
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##EXAMPLEINTRO" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=example,caption=""$$Example$$%%designlist:tagidentifier=##EXAMPLECODE,itemtype=Example%%""%%%%comment%%" --><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="EXAMPLEGROUP_LIST" namespace="ExampleGroup" source="Item" filter="type=inline" condition="content:content=""%%GroupExamples%%"",operator=""="",value=""True""" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%taggedcomment:source=item,id=##EXAMPLEINTRO,blankformat=""%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=example,caption=$$Example$$%%"",format= %%%%filtereditemlist%%</div>" blankformat="%%taggedcomment:source=item,id=##EXAMPLEINTRO,format=</div>%%" --><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="INLINE_EXAMPLE" namespace="Example" source="Item" filter="type=inline" condition="content:content=""%%GroupExamples%%"",operator=""<>"",value=""True""" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%taggedcomment:source=item,id=##EXAMPLEINTRO,blankformat=""%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=example,caption=$$Example$$%%"",format= %%%%filtereditemlist%%</div>" blankformat="%%taggedcomment:source=item,id=##EXAMPLEINTRO,format=</div>%%" --><div class="i-section-heading" id="i-example-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Example</span></div><div id="i-example-section-content" class="i-section-content"><div class="i-filtered-content-Javascript">
+    <div class="i-description-content">This example uses a style with rules.</div>
+	<div class="i-tab-container">
+	    <ul>
+	        <li><a href="#i-tab-content-ec3ca9ae-4d29-46e4-8d52-4d1370b89aea">Javascript</a></li>
+	    </ul>
+	    <div id="i-tab-content-ec3ca9ae-4d29-46e4-8d52-4d1370b89aea" class="i-filtered-content-Javascript i-code"><pre>activeSheet.setArray(0,0,[1,2,3,4,5,6,7,8,9,10]);
+<span style="color: #0000FF; ">var</span> style = <span style="color: #0000FF; ">new</span> GC.Spread.Sheets.Style();
+style.backColor = <span style="color: #800000; ">&quot;red&quot;</span>;
+style.foreColor = <span style="color: #800000; ">&quot;black&quot;</span>;
+<span style="color: #0000FF; ">var</span> cell = <span style="color: #0000FF; ">new</span> GC.Spread.Sheets.ConditionalFormatting.NormalConditionRule();
+cell.ruleType(GC.Spread.Sheets.ConditionalFormatting.RuleType.cellValueRule);
+cell.operator(GC.Spread.Sheets.ConditionalFormatting.ComparisonOperators.greaterThan);
+cell.value1(5);
+cell.ranges([<span style="color: #0000FF; ">new</span> GC.Spread.Sheets.Range(0, 0, 10, 1)]);
+cell.style(style);
+activeSheet.conditionalFormats.addRule(cell);
+
+<span style="color: #0000FF; ">var</span> style1 = <span style="color: #0000FF; ">new</span> GC.Spread.Sheets.Style();
+style1.foreColor = <span style="color: #800000; ">&quot;red&quot;</span>;
+<span style="color: #0000FF; ">var</span> top = <span style="color: #0000FF; ">new</span> GC.Spread.Sheets.ConditionalFormatting.NormalConditionRule();
+top.ruleType(GC.Spread.Sheets.ConditionalFormatting.RuleType.top10Rule);
+top.type(GC.Spread.Sheets.ConditionalFormatting.Top10ConditionType.top);
+top.rank(3);
+top.style(style1);
+top.ranges([<span style="color: #0000FF; ">new</span> GC.Spread.Sheets.Range(0, 0, 10, 1)]);
+top.stopIfTrue(<span style="color: #0000FF; ">true</span>);
+activeSheet.conditionalFormats.addRule(top);</pre></div>
+	</div>
+</div>
+<div class="i-filtered-content-Javascript">
+    <div class="i-description-content">This example creates and sets parameters for the style.</div>
+	<div class="i-tab-container">
+	    <ul>
+	        <li><a href="#i-tab-content-e996a768-74f7-4e97-b4b9-6f4474aab77a">Javascript</a></li>
+	    </ul>
+	    <div id="i-tab-content-e996a768-74f7-4e97-b4b9-6f4474aab77a" class="i-filtered-content-Javascript i-code"><pre>sheet.setValue(0,0, 1,3);
+sheet.setValue(1,0, 50,3);
+sheet.setValue(2,0, 100,3);
+sheet.setValue(3,0, 2,3);
+sheet.setValue(4,0, 60,3);
+sheet.setValue(5,0, 90,3);
+sheet.setValue(6,0, 3,3);
+sheet.setValue(7,0, 40,3);
+sheet.setValue(8,0, 70,3);
+sheet.setValue(9,0, 5,3);
+sheet.setValue(10,0, 35,3);
+<span style="color: #0000FF; ">var</span> style = <span style="color: #0000FF; ">new</span> GC.Spread.Sheets.Style();
+style.backColor = <span style="color: #800000; ">&quot;red&quot;</span>;
+style.borderLeft =<span style="color: #0000FF; ">new</span> GC.Spread.Sheets.LineBorder(<span style="color: #800000; ">&quot;blue&quot;</span>,GC.Spread.Sheets.LineStyle.medium);
+style.borderTop = <span style="color: #0000FF; ">new</span> GC.Spread.Sheets.LineBorder(<span style="color: #800000; ">&quot;blue&quot;</span>,GC.Spread.Sheets.LineStyle.medium);
+style.borderRight = <span style="color: #0000FF; ">new</span> GC.Spread.Sheets.LineBorder(<span style="color: #800000; ">&quot;blue&quot;</span>,GC.Spread.Sheets.LineStyle.medium);
+style.borderBottom =  <span style="color: #0000FF; ">new</span> GC.Spread.Sheets.LineBorder(<span style="color: #800000; ">&quot;blue&quot;</span>,GC.Spread.Sheets.LineStyle.medium);
+sheet.conditionalFormats.addAverageRule(GC.Spread.Sheets.ConditionalFormatting.AverageConditionType.above, style, [<span style="color: #0000FF; ">new</span> GC.Spread.Sheets.Range(0, 0, 10, 3)]);</pre></div>
+	</div>
+</div>
+</div><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="MENU_LINK" namespace="example" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=example,caption=$$Example$$%%%%filtereditemlist%%</div>" --><!--DXMETADATA end -->
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##REMARKS" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=remarks,caption=$$Remarks$$%%%%comment%%</div>" --><div class="i-section-heading" id="i-remarks-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Remarks</span></div><div id="i-remarks-section-content" class="i-section-content"><p>The cell label options are as follows:</p>
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+
+            <th>Type</th>
+
+            <th>Attributes</th>
+
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td class="name"><code>alignment</code></td>
+
+            <td class="type"><span class="param-type">GC.Spread.Sheets.LabelAlignment</span></td>
+
+            <td class="attributes">&lt;optional&gt;<br /></td>
+
+            <td class="description last">The cell label position.</td>
+        </tr>
+
+        <tr>
+            <td class="name"><code>visibility</code></td>
+
+            <td class="type"><span class="param-type">GC.Spread.Sheets.LabelVisibility</span></td>
+
+            <td class="attributes">&lt;optional&gt;<br /></td>
+
+            <td class="description last">The cell label visibility.</td>
+        </tr>
+
+        <tr>
+            <td class="name"><code>font</code></td>
+
+            <td class="type"><span class="param-type">string</span></td>
+
+            <td class="attributes">&lt;optional&gt;<br /></td>
+
+            <td class="description last">The cell label font.</td>
+        </tr>
+
+        <tr>
+            <td class="name"><code>foreColor</code></td>
+
+            <td class="type"><span class="param-type">string</span></td>
+
+            <td class="attributes">&lt;optional&gt;<br /></td>
+
+            <td class="description last">The cell label forecolor.</td>
+        </tr>
+
+        <tr>
+            <td class="name"><code>margin</code></td>
+
+            <td class="type"><span class="param-type">string</span></td>
+
+            <td class="attributes">&lt;optional&gt;<br /></td>
+
+            <td class="description last">The cell label margin.</td>
+        </tr>
+    </tbody>
+</table></div><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="BROWSER_COMPATIBILITY_LIST" namespace="Browser Compatibility" source="Item" filter="" condition="content:content=""%%IncludeBrowserCompatibility%%"",operator=""="",value=""True""" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=browsercompatibility,caption=$$Browser_Compatibility$$%%%%filtereditemlist%%</div>" blankformat="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=browsercompatibility,caption=$$Browser_Compatibility$$%%%%filtereditemlist%%</div>"--><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORIZED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""$$See_Also$$%%designlist:tagidentifier=##SEEALSO,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><h4 class="dxh4">Reference</h4><p><a href="SpreadJS~GC.Spread.Sheets.Style.html">Style class</a>
+</p>
+</div><!--DXMETADATA end-->
+            <div id="i-footer-content" class="i-footer-content">
+                <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p><p>Copyright © 2019 GrapeCity, Inc. All rights reserved.</p>
+<p><a href="https://www.grapecity.com/en/forums/winforms-edition" target="_blank">Product Support Forum</a> | <a href="javascript:window.print()">Print this page</a></p>
+<ul class="social">
+<li><a href="https://www.facebook.com/GrapeCityUS/" target="_blank" class="facebook">&nbsp;</a></li>
+<li><a href="https://twitter.com/GrapeCityUS" target="_blank" class="twitter">&nbsp;</a></li>
+<li><a href="https://www.linkedin.com/company/grapecity" target="_blank" class="linkedin">&nbsp;</a></li>
+</ul>
+</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><a href="mailto:support@company.com?subject=Documentation Feedback: SpreadJS~GC.Spread.Sheets.Style~_ctor.html">Send comments</a> on this topic.<!--DXMETADATA end-->
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

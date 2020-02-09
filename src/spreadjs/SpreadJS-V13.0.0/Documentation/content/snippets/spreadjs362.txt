@@ -1,0 +1,2 @@
+spread.options.allowUserZoom = false;
+activeSheet.zoom(3);

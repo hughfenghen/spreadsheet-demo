@@ -1,0 +1,9 @@
+var style = new GC.Spread.Sheets.Style();
+style.backColor = "red";
+style.borderLeft =new GC.Spread.Sheets.LineBorder("blue",GC.Spread.Sheets.LineStyle.medium);
+style.borderTop = new GC.Spread.Sheets.LineBorder("blue",GC.Spread.Sheets.LineStyle.medium);
+style.borderRight = new GC.Spread.Sheets.LineBorder("blue",GC.Spread.Sheets.LineStyle.medium);
+style.borderBottom = new GC.Spread.Sheets.LineBorder("blue",GC.Spread.Sheets.LineStyle.medium);
+activeSheet.setStyle(1,1,style,GC.Spread.Sheets.SheetArea.viewport);
+var cstyle = activeSheet.getStyle(1,1,GC.Spread.Sheets.SheetArea.viewport, true);
+alert(cstyle.backColor);

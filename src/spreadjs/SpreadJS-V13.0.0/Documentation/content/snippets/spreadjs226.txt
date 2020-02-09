@@ -1,0 +1,12 @@
+for (var i = 0; i < sheet.getRowCount(); i++)
+  {
+    sheet.setValue(i,1, i);
+  }
+sheet.getRange(-1, 1, -1, 1, GC.Spread.Sheets.SheetArea.viewport).backColor("Gray");
+sheet.getRange(-1, 1, -1, 1, GC.Spread.Sheets.SheetArea.viewport).foreColor("Red");
+sheet.getRange(-1, 1, -1, 1, GC.Spread.Sheets.SheetArea.viewport).formatter("0.00");
+sheet.getRange(-1, 1, -1, 1, GC.Spread.Sheets.SheetArea.viewport).borderBottom(new GC.Spread.Sheets.LineBorder("Green", GC.Spread.Sheets.LineStyle.thin));
+sheet.getRange(-1, 1, -1, 1, GC.Spread.Sheets.SheetArea.viewport).borderTop(new GC.Spread.Sheets.LineBorder("Green",  GC.Spread.Sheets.LineStyle.thin));
+sheet.getRange(-1, 1, -1, 1, GC.Spread.Sheets.SheetArea.viewport).borderLeft(new GC.Spread.Sheets.LineBorder("Green",  GC.Spread.Sheets.LineStyle.thin));
+sheet.getRange(-1, 1, -1, 1, GC.Spread.Sheets.SheetArea.viewport).borderRight( new GC.Spread.Sheets.LineBorder("Green",  GC.Spread.Sheets.LineStyle.thin));
+sheet.getRange(-1, 1, -1, 1, GC.Spread.Sheets.SheetArea.viewport).font("italic bold 12px/30px arial,sans-serif");

@@ -1,0 +1,16 @@
+//override isImeAware:
+NameCellType.prototype.isImeAware = function (context) {
+            return true;
+        }
+//override updateImeMode:
+        NameCellType.prototype.updateImeMode = function (editorContext, imeMode, context) {
+            if (editorContext) {
+                var $input = $(editorContext.children[1]);
+                switch (imeMode) {
+                    case GC.Spread.Sheets.ImeMode.Auto: $input.css("ime-mode", "auto"); break;
+                    case GC.Spread.Sheets.ImeMode.Active: $input.css("ime-mode", "active"); break;
+                    case GC.Spread.Sheets.ImeMode.Inactive: $input.css("ime-mode", "inactive"); break;
+                    case GC.Spread.Sheets.ImeMode.Disabled: $input.css("ime-mode", "disabled"); break;
+                }
+            }
+        }

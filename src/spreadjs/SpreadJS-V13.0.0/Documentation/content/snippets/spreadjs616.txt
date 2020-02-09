@@ -1,0 +1,10 @@
+var spread = new GC.Spread.Sheets.Workbook(document.getElementById("ss"),{sheetCount:3});
+var activeSheet = spread.getActiveSheet(); 
+
+activeSheet.pictures.add("f2","Event.png",2,2,6,6);
+activeSheet.pictures.add("f1","tsoutline.png",3,0,6,6);
+
+// Use IE to see the console log text
+activeSheet.bind(GC.Spread.Sheets.Events.PictureChanged, function (e, info) {    
+console.log("Sheet: " + info.sheetName);
+});

@@ -1,0 +1,3 @@
+activeSheet.currentTheme("Oriel");
+activeSheet.resumePaint();
+activeSheet.repaint();

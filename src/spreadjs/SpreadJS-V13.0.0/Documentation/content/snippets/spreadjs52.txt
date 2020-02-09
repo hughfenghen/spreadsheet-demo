@@ -1,0 +1,1 @@
+activeSheet.getCell(1, 2, GC.Spread.Sheets.SheetArea.viewport).backColor("red");

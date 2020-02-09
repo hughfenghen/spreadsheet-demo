@@ -1,0 +1,25 @@
+var setting = new GC.Spread.Sheets.Sparklines.SparklineSetting();
+setting.options.showMarkers = true;
+setting.options.displayXAxis = true;
+
+activeSheet.suspendPaint();
+activeSheet.setValue(1, 0, 10);
+activeSheet.setValue(2, 0, 0);
+activeSheet.setValue(3, 0, -3);
+activeSheet.setValue(4, 0, -5);
+activeSheet.setValue(0, 0, 1);
+activeSheet.setValue(0, 1, 2);
+activeSheet.setValue(0, 2, 4);
+activeSheet.setValue(0, 3, 8);
+activeSheet.setValue(0, 4, 6);
+activeSheet.setValue(0, 5, new Date(2014, 1, 1));
+activeSheet.setValue(1, 5, new Date(2014, 9, 1));
+activeSheet.setValue(2, 5, new Date(2014, 7, 1));
+activeSheet.setValue(3, 5, new Date(2014, 5, 1));
+activeSheet.setValue(4, 5, new Date(2014, 3, 1));
+var sparkline = activeSheet.setSparkline(5, 0, new GC.Spread.Sheets.Range(0, 0, 5, 5), GC.Spread.Sheets.Sparklines.DataOrientation.horizontal, GC.Spread.Sheets.Sparklines.SparklineType.line, setting, new GC.Spread.Sheets.Range(0, 5, 5, 1), GC.Spread.Sheets.Sparklines.DataOrientation.vertical);
+sparkline.dataOrientation(GC.Spread.Sheets.Sparklines.DataOrientation.vertical);
+sparkline.displayDateAxis(true); 
+activeSheet.resumePaint();
+
+activeSheet.addSpan(5, 0, 4, 3, null);

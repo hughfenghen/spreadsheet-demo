@@ -1,0 +1,14 @@
+var datasource = [
+                 { name: "Alice", age: 27, birthday: "1985/08/31", position: "PM" },
+                 { name: "Aimee", age: 28, birthday: "1984/07/31", position: "TL" },
+                 { name: "Charles", age: 29, birthday: "1983/03/31", position: "QC" },
+            ];
+var colInfos = [
+                { name: "name", displayName: "Name", size: 70 },
+                { name: "age", displayName: "Age", size: 40, resizable: false },
+                { name: "birthday", displayName: "Birthday", formatter: "d/M/yy", size: 120 },
+                { name: "position", displayName: "Position", size: 50, visible: false }
+            ];
+activeSheet.autoGenerateColumns = true;
+activeSheet.setDataSource(datasource);
+activeSheet.bindColumns(colInfos);

@@ -1,0 +1,2 @@
+spread.options.allowUndo = true;
+spread.undoManager().undo();

@@ -1,0 +1,574 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%ProjectTitle%% - %%ItemTitle%%</title>" --><title>SpreadJS Documentation - Cell Dropdowns</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ProjectTitle%% - %%ItemTitleNoQuotes%%""/>" --><meta name="Title" content="SpreadJS Documentation - Cell Dropdowns"/><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n145","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="light" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="SpreadJS allows users to add a drop down cell in the worksheet. With this feature, users can add a drop down menu with specific properties to the cells in a workbook as per their specific requirements and preferences." /><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-topics/topics.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-topics/topics.mshv1.css"" data-responsive-mobile=""template/packages/core-topics/topics.mobile.css"" data-responsive-tablet=""template/packages/core-topics/topics.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="script"--><script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="script"--><script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="324d2cbf-69fd-4198-8b21-9c12cfc18010"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="3ff39078-fb0f-471b-a3ec-25d37e40d683"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocOrdinal" format="<meta name=""Microsoft.Help.TocOrder"" content=""%%TocOrdinal%%""/>" --><meta name="Microsoft.Help.TocOrder" content="8"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/hs-simpletab.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="StylePropertyValues" format="<style>%%StylePropertyValues%%</style>" --><style>.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+    <!--DXMETADATA start type="CustomHeadContent" --><link rel="stylesheet" type="text/css" href="template/packages/core-web/css/SP.css">
+<script type="text/javascript">
+var currentHeader = function() {
+    return "spjs";
+}
+</script>
+<script src="template/packages/core-web/script/topNavigation.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WT462SJ"></script>
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime()
+                , event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WT462SJ');
+    </script>
+<!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->SpreadJS Documentation<!--DXMETADATA end--></div>
+            <div class="i-search-container">
+                <!--DXMETADATA start type="outputfileextension" format="<form action=""websearch%%outputfileextension%%"">" --><form action="websearch.html"><!--DXMETADATA end-->
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                <!--DXMETADATA start type="Literal" value="</form>" --></form><!--DXMETADATA end-->
+            </div>
+            <!--DXMETADATA start type="outputfileextension" format="<a id=""i-index-button"" href=""webindex%%outputfileextension%%""></a>" --><a id="i-index-button" href="webindex.html"></a><!--DXMETADATA end-->
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container">
+<a href="overview.html">SpreadJS Documentation</a>
+ / <a href="devguide.html">Developer's Guide</a>
+ / <a href="features.html">Features</a>
+ / <a href="interface.html">Manage User Interface</a>
+ / Cell Dropdowns</div><!--DXMETADATA end --></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="ItemTitle" -->Cell Dropdowns<!--DXMETADATA end--></div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+            </div>
+            <!--DXMETADATA start type="TopicSection" name="BodyText"--><p>SpreadJS allows users to add a drop down cell in the worksheet. With this feature, users can add a drop down menu with specific properties to the cells in a workbook as per their specific requirements and preferences.</p>
+
+<h3 id="a">What are Cell Dropdowns?</h3>
+
+<p>Cell dropdowns provide a drop down menu in the cell&nbsp;that can help users in selecting the data easily and quickly.</p>
+
+<p>This feature is helpful in creating input form controls, advanced structured forms and other interactive forms and dashboards within the spreadsheet.</p>
+
+<p><strong>Types of Cell Dropdowns</strong> - SpreadJS provides eight different types of built-in dropdown menus while working with spreadsheets. Users can use the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.DropDownType.html">DropDownType</a> enumeration to simply specify a value (ranging from 0 to 7) and the corresponding cell dropdown type will be picked as per the following options:</p>
+
+<ul>
+    <li>Calculator Dropdown [Enum Value : 6]</li>
+
+    <li>Date Time Picker Dropdown [Enum Value : 1]</li>
+
+    <li>Month Picker Dropdown [Enum Value : 3 ]</li>
+
+    <li>Time Picker Dropdown [Enum Value : 2]</li>
+
+    <li>Color Picker Dropdown [Enum Value : 0]</li>
+
+    <li>List Dropdown [Enum Value : 4]</li>
+
+    <li>Slider Dropdown [Enum Value : 5]</li>
+
+    <li>Workflow List Dropdown [Enum Value : 7]</li>
+</ul>
+
+<p><strong>Configuring Cell Dropdowns</strong> - Users can configure a dropdown cell with a list of predefined values (using a list dropdown); calculated values (using a calculator dropdown); calendars and events (using date time picker, month picker and time picker dropdowns); select a color (using color picker dropdown); create range sliders (using a slider dropdown) and automatically repopulate the next available choices based on the earlier choice (using a workflow list dropdown) as shown in the screesnhot shared below.</p>
+
+<p><img style="MAX-WIDTH: 100%; HEIGHT: auto" border="0" alt="" src="images/spreadjsv13images/drop.png" /></p>
+
+<h3 id="b">Calculator Dropdown</h3>
+
+<p>The calculator dropdown in a cell allows users to compute the values and populate the evaluated result in the cell. The following screenshot depicts the calculator dropdown in cell C3 with a dropdown indicator.</p>
+
+<p><img border="0" alt="" src="images/spreadjsv13images/calculator-dropdown.png" />&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Users can configure the calculator dropdown&nbsp;in a cell by adding a dropdown button using the <a href="SpreadJS~GC.Spread.Sheets.Style~cellButtons.html" data-auto-update-caption="true">cellButtons</a> field of the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Style.html" data-auto-update-caption="true">Style</a> class and setting its command parameter to "<strong>openCalculator</strong>" as shown in the code snippet shared below.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <p>// Set Calculator Dropdown<br />
+                    var calStyle = new GC.Spread.Sheets.Style();<br />
+                    calStyle.cellButtons = [<br />
+                    {<br />
+                    imageType: GC.Spread.Sheets.ButtonImageType.dropdown,<br />
+                    command: "openCalculator",<br />
+                    useButtonStyle: true,<br />
+                    }<br />
+                    ];<br />
+                    activeSheet.setText(2, 3, "Calculator Dropdown");<br />
+                    activeSheet.setStyle(2, 4, calStyle);</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h3 id="c">Date Time Picker Dropdown</h3>
+
+<p>The date time picker dropdown in a cell allows users to set date and time to populate the evaluated result in the cell. The following screenshot depicts the date time picker dropdown in cell&nbsp;C5 with a dropdown indicator.</p>
+
+<p><img border="0" alt="" src="images/spreadjsv13images/date-time-picker.png" /></p>
+
+<p>Users can configure the date time picker dropdown&nbsp;in a cell by adding a dropdown button using the <a href="SpreadJS~GC.Spread.Sheets.Style~cellButtons.html" data-auto-update-caption="true">cellButtons</a> field of the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Style.html" data-auto-update-caption="true">Style</a> class and setting its command parameter to "<strong>openDateTimePicker</strong>" as shown in the code snippet shared below.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <p>// Set DateTimePicker Dropdown<br />
+                    var dateTimeStyle = new GC.Spread.Sheets.Style();<br />
+                    dateTimeStyle.cellButtons = [<br />
+                    {<br />
+                    imageType: GC.Spread.Sheets.ButtonImageType.dropdown,<br />
+                    command: "openDateTimePicker",<br />
+                    useButtonStyle: true,<br />
+                    }<br />
+                    ];<br />
+                    dateTimeStyle.dropDowns = [<br />
+                    {<br />
+                    type: GC.Spread.Sheets.DropDownType.dateTimePicker,<br />
+                    option: {<br />
+                    &nbsp; showTime: true,<br />
+                    }<br />
+                    }<br />
+                    ];<br />
+                    activeSheet.setText(4, 3, "DateTimePicker Dropdown");<br />
+                    activeSheet.setStyle(4, 4, dateTimeStyle);</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div><br />
+
+<h3 id="d">Month Picker Dropdown</h3>
+
+<p>The date time picker dropdown in a cell allows users to configure a specfiic month in a year to populate the evaluated result in the cell. The following screenshot depicts the month picker dropdown in cell&nbsp;C7 with a dropdown indicator.</p>
+
+<p><img border="0" alt="" src="images/spreadjsv13images/month-picker.png" /></p>
+
+<p>Users can configure the month picker dropdown&nbsp;in a cell by adding a dropdown button using the <a href="SpreadJS~GC.Spread.Sheets.Style~cellButtons.html" data-auto-update-caption="true">cellButtons</a> field of the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Style.html" data-auto-update-caption="true">Style</a> class and setting its command parameter to "<strong>openMonthPicker</strong>" as shown in the code snippet shared below.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <p>// Set MonthPicker Dropdown<br />
+                    var monthPickerStyle = new GC.Spread.Sheets.Style();<br />
+                    monthPickerStyle.cellButtons = [<br />
+                    {<br />
+                    imageType: GC.Spread.Sheets.ButtonImageType.dropdown,<br />
+                    command: "openMonthPicker",<br />
+                    useButtonStyle: true,<br />
+                    }<br />
+                    ];</p>
+
+                    <p>monthPickerStyle.dropDowns = [<br />
+                    {<br />
+                    type: GC.Spread.Sheets.DropDownType.monthPicker,<br />
+                    option: {<br />
+                    &nbsp; startYear: 2009,<br />
+                    &nbsp; stopYear: 2019,<br />
+                    &nbsp; height: 300,<br />
+                    }<br />
+                    }<br />
+                    ];<br />
+                    activeSheet.setText(6, 3, "Month Picker Dropdown");<br />
+                    activeSheet.setStyle(6, 4, monthPickerStyle);</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div><br />
+
+<h3 id="e">Time Picker Dropdown</h3>
+
+<p>The date time picker dropdown in a cell allows users to configure a specfiic time to populate the evaluated result in the cell. The following screenshot depicts the time picker dropdown in cell&nbsp;C9 with a dropdown indicator.</p>
+
+<p><img border="0" alt="" src="images/spreadjsv13images/time-picker.png" /></p>
+
+<p>Users can configure the time picker dropdown&nbsp;in a cell by adding a dropdown button using the <a href="SpreadJS~GC.Spread.Sheets.Style~cellButtons.html" data-auto-update-caption="true">cellButtons</a> field of the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Style.html" data-auto-update-caption="true">Style</a> class and setting its command parameter to "<strong>openTimePicker</strong>" as shown in the code snippet shared below.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">// Set the TimePicker Dropdown<br />
+                var timePickerStyle = new GC.Spread.Sheets.Style();<br />
+                timePickerStyle.cellButtons = [<br />
+                {<br />
+                imageType: GC.Spread.Sheets.ButtonImageType.dropdown,<br />
+                command: "openTimePicker",<br />
+                useButtonStyle: true,<br />
+                }<br />
+                ];<br />
+                timePickerStyle.dropDowns = [<br />
+                {<br />
+                type: GC.Spread.Sheets.DropDownType.timePicker,<br />
+                option: {<br />
+                &nbsp; min: { hour: 8 },<br />
+                &nbsp; max: { hour: 19 },<br />
+                &nbsp; step: { minute: 30 },<br />
+                &nbsp; formatString: "h:mm AM/PM",<br />
+                }<br />
+                }<br />
+                ];<br />
+                activeSheet.setText(8, 3, "Time Picker Dropdown");<br />
+                activeSheet.setStyle(8, 4, timePickerStyle);</td>
+            </tr>
+        </tbody>
+    </table>
+</div><br />
+
+<h3 id="f">Color Picker Dropdown</h3>
+
+<p>The color picker dropdown in a cell allows users to&nbsp;choose a specific color&nbsp;to populate the&nbsp;cell value with the hex code of the chosen color. The following screenshot depicts the color picker dropdown in cell&nbsp;C11 with a dropdown indicator.</p>
+
+<p>&nbsp;</p>
+
+<p><img border="0" alt="" src="images/spreadjsv13images/color-picker.png" /></p>
+
+<p>Users can configure the color picker dropdown&nbsp;in a cell by adding a dropdown button using the <a href="SpreadJS~GC.Spread.Sheets.Style~cellButtons.html" data-auto-update-caption="true">cellButtons</a> field of the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Style.html" data-auto-update-caption="true">Style</a> class and setting its command parameter to "<strong>openColorPicker</strong>" as shown in the code snippet shared below.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">// Set the ColorPicker Dropdown<br />
+                var colorPickerStyle = new GC.Spread.Sheets.Style();<br />
+                colorPickerStyle.cellButtons = [<br />
+                {<br />
+                imageType: GC.Spread.Sheets.ButtonImageType.dropdown,<br />
+                command: "openColorPicker",<br />
+                useButtonStyle: true,<br />
+                }<br />
+                ];<br />
+                activeSheet.setText(10, 3, "Color Picker Dropdown");<br />
+                activeSheet.setStyle(10, 4, colorPickerStyle);</td>
+            </tr>
+        </tbody>
+    </table>
+</div><br />
+
+<h3 id="g">List Dropdown</h3>
+
+<p>The list dropdown in a cell allows users to&nbsp;choose a&nbsp;specific item from the dropdown list&nbsp;to populate the&nbsp;cell value. The following screenshot depicts the&nbsp;list dropdown in cell&nbsp;C13 with a dropdown indicator.</p>
+
+<p><img border="0" alt="" src="images/spreadjsv13images/list-dropdown.png" /></p>
+
+<p>Users can configure the list dropdown&nbsp;in a cell by adding a dropdown button using the <a href="SpreadJS~GC.Spread.Sheets.Style~cellButtons.html" data-auto-update-caption="true">cellButtons</a> field of the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Style.html" data-auto-update-caption="true">Style</a> class and setting its command parameter to "<strong>openList</strong>" as shown in the code snippet shared below.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">// Set the List Dropdown<br />
+                var listStyle = new GC.Spread.Sheets.Style();<br />
+                listStyle.cellButtons = [<br />
+                {<br />
+                imageType: GC.Spread.Sheets.ButtonImageType.dropdown,<br />
+                command: "openList",<br />
+                useButtonStyle: true,<br />
+                }<br />
+                ];<br />
+                listStyle.dropDowns = [<br />
+                {<br />
+                type: GC.Spread.Sheets.DropDownType.list,<br />
+                option: {<br />
+                &nbsp; items: [<br />
+                &nbsp; {<br />
+                &nbsp; text: 'item1',<br />
+                &nbsp; value: 'item1'<br />
+                &nbsp; },<br />
+                &nbsp; {<br />
+                &nbsp; text: 'item2',<br />
+                &nbsp; value: 'item2'<br />
+                &nbsp; },<br />
+                &nbsp; {<br />
+                &nbsp; text: 'item3',<br />
+                &nbsp; value: 'item3'<br />
+                &nbsp; },<br />
+                &nbsp; {<br />
+                &nbsp; text: 'item4',<br />
+                &nbsp; value: 'item4'<br />
+                &nbsp; }<br />
+                &nbsp; ],<br />
+                }<br />
+                }<br />
+                ];<br />
+                activeSheet.setText(12, 3, "List Dropdown");<br />
+                activeSheet.setStyle(12, 4, listStyle);</td>
+            </tr>
+        </tbody>
+    </table>
+</div><br />
+
+<h3 id="h">Slider Dropdown</h3>
+
+<p>The slider dropdown in a cell allows users to add a dynamic&nbsp;range slider&nbsp;in a cell&nbsp;that populates the current value in the cell. The following screenshot depicts the&nbsp;slider dropdown in cell&nbsp;C15 with a dropdown indicator.</p>
+
+<p><img border="0" alt="" src="images/spreadjsv13images/slider.png" />&nbsp;</p>
+
+<p>Users can configure the slider dropdown&nbsp;in a cell by adding a dropdown button using the <a href="SpreadJS~GC.Spread.Sheets.Style~cellButtons.html" data-auto-update-caption="true">cellButtons</a> field of the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Style.html" data-auto-update-caption="true">Style</a> class and setting its command parameter to "<strong>openSlider</strong>" as shown in the code snippet shared below.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">// Set the Slider dropdown<br />
+                var horizontalSliderStyle = new GC.Spread.Sheets.Style();<br />
+                horizontalSliderStyle.cellButtons = [<br />
+                {<br />
+                imageType: GC.Spread.Sheets.ButtonImageType.dropdown,<br />
+                command: "openSlider",<br />
+                useButtonStyle: true,<br />
+                }<br />
+                ];<br />
+                horizontalSliderStyle.dropDowns = [<br />
+                {<br />
+                type: GC.Spread.Sheets.DropDownType.slider,<br />
+                option: {<br />
+                &nbsp; marks: [0, 50, 100],<br />
+                &nbsp; step: 10,<br />
+                &nbsp; direction: GC.Spread.Sheets.LayoutDirection.horizontal,<br />
+                }<br />
+                }<br />
+                ];<br />
+                activeSheet.setText(14, 3, "Slider Dropdown");<br />
+                activeSheet.setStyle(14, 4, horizontalSliderStyle);</td>
+            </tr>
+        </tbody>
+    </table>
+</div><br />
+
+<h3 id="i">Workflow List Dropdown</h3>
+
+<p>The workflow list dropdown in a cell allows users to&nbsp;select workflow item easily and quickly to populate the chosen value in the cell. The following screenshot depicts the&nbsp;workflow list dropdown in cell&nbsp;C17 with a dropdown indicator.</p>
+
+<p><img border="0" alt="" src="images/spreadjsv13images/workflow-list.png" /></p>
+
+<p>Users can configure the workflow list dropdown&nbsp;in a cell by adding a dropdown button using the <a href="SpreadJS~GC.Spread.Sheets.Style~cellButtons.html" data-auto-update-caption="true">cellButtons</a> field of the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Style.html" data-auto-update-caption="true">Style</a> class and setting its command parameter to "<strong>openWorkflowList</strong>" as shown in the code snippet shared below.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">&nbsp;//Set the Workflow list dropdown<br />
+                let workflowListStyle = new GC.Spread.Sheets.Style();<br />
+                workflowListStyle.cellButtons = [<br />
+                {<br />
+                imageType: GC.Spread.Sheets.ButtonImageType.dropdown,<br />
+                command: "openWorkflowList",<br />
+                useButtonStyle: true,<br />
+                }<br />
+                ];<br />
+                workflowListStyle.dropDowns = [<br />
+                {<br />
+                type: GC.Spread.Sheets.DropDownType.workflowList,<br />
+                option: {<br />
+                &nbsp; items: [<br />
+                &nbsp; { value: "New", transitions: [1] },<br />
+                &nbsp; { value: "Open", transitions: [0, 2, 3, 5] },<br />
+                &nbsp; { value: "In Progress", transitions: [1, 3, 5] },<br />
+                &nbsp; { value: "Resolved", transitions: [5, 4] },<br />
+                &nbsp; { value: "Reopened", transitions: [5, 3, 2] },<br />
+                &nbsp; { value: "Closed", transitions: [4] },<br />
+                &nbsp; ]<br />
+                }<br />
+                }<br />
+                ];<br />
+                activeSheet.setText(16, 3, "Workflow List Dropdown");<br />
+                activeSheet.setStyle(16, 4, workflowListStyle);</td>
+            </tr>
+        </tbody>
+    </table>
+</div><br /><!--DXMETADATA end-->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORISED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""%%phrase:name=SeeAlso%%%%designlist:tagidentifier=seealso,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><!--DXMETADATA end-->
+            
+            <div id="i-footer-content" class="i-footer-content">
+                <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p><p>Copyright © 2019 GrapeCity, Inc. All rights reserved.</p>
+<p><a href="https://www.grapecity.com/en/forums/winforms-edition" target="_blank">Product Support Forum</a> | <a href="javascript:window.print()">Print this page</a></p>
+<ul class="social">
+<li><a href="https://www.facebook.com/GrapeCityUS/" target="_blank" class="facebook">&nbsp;</a></li>
+<li><a href="https://twitter.com/GrapeCityUS" target="_blank" class="twitter">&nbsp;</a></li>
+<li><a href="https://www.linkedin.com/company/grapecity" target="_blank" class="linkedin">&nbsp;</a></li>
+</ul>
+</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end-->
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

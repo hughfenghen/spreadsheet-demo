@@ -1,0 +1,2 @@
+spread.options.backColor = "green";
+spread.options.grayAreaBackColor = "Accent 2";

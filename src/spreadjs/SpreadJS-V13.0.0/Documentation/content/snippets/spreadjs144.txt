@@ -1,0 +1,3 @@
+activeSheet.bind(GC.Spread.Sheets.Events.ColumnWidthChanged, function (e, info) {    
+        alert("Column (" + info.colList + ")");
+});

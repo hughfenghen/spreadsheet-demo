@@ -1,0 +1,4 @@
+spread.options.scrollIgnoreHidden = true;
+activeSheet.getRange(-1, 1, -1, 1).width(0);
+activeSheet.getRange(1, -1, 1, -1).height(0);
+activeSheet.getRange(-1, 3, -1, 1).visible(false);

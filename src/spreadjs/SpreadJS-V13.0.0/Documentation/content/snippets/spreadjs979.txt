@@ -1,0 +1,11 @@
+var ntheme = new GC.Spread.Sheets.Theme("customThemeColor");
+ntheme.colors().accent1("lightgreen");
+ntheme.colors().followedHyperlink("orange");
+ntheme.colors().hyperlink("red");
+ntheme.colors().name("test");
+activeSheet.currentTheme(ntheme);
+activeSheet.getCell(0, 0).backColor("accent 1");
+activeSheet.getCell(1, 0).backColor("followedHyperlink");
+activeSheet.getCell(2, 0).backColor("hyperlink");
+var cname = ntheme.getColor("accent 1");
+alert(cname);

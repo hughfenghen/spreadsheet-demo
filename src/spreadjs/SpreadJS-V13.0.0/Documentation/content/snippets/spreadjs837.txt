@@ -1,0 +1,2 @@
+activeSheet.getRange(1, -1, 1, -1).tag("row tag");
+alert(activeSheet.getTag(1,-1,GC.Spread.Sheets.SheetArea.viewport));

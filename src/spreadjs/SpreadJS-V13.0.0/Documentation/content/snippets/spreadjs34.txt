@@ -1,0 +1,7 @@
+var cellType = new GC.Spread.Sheets.CellTypes.HyperLink();
+cellType.linkColor("blue");
+cellType.visitedLinkColor("#FF2235");
+cellType.text("GrapeCity");
+cellType.linkToolTip("Company Web Site");
+activeSheet.getCell(1, 1).cellType(cellType).value("http://spread.grapecity.com/");
+activeSheet.getCell(1, -1).height(30);

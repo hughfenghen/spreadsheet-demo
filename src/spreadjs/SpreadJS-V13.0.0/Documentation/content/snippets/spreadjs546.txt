@@ -1,0 +1,7 @@
+var nCondition = new GC.Spread.Sheets.ConditionalFormatting.Condition(GC.Spread.Sheets.ConditionalFormatting.ConditionType.textCondition, {compareType: GC.Spread.Sheets.ConditionalFormatting.TextCompareType.contains, expected: "test"});
+var validator = new GC.Spread.Sheets.DataValidation.DefaultDataValidator(nCondition);
+validator.type(GC.Spread.Sheets.DataValidation.CriteriaType.custom);
+activeSheet.getCell(0, 0, GC.Spread.Sheets.SheetArea.viewport).validator(validator);
+spread.options.highlightInvalidData = true;
+activeSheet.setValue(0, 0, "testing");
+//Type text in 0,0 that does not contain "test" to see invalid symbol

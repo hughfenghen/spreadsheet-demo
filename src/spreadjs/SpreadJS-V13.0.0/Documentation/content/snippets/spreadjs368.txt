@@ -1,0 +1,2 @@
+spread.setSheetCount(5);
+spread.removeSheet(0);

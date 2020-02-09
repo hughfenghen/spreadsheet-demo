@@ -1,0 +1,1 @@
+activeSheet.options.selectionBackColor = "rgba(204,255,51, 0.3)";

@@ -1,0 +1,21 @@
+//Add data
+for (var col = 1; col < 6; col++) {
+    for (var row = 2; row < 11; row++) {
+        activeSheet.setValue(row, col, row + col);
+    }
+}
+var tableStyle = new GC.Spread.Sheets.Tables.TableTheme();
+var thinBorder = new GC.Spread.Sheets.LineBorder("black", GC.Spread.Sheets.LineStyle.dotted);
+tableStyle.wholeTableStyle(new GC.Spread.Sheets.Tables.TableStyle("aliceblue", "green", "bold 10pt arial", thinBorder, thinBorder, thinBorder, thinBorder, thinBorder, thinBorder));
+ 
+var tStyleInfo = new GC.Spread.Sheets.Tables.TableStyle();
+tStyleInfo.backColor = "green";
+tStyleInfo.foreColor = "red";
+tStyleInfo.borderBottom = new GC.Spread.Sheets.LineBorder("green", GC.Spread.Sheets.LineStyle.thin);
+tStyleInfo.borderLeft = new GC.Spread.Sheets.LineBorder("yellow", GC.Spread.Sheets.LineStyle.medium);
+tStyleInfo.borderTop = new GC.Spread.Sheets.LineBorder("green", GC.Spread.Sheets.LineStyle.thin);
+tStyleInfo.borderRight = new GC.Spread.Sheets.LineBorder("green", GC.Spread.Sheets.LineStyle.thin);
+tStyleInfo.font = "bold 11pt arial";
+tableStyle.secondRowStripSize(2);
+tableStyle.secondRowStripStyle(tStyleInfo);
+activeSheet.tables.add("Custom", 1, 1, 10, 5, tableStyle);

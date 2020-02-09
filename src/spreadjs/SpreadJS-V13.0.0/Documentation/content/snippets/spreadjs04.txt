@@ -1,0 +1,6 @@
+//Set border lines to cell(1,1).
+    var cell = activeSheet.getCell(1, 1, GC.Spread.Sheets.SheetArea.viewport);
+    cell.borderLeft(new GC.Spread.Sheets.LineBorder("Red", GC.Spread.Sheets.LineStyle.thick));
+    cell.borderTop(new GC.Spread.Sheets.LineBorder("Blue", GC.Spread.Sheets.LineStyle.double));
+    cell.borderRight(new GC.Spread.Sheets.LineBorder("Green", GC.Spread.Sheets.LineStyle.dashDot));
+    cell.borderBottom(new GC.Spread.Sheets.LineBorder("Yellow", GC.Spread.Sheets.LineStyle.mediumDashed));

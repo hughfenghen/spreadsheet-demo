@@ -1,0 +1,12 @@
+ activeSheet.bind(GC.Spread.Sheets.Events.CellClick, function (e, info) {
+                if (info.sheetArea === GC.Spread.Sheets.SheetArea.viewport) {
+                    alert("Clicked cell index (" + info.row + "," + info.col + ")");
+
+                    //Acquire the coordinate information of regular cells which exist at the specified index position
+                    var cellRect = activeSheet.getCellRect(info.row, info.col);
+                    alert("X coordinate:" + cellRect.x);
+                    alert("Y coordinate:" + cellRect.y);
+                    alert("Cell width:" + cellRect.width);
+                    alert("Cell height:" + cellRect.height);
+                }
+            });

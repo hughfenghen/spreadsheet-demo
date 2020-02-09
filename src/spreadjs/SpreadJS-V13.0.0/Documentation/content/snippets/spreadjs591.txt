@@ -1,0 +1,11 @@
+activeSheet.tables.add("Table1", 0, 0, 4, 3, GC.Spread.Sheets.Tables.TableTheme.dark1);
+activeSheet.getCell(0,0).text("Value1");
+activeSheet.getCell(0,1).text("Value2");
+activeSheet.getCell(0,2).text("Total");
+activeSheet.getCell(1,0).text("1");
+activeSheet.getCell(2,0).text("2");
+activeSheet.getCell(3,0).text("3");
+activeSheet.getCell(1,1).text("5");
+activeSheet.getCell(2,1).text("5");
+activeSheet.getCell(3,1).text("5");
+activeSheet.tables.findByName("Table1").setColumnDataFormula(2, "=[Value1]*[Value2]");

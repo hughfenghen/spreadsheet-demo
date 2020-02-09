@@ -1,0 +1,13 @@
+sheet.getCell(1, 1).borderTop(new GC.Spread.Sheets.LineBorder("#F0F8FF",GC.Spread.Sheets.LineStyle.double));
+sheet.getCell(1, 1).borderLeft(new GC.Spread.Sheets.LineBorder("#F0F8FF",GC.Spread.Sheets.LineStyle.hair));
+sheet.getCell(1, 1).borderRight(new GC.Spread.Sheets.LineBorder("#FAEBD7",GC.Spread.Sheets.LineStyle.dashDot));
+sheet.getCell(1, 1).borderBottom(new GC.Spread.Sheets.LineBorder("#00FFFF",GC.Spread.Sheets.LineStyle.medium));
+sheet.getRange(-1, 5, -1, 1, GC.Spread.Sheets.SheetArea.viewport).borderTop(new GC.Spread.Sheets.LineBorder("#F0FFFF",GC.Spread.Sheets.LineStyle.medium));
+sheet.getRange(-1, 5, -1, 1, GC.Spread.Sheets.SheetArea.viewport).borderLeft(new GC.Spread.Sheets.LineBorder("#F5F5DC",GC.Spread.Sheets.LineStyle.medium));
+sheet.getRange(-1, 5, -1, 1, GC.Spread.Sheets.SheetArea.viewport).borderRight(new GC.Spread.Sheets.LineBorder("#FF02FF", GC.Spread.Sheets.LineStyle.dashDot));
+sheet.getRange(-1, 5, -1, 1, GC.Spread.Sheets.SheetArea.viewport).borderBottom (new GC.Spread.Sheets.LineBorder("#FFE4C4",GC.Spread.Sheets.LineStyle.thin));
+sheet.getRange(2, 2, 2, 2, GC.Spread.Sheets.SheetArea.viewport).setBorder(new GC.Spread.Sheets.LineBorder("#8A2BE2",GC.Spread.Sheets.LineStyle.thick), { all:true },3);
+sheet.getRange(5, -1, 1, -1, GC.Spread.Sheets.SheetArea.viewport).borderTop( new GC.Spread.Sheets.LineBorder("#A52A2A",GC.Spread.Sheets.LineStyle.mediumDashed));
+sheet.getRange(5, -1, 1, -1, GC.Spread.Sheets.SheetArea.viewport).borderLeft( new GC.Spread.Sheets.LineBorder("#FF02FF",GC.Spread.Sheets.LineStyle.medium));
+sheet.getRange(5, -1, 1, -1, GC.Spread.Sheets.SheetArea.viewport).borderRight(new GC.Spread.Sheets.LineBorder("#5F9EA0", GC.Spread.Sheets.LineStyle.dashDot));
+sheet.getRange(5, -1, 1, -1, GC.Spread.Sheets.SheetArea.viewport).borderBottom (new GC.Spread.Sheets.LineBorder("#6495ED",GC.Spread.Sheets.LineStyle.dotted));

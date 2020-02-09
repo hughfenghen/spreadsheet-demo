@@ -1,0 +1,6 @@
+sheet.suspendPaint();
+sheet.rowOutlines.group(3,2);
+sheet.columnOutlines.group(4,1);
+sheet.rowOutlines.direction(GC.Spread.Sheets.Outlines.OutlineDirection.backward);
+sheet.columnOutlines.direction(GC.Spread.Sheets.Outlines.OutlineDirection.forward);
+sheet.resumePaint();

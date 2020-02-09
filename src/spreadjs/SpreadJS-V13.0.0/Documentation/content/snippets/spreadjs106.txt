@@ -1,0 +1,6 @@
+var style = new GC.Spread.Sheets.Style();
+style.textIndent = 3;
+// Enter multiple lines with Alt+Enter
+style.wordWrap = true;
+activeSheet.setStyle(1,1,style,GC.Spread.Sheets.SheetArea.viewport);
+activeSheet.getCell(1,1).text("Test");

@@ -1,0 +1,12 @@
+var style = new GC.Spread.Sheets.Style();
+style.backColor = "red";
+var rule = new GC.Spread.Sheets.ConditionalFormatting.NormalConditionRule();
+rule.ruleType(GC.Spread.Sheets.ConditionalFormatting.RuleType.FormulaRule);
+rule.formula("=A1=B1+C1");
+rule.ranges([new GC.Spread.Sheets.Range(0, 0, 2, 1)]);
+rule.style(style);
+activeSheet.conditionalFormats.addRule(rule);
+activeSheet.setValue(0, 0, 2,3);
+activeSheet.setValue(0, 1, 1,3);
+activeSheet.setValue(0, 2,1,3);
+activeSheet.setValue(1, 0, 1,3); 

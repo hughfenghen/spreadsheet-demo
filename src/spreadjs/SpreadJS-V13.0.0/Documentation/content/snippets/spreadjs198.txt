@@ -1,0 +1,10 @@
+activeSheet.addSpan(0,0,3,3,GC.Spread.Sheets.SheetArea.viewport);
+
+//button click event
+var spans= activeSheet.getSpans();      
+for(var i = 0; i < spans.length; i++){
+alert(spans[i].row);
+alert(spans[i].rowCount);
+alert(spans[i].col);
+alert(spans[i].colCount);
+}

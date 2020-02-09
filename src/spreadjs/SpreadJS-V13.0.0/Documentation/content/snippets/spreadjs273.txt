@@ -1,0 +1,1 @@
+activeSheet.options.selectionBorderColor = "#FFFF00";

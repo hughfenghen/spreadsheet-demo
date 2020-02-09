@@ -1,0 +1,17 @@
+activeSheet.setValue(0, 0, 10);
+activeSheet.setValue(1, 0, 100);
+activeSheet.setValue(2, 0, 50);
+activeSheet.setValue(3, 0, 40);
+activeSheet.setValue(4, 0, 80);
+activeSheet.setValue(5, 0, 1);
+activeSheet.setValue(6, 0, 65);
+activeSheet.setValue(7, 0, 20);
+activeSheet.setValue(8, 0, 30);
+activeSheet.setValue(9, 0, 35);
+var cellrange =new GC.Spread.Sheets.Range(0, 0, 5, 1);
+var hideRowFilter =new GC.Spread.Sheets.Filter.HideRowFilter(cellrange);
+activeSheet.rowFilter(hideRowFilter);
+
+activeSheet.bind(GC.Spread.Sheets.Events.RangeSorted, function (e, info) {    
+        alert("Col (" + info.col + ", " + info.ascending +")");
+});

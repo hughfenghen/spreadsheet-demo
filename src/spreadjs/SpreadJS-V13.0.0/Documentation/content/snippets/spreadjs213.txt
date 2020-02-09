@@ -1,0 +1,18 @@
+var datasource = [
+                   { name: "Alice", age: 27, birthday: "1985/08/31", position: "PM" },
+                   { name: "Aimee", age: 28, birthday: "1984/07/31", position: "TL" },
+                   { name: "Charles", age: 29, birthday: "1983/03/31", position: "QC" },
+                   { name: "Fred", age: 30, birthday: "1982/02/20", position: "DL" },
+                   { name: "Angelia", age: 31, birthday: "1981/05/30", position: "QC" },
+                   { name: "Peter", age: 32, birthday: "1980/11/08", position: "QC" }
+               ];
+var nameColInfo = { name: "name", displayName: "Name", size: 70 };
+var ageColInfo = { name: "age", displayName: "Age", size: 40, resizable: false };
+var birthdayColInfo = { name: "birthday", displayName: "Birthday",formatter:"d/M/yy", size: 120 };
+var positionColInfo = { name: "position", displayName: "Position", size: 50, visible: false };
+sheet.autoGenerateColumns = true;
+sheet.setDataSource(datasource);
+sheet.bindColumn(0, nameColInfo);
+sheet.bindColumn(1, ageColInfo);
+sheet.bindColumn(2, birthdayColInfo);
+sheet.bindColumn(3, positionColInfo);

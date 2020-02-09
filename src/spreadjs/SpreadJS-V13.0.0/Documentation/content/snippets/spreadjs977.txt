@@ -1,0 +1,11 @@
+activeSheet.tables.add("Table1", 0, 0, 3, 3, GC.Spread.Sheets.Tables.TableTheme.dark1);
+activeSheet.getCell(0,0).text("Name");
+activeSheet.getCell(0,1).text("Value");
+activeSheet.getCell(0,2).text("T/F");
+activeSheet.getCell(1,0).text("AW");
+activeSheet.getCell(1,1).text("5");
+activeSheet.getCell(1,2).text("T");
+
+activeSheet.bind(GC.Spread.Sheets.Events.TableFiltered, function (e, info) {    
+        alert("Sheet (" + info.sheetName + ")");
+});

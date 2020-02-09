@@ -1,0 +1,5 @@
+activeSheet.getCell(0, 0).imeMode(GC.Spread.Sheets.ImeMode.disabled);
+//or
+var style = new GC.Spread.Sheets.Style();
+style.imeMode = GC.Spread.Sheets.ImeMode.disabled;
+activeSheet.setStyle(0, 0, style);

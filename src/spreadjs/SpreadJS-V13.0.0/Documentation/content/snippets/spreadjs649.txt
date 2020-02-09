@@ -1,0 +1,13 @@
+activeSheet.suspendPaint();
+for (var row = 0; row < 25; row++) {
+    activeSheet.setValue(row, 0, row, GC.Spread.Sheets.SheetArea.viewport);
+}
+var rowFilter = new GC.Spread.Sheets.Filter.HideRowFilter(new GC.Spread.Sheets.Range(0, 0, 25, 1));
+activeSheet.rowFilter(rowFilter);
+var top10Con = new GC.Spread.Sheets.ConditionalFormatting.Condition(GC.Spread.Sheets.ConditionalFormatting.ConditionType.top10Condition);
+top10Con.type(GC.Spread.Sheets.ConditionalFormatting.Top10ConditionType.top);
+top10Con.expected(10);
+var filter = activeSheet.rowFilter();
+filter.addFilterItem(0, top10Con);
+filter.filter(0);
+activeSheet.resumePaint();

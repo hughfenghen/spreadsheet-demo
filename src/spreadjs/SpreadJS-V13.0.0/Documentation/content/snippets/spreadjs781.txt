@@ -1,0 +1,38 @@
+<script type="text/javascript">
+    function FactorialFunction() {
+        this.name = "FACTORIAL";
+        this.maxArgs = 1;
+        this.minArgs = 1;
+    }
+    FactorialFunction.prototype = new GC.Spread.CalcEngine.Functions.Function();
+    FactorialFunction.prototype.description = function () {
+        return {
+            description: "The function returns the factorial of the cells value",
+            parameters: [{
+                name: "value"
+            }]
+        }
+    }
+    FactorialFunction.prototype.evaluate = function () {
+        var result = 1;
+        var args = arguments;
+        if (args.length === 1 && !isNaN(parseInt(args[0]))) {
+            for (var i = 1; i <= args[0]; i++) {
+                result = i * result;
+            }
+            return result;
+        }
+        return "#VALUE!";
+    }
+    $(document).ready(function () {
+        var spread = new GC.Spread.Sheets.Workbook(document.getElementById('ss'), {sheetCount: 3});
+        var factorial = new FactorialFunction();
+        spread.addCustomFunction(factorial);
+
+        $("button").click(function () {
+            var fun = spread.getCustomFunction("FACTORIAL");
+            fun.description = function () { };
+            //or fun.description = null;
+        });
+    });
+</script>

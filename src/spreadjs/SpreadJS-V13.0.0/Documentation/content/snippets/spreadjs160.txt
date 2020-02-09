@@ -1,0 +1,5 @@
+spread.options.allowUserZoom = true;
+
+activeSheet.bind(GC.Spread.Sheets.Events.UserZooming, function (e, info) {    
+        alert("Zoom (" + info.newZoomFactor + ")");
+});

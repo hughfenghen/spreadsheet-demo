@@ -1,0 +1,15 @@
+var tableStyle = new GC.Spread.Sheets.Tables.TableTheme();
+var thinBorder = new GC.Spread.Sheets.LineBorder("black", GC.Spread.Sheets.LineStyle.dotted);
+tableStyle.wholeTableStyle(new GC.Spread.Sheets.Tables.TableStyle("aliceblue", "green", "bold 10pt arial", thinBorder, thinBorder, thinBorder, thinBorder, thinBorder, thinBorder));
+
+var tableStyleInfo = new GC.Spread.Sheets.Tables.TableStyle(
+    "black",
+    "white",
+    "bold 11pt arial",
+    new GC.Spread.Sheets.LineBorder("green", GC.Spread.Sheets.LineStyle.thin),
+    new GC.Spread.Sheets.LineBorder("red", GC.Spread.Sheets.LineStyle.thick),
+    new GC.Spread.Sheets.LineBorder("yellow", GC.Spread.Sheets.LineStyle.thin),
+    new GC.Spread.Sheets.LineBorder("blue", GC.Spread.Sheets.LineStyle.thick));
+tableStyle.headerRowStyle(tableStyleInfo);
+
+var table = activeSheet.tables.add("table1", 1, 1, 5, 5, tableStyle);

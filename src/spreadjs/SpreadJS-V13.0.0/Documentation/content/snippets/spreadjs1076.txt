@@ -1,0 +1,19 @@
+activeSheet.setRowCount(5, GC.Spread.Sheets.SheetArea.viewport);
+activeSheet.setColumnCount(5, GC.Spread.Sheets.SheetArea.viewport);
+
+activeSheet.suspendPaint();
+            //set value
+            for (var r = 0, rc = activeSheet.getRowCount(); r < rc; r++) {
+                for (var c = 0, cc = activeSheet.getColumnCount(); c < cc; c++) {
+                    activeSheet.setValue(r, c, r + c);
+                }
+            }
+activeSheet.resumePaint();
+
+$("#button1").click(function () {
+var printInfo = new GC.Spread.Sheets.Print.PrintInfo();
+printInfo.headerLeft("Header Left");
+printInfo.qualityFactor(6);
+activeSheet.printInfo(printInfo);
+spread.print();
+   });

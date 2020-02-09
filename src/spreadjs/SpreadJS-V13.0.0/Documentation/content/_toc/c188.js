@@ -1,0 +1,25 @@
+﻿(function () { Innovasys.DynamicToc.injectNodeInfo("n5420", "c188", [
+{"id":"n5421","t":"comparisonOperator","u":"SpreadJS~GC.Spread.Sheets.DataValidation.DefaultDataValidator~comparisonOperator.html"},
+{"id":"n5423","t":"condition","u":"SpreadJS~GC.Spread.Sheets.DataValidation.DefaultDataValidator~condition.html"},
+{"id":"n5425","t":"errorMessage","u":"SpreadJS~GC.Spread.Sheets.DataValidation.DefaultDataValidator~errorMessage.html"},
+{"id":"n5427","t":"errorStyle","u":"SpreadJS~GC.Spread.Sheets.DataValidation.DefaultDataValidator~errorStyle.html"},
+{"id":"n5429","t":"errorTitle","u":"SpreadJS~GC.Spread.Sheets.DataValidation.DefaultDataValidator~errorTitle.html"},
+{"id":"n5431","t":"getValidList","u":"SpreadJS~GC.Spread.Sheets.DataValidation.DefaultDataValidator~getValidList.html"},
+{"id":"n5433","t":"highlightStyle","u":"SpreadJS~GC.Spread.Sheets.DataValidation.DefaultDataValidator~highlightStyle.html"},
+{"id":"n5435","t":"ignoreBlank","u":"SpreadJS~GC.Spread.Sheets.DataValidation.DefaultDataValidator~ignoreBlank.html"},
+{"id":"n5437","t":"inCellDropdown","u":"SpreadJS~GC.Spread.Sheets.DataValidation.DefaultDataValidator~inCellDropdown.html"},
+{"id":"n5439","t":"inputMessage","u":"SpreadJS~GC.Spread.Sheets.DataValidation.DefaultDataValidator~inputMessage.html"},
+{"id":"n5441","t":"inputTitle","u":"SpreadJS~GC.Spread.Sheets.DataValidation.DefaultDataValidator~inputTitle.html"},
+{"id":"n5443","t":"isValid","u":"SpreadJS~GC.Spread.Sheets.DataValidation.DefaultDataValidator~isValid.html"},
+{"id":"n5445","t":"reset","u":"SpreadJS~GC.Spread.Sheets.DataValidation.DefaultDataValidator~reset.html"},
+{"id":"n5447","t":"showErrorMessage","u":"SpreadJS~GC.Spread.Sheets.DataValidation.DefaultDataValidator~showErrorMessage.html"},
+{"id":"n5449","t":"showInputMessage","u":"SpreadJS~GC.Spread.Sheets.DataValidation.DefaultDataValidator~showInputMessage.html"},
+{"id":"n5451","t":"type","u":"SpreadJS~GC.Spread.Sheets.DataValidation.DefaultDataValidator~type.html"},
+{"id":"n5453","t":"value1","u":"SpreadJS~GC.Spread.Sheets.DataValidation.DefaultDataValidator~value1.html"},
+{"id":"n5455","t":"value2","u":"SpreadJS~GC.Spread.Sheets.DataValidation.DefaultDataValidator~value2.html"},
+])})();
+(function () { Innovasys.DynamicToc.injectNodeInfo("n5415", "c0", [
+{"id":"n5416","t":"Overview","u":"SpreadJS~GC.Spread.Sheets.DataValidation.DefaultDataValidator.html"},
+{"id":"n5418","t":"DefaultDataValidator Constructor","u":"SpreadJS~GC.Spread.Sheets.DataValidation.DefaultDataValidator~_ctor.html"},
+{"id":"n5420","t":"Methods","cc":"c188"},
+])})();

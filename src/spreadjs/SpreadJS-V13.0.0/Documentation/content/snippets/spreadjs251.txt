@@ -1,0 +1,1 @@
+sheet.getRange(2, -1, 1, -1, GC.Spread.Sheets.SheetArea.viewport).height("60");

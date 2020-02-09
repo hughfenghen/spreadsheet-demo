@@ -1,0 +1,13 @@
+activeSheet.suspendPaint();
+var rowFilter = new GC.Spread.Sheets.Filter.HideRowFilter(new GC.Spread.Sheets.Range(-1, 0, -1, 1));
+activeSheet.rowFilter(rowFilter);
+activeSheet.getCell(0, 0).value("A1").backColor("blue");
+activeSheet.getCell(1, 0).value("A2").backColor("yellow");
+activeSheet.getCell(2, 0).value("A3").backColor("red");
+activeSheet.getCell(3, 0).value("A4").backColor("green");
+activeSheet.getCell(4, 0).value("A5").backColor("yellow");
+var nCondition = new GC.Spread.Sheets.ConditionalFormatting.Condition(GC.Spread.Sheets.ConditionalFormatting.ConditionType.colorCondition, {compareType: GC.Spread.Sheets.ConditionalFormatting.ColorCompareType.backgroundColor, expected: "yellow"});
+var filter = activeSheet.rowFilter();
+filter.addFilterItem(0, nCondition);
+filter.filter(0);
+activeSheet.resumePaint();

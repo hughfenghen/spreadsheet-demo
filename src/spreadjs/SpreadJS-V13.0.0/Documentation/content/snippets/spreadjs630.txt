@@ -1,0 +1,19 @@
+spread.options.highlightInvalidData = true;
+//The formula validator is valid if the formula condition returns true.
+var dv = GC.Spread.Sheets.DataValidation.createFormulaValidator("A1>0");
+dv.showInputMessage(true);
+dv.inputMessage("Enter a value greater than 0 in A1.");
+dv.inputTitle("Tip");
+dv.showErrorMessage(true);
+dv.errorMessage("Incorrect Value");
+activeSheet.setDataValidator(0, 0, 1, 1, dv, GC.Spread.Sheets.SheetArea.viewport);
+
+activeSheet.bind(GC.Spread.Sheets.Events.ValidationError, function (sender, args) {
+    if (args.validator.showErrorMessage()) {
+        if (confirm(args.validator.errorMessage())) {
+            args.validationResult = GC.Spread.Sheets.DataValidation.DataValidationResult.retry;
+        } else {
+            args.validationResult = GC.Spread.Sheets.DataValidation.DataValidationResult.forceApply;
+        }
+    }
+});

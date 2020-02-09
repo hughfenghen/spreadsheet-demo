@@ -1,0 +1,3 @@
+activeSheet.currentTheme("Office2007");
+activeSheet.resumePaint();
+activeSheet.repaint();

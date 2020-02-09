@@ -1,0 +1,1 @@
+alert(activeSheet.isValid(0, 0, 10));

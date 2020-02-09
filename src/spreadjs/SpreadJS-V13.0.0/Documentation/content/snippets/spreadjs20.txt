@@ -1,0 +1,42 @@
+//Create a custom condition.
+        function CustomFilter(){
+            GC.Spread.Sheets.ConditionalFormatting.Condition.apply(this, arguments);
+            //this.conditionType("CustomFilter");
+        };
+        CustomFilter.prototype = new GC.Spread.Sheets.ConditionalFormatting.Condition();
+        CustomFilter.prototype.evaluate = function (evaluator, row, col) {
+            var value = evaluator.getValue(row, col);
+
+            if (value !== null && value >= 10 && value <= 50) {
+                //Return True only when the following conditions are satisfied.
+                // (1)Values are entered.
+                // (2)Values are not lower than 10.
+                // (3)Values are not greater than 50.
+                return true;
+            } else {
+                return false;
+            }
+        };
+
+        $(function () {
+            var workbook = new GC.Spread.Sheets.Workbook($("#ss")[0]);
+            var activeSheet = workbook.getActiveSheet();
+            activeSheet.setValue(0, 0, 10);
+            activeSheet.setValue(1, 0, 100);
+            activeSheet.setValue(2, 0, 50);
+            activeSheet.setValue(3, 0, 40);
+            activeSheet.setValue(4, 0, 80);
+            activeSheet.setValue(5, 0, 1);
+            activeSheet.setValue(6, 0, 65);
+            activeSheet.setValue(7, 0, 20);
+            activeSheet.setValue(8, 0, 30);
+            activeSheet.setValue(9, 0, 35);
+
+            $("#button1").click(function(){
+                //Set a row Filter.
+                var rowFilter = new GC.Spread.Sheets.Filter.HideRowFilter(new GC.Spread.Sheets.Range(0, 0, 7, 1));
+                activeSheet.rowFilter(rowFilter);
+                rowFilter.addFilterItem(0, new CustomFilter());
+                rowFilter.filter(0);
+            });
+        });

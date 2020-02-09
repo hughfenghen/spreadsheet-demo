@@ -1,0 +1,15 @@
+var spread = new GC.Spread.Sheets.Workbook(document.getElementById("ss"),{sheetCount:3});
+var activeSheet = spread.getActiveSheet(); 
+activeSheet.suspendPaint();
+            //set value
+            for (var r = 0, rc = activeSheet.getRowCount() - 5; r < rc; r++) {
+                for (var c = 0, cc = activeSheet.getColumnCount() - 5; c < cc; c++) {
+                    activeSheet.setValue(r, c, r + c);
+                }
+            }
+activeSheet.resumePaint();
+
+//Add button for printing
+$("#button1").click(function () {
+spread.print(0);
+   });

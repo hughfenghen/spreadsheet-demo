@@ -1,0 +1,5 @@
+var nCondition = new GC.Spread.Sheets.ConditionalFormatting.Condition(GC.Spread.Sheets.ConditionalFormatting.ConditionType.formulaCondition, {compareType: GC.Spread.Sheets.ConditionalFormatting.CustomValueType.nonEmpty});
+var validator = new GC.Spread.Sheets.DataValidation.DefaultDataValidator(nCondition);
+validator.ignoreBlank(false);
+activeSheet.getCell(0, 0, GC.Spread.Sheets.SheetArea.viewport).validator(validator);
+spread.options.highlightInvalidData = true;

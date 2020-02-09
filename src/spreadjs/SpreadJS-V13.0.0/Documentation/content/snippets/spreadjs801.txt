@@ -1,0 +1,7 @@
+var style = new GC.Spread.Sheets.Style(); 
+style.backColor = "green"; 
+activeSheet.setValue(0, 0, 50); 
+activeSheet.setValue(1, 0, 50); 
+activeSheet.setValue(2, 0, 11); 
+activeSheet.setValue(3, 0, 5);
+activeSheet.conditionalFormats.addUniqueRule(style, [new GC.Spread.Sheets.Range(0,0,10,1)]);

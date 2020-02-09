@@ -1,0 +1,6 @@
+activeSheet.suspendCalcService(false);
+activeSheet.setValue(0,0,1);
+activeSheet.setValue(0,1,2);
+activeSheet.setValue(0,2,10);
+activeSheet.getCell(1,1).formula("=SUM(A1:C1)");
+activeSheet.resumeCalcService(true);

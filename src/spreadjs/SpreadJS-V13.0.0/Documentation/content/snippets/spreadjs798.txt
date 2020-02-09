@@ -1,0 +1,5 @@
+activeSheet.setValue(0,0,1,3);
+activeSheet.setValue(1,0,15,3);
+activeSheet.setValue(2,0,25,3);
+activeSheet.setValue(3,0,-1,3);
+activeSheet.conditionalFormats.addIconSetRule(GC.Spread.Sheets.ConditionalFormatting.IconSetType.fourTrafficLights, [new GC.Spread.Sheets.Range(0,0,4,1)]);

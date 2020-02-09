@@ -1,0 +1,4 @@
+activeSheet.getRange(-1, 2, -1, 1, GC.Spread.Sheets.SheetArea.viewport).vAlign(GC.Spread.Sheets.VerticalAlign.bottom);
+activeSheet.getRange(-1, 2, -1, 1, GC.Spread.Sheets.SheetArea.viewport).hAlign(GC.Spread.Sheets.HorizontalAlign.left);
+activeSheet.getCell(0,2).text("Test");
+activeSheet.getRange(0, -1, 1, -1, GC.Spread.Sheets.SheetArea.viewport).height(90);

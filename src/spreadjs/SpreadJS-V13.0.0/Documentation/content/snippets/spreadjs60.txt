@@ -1,0 +1,13 @@
+activeSheet.setRowCount(2,GC.Spread.Sheets.SheetArea.colHeader);
+activeSheet.setColumnCount(2,GC.Spread.Sheets.SheetArea.rowHeader);
+activeSheet.setValue(0, 2,"Column",GC.Spread.Sheets.SheetArea.colHeader);
+activeSheet.options.rowHeaderAutoTextIndex = 1;
+activeSheet.options.rowHeaderAutoText = GC.Spread.Sheets.HeaderAutoText.letters;
+activeSheet.options.colHeaderAutoTextIndex = 1;
+activeSheet.options.colHeaderAutoText = GC.Spread.Sheets.HeaderAutoText.numbers;
+var htext = activeSheet.options.rowHeaderAutoText;
+var hindex = activeSheet.options.rowHeaderAutoTextIndex;
+var hvisible = activeSheet.options.rowHeaderVisible;
+alert(htext);
+alert(hindex);
+alert(hvisible);

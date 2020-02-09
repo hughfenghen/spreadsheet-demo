@@ -1,0 +1,5 @@
+activeSheet.setValue(0,0,1,3);
+activeSheet.setValue(1,0,15,3);
+activeSheet.setValue(2,0,25,3);
+activeSheet.setValue(3,0,-1,3);
+activeSheet.conditionalFormats.addDataBarRule(GC.Spread.Sheets.ConditionalFormatting.ScaleValueType.number, -1, GC.Spread.Sheets.ConditionalFormatting.ScaleValueType.number, 40, "orange", [new GC.Spread.Sheets.Range(0,0,4,1)]);

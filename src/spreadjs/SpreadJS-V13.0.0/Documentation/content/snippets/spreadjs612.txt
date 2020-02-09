@@ -1,0 +1,2 @@
+var spread = new GC.Spread.Sheets.Workbook($("#ss").get(0),{sheetCount:3});
+spread.sheets[1].visible(false);

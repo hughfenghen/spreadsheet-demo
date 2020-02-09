@@ -1,0 +1,14 @@
+//Add data
+for (var col = 1; col < 6; col++) {
+    for (var row = 2; row < 11; row++) {
+        activeSheet.setValue(row, col, row + col);
+    }
+}
+
+$("#button1").click(function () {
+spread.options.allowUndo = true;
+spread.commandManager().execute({cmd: "dragDrop",  sheetName: "Sheet1", fromRow:2, fromColumn:1, toRow:12, toColumn:2, rowCount:2, columnCount:2, copy: true, insert: false, option: GC.Spread.Sheets.ClipboardPasteOptions.values});
+    });
+
+
+<input type="button" id="button1" value="button1"/>

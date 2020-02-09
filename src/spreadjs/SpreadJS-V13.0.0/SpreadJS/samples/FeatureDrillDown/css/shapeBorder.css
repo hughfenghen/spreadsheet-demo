@@ -1,0 +1,41 @@
+[class^="shape-border-style"] {
+    width: 80px;
+    height: 12px;
+    background-image: url(images/shape-border.png);
+    display: inline-block;
+}
+
+.shape-border-style-solid {
+    background-position: 0 0;
+}
+
+.shape-border-style-square-dot {
+    background-position: 0 -32px;
+}
+
+.shape-border-style-sys-dash,
+.shape-border-style-dash {
+    background-position: 0 -49px;
+}
+
+.shape-border-style-long-dash {
+    background-position: 0 -49px;
+}
+
+.shape-border-style-sys-dash-dot,
+.shape-border-style-dash-dot {
+    background-position: 0 -65px;
+}
+
+.shape-border-style-long-dash-dot {
+    background-position: 0 -80px;
+}
+
+.shape-border-style-dash-dot-dot,
+.shape-border-style-long-dash-dot-dot {
+    background-position: 0 -96px;
+}
+
+.shape-border-style-sys-dot{
+    background-position: 0 -17px;
+}

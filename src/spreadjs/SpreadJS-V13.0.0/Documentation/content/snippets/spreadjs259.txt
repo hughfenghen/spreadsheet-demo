@@ -1,0 +1,14 @@
+sheet.setValue(0, 0, 1);
+sheet.setValue(1, 0, 50);
+sheet.setValue(2, 0, 100);
+sheet.setValue(3, 0, 2);
+sheet.setValue(4, 0, 60);
+sheet.setValue(5, 0, 90);
+sheet.setValue(6, 0, 3);
+sheet.setValue(7, 0, 40);
+sheet.setValue(8, 0, 70);
+sheet.setValue(9, 0, 5);
+sheet.setValue(10, 0, 35);
+sheet.addSelection(0, 0, 11, 1);
+var ScaleValueType = GC.Spread.Sheets.ConditionalFormatting.ScaleValueType;
+sheet.conditionalFormats.add3ScaleRule(ScaleValueType.lowestValue, 10, "red", ScaleValueType.number, 50, "blue",ScaleValueType.highestValue, 100, "yellow", sheet.getSelections());

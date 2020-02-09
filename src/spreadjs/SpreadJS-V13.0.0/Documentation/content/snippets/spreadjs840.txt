@@ -1,0 +1,2 @@
+activeSheet.tag("test");
+alert(activeSheet.tag());

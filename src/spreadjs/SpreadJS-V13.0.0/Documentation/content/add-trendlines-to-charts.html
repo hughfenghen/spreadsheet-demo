@@ -1,0 +1,508 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%ProjectTitle%% - %%ItemTitle%%</title>" --><title>SpreadJS Documentation - Add Trendlines To Charts</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ProjectTitle%% - %%ItemTitleNoQuotes%%""/>" --><meta name="Title" content="SpreadJS Documentation - Add Trendlines To Charts"/><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n384","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="light" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="SpreadJS allows users to add trendlines to charts while visualizing data in the spreadsheets. " /><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-topics/topics.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-topics/topics.mshv1.css"" data-responsive-mobile=""template/packages/core-topics/topics.mobile.css"" data-responsive-tablet=""template/packages/core-topics/topics.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="script"--><script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="script"--><script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="d41b3854-106b-457a-994d-092cc6f2ef64"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="bdba97c4-037f-4cd7-ae56-830374286ef0"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocOrdinal" format="<meta name=""Microsoft.Help.TocOrder"" content=""%%TocOrdinal%%""/>" --><meta name="Microsoft.Help.TocOrder" content="3"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/hs-simpletab.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="StylePropertyValues" format="<style>%%StylePropertyValues%%</style>" --><style>.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+    <!--DXMETADATA start type="CustomHeadContent" --><link rel="stylesheet" type="text/css" href="template/packages/core-web/css/SP.css">
+<script type="text/javascript">
+var currentHeader = function() {
+    return "spjs";
+}
+</script>
+<script src="template/packages/core-web/script/topNavigation.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WT462SJ"></script>
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime()
+                , event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WT462SJ');
+    </script>
+<!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->SpreadJS Documentation<!--DXMETADATA end--></div>
+            <div class="i-search-container">
+                <!--DXMETADATA start type="outputfileextension" format="<form action=""websearch%%outputfileextension%%"">" --><form action="websearch.html"><!--DXMETADATA end-->
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                <!--DXMETADATA start type="Literal" value="</form>" --></form><!--DXMETADATA end-->
+            </div>
+            <!--DXMETADATA start type="outputfileextension" format="<a id=""i-index-button"" href=""webindex%%outputfileextension%%""></a>" --><a id="i-index-button" href="webindex.html"></a><!--DXMETADATA end-->
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container">
+<a href="overview.html">SpreadJS Documentation</a>
+ / <a href="devguide.html">Developer's Guide</a>
+ / <a href="features.html">Features</a>
+ / <a href="ManagingDataVisualizationAndObjects.html">Manage Data Visualization and Objects</a>
+ / <a href="Charts.html">Charts</a>
+ / Add Trendlines To Charts</div><!--DXMETADATA end --></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="ItemTitle" -->Add Trendlines To Charts<!--DXMETADATA end--></div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+            </div>
+            <!--DXMETADATA start type="TopicSection" name="BodyText"--><p>SpreadJS allows users to add trendlines to charts while visualizing data in the spreadsheets.&nbsp;</p>
+
+<h3 id="a">What is a Trendline?</h3>
+
+<p>A trendline, also called as a line of best fit, is an additional line in a chart that indicates the slope (trend) in a particular data series to help users in quickly analyzing the overall trend (even when there are ups and downs in your data points).</p>
+
+<h3 id="b">Usage Scenario</h3>
+
+<p>Adding&nbsp;trendlines to&nbsp;charts can prove to be a great analytical tool for your organization that you can use to show data movements over a period of time or simply depict correlation between two variables.</p>
+
+<p>Trendlines are extremely helpful while:</p>
+
+<ul>
+    <li>Analyzing stock, trading, finance and sales applications, wherein, estimating the past trends and deriving valuable future outcomes becomes necessary to increase the ROI of the company.</li>
+
+    <li>Executing advanced data analytics in spreadsheets especially when you need to forecast future values based upon your current data.</li>
+
+    <li>Depicting&nbsp;which direction the trend of your data is going via providing trajectories to help you optimize future predictions and analysis.</li>
+</ul>
+
+<p><strong>Example</strong>: The following screenshot depicts the annual sales record for three&nbsp;different products- Mobile Phones, Laptops, and&nbsp;Tablets,&nbsp;via using different types of trendlines in the chart.</p>
+
+<p><img style="MAX-WIDTH: 100%; HEIGHT: auto" border="0" alt="" src="images/spreadjsv13images/chart-trendline.png" />&nbsp;</p>
+
+<h3 id="c">Types of Trendlines</h3>
+
+<p>The following table describes the various types of the trendlines supported while working with charts in SpreadJS.</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td><strong>Trendline Type</strong></td>
+
+            <td><strong>Description</strong></td>
+
+            <td><strong>Example</strong></td>
+        </tr>
+
+        <tr>
+            <td>
+                <p>&nbsp;</p>
+
+                <p>Linear Trendline</p>
+            </td>
+
+            <td>
+                <p>A linear trendline is a best fit straight line that shows how values in a data series increase or decrease at a steady rate and provides future approximations for the data in the chart. The data is linear, if the data pattern resembles a line.</p>
+
+                <p><strong>Equation</strong> -:&nbsp; y=mx + b</p>
+
+                <p>where m is the slope and b is the intercept.</p>
+            </td>
+
+            <td><img style="MAX-WIDTH: 100%; HEIGHT: auto" border="0" alt="" src="images/spreadjsv13images/linear-trendline.png" /></td>
+        </tr>
+
+        <tr>
+            <td>
+                <p>&nbsp;</p>
+
+                <p>Exponential Trendline</p>
+            </td>
+
+            <td>
+                <p>An exponential trendline is a best-fit curved line that is most useful when data values rise(increase) or fall(decrease) at increasingly higher rates, and then level out.</p><strong>Equation</strong> -: y=ce<sup>bx</sup>
+
+                <p>where c and b are constants and e is the base of the natural logarithm.</p>
+
+                <div class="i-box i-box-note">
+                    <p><strong>Note</strong>: This trendline can only be used with positive numbers. Users cannot create an exponential trendline if the data contains zero or negative values.</p>
+
+                    <p></p>
+                </div>
+            </td>
+
+            <td><img style="MAX-WIDTH: 100%; HEIGHT: auto" border="0" alt="" src="images/spreadjsv13images/exponential-trendline.png" /></td>
+        </tr>
+
+        <tr>
+            <td>
+                <p>&nbsp;</p>
+
+                <p>Logarithmic Trendline</p>
+            </td>
+
+            <td>
+                <p>A logarithmic trendline is a best-fit curved line that illustrates how the data values increase or decrease quickly and then level out. This type of trendline can be used with both positive and negative data values.</p>
+
+                <p>Equation-: y=c ln x + b</p>
+
+                <p>where c and b are constants and ln is the natural logarithm function.</p>
+            </td>
+
+            <td><img style="MAX-WIDTH: 100%; HEIGHT: auto" border="0" alt="" src="images/spreadjsv13images/logairthmic-scale.png" /></td>
+        </tr>
+
+        <tr>
+            <td>
+                <p>&nbsp;</p>
+
+                <p>Polynomial Trendline</p>
+            </td>
+
+            <td>
+                <p>A polynomial trendline is a curved line that illustrates fluctuations in the data values. This type of trendline is based upon the order property and helps users in analyzing the gains or losses over large data sets (for example- stock, trading and finance applications).</p>
+
+                <p>Equation-: y=b + c<sub>1</sub>x + c<sub>2</sub>x + c<sub>3</sub>x + ...</p>
+
+                <p>where c1, c2, c3, are constants.</p>
+
+                <p>For this trendline, the default value is 2. The order should be a positive integer within the range 2-6. If the order value lies outside the range, then the result would be as described in the table below:</p>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td width="171">Order Values of Polynomial</td>
+
+                            <td>Description</td>
+                        </tr>
+
+                        <tr>
+                            <td width="171">Value &lt;2 (Less than 2)</td>
+
+                            <td>Will be treated as 2.</td>
+                        </tr>
+
+                        <tr>
+                            <td width="171">Value &gt;6 (greater than 6)</td>
+
+                            <td>Will be treated as 6.</td>
+                        </tr>
+
+                        <tr>
+                            <td width="171">Decimal value</td>
+
+                            <td>Users need to use Math.floor convert the decimal value to integer.</td>
+                        </tr>
+
+                        <tr>
+                            <td width="171">Other types of values</td>
+
+                            <td>The trendline will not be displayed.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+
+            <td><img style="MAX-WIDTH: 100%; HEIGHT: auto" border="0" alt="" src="images/spreadjsv13images/polynomial-trendline.png" /></td>
+        </tr>
+
+        <tr>
+            <td>
+                <p>&nbsp;</p>
+
+                <p>Power Trendline&nbsp;</p>
+            </td>
+
+            <td>
+                <p>A power trendline is a curved line that can be used to compare measurements which increase at a specific rate.</p>
+
+                <p>Note - This trendline can only be used with positive numbers. Users cannot create a power trendline if the data contains zero or negative values.</p>
+
+                <p>Equation-: y=cx<sup>b</sup></p>
+
+                <p>where c and b are constants.</p>
+            </td>
+
+            <td><img style="MAX-WIDTH: 100%; HEIGHT: auto" border="0" alt="" src="images/spreadjsv13images/power-trendline.png" /></td>
+        </tr>
+
+        <tr>
+            <td>
+                <p>&nbsp;</p>
+
+                <p>Moving Average Trendline</p>
+            </td>
+
+            <td>
+                <p>A moving average trendline is a trend line that reduces the fluctuations in the trend line to a show smoother pattern. This type of trendline is based upon the period property and is often used to show the trend by considering an average of the specified number of periods.</p>
+
+                <p>Equation-: P<sub>m</sub> = P<sub>m-1</sub> + (y<sub>m</sub> - y<sub>m</sub> - n) / n</p>
+
+                <p>The default value of this trendline is 2. The average of the second and third data points is used as the second point in the trendline, and so on. The max period is the length of data set.</p>
+
+                <p>For example - if there are 10 data sets in the plot, then the max period is 9, so if the length of data set less than 3, the trendline of Moving Average Series will not be displayed.</p>
+
+                <p>The period should be a positive integer of 2-max period. If it is not, then the result would be as described in the table below:</p>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><strong>Period Values</strong></td>
+
+                            <td><strong>Description</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>Value &lt;2 (Less than 2)</td>
+
+                            <td>Will be treated as 2.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Value &gt; max period (greater than max period)</td>
+
+                            <td>Will be treated as max period</td>
+                        </tr>
+
+                        <tr>
+                            <td>Decimal value&nbsp;</td>
+
+                            <td>Users need to use Math.floor to convert the decimal value to integer</td>
+                        </tr>
+
+                        <tr>
+                            <td>Other types of values</td>
+
+                            <td>Trendline will not be displayed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+
+            <td><img style="MAX-WIDTH: 100%; HEIGHT: auto" border="0" alt="" src="images/spreadjsv13images/moving-average-trendline.png" /></td>
+        </tr>
+    </tbody>
+</table>
+
+<p>Apart from the above six types of trendlines, SpreadJS also provides support for custom names for trendlines. If a user doesn't set the trendline name, a built-in name will be given. The template should be something like this:</p>
+
+<ul>
+    <li>For Moving Average Trendline: '{period number}period MovingAverage({series name})'. Example: '3period MovingAverage(Bears)'.</li>
+
+    <li>For other types of Trendlines: '{trendline type}({series name})'. Example: 'Logarithmic(Bears)'.</li>
+</ul>
+
+<h3 id="d">Supported Chart Types</h3>
+
+<p>The following chart types are supported while adding trendlines in charts-:</p>
+
+<ul>
+    <li>Column Charts</li>
+
+    <li>Bar Charts</li>
+
+    <li>Line Charts</li>
+
+    <li>Scatter Charts</li>
+
+    <li>Area Charts</li>
+</ul>
+
+<div class="i-box i-box-note">
+    <p><strong>Note:</strong> The following limitation must be kept in mind while adding trendlines to the charts:</p>
+
+    <ul>
+        <li>&nbsp;Trendlines cannot be added to stacked chart types, like StackedColumn chart. If users try to add or change an existing chart type to the chart types that don't support trendlines, then the trendline will not be displayed.</li>
+    </ul>
+</div>
+
+<h3 id="e">Using Code</h3>
+
+<p>The following example code depicts the annual sales records using different trendlines in the chart.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <p>var activeSheet = spread.getActiveSheet();<br />
+                    activeSheet.suspendPaint();</p>
+
+                    <p>// Prepare data for chart<br />
+                    activeSheet.setValue(0, 1, "Y-2016");<br />
+                    activeSheet.setValue(0, 2, "Y-2017");<br />
+                    activeSheet.setValue(0, 3, "Y-2018");<br />
+                    activeSheet.setValue(1, 0, "Mobile Phones");<br />
+                    activeSheet.setValue(2, 0, "Laptops");<br />
+                    activeSheet.setValue(3, 0, "Tablets");<br />
+                    for (var r = 1; r &lt;= 3; r++)</p>
+
+                    <p>{<br />
+                    &nbsp;&nbsp;&nbsp;for (var c = 1; c &lt;= 3; c++) {<br />
+                    &nbsp;&nbsp;&nbsp;activeSheet.setValue(r, c, parseInt(Math.random() * 5000));<br />
+                    }<br />
+                    }</p>
+
+                    <p>// Add columnClustered chart<br />
+                    chart_columnClustered = activeSheet.charts.add('chart_columnClustered', GC.Spread.Sheets.Charts.ChartType.columnClustered, 50, 100, 600, 400, "A1:D4");<br /></p>
+
+                    <p>// Adding TrendLines on series[0] i.e. Mobile Phones<br />
+                    var series1 = chart_columnClustered.series().get(0);<br />
+                    series1.trendlines = [<br />
+                    {<br />
+                    &nbsp;&nbsp;&nbsp;type: 2,<br />
+                    &nbsp;&nbsp;&nbsp;forward: 2,<br />
+                    &nbsp;&nbsp;&nbsp;name: "MovingAverage",<br />
+                    &nbsp;&nbsp;&nbsp;style: { color: "blue"<br />
+                    &nbsp;&nbsp;&nbsp;},<br />
+                    &nbsp;&nbsp;&nbsp;period: 3 // only used for Moving Average Trendline<br />
+                    }];</p>
+
+                    <p>// Adding TrendLines on series[1] i.e. Laptops<br />
+                    var series2 = chart_columnClustered.series().get(1);<br />
+                    series2.trendlines = [<br />
+                    {<br />
+                    &nbsp;&nbsp;type: 2,<br />
+                    &nbsp;&nbsp;forward: 2,<br />
+                    &nbsp;&nbsp;name: "MovingAverage",<br />
+                    &nbsp;&nbsp;style:</p>
+
+                    <p>&nbsp; {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;color: "red"<br />
+                    &nbsp;&nbsp;},<br />
+                    &nbsp;&nbsp;period: 3<br />
+                    }];</p>
+
+                    <p>// Adding TrendLines on series[2] i.e. Tablets<br />
+                    var series3 = chart_columnClustered.series().get(2);<br />
+                    series3.trendlines =</p>
+
+                    <p>[<br />
+                    {<br />
+                    &nbsp;&nbsp;&nbsp;type: 2,<br />
+                    &nbsp;&nbsp;&nbsp;forward: 2,<br />
+                    &nbsp;&nbsp;&nbsp;name: "MovingAverage",<br />
+                    &nbsp;&nbsp;&nbsp;style: {color: "green"<br />
+                    &nbsp;&nbsp;&nbsp;},<br />
+                    &nbsp;&nbsp;&nbsp;period: 3<br />
+                    }];</p>
+
+                    <p>chart_columnClustered.series().set(0, series1);<br />
+                    chart_columnClustered.series().set(1, series2);<br />
+                    chart_columnClustered.series().set(2, series3);</p>
+
+                    <p>// Configure Chart Title<br />
+                    var title = chart_columnClustered.title();<br />
+                    title.text = "Annual Sales Record";<br />
+                    title.fontFamily = "Cambria";<br />
+                    title.fontSize = 28;<br />
+                    title.color = "Red";<br />
+                    chart_columnClustered.title(title);<br />
+                    activeSheet.resumePaint();&nbsp;</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div><!--DXMETADATA end-->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORISED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""%%phrase:name=SeeAlso%%%%designlist:tagidentifier=seealso,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><!--DXMETADATA end-->
+            
+            <div id="i-footer-content" class="i-footer-content">
+                <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p><p>Copyright © 2019 GrapeCity, Inc. All rights reserved.</p>
+<p><a href="https://www.grapecity.com/en/forums/winforms-edition" target="_blank">Product Support Forum</a> | <a href="javascript:window.print()">Print this page</a></p>
+<ul class="social">
+<li><a href="https://www.facebook.com/GrapeCityUS/" target="_blank" class="facebook">&nbsp;</a></li>
+<li><a href="https://twitter.com/GrapeCityUS" target="_blank" class="twitter">&nbsp;</a></li>
+<li><a href="https://www.linkedin.com/company/grapecity" target="_blank" class="linkedin">&nbsp;</a></li>
+</ul>
+</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end-->
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

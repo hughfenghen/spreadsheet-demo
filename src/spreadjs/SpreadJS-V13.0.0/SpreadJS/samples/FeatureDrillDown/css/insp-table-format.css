@@ -1,0 +1,112 @@
+.table-format,
+.table-format-2013 {
+  overflow: hidden;
+}
+.table-format .table-format-item,
+.table-format-2013 .table-format-item {
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 2px 1px;
+  margin-bottom: 5px;
+  border: 1px solid transparent;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.table-format .table-format-item:hover,
+.table-format-2013 .table-format-item:hover {
+  background: #d0f0e0;
+}
+.table-format .table-format-item-selected,
+.table-format-2013 .table-format-item-selected {
+  background: #9fd5b7;  
+}
+.table-format .table-format-icon {
+  width: 61px;
+  height: 46px;
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url(images/formattable.png);
+}
+.table-format .table-format-light1 {
+  background-position: 0 -506px;
+}
+.table-format .table-format-light2 {
+  background-position: 0 -552px;
+}
+.table-format .table-format-light3 {
+  background-position: 0 -598px;
+}
+.table-format .table-format-light7 {
+  background-position: 0 -782px;
+}
+.table-format .table-format-medium1 {
+  background-position: 0 -1472px;
+}
+.table-format .table-format-medium2 {
+  background-position: 0 -1518px;
+}
+.table-format .table-format-medium3 {
+  background-position: 0 -1564px;
+}
+.table-format .table-format-medium7 {
+  background-position: 0 -1748px;
+}
+.table-format .table-format-dark1 {
+  background-position: 0 0px;
+}
+.table-format .table-format-dark2 {
+  background-position: 0 -46px;
+}
+.table-format .table-format-dark3 {
+  background-position: 0 -92px;
+}
+.table-format .table-format-dark7 {
+  background-position: 0 -276px;
+}
+
+.table-format-2013 .table-format-icon {
+  width: 63px;
+  height: 48px;
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url(images/formattable2013.png);
+}
+.table-format-2013 .table-format-light1 {
+  background-position: 0 -48px;
+}
+.table-format-2013 .table-format-light2 {
+  background-position: 0 -96px;
+}
+.table-format-2013 .table-format-light3 {
+  background-position: 0 -144px;
+}
+.table-format-2013 .table-format-light7 {
+  background-position: 0 -336px;
+}
+.table-format-2013 .table-format-medium1 {
+  background-position: 0 -1056px;
+}
+.table-format-2013 .table-format-medium2 {
+  background-position: 0 -1104px;
+}
+.table-format-2013 .table-format-medium3 {
+  background-position: 0 -1152px;
+}
+.table-format-2013 .table-format-medium7 {
+  background-position: 0 -1344px;
+}
+.table-format-2013 .table-format-dark1 {
+  background-position: 0 -2400px;
+}
+.table-format-2013 .table-format-dark2 {
+  background-position: 0 -2448px;
+}
+.table-format-2013 .table-format-dark3 {
+  background-position: 0 -2496px;
+}
+.table-format-2013 .table-format-dark7 {
+  background-position: 0 -2688px;
+}

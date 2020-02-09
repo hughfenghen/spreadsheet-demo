@@ -1,0 +1,14 @@
+var customers = [
+   { ID: 0, Name: 'A', Info1: 'Info0' },
+   { ID: 1, Name: 'B', Info1: 'Info1' },
+   { ID: 2, Name: 'C', Info1: 'Info2' },
+];
+activeSheet.autoGenerateColumns = true;
+activeSheet.setDataSource(customers);
+
+$("#button1").click(function () {
+alert(activeSheet.hasPendingChanges());
+   });
+
+// Add button control to page
+<input type="button" id="button1" value="button1"/>

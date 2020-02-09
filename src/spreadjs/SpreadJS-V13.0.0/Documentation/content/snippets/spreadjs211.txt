@@ -1,0 +1,4 @@
+var test = {name: "John", gender: "male"};
+sheet.setBindingPath(0, 0, "name");
+sheet.setBindingPath(0, 1, "gender");
+sheet.setDataSource(new GC.Spread.Sheets.Bindings.CellBindingSource(test));

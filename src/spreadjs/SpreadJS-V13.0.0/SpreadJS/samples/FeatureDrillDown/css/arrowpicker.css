@@ -1,0 +1,43 @@
+[class^="begin-arrow-style"] {
+    width: 34px;
+    height: 16px;
+    background-image: url(images/begin-arrow.png);
+    display: inline-block;
+}
+
+[class^="end-arrow-style"] {
+    width: 34px;
+    height: 16px;
+    background-image: url(images/end-arrow.png);
+    display: inline-block;
+}
+
+.end-arrow-style-none,
+.begin-arrow-style-none {
+    background-position: 0 -8px;
+}
+
+.end-arrow-style-triangle,
+.begin-arrow-style-triangle {
+    background-position: -34px -7px;
+}
+
+.end-arrow-style-stealth,
+.begin-arrow-style-stealth {
+    background-position: 0 -41px;
+}
+
+.end-arrow-style-diamond,
+.begin-arrow-style-diamond {
+    background-position: -34px -41px;
+}
+
+.end-arrow-style-oval,
+.begin-arrow-style-oval {
+    background-position: -68px -41px;
+}
+
+.end-arrow-style-open,
+.begin-arrow-style-open {
+    background-position: -68px -7px;
+}

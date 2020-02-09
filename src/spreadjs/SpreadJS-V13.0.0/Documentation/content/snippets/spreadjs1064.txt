@@ -1,0 +1,7 @@
+spread.options.highlightInvalidData = true;
+var dv = GC.Spread.Sheets.DataValidation.createListValidator("1,2,3");
+dv.showInputMessage(true);
+dv.inputMessage("Value must be 1, 2 or 3.");
+dv.inputTitle("tip");
+activeSheet.setDataValidator(1, 1, 1, 1, dv, GC.Spread.Sheets.SheetArea.viewport); 
+alert(dv.type());

@@ -1,0 +1,19 @@
+<input type="button" id="button1" value="button1"/>
+
+var style = new GC.Spread.Sheets.Style();
+style.backColor = "red";
+var rule = new GC.Spread.Sheets.ConditionalFormatting.NormalConditionRule(GC.Spread.Sheets.ConditionalFormatting.RuleType.dateOccurringRule, [new GC.Spread.Sheets.Range(0,0,10,1)], style, null, null, null, null, null, GC.Spread.Sheets.ConditionalFormatting.DateOccurringType.nextWeek);
+activeSheet.conditionalFormats.addRule(rule);
+var d = new Date();
+activeSheet.setValue(0, 0, d);
+activeSheet.setValue(1, 0, new Date(d.setDate(d.getDate()+1)));
+activeSheet.setValue(2, 0, new Date(d.setDate(d.getDate()+5)));
+activeSheet.setValue(3, 0,new Date(d.setDate(d.getDate()+6)));
+activeSheet.setValue(4, 0,new Date(d.setDate(d.getDate()+7)));
+activeSheet.setValue(5, 0, new Date(d.setDate(d.getDate()+8)));
+
+$("#button1").click(function () {
+activeSheet.suspendPaint();
+rule.reset();
+activeSheet.resumePaint();
+    });

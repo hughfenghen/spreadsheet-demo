@@ -1,0 +1,8 @@
+var brow = activeSheet.getViewportBottomRow(1);
+var lcol = activeSheet.getViewportLeftColumn(1);
+var rcol = activeSheet.getViewportRightColumn(1);
+var trow = activeSheet.getViewportTopRow(1);
+alert(brow);
+alert(lcol);
+alert(rcol);
+alert(trow);

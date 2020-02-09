@@ -1,0 +1,59 @@
+[class^="line-style"] {
+    width: 60px;
+    height: 12px;
+    background-image: url(images/borderpicker.png);
+    background-color: black;
+    display: inline-block;
+}
+
+.line-style-hair {
+    background-position: 0 0;
+}
+
+.line-style-dotted {
+    background-position: 0 -16px;
+}
+
+.line-style-dash-dot-dot {
+    background-position: 0 -32px;
+}
+
+.line-style-dash-dot {
+    background-position: 0 -48px;
+}
+
+.line-style-dashed {
+    background-position: 0 -64px;
+}
+
+.line-style-thin {
+    background-position: 0 -80px;
+}
+
+.line-style-medium-dash-dot-dot {
+    background-position: 0 -96px;
+}
+
+.line-style-slanted-dash-dot {
+    background-position: 0 -112px;
+}
+
+.line-style-medium-dash-dot {
+    background-position: 0 -128px;
+}
+
+.line-style-medium-dashed {
+    background-position: 0 -144px;
+}
+
+.line-style-medium {
+    background-position: 0 -160px;
+}
+
+.line-style-thick {
+    background-position: 0 -176px;
+}
+
+.line-style-double {
+    background-position: 0 -192px;
+}

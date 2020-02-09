@@ -1,0 +1,4 @@
+// Use IE to see the console log text
+activeSheet.bind(GC.Spread.Sheets.Events.EditChange, function (sender, args) {
+    console.log("Cell (" + args.row + ", " + args.col + ") data has been changed.")
+});

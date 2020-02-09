@@ -1,0 +1,28 @@
+sheet.bind(GC.Spread.Sheets.Events.LeftColumnChanged,function(event,data)
+  {
+    var str = "----------------------------------------\n";
+    var title = "Event [LeftColumnChanged ] Fired";
+    str = str.substr(0, 4) + title + str.substr(4 + title.length);
+    if (typeof data == "object") {
+        for (var key in data) {
+            str += key + " : " + data[key] + "\n";
+          }
+      } else {
+        str += data + "\n";
+      }
+      alert(str);
+  });
+sheet.bind(GC.Spread.Sheets.Events.TopRowChanged,function(event,data)
+  {
+        var str = "----------------------------------------\n";
+        var title = "Event [TopRowChanged] Fired";
+        str = str.substr(0, 4) + title + str.substr(4 + title.length);
+        if (typeof data == "object") {
+            for (var key in data) {
+                str += key + " : " + data[key] + "\n";
+            }
+        } else {
+            str += data + "\n";
+        }
+        alert(str);
+    });

@@ -1,0 +1,10 @@
+//Note: This code only works with V9 or earlier versions.
+var style = new GC.Spread.Sheets.Style();
+style.backColor = "lightgreen";
+style.foreColor = "red";
+activeSheet.setStyle(1,1,style,GC.Spread.Sheets.SheetArea.viewport);
+
+var style2 = new GC.Spread.Sheets.Style();
+style2.foreColor = "black";
+style2.copyFrom(style);
+activeSheet.setStyle(1,3,style2,GC.Spread.Sheets.SheetArea.viewport);

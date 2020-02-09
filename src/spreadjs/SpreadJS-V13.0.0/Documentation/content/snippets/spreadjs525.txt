@@ -1,0 +1,14 @@
+//Add data
+for (var col = 1; col < 6; col++) {
+    for (var row = 2; row < 11; row++) {
+        activeSheet.setValue(row, col, row + col);
+    }
+}
+
+$("#button1").click(function () {
+var columns = [ { firstCol: 3, lastCol: 5 } ];
+spread.options.allowUndo = true;
+spread.commandManager().execute({cmd: "resizeColumn", sheetName: "Sheet1", columns:columns, value: 50, isRowHeader: false});
+    });
+
+<input type="button" id="button1" value="button1"/>

@@ -1,0 +1,5 @@
+var style = new GC.Spread.Sheets.Style();
+style.formatter = "0.000%";
+style.themeFont = "Body";
+activeSheet.setStyle(1,1,style,GC.Spread.Sheets.SheetArea.viewport);
+activeSheet.getCell(1,1).value("11");

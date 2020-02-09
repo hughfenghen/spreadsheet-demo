@@ -1,0 +1,1 @@
+spread.commandManager().setShortcutKey("navigationLeft", GC.Spread.Commands.Key.a, false, false, false, false);

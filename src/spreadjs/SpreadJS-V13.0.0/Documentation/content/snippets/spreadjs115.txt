@@ -1,0 +1,4 @@
+activeSheet.setValue(0,0, 1,3);
+activeSheet.setValue(1,0, 50,3);
+activeSheet.setValue(2,0, 100,3);
+activeSheet.conditionalFormats.add3ScaleRule(1, 10, "red", 0, 50, "blue",2, 100, "yellow", [new GC.Spread.Sheets.Range(0, 0, 10, 3)]);

@@ -1,0 +1,14 @@
+<input type="button" id="button1" value="button1"/>
+
+var customFloatingObject = new GC.Spread.Sheets.FloatingObjects.FloatingObject("f1", 10, 10, 60, 64);
+var btn = document.createElement('button');
+btn.style.width = "60px";
+btn.style.height = "30px";
+btn.innerText = "button";
+customFloatingObject.content(btn);
+activeSheet.floatingObjects.add(customFloatingObject);
+
+$("#button1").click(function () {
+var floating = activeSheet.floatingObjects.get("f1");
+floating.isVisible(false);
+    });

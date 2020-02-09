@@ -1,0 +1,358 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%ProjectTitle%% - %%ItemTitle%%</title>" --><title>SpreadJS Documentation - Set Styles</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ProjectTitle%% - %%ItemTitleNoQuotes%%""/>" --><meta name="Title" content="SpreadJS Documentation - Set Styles"/><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n264","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="light" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="You can create a style using the Style object or you can create your own named style that uses a Style object." /><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-topics/topics.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-topics/topics.mshv1.css"" data-responsive-mobile=""template/packages/core-topics/topics.mobile.css"" data-responsive-tablet=""template/packages/core-topics/topics.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="script"--><script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="script"--><script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="5f5d1a8c-8527-4cbf-8c4a-fe622f40cc22"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="6eb360d0-8726-40ee-ab86-cf1cd72d035a"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocOrdinal" format="<meta name=""Microsoft.Help.TocOrder"" content=""%%TocOrdinal%%""/>" --><meta name="Microsoft.Help.TocOrder" content="1"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/hs-simpletab.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="StylePropertyValues" format="<style>%%StylePropertyValues%%</style>" --><style>.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+    <!--DXMETADATA start type="CustomHeadContent" --><link rel="stylesheet" type="text/css" href="template/packages/core-web/css/SP.css">
+<script type="text/javascript">
+var currentHeader = function() {
+    return "spjs";
+}
+</script>
+<script src="template/packages/core-web/script/topNavigation.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WT462SJ"></script>
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime()
+                , event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WT462SJ');
+    </script>
+<!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->SpreadJS Documentation<!--DXMETADATA end--></div>
+            <div class="i-search-container">
+                <!--DXMETADATA start type="outputfileextension" format="<form action=""websearch%%outputfileextension%%"">" --><form action="websearch.html"><!--DXMETADATA end-->
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                <!--DXMETADATA start type="Literal" value="</form>" --></form><!--DXMETADATA end-->
+            </div>
+            <!--DXMETADATA start type="outputfileextension" format="<a id=""i-index-button"" href=""webindex%%outputfileextension%%""></a>" --><a id="i-index-button" href="webindex.html"></a><!--DXMETADATA end-->
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container">
+<a href="overview.html">SpreadJS Documentation</a>
+ / <a href="devguide.html">Developer's Guide</a>
+ / <a href="features.html">Features</a>
+ / <a href="appearance.html">Customize Appearance</a>
+ / <a href="styletheme.html">Styles and Themes</a>
+ / Set Styles</div><!--DXMETADATA end --></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="ItemTitle" -->Set Styles<!--DXMETADATA end--></div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+            </div>
+            <!--DXMETADATA start type="TopicSection" name="BodyText"--><p>You can create a style using the <strong>Style</strong> object or you can create your own named style that uses a <strong>Style</strong> object.</p>
+
+<p>The style can contain settings such as borders, colors, and fonts. You can set styles for the cell, row, column, and the sheet.</p>
+
+<p>The cell style is a composite of settings that are applied based on a priority. The style in the cell has the highest priority. The style of the row the cell is in is next, then the column the cell is in, and then the default style of the sheet.</p>
+
+<p>Style objects can be assigned using the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Worksheet~setStyle.html">setStyle</a> method. Use -1 to specify an entire row or entire column.</p>
+
+<p>You can create your own named style and add it to the sheet or the spread with the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Worksheet~addNamedStyle.html">addNamedStyle</a> method. You can change the style settings or remove the named style. Use the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Worksheet~setStyleName.html">setStyleName</a> method to use the style on a cell. Use -1 to specify an entire row or entire column.</p>
+
+<p>Named styles are useful if a style is used many times or in many cells. Use a named style&nbsp;with a JSON data store or Excel&nbsp;import and export&nbsp;since less data is used.</p>
+
+<p>The following image displays a style&nbsp;in&nbsp;cell B2:</p>
+
+<p><img border="0" alt="" src="images/cstyle.png" /></p>
+
+<h4>Using Code</h4>
+
+<p>This example uses the <strong>setStyle</strong> method to assign a style to a cell.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">var style = new GC.Spread.Sheets.Style();<br />
+                style.backColor = "red";<br />
+                style.borderLeft = new GC.Spread.Sheets.LineBorder("blue",GC.Spread.Sheets.LineStyle.medium);<br />
+                style.borderTop = new GC.Spread.Sheets.LineBorder("blue",GC.Spread.Sheets.LineStyle.medium);<br />
+                style.borderRight = new GC.Spread.Sheets.LineBorder("blue",GC.Spread.Sheets.LineStyle.medium);<br />
+                style.borderBottom = new GC.Spread.Sheets.LineBorder("blue",GC.Spread.Sheets.LineStyle.medium);<br />
+                activeSheet.setStyle(1,1,style,GC.Spread.Sheets.SheetArea.viewport);<br />
+                //row<br />
+                //activeSheet.setStyle(1,-1,style,GC.Spread.Sheets.SheetArea.viewport);<br />
+                //column<br />
+                //activeSheet.setStyle(-1,2,style,GC.Spread.Sheets.SheetArea.viewport);</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h4>Using Code</h4>
+
+<p>This example uses the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Worksheet~setDefaultStyle.html">setDefaultStyle</a> method.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <p>//setDefaultStyle<br />
+                    activeSheet.setRowCount(5, GC.Spread.Sheets.SheetArea.viewport);<br />
+                    activeSheet.setColumnCount(5, GC.Spread.Sheets.SheetArea.viewport);</p>
+
+                    <p>//Set the default styles.<br />
+                    var defaultStyle = new GC.Spread.Sheets.Style();<br />
+                    defaultStyle.backColor = "LemonChiffon";<br />
+                    defaultStyle.foreColor = "Red";<br />
+                    defaultStyle.formatter = "0.00";<br />
+                    defaultStyle.hAlign = GC.Spread.Sheets.HorizontalAlign.center;<br />
+                    defaultStyle.borderLeft = new GC.Spread.Sheets.LineBorder("Green",GC.Spread.Sheets.LineStyle.medium);<br />
+                    defaultStyle.borderTop = new GC.Spread.Sheets.LineBorder("Green",GC.Spread.Sheets.LineStyle.medium);<br />
+                    defaultStyle.borderRight = new GC.Spread.Sheets.LineBorder("Green",GC.Spread.Sheets.LineStyle.medium);<br />
+                    defaultStyle.borderBottom = new GC.Spread.Sheets.LineBorder("Green",GC.Spread.Sheets.LineStyle.medium);<br />
+                    activeSheet.setDefaultStyle(defaultStyle, GC.Spread.Sheets.SheetArea.viewport);</p>
+
+                    <p>var rowCount = activeSheet.getRowCount();<br />
+                    var colCount = activeSheet.getColumnCount();<br />
+                    for(var i = 0; i &lt; rowCount; i++){<br />
+                    &nbsp;&nbsp;&nbsp; for(var j = 0; j &lt; colCount; j++){<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; activeSheet.setValue(i, j, i+j, GC.Spread.Sheets.SheetArea.viewport);<br />
+                    &nbsp;&nbsp;&nbsp; }<br />
+                    }</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h4>Using Code</h4>
+
+<p>This example displays the results when setting styles for cells, rows, and columns.</p>
+
+<p><img border="0" alt="" src="images/composite.png" /></p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <p>activeSheet.setRowCount(15);<br />
+                    activeSheet.setColumnCount(14);<br />
+                    var ns = GC.SpreadJS;<br />
+                    var style = activeSheet.getDefaultStyle();<br />
+                    style.backColor = "lightgray";<br />
+                    style.foreColor = "purple";<br />
+                    style.borderLeft = new ns.LineBorder("red", ns.LineStyle.hair);<br />
+                    style.borderTop = new ns.LineBorder("red", ns.LineStyle.hair);<br />
+                    style.borderRight = new ns.LineBorder("red", ns.LineStyle.hair);<br />
+                    style.borderBottom = new ns.LineBorder("red", ns.LineStyle.hair);</p>
+
+                    <p>var cell = activeSheet.getRange(3, 3, 6, 6);<br />
+                    cell.value(10);<br />
+                    cell.formatter("0.0%");<br />
+                    cell.backColor("lightgreen");<br />
+                    cell.borderLeft(new ns.LineBorder("gray", ns.LineStyle.double));<br />
+                    cell.borderTop(new ns.LineBorder("gray", ns.LineStyle.double));<br />
+                    cell.borderRight(new ns.LineBorder("gray", ns.LineStyle.double));<br />
+                    cell.borderBottom(new ns.LineBorder("gray", ns.LineStyle.double));</p>
+
+                    <p>var row = activeSheet.getRange(2, -1, 8, -1);<br />
+                    row.backColor("lightblue");<br />
+                    row.borderLeft(new ns.LineBorder("green", ns.LineStyle.dashed));<br />
+                    row.borderRight(new ns.LineBorder("green", ns.LineStyle.dashed));</p>
+
+                    <p>var col = activeSheet.getRange(-1, 2, -1, 8);<br />
+                    col.backColor("pink");<br />
+                    col.borderTop(new ns.LineBorder("blue", ns.LineStyle.dashed));<br />
+                    col.borderBottom(new ns.LineBorder("blue", ns.LineStyle.dashed));</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h4>Using Code</h4>
+
+<p>This example uses a named style to set a style for several cells. Use the button to remove the style.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <p>&lt;input type="button" id="button1" value="button1"/&gt;</p>
+
+                    <p>var namedStyle = new GC.Spread.Sheets.Style();<br />
+                    namedStyle.name = "style1";<br />
+                    namedStyle.backColor = "green";<br />
+                    activeSheet.addNamedStyle(namedStyle);<br />
+                    activeSheet.setStyleName(1, 1, "style1"); // cell(1,1)'s backColor is green.<br />
+                    activeSheet.setStyleName(2, 1, "style1");<br />
+                    &nbsp;<br />
+                    var style = activeSheet.getNamedStyle("style1");<br />
+                    style.foreColor = "red";&nbsp;&nbsp;&nbsp; // the namedStyle's foreColor is red.<br />
+                    activeSheet.repaint(); // the foreColor of the cell(1,1) and cell(2,1) is red.<br />
+                    activeSheet.getCell(1,1).value("test");</p>
+
+                    <p>$("#button1").click(function () {<br />
+                    activeSheet.removeNamedStyle("style1");<br />
+                    &nbsp;&nbsp;&nbsp; });</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div><!--DXMETADATA end-->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORISED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""%%phrase:name=SeeAlso%%%%designlist:tagidentifier=seealso,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><div class="i-see-also-link">
+<a href="colors.html">Colors</a></div>
+<div class="i-see-also-link">
+<a href="objectinh.html">Object Inheritance</a></div>
+<div class="i-see-also-link">
+<a href="SpreadJS~GC.Spread.Sheets.Style.html">Style class</a></div>
+<div class="i-see-also-link">
+<a href="spdesignhometab.html">SpreadJS Designer Home Tab</a></div>
+<div class="i-see-also-link">
+<a href="SpreadJS~GC.Spread.Sheets.Worksheet~getNamedStyle.html">getNamedStyle Method</a></div>
+<div class="i-see-also-link">
+<a href="SpreadJS~GC.Spread.Sheets.Worksheet~removeNamedStyle.html">removeNamedStyle Method</a></div>
+
+</div><!--DXMETADATA end-->
+            
+            <div id="i-footer-content" class="i-footer-content">
+                <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p><p>Copyright © 2019 GrapeCity, Inc. All rights reserved.</p>
+<p><a href="https://www.grapecity.com/en/forums/winforms-edition" target="_blank">Product Support Forum</a> | <a href="javascript:window.print()">Print this page</a></p>
+<ul class="social">
+<li><a href="https://www.facebook.com/GrapeCityUS/" target="_blank" class="facebook">&nbsp;</a></li>
+<li><a href="https://twitter.com/GrapeCityUS" target="_blank" class="twitter">&nbsp;</a></li>
+<li><a href="https://www.linkedin.com/company/grapecity" target="_blank" class="linkedin">&nbsp;</a></li>
+</ul>
+</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end-->
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

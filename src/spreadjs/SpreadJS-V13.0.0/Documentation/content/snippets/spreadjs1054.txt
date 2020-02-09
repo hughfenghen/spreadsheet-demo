@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SpreadJS</title>
+<link type="text/css" href="./css/GC.Spread.sheets.excel2013white.12.0.0.css" rel="stylesheet" /> 
+<script type="text/javascript" src="./scripts/GC.Spread.sheets.all.12.0.0.min.js"></script>   
+<script type="text/javascript">
+
+function bodyReady() {
+    var spread = new GC.Spread.Sheets.Workbook(document.getElementById("ss"));
+    var sheet = spread.getActiveSheet();
+    sheet.setValue(3, 10, "lastCol");
+    sheet.setValue(9, 2, "lastRow");
+    sheet.setValue(7, 5, "data");
+    sheet.setValue(9, 6, "lastCell");
+}
+
+function buttonClick() {
+    var spread = GC.Spread.Sheets.findControl(document.getElementById("ss"));
+    var sheet = spread.getActiveSheet();
+    var result = getLastNotEmptyCell(sheet);
+    console.log("The last non-empty row index: " + result.lastRow);
+    console.log("The last non-empty col index: " + result.lastColumn);
+    console.log("The last non-empty CELL :  [" + result.lastCell.row + ":" + result.lastCell.col + "]");
+}
+
+function getLastNotEmptyCell(sheet) {
+    var lastCell = null, lastRow = -1, lastColumn = -1;
+    var searchCondition = getSearchCondition(sheet);
+    var searchResult = sheet.search(searchCondition);
+    while (searchResult.searchFoundFlag > 0) {
+        sheet.setActiveCell(searchResult.foundRowIndex, searchResult.foundColumnIndex);
+        lastRow = searchResult.foundRowIndex;
+        lastColumn = searchResult.foundColumnIndex;
+        lastCell = sheet.getCell(searchResult.foundRowIndex, searchResult.foundColumnIndex);
+        if (searchCondition.searchOrder === GC.Spread.Sheets.Search.SearchOrder.zOrder) {
+            searchCondition.findBeginRow = searchResult.foundRowIndex;
+            searchCondition.findBeginColumn = searchResult.foundColumnIndex + 1;
+        } else if (searchCondition.searchOrder === GC.Spread.Sheets.Search.SearchOrder.nOrder) {
+            searchCondition.findBeginRow = searchResult.foundRowIndex + 1;
+            searchCondition.findBeginColumn = searchResult.foundColumnIndex;
+        }
+        searchResult = sheet.search(searchCondition);
+    }
+    return {
+        lastCell: lastCell,
+        lastRow: lastRow,
+        lastColumn: lastColumn
+    };
+}
+
+function getSearchCondition(sheet) {
+    var searchCondition = new GC.Spread.Sheets.Search.SearchCondition();
+    searchCondition.rowStart = 0;
+    searchCondition.rowEnd = sheet.getRowCount();
+    searchCondition.columnStart = 0;
+    searchCondition.columnEnd = sheet.getColumnCount();
+    searchCondition.searchString = "*";
+    searchCondition.searchOrder = GC.Spread.Sheets.Search.SearchOrder.zOrder;
+    searchCondition.searchTarget = GC.Spread.Sheets.Search.SearchFoundFlags.cellText;
+    searchCondition.searchFlags = GC.Spread.Sheets.Search.SearchFlags.useWildCards;
+    searchCondition.findBeginRow = 0;
+    searchCondition.findBeginColumn = 0;
+    return searchCondition;
+}
+
+    </script>
+</head>
+<body onload="bodyReady()">
+    <div id="ss" style="width:100%;height:500px;border:1px solid gray"></div>
+    <input type="button" id="btn" value="Last Cell in Console" onclick="buttonClick()" />
+</body>
+</html>

@@ -1,0 +1,1 @@
+sheet.options.rowHeaderVisible = false;

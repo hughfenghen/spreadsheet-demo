@@ -1,0 +1,3 @@
+activeSheet.currentTheme("Civic");
+activeSheet.resumePaint();
+activeSheet.repaint();

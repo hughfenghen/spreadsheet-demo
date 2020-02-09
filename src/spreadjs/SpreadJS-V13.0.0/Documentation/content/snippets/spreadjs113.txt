@@ -1,0 +1,4 @@
+var style = new GC.Spread.Sheets.Style();
+style.backColor = "lightgreen";
+activeSheet.setStyle(-1,1,style,GC.Spread.Sheets.SheetArea.viewport);
+activeSheet.getCell(-1, 1).clearStyleProperty("backColor");

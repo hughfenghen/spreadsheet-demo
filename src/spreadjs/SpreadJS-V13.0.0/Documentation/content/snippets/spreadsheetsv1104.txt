@@ -1,0 +1,21 @@
+var h2 = new GC.Spread.Sheets.CellTypes.HyperLink();
+h2.text("set sheet tab style");
+h2.linkToolTip("set sheet tab style");
+h2.linkColor("blue");
+h2.visitedLinkColor("#FF2235");
+activeSheet.getCell(2, 1).cellType(h2).value("set sheet tab style").hAlign(GC.Spread.Sheets.HorizontalAlign.center);
+
+h2.moveActiveCellOnClick(true);
+            h2.onClickAction(function () {
+                var setSheetTabColor = {
+                    canUndo: true,
+                    execute: function (context, options, isUndo) {
+                        activeSheet.name("Hyperlink");
+                        activeSheet.options.sheetTabColor = "red";
+                    }
+                };
+                var commandManager = spread.commandManager();
+                var commandName = "setSheetTabStyle";
+                commandManager.register(commandName, setSheetTabColor, null, false, false, false, false);
+                commandManager.execute({cmd: commandName})
+            });

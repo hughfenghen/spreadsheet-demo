@@ -1,0 +1,3 @@
+sheet.setValue(0,2,"ColumnHeader", GC.Spread.Sheets.SheetArea.colHeader);
+sheet.setValue(2,0,"RowHeader", GC.Spread.Sheets.SheetArea.rowHeader);
+sheet.setValue(2,0,"viewport", GC.Spread.Sheets.SheetArea.viewport);

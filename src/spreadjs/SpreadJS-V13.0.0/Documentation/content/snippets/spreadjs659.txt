@@ -1,0 +1,18 @@
+// Use IE to see the console log text
+var activeSheet = spread.getActiveSheet();
+
+activeSheet.bind(GC.Spread.Sheets.Events.ClipboardChanged, function (sender, args) {
+    console.log("ClipboardChanged.");
+});
+
+activeSheet.bind(GC.Spread.Sheets.Events.ClipboardChanging, function (sender, args) {
+    console.log("ClipboardChanging");
+});
+
+activeSheet.bind(GC.Spread.Sheets.Events.ClipboardPasted, function (sender, args) {
+    console.log("ClipboardPasted");
+});
+
+activeSheet.bind(GC.Spread.Sheets.Events.ClipboardPasting, function (sender, args) {
+    console.log("ClipboardPasting");
+});

@@ -1,0 +1,5 @@
+var type = new GC.Spread.Sheets.Style();
+type.watermark = "The watermark.";
+activeSheet.setStyle(-1, 1, type);
+activeSheet.setStyle(1, -1, type);
+activeSheet.setStyle(2, 2, type);

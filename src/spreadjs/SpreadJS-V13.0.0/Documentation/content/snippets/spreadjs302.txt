@@ -1,0 +1,18 @@
+var dvalue= 12345.6789; 
+var nvalue = 12345; 
+activeSheet.setColumnWidth(0, 100); 
+activeSheet.setColumnWidth(1, 100); 
+activeSheet.setColumnWidth(2, 100); 
+activeSheet.setValue(0,0,dvalue); 
+activeSheet.getCell(0, 0).formatter("#.#%");
+activeSheet.getCell(0, 1).formatter(".#########");
+activeSheet.setValue(0,1,dvalue); 
+activeSheet.getCell(0, 2).formatter("########0");
+activeSheet.setValue(0,2,dvalue); 
+activeSheet.getCell(1, 0).formatter("##.##"); 
+activeSheet.setValue(1,0,dvalue); 
+activeSheet.getCell(1, 1).formatter("[>2]0.0;[<-3]0.0;zero;");
+activeSheet.setValue(1,1,dvalue); 
+activeSheet.setValue(1,2,dvalue); 
+activeSheet.getCell(2, 0).formatter("#.#%"); 
+activeSheet.getCell(2, 0).value(Math.PI); 

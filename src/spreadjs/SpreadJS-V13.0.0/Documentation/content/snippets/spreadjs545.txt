@@ -1,0 +1,1 @@
+spread.commandManager().execute({cmd: "renameSheet", sheetName: "Sheet1", name: "SheetName"});

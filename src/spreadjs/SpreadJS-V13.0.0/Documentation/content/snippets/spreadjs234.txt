@@ -1,0 +1,5 @@
+sheet.setRowCount(4,1);
+sheet.setColumnCount(4,2);
+sheet.addSpan(0,0,3,3,GC.Spread.Sheets.SheetArea.colHeader);
+sheet.addSpan(0,0,3,3,GC.Spread.Sheets.SheetArea.rowHeader);
+sheet.addSpan(0,0,3,3,GC.Spread.Sheets.SheetArea.viewport);

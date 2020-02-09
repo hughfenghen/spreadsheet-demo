@@ -1,0 +1,4 @@
+activeSheet.setValue(0, 2, 3);
+activeSheet.setFormula(1,1,"C1+D1",GC.Spread.Sheets.SheetArea.viewport);
+var information = activeSheet.getFormulaInformation(1, 1);
+alert(information.hasFormula);

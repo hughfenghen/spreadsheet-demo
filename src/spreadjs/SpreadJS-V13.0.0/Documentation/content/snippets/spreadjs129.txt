@@ -1,0 +1,2 @@
+activeSheet.selectionUnit(GC.Spread.Sheets.SelectionUnit.row);
+activeSheet.selectionPolicy(GC.Spread.Sheets.SelectionPolicy.range);

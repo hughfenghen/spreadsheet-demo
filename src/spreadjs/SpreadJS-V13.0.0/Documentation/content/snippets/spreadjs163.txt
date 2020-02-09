@@ -1,0 +1,3 @@
+spread.bind(GC.Spread.Sheets.Events.SheetTabClick, function (e, info) {    
+        alert("Index (" + info.sheetTabIndex + ")");
+});

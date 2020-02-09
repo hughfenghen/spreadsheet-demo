@@ -1,0 +1,4 @@
+activeSheet.suspendPaint();
+activeSheet.rowOutlines.group(0,5);
+activeSheet.rowOutlines.ungroupRange(0,1);
+activeSheet.resumePaint();

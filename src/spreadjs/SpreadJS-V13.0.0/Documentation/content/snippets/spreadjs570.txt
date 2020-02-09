@@ -1,0 +1,6 @@
+activeSheet.suspendPaint();
+activeSheet.rowOutlines.group(0,5);
+var rgi = activeSheet.rowOutlines.find(1, 0);
+rgi.state(GC.Spread.Sheets.Outlines.OutlineInfo.collapsed);
+alert(activeSheet.rowOutlines.getState(rgi));
+activeSheet.resumePaint();

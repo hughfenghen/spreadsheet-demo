@@ -1,0 +1,2 @@
+var sheet1 = spread.getSheetIndex("Sheet2");
+alert(sheet1);

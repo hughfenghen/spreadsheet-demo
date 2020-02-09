@@ -1,0 +1,2 @@
+spread.commandManager().setShortcutKey('navigationDown', GC.Spread.Commands.Key.tab, false, false, false, false); // Tab key
+spread.commandManager().setShortcutKey('navigationBottom', GC.Spread.Commands.Key.tab, false, true, false, false); // Shift key and Tab key

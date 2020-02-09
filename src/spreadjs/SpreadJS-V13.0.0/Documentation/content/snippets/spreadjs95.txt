@@ -1,0 +1,12 @@
+activeSheet.tables.add("Table1", 0, 0, 3, 3, GC.Spread.Sheets.Tables.TableThemes.dark1);
+activeSheet.getCell(0,0).text("Name");
+activeSheet.getCell(0,1).text("Value");
+activeSheet.getCell(0,2).text("T/F");
+activeSheet.getCell(1,0).text("AW");
+activeSheet.getCell(1,1).text("5");
+activeSheet.getCell(1,2).text("T");
+
+$("#button1").click(function () {
+var table  = activeSheet.tables.find(0,0);
+activeSheet.tables.resize(table, new GC.Spread.Sheets.Range(0,0,4,4));
+    });

@@ -1,0 +1,6 @@
+activeSheet.pictures.add("p1", "pics/download.jpg", 1, 6, 400, 400);
+activeSheet.pictures.add("p2", "pics/download.jpg", 500, 150, 200, 300);
+var pictures = activeSheet.pictures.all();
+for (var i = 0; i < pictures.length; i++) {
+    alert("Path of picture " + i + " is:  " + pictures[i].src())
+}

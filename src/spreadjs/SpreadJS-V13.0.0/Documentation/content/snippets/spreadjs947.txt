@@ -1,0 +1,3 @@
+activeSheet.currentTheme("Opulent");
+activeSheet.resumePaint();
+activeSheet.repaint();

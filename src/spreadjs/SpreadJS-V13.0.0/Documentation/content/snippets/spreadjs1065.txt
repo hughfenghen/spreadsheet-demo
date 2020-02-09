@@ -1,0 +1,7 @@
+activeSheet.getCell(1,1).locked(true);
+activeSheet.options.isProtected = true;
+activeSheet.getCell(1,1).value(2);
+
+activeSheet.bind(GC.Spread.Sheets.Events.InvalidOperation, function (e, info) {    
+        alert("Message (" + info.invalidType + ")");
+});

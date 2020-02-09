@@ -1,0 +1,18 @@
+activeSheet.suspendPaint();
+activeSheet.setRowCount(34);
+activeSheet.setValue(0,0,"Western");
+activeSheet.setValue(0,1,"Western");
+activeSheet.setValue(0,2,"Western");
+activeSheet.setValue(1,0,"A");
+activeSheet.setValue(1,1,"B");
+activeSheet.setValue(1,2,"C");
+activeSheet.setValue(2,0,"A");
+activeSheet.setValue(2,1,"B");
+activeSheet.setValue(2,2,"C");
+activeSheet.rowOutlines.group(0,2);
+activeSheet.columnOutlines.group(0,1);
+activeSheet.resumePaint();
+
+activeSheet.bind(GC.Spread.Sheets.Events.RangeGroupStateChanging, function (e, info) {    
+        alert("Level (" + info.level + ")");
+});

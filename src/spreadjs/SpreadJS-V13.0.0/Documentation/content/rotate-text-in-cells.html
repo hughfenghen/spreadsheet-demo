@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%ProjectTitle%% - %%ItemTitle%%</title>" --><title>SpreadJS Documentation - Rotate Text In Cells</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ProjectTitle%% - %%ItemTitleNoQuotes%%""/>" --><meta name="Title" content="SpreadJS Documentation - Rotate Text In Cells"/><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n279","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="light" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="SpreadJS allows users to rotate the text in a cell. This feature helps users to change the way data appears in a cell." /><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-topics/topics.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-topics/topics.mshv1.css"" data-responsive-mobile=""template/packages/core-topics/topics.mobile.css"" data-responsive-tablet=""template/packages/core-topics/topics.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="script"--><script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="script"--><script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="579b15d4-b408-4364-b2ea-c648a8606a05"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="a82f1a43-0eb6-43f2-ad59-e8565d14c202"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocOrdinal" format="<meta name=""Microsoft.Help.TocOrder"" content=""%%TocOrdinal%%""/>" --><meta name="Microsoft.Help.TocOrder" content="11"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/hs-simpletab.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="StylePropertyValues" format="<style>%%StylePropertyValues%%</style>" --><style>.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+    <!--DXMETADATA start type="CustomHeadContent" --><link rel="stylesheet" type="text/css" href="template/packages/core-web/css/SP.css">
+<script type="text/javascript">
+var currentHeader = function() {
+    return "spjs";
+}
+</script>
+<script src="template/packages/core-web/script/topNavigation.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WT462SJ"></script>
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime()
+                , event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WT462SJ');
+    </script>
+<!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->SpreadJS Documentation<!--DXMETADATA end--></div>
+            <div class="i-search-container">
+                <!--DXMETADATA start type="outputfileextension" format="<form action=""websearch%%outputfileextension%%"">" --><form action="websearch.html"><!--DXMETADATA end-->
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                <!--DXMETADATA start type="Literal" value="</form>" --></form><!--DXMETADATA end-->
+            </div>
+            <!--DXMETADATA start type="outputfileextension" format="<a id=""i-index-button"" href=""webindex%%outputfileextension%%""></a>" --><a id="i-index-button" href="webindex.html"></a><!--DXMETADATA end-->
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container">
+<a href="overview.html">SpreadJS Documentation</a>
+ / <a href="devguide.html">Developer's Guide</a>
+ / <a href="features.html">Features</a>
+ / <a href="appearance.html">Customize Appearance</a>
+ / Rotate Text In Cells</div><!--DXMETADATA end --></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="ItemTitle" -->Rotate Text In Cells<!--DXMETADATA end--></div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+            </div>
+            <!--DXMETADATA start type="TopicSection" name="BodyText"--><p>SpreadJS allows users to rotate the text in a cell. This feature helps users to change the way data appears in a cell.</p>
+
+<p>Users can rotate the font angle from -90 to +90 degrees (including 45⁰ , 90⁰, -45⁰ , -90⁰ etc.), or change the data alignment as per their specific preferences while working with spreadsheets. The text can be rotated in upwards direction, downwards direction, clockwise direction or counterclockwise direction, as shown in the screenshot shared below:</p>
+
+<p><img style="MAX-WIDTH: 100%; HEIGHT: auto" border="0" alt="" src="images/spreadjsv13images/rotate1.png" />&nbsp;</p>
+
+<h3 id="a">Usage Scenario</h3>
+
+<p>Text Rotation is helpful especially when:</p>
+
+<ul>
+    <li>Users are working in a large spreadsheet with hundreds of columns and the text in column headers is longer than the text in the cells. In this scenario, it is beneficial to rotate the text in your headings so the columns become narrower and you can see maximum number of column headings in the viewport while analyzing data.</li>
+
+    <li>Users want to fit more columns of data in a smaller area to manage bulk data easily and quickly.</li>
+</ul>
+
+<h3>Rotating&nbsp;Text in&nbsp;a Cell</h3>
+
+<p>When the text to be rotated is a normal text or the text is in accounting format, then the number of characters filled will be related to the cell height.&nbsp;If users adjust the cell height, the text will change dynamically.</p>
+
+<p>The following image depicts annual sales revenues of different companies in a spreadsheet with text rotation feature applied to the cells along with border styling and custom background color.</p>
+
+<p><img border="0" alt="" src="images/spreadjsv13images/rotate5.png" />&nbsp;</p>
+
+<p>When the text in the cells is rotated, the following worksheet features will be affected:</p>
+
+<ol>
+    <li>Text Alignment - The rotation angle will affect the order of the text. When the rotation angle is negative, the text is displayed from right to left. When the rotation angle is positive, then the text is displayed from left to right.</li>
+
+    <li>Word Wrap - Only the height of the current cell will affect the wordwrap feature.</li>
+
+    <li>Cell Overflow -&nbsp;This is related to the horizontal alignment. When "hAlign=left", the text will be over to the right and when "hAlign=right", then the text will be over to the left.&nbsp;</li>
+
+    <li>&nbsp;Text Indentation - If the text in the cell is indented, then the text rotation feature will not work.</li>
+
+    <li>Shrink to Fit - For accounting format text, the repeat characters will be eliminiated and hence, the text will shrink to fit in the cell.</li>
+
+    <li>Text Decoration - When the text is rotated, the placeholders will also have text decoration just like in Excel.</li>
+
+    <li>Text Hidden and AutoFit - When the height after the rotation exceeds the height of the current cell, then the text will hide the extra text above the viewport and the rowHeightAutoFit will be calculated according to the vertical length after rotation. For accounting format text, the repeat characters will be eliminiated and hence, the text will automatically fit inside the cell.</li>
+</ol>
+
+<h3>Rotating Cell Border with Background</h3>
+
+<p>When users apply text rotation in the cells (containing data values)&nbsp;of a spreadsheet, then the border and the background color will also rotate to the corresponding angle.&nbsp;The position of the text will automatically adjust itself according to the position of the cell after the rotation, as shown in the screenshot shared below:</p>
+
+<p><img style="MAX-WIDTH: 100%; HEIGHT: auto" border="0" alt="" src="images/spreadjsv13images/rotate-2.png" /></p>
+
+<div class="i-box i-box-note">
+    <strong>Note:</strong> When users set the background color, the rotation on the background color will take effect only if the cell contains a value and has an arbitrary border so that the background can fill the rotated border area.
+</div>
+
+<h3 id="e">Using Code</h3>
+
+<p>Refer to the following example code to rotate text in the cells while working with spreadsheets.&nbsp;</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <p>// Initializing Spread<br />
+                    var spread = new GC.Spread.Sheets.Workbook(document.getElementById('ss'), { sheetCount: 1 });<br /></p>
+
+                    <p>// Get the activesheet<br />
+                    var activeSheet = spread.getActiveSheet();</p>
+
+                    <p></p>
+
+                    <p>// Prepare data<br />
+                    activeSheet.setValue(1, 1, "Company Sales Data");<br />
+                    activeSheet.setValue(1, 3, "Year-2015");<br />
+                    activeSheet.setValue(1, 4, "Year-2016");<br />
+                    activeSheet.setValue(1, 5, "Year-2017");<br />
+                    activeSheet.setValue(1, 6, "Year-2018");<br />
+                    activeSheet.setValue(1, 7, "Year-2019");<br />
+                    activeSheet.setValue(2, 2, "Gradlco");<br />
+                    activeSheet.setValue(3, 2, "Saagiate");<br />
+                    activeSheet.setValue(4, 2, "Inferno");<br />
+                    activeSheet.setColumnWidth(1, 120);<br />
+                    for (var r = 2; r &lt;= 4; r++) {<br />
+                    for (var c = 3; c &lt; 8; c++) {<br />
+                    activeSheet.setValue(r, c, parseInt(Math.random() * 5000));<br />
+                    }<br />
+                    }</p>
+
+                    <p>// Create a Style with TextOrientation and apply it on a range of cells<br />
+                    var style = new GC.Spread.Sheets.Style();<br />
+                    style.textOrientation = 60;<br />
+                    style.backColor = "pink";<br />
+                    style.foreColor = "red";<br />
+                    for (var i = 3; i &lt; 8; i++)<br />
+                    activeSheet.setStyle(1, i, style, GC.Spread.Sheets.SheetArea.viewport);</p>
+
+                    <p>// Set Row Height<br />
+                    activeSheet.setRowHeight(1, 60, GC.Spread.Sheets.SheetArea.viewport);</p>
+
+                    <p>activeSheet.addSpan(1, 1, 4, 1, GC.Spread.Sheets.SheetArea.viewport);<br /></p>
+
+                    <p>// Set textOrientation for Cell(1,1), this cell is without borders.<br />
+                    activeSheet.getCell(1, 1).textOrientation(60);<br />
+                    activeSheet.getCell(1, 1).hAlign(GC.Spread.Sheets.HorizontalAlign.center);<br />
+                    activeSheet.getCell(1, 1).hAlign(GC.Spread.Sheets.VerticalAlign.center);<br />
+                    activeSheet.getCell(1, 1).backColor("LightBlue");</p>
+
+                    <p>// Set border for cells<br />
+                    activeSheet.getRange(1, 3, 4, 5, GC.Spread.Sheets.SheetArea.viewport).setBorder(new GC.Spread.Sheets.LineBorder("Blue", GC.Spread.Sheets.LineStyle.medium), { all: true }, 3);<br /></p>
+
+                    <p>// Set cell's backColor<br />
+                    for (var i = 2; i &lt; 5; i++)<br />
+                    activeSheet.getCell(i, 2).backColor("lightGray");</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div><!--DXMETADATA end-->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORISED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""%%phrase:name=SeeAlso%%%%designlist:tagidentifier=seealso,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><!--DXMETADATA end-->
+            
+            <div id="i-footer-content" class="i-footer-content">
+                <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p><p>Copyright © 2019 GrapeCity, Inc. All rights reserved.</p>
+<p><a href="https://www.grapecity.com/en/forums/winforms-edition" target="_blank">Product Support Forum</a> | <a href="javascript:window.print()">Print this page</a></p>
+<ul class="social">
+<li><a href="https://www.facebook.com/GrapeCityUS/" target="_blank" class="facebook">&nbsp;</a></li>
+<li><a href="https://twitter.com/GrapeCityUS" target="_blank" class="twitter">&nbsp;</a></li>
+<li><a href="https://www.linkedin.com/company/grapecity" target="_blank" class="linkedin">&nbsp;</a></li>
+</ul>
+</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end-->
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

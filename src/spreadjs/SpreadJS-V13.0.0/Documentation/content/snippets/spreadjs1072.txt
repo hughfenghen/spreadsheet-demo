@@ -1,0 +1,1 @@
+var spread = new GC.Spread.Sheets.Workbook($("#ss")[0],{sheetCount:3, tabStripVisible:false});

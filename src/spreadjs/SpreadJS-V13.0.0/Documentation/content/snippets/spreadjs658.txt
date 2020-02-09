@@ -1,0 +1,11 @@
+activeSheet.bind(GC.Spread.Sheets.Events.EditStarting, function (sender, args) {
+    console.log("Start cell editing.");
+});
+
+activeSheet.bind(GC.Spread.Sheets.Events.EditEnding, function (sender, args) {
+    console.log("EditEnding event.");
+});
+
+activeSheet.bind(GC.Spread.Sheets.Events.EditEnded, function (sender, args) {
+    console.log("EditEnded event.");
+});

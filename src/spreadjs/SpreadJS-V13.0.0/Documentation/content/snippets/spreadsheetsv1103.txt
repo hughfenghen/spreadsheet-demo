@@ -1,0 +1,14 @@
+<script type="text/javascript">
+      window.onload = function(){
+          var spread = new GC.Spread.Sheets.Workbook(document.getElementById("ss"),{sheetCount:3});
+          var activeSheet = spread.getActiveSheet(); 
+
+spread.bind(GC.Spread.Sheets.Events.SheetMoving, function (e, data) {
+alert(data.sheetName + '\n' +  'oldIndex: ' + data.oldIndex + '\n' +  'newIndex: ' + data.newIndex + '\n' +  'cancel: ' + data.cancel);
+});
+
+spread.bind(GC.Spread.Sheets.Events.SheetMoved, function (e, data) {
+alert(data.sheetName + '\n' +  'oldIndex: ' + data.oldIndex + '\n' +  'newIndex: ' + data.newIndex);
+});
+}
+</script>

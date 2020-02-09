@@ -1,0 +1,10 @@
+activeSheet.getCell(0, 0).textDecoration(GC.Spread.Sheets.TextDecorationType.underline);
+activeSheet.getRange(1, -1, 1, -1).textDecoration(GC.Spread.Sheets.TextDecorationType.overline | GC.Spread.Sheets.TextDecorationType.underline);
+activeSheet.getRange(-1, 1, -1, 1).textDecoration(GC.Spread.Sheets.TextDecorationType.overline | GC.Spread.Sheets.TextDecorationType.lineThrough | GC.Spread.Sheets.TextDecorationType.underline);
+ 
+var style = new GC.Spread.Sheets.Style();
+style.textDecoration = GC.Spread.Sheets.TextDecorationType.overline | GC.Spread.Sheets.TextDecorationType.underline;
+activeSheet.setStyle(1, 1, style, GC.Spread.Sheets.SheetArea.viewport);
+activeSheet.getCell(0, 0).value("Test");
+activeSheet.getCell(1, 0).value("Test");
+activeSheet.getCell(0, 1).value("Test");

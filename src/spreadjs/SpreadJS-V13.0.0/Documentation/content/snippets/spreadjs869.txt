@@ -1,0 +1,42 @@
+var myCulture = new GC.Spread.Common.CultureInfo();
+myCulture.currencySymbol = "€"
+myCulture.numberDecimalSeparator = ",";
+myCulture.numberGroupSeparator = ".";
+myCulture.arrayGroupSeparator = ";";
+myCulture.listSeparator = ",";
+myCulture.amDesignator = "";
+myCulture.pmDesignator = "";
+myCulture.abbreviatedMonthNames = ["Jan", "Feb", "Mrz", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez", ""];
+myCulture.abbreviatedDayNames = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
+myCulture.abbreviatedMonthGenitiveNames = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
+myCulture.dayNames = ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"];
+myCulture.fullDateTimePattern = "dddd, d. MMMM yyyy HH:mm:ss";
+myCulture.longDatePattern = "dddd, d. MMMM yyyy";
+myCulture.longTimePattern = "HH:mm:ss";
+myCulture.monthDayPattern = "dd MMMM";
+myCulture.monthNames = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember", ""];
+myCulture.monthGenitiveNames = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember", ""];
+myCulture.shortDatePattern = "dd.MM.yyyy";
+myCulture.shortTimePattern = "HH:mm";
+myCulture.yearMonthPattern = "MMMM yyyy";
+
+//add one culture
+GC.Spread.Common.CultureManager.addCultureInfo("de-DE", myCulture);
+//switch to "de-DE" culture
+GC.Spread.Common.CultureManager.culture("de-DE");
+var d = new Date();
+//With culture
+activeSheet.setValue(1, 0, new Date(d.setDate(d.getDate() + 1)));
+activeSheet.getCell(1, 0).formatter("mmm");
+var dvalue = 12345.6789;
+var nvalue = 12345;
+activeSheet.setColumnWidth(0, 100);
+activeSheet.setColumnWidth(1, 100);
+activeSheet.setColumnWidth(2, 100);
+activeSheet.setValue(0, 0, dvalue);
+activeSheet.getCell(0, 0).formatter("###,###.00");
+//Without culture
+activeSheet.setValue(2, 0, new Date(d.setDate(d.getDate() + 1)));
+//With culture
+activeSheet.getCell(3, 0).formatter("yyyy/mmm/dddd");
+activeSheet.setValue(3, 0, new Date());

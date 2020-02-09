@@ -1,0 +1,142 @@
+#richTextContainer .list {
+    list-style: none;
+    display: none;
+    position: absolute;
+    box-shadow: 1px 2px 5px 2px rgba(51, 51, 51, .15);
+    background-color: white;
+}
+#richTextContainer .font-family-value {
+    max-width: 80px;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 30px;
+    vertical-align: top;
+}
+
+#richTextContainer .rich-editor {
+    border: 1px solid rgba(10, 10, 10, 0.1);
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#richTextContainer .rich-editor-content {
+    box-sizing: border-box;
+    height: 150px;
+    outline: 0;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+#setRichText {
+    display: inline-block;
+    background-color: white;
+    border: none;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 5px;
+    box-shadow: 1px 2px 5px 2px rgba(51, 51, 51, .15);
+}
+
+#richTextContainer .rich-editor-actionbar {
+    background-color: #FFF;
+    border-bottom: 1px solid rgba(10, 10, 10, 0.1);
+}
+
+#richTextContainer .rich-editor-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    outline: 0;
+    width: 30px;
+    position: relative;
+    display: inline-block;
+    margin: 0 3px;
+    padding:0 2px;
+}
+
+#richTextContainer .drop-down-arrow {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+}
+
+#richTextContainer .rich-editor-button-selected {
+    background-color: #F0F0F0;
+}
+
+#richTextContainer .color_picker_result {
+    border-bottom: 5px solid black;
+}
+
+#richTextContainer #textFontSizeList {
+    width: 40px;
+    padding-left: 0px;
+}
+
+#richTextContainer #textFontFamilyList {
+    width: 128px;
+    padding-left: 0px;
+}
+
+#richTextContainer #colorPicker {
+    width: 60px;
+    padding-left: 3px;
+}
+
+#richTextContainer .fontsize-item {
+    width: 40px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#richTextContainer .fontfamily-item {
+    width: 128px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    padding-left: 13px;
+    cursor: pointer;
+}
+
+#richTextContainer .colorpicker-item {
+    width: 16px;
+    height: 16px;
+    margin: 1px;
+    padding: 1px;
+    border: 1px solid transparent;
+    background-clip: content-box;
+    float: left;
+    display: inline-block;
+}
+
+#richTextContainer .fontsize-item:hover {
+    background-color: #DDDDDDAA;
+}
+
+#richTextContainer .fontfamily-item:hover {
+    background-color: #DDDDDDAA;
+}
+
+#richTextContainer .colorpicker-item:hover {
+    box-shadow: 1px 1px 1px 1px rgba(51, 51, 51, .15);
+}
+
+#richTextContainer sup, #richTextContainer sub{
+    font-size: 75%;
+    top: auto;
+    position: static;
+    line-height: auto;
+}
+#richTextContainer sub{
+    vertical-align: sub;
+}
+#richTextContainer sup{
+    vertical-align: super;
+}

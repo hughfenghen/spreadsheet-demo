@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%ProjectTitle%% - %%ItemTitle%%</title>" --><title>SpreadJS Documentation - Dynamic Column Size</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ProjectTitle%% - %%ItemTitleNoQuotes%%""/>" --><meta name="Title" content="SpreadJS Documentation - Dynamic Column Size"/><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n225","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="light" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="SpreadJS provides support for dynamic column sizing (also called as star sizing and proportional sizing)." /><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-topics/topics.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-topics/topics.mshv1.css"" data-responsive-mobile=""template/packages/core-topics/topics.mobile.css"" data-responsive-tablet=""template/packages/core-topics/topics.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="script"--><script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="script"--><script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="5ddac8d0-5a4e-4cc4-b56c-4ed31af3c606"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="3ff39078-fb0f-471b-a3ec-25d37e40d683"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocOrdinal" format="<meta name=""Microsoft.Help.TocOrder"" content=""%%TocOrdinal%%""/>" --><meta name="Microsoft.Help.TocOrder" content="33"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/hs-simpletab.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="StylePropertyValues" format="<style>%%StylePropertyValues%%</style>" --><style>.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+    <!--DXMETADATA start type="CustomHeadContent" --><link rel="stylesheet" type="text/css" href="template/packages/core-web/css/SP.css">
+<script type="text/javascript">
+var currentHeader = function() {
+    return "spjs";
+}
+</script>
+<script src="template/packages/core-web/script/topNavigation.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WT462SJ"></script>
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime()
+                , event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WT462SJ');
+    </script>
+<!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->SpreadJS Documentation<!--DXMETADATA end--></div>
+            <div class="i-search-container">
+                <!--DXMETADATA start type="outputfileextension" format="<form action=""websearch%%outputfileextension%%"">" --><form action="websearch.html"><!--DXMETADATA end-->
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                <!--DXMETADATA start type="Literal" value="</form>" --></form><!--DXMETADATA end-->
+            </div>
+            <!--DXMETADATA start type="outputfileextension" format="<a id=""i-index-button"" href=""webindex%%outputfileextension%%""></a>" --><a id="i-index-button" href="webindex.html"></a><!--DXMETADATA end-->
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container">
+<a href="overview.html">SpreadJS Documentation</a>
+ / <a href="devguide.html">Developer's Guide</a>
+ / <a href="features.html">Features</a>
+ / <a href="interface.html">Manage User Interface</a>
+ / Dynamic Column Size</div><!--DXMETADATA end --></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="ItemTitle" -->Dynamic Column Size<!--DXMETADATA end--></div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+            </div>
+            <!--DXMETADATA start type="TopicSection" name="BodyText"--><p>SpreadJS provides support for&nbsp;dynamic column sizing (also called as star sizing and proportional sizing).</p>
+
+<h3 id="a">What is Dynamic Column Sizing?</h3>
+
+<p>Dynamic Column Sizing is used to configure the width of the columns and the height of the rows in such a way that the viewport is filled exactly as per the weighted proportion (represented by the&nbsp;* symbol) specified by the user.</p>
+
+<p>This type of sizing can be used in conjunction with numbers to define a weighted proportion, where: &nbsp;</p>
+
+<ul>
+    <li>The weighting factor is expressed by using the * (star character) or n* character (n can be any integer value (like 2*, 3* etc.) or a non-integer value (like 0.5* or 1.5* etc.)).</li>
+
+    <li>Available Size = Viewport Size - Visible Fixed Size.</li>
+
+    <li>The available size is distributed to the visible row or column&nbsp;as per&nbsp;the weighted factor defined by the user.</li>
+
+    <li>Total column width = Viewport width.</li>
+</ul>
+
+<h3 id="b">Usage Scenario</h3>
+
+<p>Dynamic Column sizing is beneficial especially when users need to widen multiple columns proportionally in order to analyze reports or manipulate large spreadsheets.</p>
+
+<p>For example -&nbsp;The following image depicts a&nbsp;spreadsheet&nbsp;with&nbsp;dynamic column&nbsp;sizing applied on column A, B and&nbsp;D and E&nbsp;in the proportion of 1.5*, 1.5*, *&nbsp;and&nbsp;* respectively.&nbsp;</p>
+
+<p><img style="MAX-WIDTH: 100%; HEIGHT: auto" border="0" alt="" src="images/spreadjsv13images/dynamic-column-sizing-gif.gif" /></p>
+
+<p>In the above example, columns A and B&nbsp;with a star size "1.5*" are filling 1.5 times that of a standard "*" sized column in the viewport.</p>
+
+<h3>Supported User Actions</h3>
+
+<p>Dynamic column sizing (or proportional sizing) ensures the columns and rows in a worksheet fill the viewport exactly whenever the viewport size is changed or the user adds, deletes or resizes any row or column.</p>
+
+<p>Users can configure dynamic column size&nbsp;in the worksheet&nbsp;by&nbsp;using the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Worksheet~setColumnWidth.html" data-auto-update-caption="true">setColumnWidth()</a> and the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Worksheet~setRowHeight.html" data-auto-update-caption="true">setRowHeight()</a> methods. After applying the dynamic column size, the&nbsp;columns and rows (on which the star sizing is applied) will automatically resize to fill up the viewport when users perform the following actions on the worskheet:</p>
+
+<ul>
+    <li>Users change the size of the viewport.</li>
+
+    <li>Users add, delete or resizes any columns or rows in the worksheet.</li>
+
+    <li>Users change the row count or column count.</li>
+
+    <li>Users hide or unhide the rows or columns.</li>
+
+    <li>Users group or ungroup the rows and columns.</li>
+
+    <li>Users apply filters to the rows and columns.</li>
+
+    <li>Users expand or collapse the outline columns in the worksheet.</li>
+</ul>
+
+<p>Dynamic Column Sizing is also supported while importing and exporting JSON files.</p>
+
+<h3 id="d">Dynamic Column Sizing Rules</h3>
+
+<p>The following rules must be kept in mind while working with dynamic column size feature in the worksheet:</p>
+
+<ul>
+    <li>The rows and columns can both be set to star size in one sheet.</li>
+
+    <li>When users try to resize the star sized row or column, or call the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Worksheet~autoFitColumn.html">autoFitColumn()</a>/<a href="SpreadJS~GC.Spread.Sheets.Worksheet~autoFitRow.html">autoFitRow()</a> methods, then the&nbsp;operated row or column size will overwrite to a fixed number with the actual size. In case you're working on the split resize mode (only nextTo mode), then it will overwrite both the operated row or column along with the next row or column size to a fixed number.</li>
+
+    <li>If the smallest star sizing is &lt;1 (less than 1) or available size is also &lt;1&nbsp;(less than 1), then the star size will keep old size because it will stop calculating the dynamic size.</li>
+
+    <li>If the users set the star sized row or column to "hidden" or "0*", then the methods&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Worksheet~getColumnWidth.html">getColumnWidth()</a> and&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Worksheet~getRowHeight.html">getRowHeight()</a> will return 0.</li>
+
+    <li>If the users set the star sized row or column to an invalid string like "abc", it will be treated as the default value.</li>
+
+    <li>After users zoom the worksheet, the fixed row or column will zoom and the star sizing will stretch to fill the viewport.</li>
+
+    <li>When the star sized row or column changes, then any binding objects like shapes, charts, comments and floating objects in the worksheet will also follow the change.</li>
+</ul>
+
+<div class="i-box i-box-note">
+    <p><strong>Note:</strong> The following limitations must be kept in mind while working with dynamic column size feature in the worksheet:</p>
+
+    <ul>
+        <li>The row headers and the column headers don't support dynamic sizing.</li>
+
+        <li>Because MS Excel doesn't provide support for dynamic column sizing, the dynamic sizing will not be applicable while importing and exporting excel files.</li>
+
+        <li>While printing to PDF or exporting to excel, it will display the size at view size(old size).</li>
+    </ul>
+</div>
+
+<h3 id="e">Using Code</h3>
+
+<p>Refer to the following example code to configure dynamic column sizing in a worksheet.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <p>&lt;script&gt;<br />
+                    $(document).ready(function ()</p>
+
+                    <p>{<br />
+                    // Initializing Spread<br />
+                    var spread = new GC.Spread.Sheets.Workbook(document.getElementById('ss'), { sheetCount: 1 });</p>
+
+                    <p><br />
+                    // Get the activesheet<br />
+                    var activeSheet = spread.getSheet(0);<br />
+                    activeSheet.suspendPaint();<br />
+                    var colHeader = GC.Spread.Sheets.SheetArea.colHeader;<br />
+                    activeSheet.setRowCount(12);<br />
+                    activeSheet.setColumnCount(5);<br /></p>
+
+                    <p>// Setting dynamic column sizes<br />
+                    activeSheet.setColumnWidth(0, "1.5*");<br />
+                    activeSheet.setColumnWidth(1, "1.5*");<br />
+                    activeSheet.setColumnWidth(3, "*");</p>
+
+                    <p>activeSheet.setColumnWidth(4, "*");</p>
+
+                    <p>// Set the row height</p>
+
+                    <p>activeSheet.setRowHeight(0, 50, colHeader);<br />
+                    for (var row = 0; row &lt; 12; row++)</p>
+
+                    <p>{<br />
+                    activeSheet.setRowHeight(row, "*");<br />
+                    for (col = 0; col &lt; 5; col++)</p>
+
+                    <p>&nbsp; {<br />
+                    &nbsp;&nbsp;&nbsp; activeSheet.getCell(row, col)<br />
+                    &nbsp;&nbsp;&nbsp; .cellPadding('0 0 0 10')<br />
+                    &nbsp;&nbsp;&nbsp; .vAlign(GC.Spread.Sheets.VerticalAlign.center);<br />
+                    &nbsp;&nbsp; }<br />
+                    &nbsp;}<br />
+                    activeSheet.setValue(0, 0, 'Company Name', colHeader);<br />
+                    activeSheet.setValue(0, 1, 'City', colHeader);<br />
+                    activeSheet.setValue(0, 2, 'State', colHeader);<br />
+                    activeSheet.setValue(0, 3, 'Phone', colHeader);<br />
+                    activeSheet.setValue(0, 4, 'Fax', colHeader);</p>
+
+                    <p><br />
+                    activeSheet.setArray(0, 0, [<br />
+                    ["Super Mart of the West", "Bentonville", "Arkansas", "(800) 555-2797", "(800) 555-2171"],<br />
+                    ["Electronics Depot", "Atlanta", "Georgia", "(800) 595-3232", "(800) 595-3231"],<br />
+                    ["K&amp;S Music", "Minneapolis", "Minnesota", "(612) 304-6073", "(612) 304-6074"],<br />
+                    ["Tom's Club", "Issaquah", "Washington", "(800) 955-2292", "(800) 955-2293"],<br />
+                    ["E-Mart", "Hoffman Estates", "Illinois", "(847) 286-2500", "(847) 286-2501"],<br />
+                    ["Walters", "Deerfield", "Illinois", "(847) 940-2500", "(847) 940-2501"],<br />
+                    ["StereoShack", "Fort Worth", "Texas", "(817) 820-0741", "(817) 820-0742"],<br />
+                    ["Circuit Town", "Oak Brook", "Illinois", "(800) 955-2929", "(800) 955-9392"],<br />
+                    ["Premier Buy", "Richfield", "Minnesota", "(612) 291-1000", "(612) 291-2001"],<br />
+                    ["ElectrixMax", "Naperville", "Illinois", "(630) 438-7800", "(630) 438-7801"],<br />
+                    ["Video Emporium", "Dallas", "Texas", "(214) 854-3000", "(214) 854-3001"],<br />
+                    ["Screen Shop", "Mooresville", "North Carolina", "(800) 445-6937", "(800) 445-6938"]<br />
+                    ]);<br /></p>
+
+                    <p>spread.resumePaint();<br />
+                    });<br />
+                    &lt;/script&gt;</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div><!--DXMETADATA end-->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORISED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""%%phrase:name=SeeAlso%%%%designlist:tagidentifier=seealso,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><!--DXMETADATA end-->
+            
+            <div id="i-footer-content" class="i-footer-content">
+                <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p><p>Copyright © 2019 GrapeCity, Inc. All rights reserved.</p>
+<p><a href="https://www.grapecity.com/en/forums/winforms-edition" target="_blank">Product Support Forum</a> | <a href="javascript:window.print()">Print this page</a></p>
+<ul class="social">
+<li><a href="https://www.facebook.com/GrapeCityUS/" target="_blank" class="facebook">&nbsp;</a></li>
+<li><a href="https://twitter.com/GrapeCityUS" target="_blank" class="twitter">&nbsp;</a></li>
+<li><a href="https://www.linkedin.com/company/grapecity" target="_blank" class="linkedin">&nbsp;</a></li>
+</ul>
+</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end-->
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

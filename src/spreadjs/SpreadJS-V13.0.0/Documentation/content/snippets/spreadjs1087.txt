@@ -1,0 +1,5 @@
+spread.options.copyPasteHeaderOptions = GC.Spread.Sheets.CopyPasteHeaderOptions.allHeaders;
+activeSheet.setRowCount(2,GC.Spread.Sheets.SheetArea.colHeader);
+activeSheet.setColumnCount(2,GC.Spread.Sheets.SheetArea.rowHeader);
+activeSheet.setValue(0, 2,"Column",GC.Spread.Sheets.SheetArea.colHeader);
+activeSheet.setValue(1, 0,"Row",GC.Spread.Sheets.SheetArea.rowHeader);

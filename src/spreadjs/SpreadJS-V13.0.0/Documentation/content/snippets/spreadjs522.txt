@@ -1,0 +1,13 @@
+//Add data
+for (var col = 1; col < 6; col++) {
+    for (var row = 2; row < 11; row++) {
+        activeSheet.setValue(row, col, row + col);
+    }
+}
+
+$("#button1").click(function () {
+spread.options.allowUndo = true;
+spread.commandManager().execute({cmd: "clearValues", sheetName: "Sheet1", ranges: [new GC.Spread.Sheets.Range(8, 5, 2, 1)]});
+    });
+
+<input type="button" id="button1" value="button1"/>

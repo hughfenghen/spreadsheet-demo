@@ -1,0 +1,3 @@
+activeSheet.currentTheme("Foundry");
+activeSheet.resumePaint();
+activeSheet.repaint();

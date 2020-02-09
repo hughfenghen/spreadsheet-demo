@@ -1,0 +1,1 @@
+activeSheet.getCell(1,1).hAlign(GC.Spread.Sheets.HorizontalAlign.center);

@@ -1,0 +1,2 @@
+var name = activeSheet.name();
+alert(name);

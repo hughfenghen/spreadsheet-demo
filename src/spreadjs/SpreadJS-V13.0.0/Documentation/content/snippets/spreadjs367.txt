@@ -1,0 +1,1 @@
+spread.addSheet(0,new GC.Spread.Sheets.Worksheet("custom"));

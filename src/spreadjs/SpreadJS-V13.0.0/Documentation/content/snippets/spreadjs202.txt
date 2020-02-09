@@ -1,0 +1,22 @@
+function FactorialFunction() {
+    this.name = "FACTORIAL";
+    this.maxArgs = 1;
+    this.minArgs = 1;
+}
+FactorialFunction.prototype = new GC.Spread.CalcEngine.Functions.Function();
+FactorialFunction.prototype.evaluate = function () {
+    var result = 1, args = arguments;
+    if (args.length === 1 && !isNaN(parseInt(args[0]))) {
+        for (var i = 1; i < args[0]; i++) {
+            result = i * result;
+        }
+        return result;
+    }
+    return "#VALUE!";
+}
+
+var factorial = new FactorialFunction();
+spread.addCustomFunction(factorial);
+activeSheet.getCell(0,0).formula("factorial(5)");
+var name = spread.getCustomFunction("factorial");
+alert(name);

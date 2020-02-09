@@ -1,0 +1,3 @@
+activeSheet.bind(GC.Spread.Sheets.Events.UserFormulaEntered, function (e, info) {    
+        alert("Formula (" + info.formula + ")");
+});

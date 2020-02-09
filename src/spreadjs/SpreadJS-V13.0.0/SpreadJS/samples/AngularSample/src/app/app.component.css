@@ -1,0 +1,105 @@
+.app-container {
+    margin: 0 10%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 20px #e3e3e3;
+}
+
+.app-header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 60px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.header-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 30px;
+    font-family: 'Forza SSm A', 'Forza SSm B';
+    font-weight: bold;
+    height: 30px;
+    margin-top: -15px;
+    top: 50%;
+    vertical-align: middle;
+}
+
+.app-footer {
+    position: absolute;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 60px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin-top: -8px;
+    height: 16px;
+    font-size: 16px;
+    font-family: 'Forza SSm A', 'Forza SSm B';
+}
+
+.body-container {
+    position: absolute;
+    top: 80px;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+}
+
+.navigationBar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 20px;
+    padding: 0 10px;
+    width: 200px;
+    border-right: 2px solid #e3e3e3;
+}
+
+.navigationBar li {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.componentContainer {
+    position: absolute;
+    padding: 10px;
+    left: 242px;
+    top: 0;
+    bottom: 20px;
+    right: 0;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:visited, a:link {
+    color: #607D8B;
+}
+
+nav a:hover {
+    color: #039be5;
+    background-color: #CFD8DC;
+}
+
+nav a.active {
+    color: #039be5;
+}

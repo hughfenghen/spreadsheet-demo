@@ -1,0 +1,59 @@
+   	function NameCellType() {
+        }
+        NameCellType.prototype = new GC.Spread.Sheets.CellTypes.Base();
+        NameCellType.prototype.updateEditor = function (editorContext, cellStyle, cellRect, context) {
+            if (editorContext) {
+                $(editorContext).width(cellRect.width);
+                $(editorContext).height(cellRect.height + 20);
+            }
+        };
+        NameCellType.prototype.createEditorElement = function (context) {
+            var div = document.createElement("div");
+            var $div = $(div);
+            $div.attr("gcUIElement", "gcEditingInput");
+            $div.css("background-color", "white");
+            $div.css("position", "absolute");
+            $div.css("overflow", "hidden");
+            $div.css("border", "2px #5292f7 solid");
+            var $span1 = $("<span>Enter Your Name</span>");
+            $span1.css("display", "block");
+            var $input1 = $("<input type='text'/>");
+            $div.append($span1);
+            $div.append($input1);
+            return div;
+        };
+        NameCellType.prototype.getEditorValue = function (editorContext, context) {
+            if (editorContext) {
+                var input1 = editorContext.children[1];
+                var name = $(input1).val();
+                return name;
+            }
+        };
+        NameCellType.prototype.setEditorValue = function (editorContext, value, context) {
+            if (editorContext) {
+                if (value) {
+                    var input1 = editorContext.children[1];
+                    $(input1).val(value);
+                }
+            }
+        };
+        NameCellType.prototype.focus = function (editorContext, context) {
+            if (editorContext) {
+                $(editorContext.children[1]).focus();
+            }
+        };
+        NameCellType.prototype.isImeAware = function (context) {
+            return true;
+        }
+        NameCellType.prototype.updateImeMode = function (editorContext, imeMode, context) {
+            if (editorContext) {
+                var $input = $(editorContext.children[1]);
+                switch (imeMode) {
+                    case GC.Spread.Sheets.ImeMode.Auto: $input.css("ime-mode", "auto"); break;
+                    case GC.Spread.Sheets.ImeMode.Active: $input.css("ime-mode", "active"); break;
+                    case GC.Spread.Sheets.ImeMode.Inactive: $input.css("ime-mode", "inactive"); break;
+                    case GC.Spread.Sheets.ImeMode.Disabled: $input.css("ime-mode", "disabled"); break;
+                }
+            }
+        }
+	sheet.setCellType(1,1,new NameCellType());

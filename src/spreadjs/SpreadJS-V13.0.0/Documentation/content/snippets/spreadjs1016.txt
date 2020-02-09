@@ -1,0 +1,3 @@
+spread.options.resizeZeroIndicator = GC.Spread.Sheets.ResizeZeroIndicator.enhanced;
+activeSheet.getRange(-1, 2, -1, 1).width(0);
+activeSheet.getRange(1, -1, 1, -1).height(0);

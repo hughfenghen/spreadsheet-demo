@@ -1,0 +1,13 @@
+//Note: This code only works with V9 or earlier versions.
+
+<input type="button" id="button1" value="button1"/>
+
+var style = new GC.Spread.Sheets.Style();
+style.backColor = "lightgreen";
+activeSheet.setStyle(1,1,style,GC.Spread.Sheets.SheetArea.viewport);
+
+$("#button1").click(function () {
+style.clear();
+activeSheet.suspendPaint();
+activeSheet.resumePaint();
+    });

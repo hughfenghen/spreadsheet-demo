@@ -1,0 +1,1 @@
+activeSheet.getRange(1, -1, 1, -1).watermark("row");

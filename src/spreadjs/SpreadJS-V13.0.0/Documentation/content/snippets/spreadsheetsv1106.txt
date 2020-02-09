@@ -1,0 +1,11 @@
+var customers = [
+               { ID: 0, Name: 'A', Info1: 'Info0' },
+               { ID: 1, Name: 'B', Info1: 'Info1' },
+               { ID: 2, Name: 'C', Info1: 'Info2' },
+            ];
+            activeSheet.setDataSource(customers);
+
+activeSheet.suspendDirty();
+alert(activeSheet.isDirtySuspended());
+activeSheet.resumeDirty();
+alert(activeSheet.isDirtySuspended());

@@ -1,0 +1,12 @@
+var cellType = new GC.Spread.Sheets.CellTypes.Button(); 
+cellType.buttonBackColor("#FFFF00"); 
+cellType.text("this is a button"); 
+activeSheet.setCellType(1,1,cellType);
+
+spread.bind(GC.Spread.Sheets.Events.ButtonClicked, function (e, args) {
+    var sheet = args.sheet, row = args.row, col = args.col;
+    var cellType = activeSheet.getCellType(row, col);
+    if (cellType instanceof GC.Spread.Sheets.CellTypes.Button) {
+        alert("Button Clicked");
+    }
+});

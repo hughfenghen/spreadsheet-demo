@@ -1,0 +1,3 @@
+activeSheet.currentTheme("Urban");
+activeSheet.resumePaint();
+activeSheet.repaint();

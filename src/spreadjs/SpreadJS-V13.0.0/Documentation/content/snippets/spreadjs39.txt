@@ -1,0 +1,3 @@
+activeSheet.getCell(-1, 3).visible(false);
+activeSheet.getCell(0,3).value("Test");
+activeSheet.getCell(-1, 1).width(100);

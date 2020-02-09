@@ -1,0 +1,19 @@
+<h3>数据绑定</h3>
+<div>
+    <p>以下示例展示如何绑定数据。</p>
+</div>
+
+<div>
+    <gc-spread-sheets [hostStyle]="hostStyle" hostClass="spreadContainer">
+        <gc-worksheet [dataSource]="data" name="All Data">
+        </gc-worksheet>
+        <gc-worksheet [dataSource]="data" name="Part Data" [autoGenerateColumns]="autoGenerateColumns">
+            <gc-column dataField="name" headerText="Name"></gc-column>
+            <gc-column dataField="city" headerText="City"></gc-column>
+            <gc-column dataField="state" headerText="State"></gc-column>
+            <gc-column dataField="lat" headerText="Lat"></gc-column>
+            <gc-column dataField="lon" headerText="Lon"></gc-column>
+            <gc-column dataField="vol2011" headerText="Vol2011"></gc-column>
+        </gc-worksheet>
+    </gc-spread-sheets>
+</div>

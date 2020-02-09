@@ -1,0 +1,6 @@
+activeSheet.setValue(0, 0, "customName1");
+activeSheet.setValue(0, 1, "customName2");
+activeSheet.addCustomName("customName1", "=12", 0, 0);
+activeSheet.addCustomName("customName2", "Average(20,45)", 0, 0);
+activeSheet.setFormula(1, 0, "customName1");
+activeSheet.setFormula(1, 1, "customName2");

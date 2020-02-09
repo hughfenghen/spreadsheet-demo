@@ -1,0 +1,496 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%ProjectTitle%% - %%ItemTitle%%</title>" --><title>SpreadJS Documentation - Structured Reference Formulas</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ProjectTitle%% - %%ItemTitleNoQuotes%%""/>" --><meta name="Title" content="SpreadJS Documentation - Structured Reference Formulas"/><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n496","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="light" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="SpreadJS supports structured reference formulas in tables." /><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-topics/topics.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-topics/topics.mshv1.css"" data-responsive-mobile=""template/packages/core-topics/topics.mobile.css"" data-responsive-tablet=""template/packages/core-topics/topics.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="script"--><script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="script"--><script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="60f1abd3-c156-4f13-90b0-095a23afa357"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="9d25871c-c47e-4700-a8b5-50b17e2a631f"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocOrdinal" format="<meta name=""Microsoft.Help.TocOrder"" content=""%%TocOrdinal%%""/>" --><meta name="Microsoft.Help.TocOrder" content="5"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/hs-simpletab.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="StylePropertyValues" format="<style>%%StylePropertyValues%%</style>" --><style>.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+    <!--DXMETADATA start type="CustomHeadContent" --><link rel="stylesheet" type="text/css" href="template/packages/core-web/css/SP.css">
+<script type="text/javascript">
+var currentHeader = function() {
+    return "spjs";
+}
+</script>
+<script src="template/packages/core-web/script/topNavigation.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WT462SJ"></script>
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime()
+                , event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WT462SJ');
+    </script>
+<!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->SpreadJS Documentation<!--DXMETADATA end--></div>
+            <div class="i-search-container">
+                <!--DXMETADATA start type="outputfileextension" format="<form action=""websearch%%outputfileextension%%"">" --><form action="websearch.html"><!--DXMETADATA end-->
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                <!--DXMETADATA start type="Literal" value="</form>" --></form><!--DXMETADATA end-->
+            </div>
+            <!--DXMETADATA start type="outputfileextension" format="<a id=""i-index-button"" href=""webindex%%outputfileextension%%""></a>" --><a id="i-index-button" href="webindex.html"></a><!--DXMETADATA end-->
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container">
+<a href="overview.html">SpreadJS Documentation</a>
+ / <a href="devguide.html">Developer's Guide</a>
+ / <a href="features.html">Features</a>
+ / <a href="ManagingDataVisualizationAndObjects.html">Manage Data Visualization and Objects</a>
+ / <a href="tablegen.html">Tables</a>
+ / Structured Reference Formulas</div><!--DXMETADATA end --></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="ItemTitle" -->Structured Reference Formulas<!--DXMETADATA end--></div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading"><!--DXMETADATA start type="Phrase" Name="IN_THIS_TOPIC" -->In This Topic<!--DXMETADATA end--></span>
+            </div>
+            <!--DXMETADATA start type="TopicSection" name="BodyText"--><p>SpreadJS supports structured reference formulas in tables.</p>
+
+<p>The structured reference formula uses keywords and the column name of the table to refer to cell ranges in the table.</p>
+
+<p>The components of a structured reference are illustrated in the following image. This formula adds total sales&nbsp;and&nbsp;tax amounts.</p>
+
+<p><img border="0" alt="" src="images/structure.png" /></p>
+
+<ol>
+    <li>
+        <div>
+            A table name is a meaningful name that you provide to reference the actual table data (excluding the headers and totals row, if any).
+        </div>
+    </li>
+
+    <li>
+        <div>
+            A column specifier is derived from the column header and is enclosed in brackets. The column specifier references the column data (excluding the column header and total, if any).
+        </div>
+    </li>
+
+    <li>
+        <div>
+            A special item specifier can be used to refer to specific portions of the table, such as the Totals row.
+        </div>
+    </li>
+
+    <li>
+        <div>
+            The table specifier is the outer portion of the structured reference that is enclosed in square brackets following the table name.
+        </div>
+    </li>
+
+    <li>
+        <div>
+            A structured reference is the entire string beginning with the table name and ending with the table specifier.
+        </div>
+    </li>
+</ol>
+
+<p>The user can use special items to refer to various areas of a table for easier use in formulas. The following table lists the special item specifiers that the user can use in a structured reference:</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td><strong>Special Item</strong></td>
+
+            <td><strong>Example</strong></td>
+
+            <td><strong>References</strong></td>
+
+            <td><strong>Cell Range</strong></td>
+        </tr>
+
+        <tr>
+            <td>#All</td>
+
+            <td>=DeptSales[#All]</td>
+
+            <td>Entire table including column headers, data, and totals</td>
+
+            <td>A1:E8</td>
+        </tr>
+
+        <tr>
+            <td>#Data</td>
+
+            <td>=DeptSales[#Data]</td>
+
+            <td>Data</td>
+
+            <td>A2:E7</td>
+        </tr>
+
+        <tr>
+            <td>#Headers</td>
+
+            <td>=DeptSales[#Headers]</td>
+
+            <td>Header&nbsp;row</td>
+
+            <td>A1:E1</td>
+        </tr>
+
+        <tr>
+            <td>#Totals</td>
+
+            <td>=DeptSales[#Totals]</td>
+
+            <td>Total row. Returns null if none exists</td>
+
+            <td>A8:E8</td>
+        </tr>
+
+        <tr>
+            <td>#This Row</td>
+
+            <td>=DeptSales[#This Row]</td>
+
+            <td>Portion of the columns in the current row</td>
+
+            <td>A5:E5 (current row is 5)</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>The "#This Row" item can be abbreviated as "@". For example =DeptSales[#This Row] is the same as =DeptSales[@].</p>
+
+<p>The "#Data" item can be combined with "#Headers" or "#Totals". The following table lists examples:</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td><strong>Special Item</strong></td>
+
+            <td><strong>Example</strong></td>
+
+            <td><strong>References</strong></td>
+
+            <td><strong>Cell Range</strong></td>
+        </tr>
+
+        <tr>
+            <td>#Headers and #Data</td>
+
+            <td>=DeptSales[[#Headers], [#Data]]</td>
+
+            <td>Column headers and data</td>
+
+            <td>A1:E7</td>
+        </tr>
+
+        <tr>
+            <td>#Data and #Totals</td>
+
+            <td>=DeptSales[[#Data], [#Totals]]</td>
+
+            <td>Data and the total row</td>
+
+            <td>A2:E8</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>If the special item is not specified, it is treated as data as&nbsp;shown in the following table:</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td><strong>Special Item</strong></td>
+
+            <td><strong>Example</strong></td>
+
+            <td><strong>References</strong></td>
+
+            <td><strong>Cell Range</strong></td>
+        </tr>
+
+        <tr>
+            <td>None</td>
+
+            <td>=DeptSales[] or =DeptSales</td>
+
+            <td>Data</td>
+
+            <td>A2:E7</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>Column specifiers represent references to the entire data column with the exception of the column header and total. The following table lists the column specifiers:</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td><strong>Column Specifier</strong></td>
+
+            <td><strong>Example</strong></td>
+
+            <td><strong>References</strong></td>
+
+            <td><strong>Cell Range</strong></td>
+        </tr>
+
+        <tr>
+            <td>Single column</td>
+
+            <td>=DeptSales[SaleAmt]</td>
+
+            <td>"SaleAmt" column in data</td>
+
+            <td>C2:C7</td>
+        </tr>
+
+        <tr>
+            <td>Column range</td>
+
+            <td>=DeptSales[[SaleAmt]:[TaxAmt]]</td>
+
+            <td>Range of column "SaleAmt" to column "TaxAmt" in data</td>
+
+            <td>C2:E7</td>
+        </tr>
+
+        <tr>
+            <td>None</td>
+
+            <td>=DeptSales[[#Data]]</td>
+
+            <td>All columns in data</td>
+
+            <td>A2:E8</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>All table, column, and special item specifiers must be enclosed in matching brackets ([ ]). A specifier that contains other specifiers requires outer matching brackets to enclose the inner matching brackets of the other specifiers. Priority is from highest to lowest if there is a conflict between the policies.</p>
+
+<p>The following rules apply to the brackets:</p>
+
+<ol>
+    <li>
+        <div>
+            If there are no specifiers, the table specifier brackets can be left out. For example, "=DeptSales[]" equals "=DeptSales".
+        </div>
+    </li>
+
+    <li>
+        <div>
+            If there is only a single special item or a single column specifier, the table specifier brackets can be left out. For example, "=DeptSales[[#Data]]" equals "=DeptSales[#Data]", "=DeptSales[[TaxAmt]]" equals "=DeptSales[TaxAmt]".
+        </div>
+    </li>
+
+    <li>
+        <div>
+            If there is a column specifier or a combination of special items, the special item must be enclosed in matching brackets. For example, "=DeptSales[#Data, [TaxAm]]" and "=DeptSales[#Data, #Totals]" is not allowed.
+        </div>
+    </li>
+
+    <li>
+        <div>
+            If a table column header contains one of the following special characters, the entire column header must be enclosed in brackets: space, tab, line break, carriage return, comma (,), colon (:), period (.), left bracket ([) , right bracket (]), pound sign (#), single quotation mark ('), double quotation mark ("), left brace ({), right brace (}), dollar sign ($), caret (^), ampersand (&amp;), asterisk (*), plus sign (+), equal sign (=), minus sign (-), greater than symbol (&gt;), less than symbol (&lt;), and division sign (//). For example,&nbsp;if one column name is "#column1", the formula "=Table1[#column1]" is not allowed, it must be "=Table1['#column1]".
+        </div>
+    </li>
+
+    <li>
+        <div>
+            If there is a column range specifier, one of the column specifiers must be enclosed in brackets. For example, "=Table1[column1:column2]" is not allowed, it must be "=Table1[[column1]:column2]" or "=Table1[column1:[column2]]" or "=Table1[[column1]:[column2]]".
+        </div>
+    </li>
+
+    <li>
+        <div>
+            The <a href="mailto:'@'">'@'</a> special item brackets can be left out. For example, "=DeptSales[@, TaxAmt]" equals "=DeptSales[[@], TaxAmt]".
+        </div>
+    </li>
+</ol>
+
+<p>The following general rules also apply:</p>
+
+<ol>
+    <li>
+        <div>
+            All table, column, and special item specifiers are case insensitive.
+        </div>
+    </li>
+
+    <li>
+        <div>
+            The following characters have special meaning and require the use of a single quotation mark (') as an escape character: left bracket ([), right bracket (]), pound sign(#), and single quotation mark ('). For example, "=Table1[colu#mn1]" is not allowed, it must be "=Table1[colu'#mn1]".
+        </div>
+    </li>
+
+    <li>
+        <div>
+            Use the comma (,) to separate the combined special items and column specifiers. For example, "=DeptSales[[#Data], [#Totals], TaxAmt]".
+        </div>
+    </li>
+
+    <li>
+        <div>
+            The order between special items and column specifiers is independent. For example, "=DeptSales[[#Data], [#Totals], TaxAmt]" equals "=DeptSales[[#Totals], TaxAmt, [#Data]]".
+        </div>
+    </li>
+
+    <li>
+        <div>
+            The comma (,) behind the <a href="mailto:'@'">'@'</a> special item can be left out. For example, "=DeptSales[@, TaxAmt]" equals "=DeptSales[@TaxAmt]".
+        </div>
+    </li>
+</ol>
+
+<p>You can add structured references to formulas&nbsp;in tables using the&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Tables.Table~setColumnDataFormula.html">setColumnDataFormula</a>&nbsp;and&nbsp;<a href="SpreadJS~GC.Spread.Sheets.Tables.Table~setColumnFormula.html">setColumnFormula</a>&nbsp;methods. You can also&nbsp;reference table data in&nbsp;formulas outside of the table area.&nbsp;For example, activeSheet.getCell(7,1).formula("SUM(Table1[SubTotal])");. The last formula that is set has priority between column and cell formulas.</p>
+
+<div class="i-box i-box-note">
+    The column specifier in the formula does not apply to the cells in headers and footers.
+</div>
+
+<p><img border="0" alt="" src="images/structure1.png" /></p>
+
+<h4>Using Code</h4>
+
+<p>The following example creates a table and uses structured reference formulas to create totals.</p>
+
+<div class="i-filtered-content-JavaScript" data-title="JavaScript" data-itemid="JavaScript">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>JavaScript</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">activeSheet.tables.add("Table1", 0, 0, 4, 3, GC.Spread.Sheets.Tables.TableThemes.dark1);<br />
+                activeSheet.getCell(0,0).text("Value1");<br />
+                activeSheet.getCell(0,1).text("Value2");<br />
+                activeSheet.getCell(0,2).text("SubTotal");<br />
+                activeSheet.getCell(1,0).text("1");<br />
+                activeSheet.getCell(2,0).text("2");<br />
+                activeSheet.getCell(3,0).text("3");<br />
+                activeSheet.getCell(1,1).text("5");<br />
+                activeSheet.getCell(2,1).text("5");<br />
+                activeSheet.getCell(3,1).text("5");<br />
+                var sTable = activeSheet.tables.findByName("Table1").setColumnDataFormula(2, "=[Value1]*[Value2]");<br />
+                sTable.showFooter(true);<br />
+                //set footer value<br />
+                sTable.setColumnValue(0, "Total");<br />
+                sTable.setColumnFormula(2, "SUM(Table1[SubTotal])");<br />
+                activeSheet.getColumn(0).width(80);<br />
+                activeSheet.getColumn(1).width(80);<br />
+                activeSheet.getColumn(2).width(80);<br />
+                //activeSheet.getCell(7,1).formula("SUM(Table1[SubTotal])");</td>
+            </tr>
+        </tbody>
+    </table>
+</div><!--DXMETADATA end-->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORISED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""%%phrase:name=SeeAlso%%%%designlist:tagidentifier=seealso,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><div class="i-see-also-link">
+<a href="tables.html">Create Tables</a></div>
+<div class="i-see-also-link">
+<a href="formulas.html">Formulas</a></div>
+
+</div><!--DXMETADATA end-->
+            
+            <div id="i-footer-content" class="i-footer-content">
+                <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p><p>Copyright © 2019 GrapeCity, Inc. All rights reserved.</p>
+<p><a href="https://www.grapecity.com/en/forums/winforms-edition" target="_blank">Product Support Forum</a> | <a href="javascript:window.print()">Print this page</a></p>
+<ul class="social">
+<li><a href="https://www.facebook.com/GrapeCityUS/" target="_blank" class="facebook">&nbsp;</a></li>
+<li><a href="https://twitter.com/GrapeCityUS" target="_blank" class="twitter">&nbsp;</a></li>
+<li><a href="https://www.linkedin.com/company/grapecity" target="_blank" class="linkedin">&nbsp;</a></li>
+</ul>
+</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end-->
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

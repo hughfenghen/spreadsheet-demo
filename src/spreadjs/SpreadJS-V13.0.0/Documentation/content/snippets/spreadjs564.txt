@@ -1,0 +1,3 @@
+activeSheet.getCell(1,1).tabStop(false);
+activeSheet.getRange(1, -1, 1, -1, GC.Spread.Sheets.SheetArea.viewport).tabStop(false);
+activeSheet.getRange(-1, 1, -1, 1, GC.Spread.Sheets.SheetArea.viewport).tabStop(false);

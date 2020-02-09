@@ -1,0 +1,20 @@
+activeSheet.setValue(0, 0, 1, GC.Spread.Sheets.SheetArea.viewport);
+activeSheet.setValue(1, 0, 2, GC.Spread.Sheets.SheetArea.viewport);
+activeSheet.setFormula(2, 0, "=A1+A2", GC.Spread.Sheets.SheetArea.viewport);
+activeSheet.setValue(0, 1, 3, GC.Spread.Sheets.SheetArea.viewport);
+activeSheet.setValue(1, 1, 4, GC.Spread.Sheets.SheetArea.viewport);
+activeSheet.setFormula(2, 1, "=B1+B2", GC.Spread.Sheets.SheetArea.viewport);
+var fromRange = [new GC.Spread.Sheets.Range(0, 0, 3, 2)];
+var toRanges = [new GC.Spread.Sheets.Range(5, 0, 3, 2)];
+
+$("#button1").click(function () {
+    //Cut Paste Action
+    spread.commandManager().execute({cmd: "clipboardPaste", sheetName: "Sheet1", fromSheet: activeSheet, fromRanges: fromRange, pastedRanges: toRanges, isCutting: true, clipboardText: "", pasteOption: GC.Spread.Sheets.ClipboardPasteOptions.all});
+});
+$("#button2").click(function () {
+    spread.commandManager().execute({cmd: "clipboardPaste", sheetName: "Sheet1", fromSheet: activeSheet, fromRanges: fromRange, pastedRanges: toRanges, isCutting: false, clipboardText: "", pasteOption: GC.Spread.Sheets.ClipboardPasteOptions.all});
+});
+
+//Add button controls to page
+<input type="button" id="button1" value="button1"/>
+<input type="button" id="button2" value="button2"/>

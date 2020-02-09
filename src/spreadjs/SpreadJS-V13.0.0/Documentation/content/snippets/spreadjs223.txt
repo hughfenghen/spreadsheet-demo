@@ -1,0 +1,3 @@
+sheet.setRowCount(10);
+sheet.setColumnCount(8);
+sheet.frozenRowCount(1);

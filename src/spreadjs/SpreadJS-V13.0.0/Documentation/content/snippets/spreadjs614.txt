@@ -1,0 +1,8 @@
+activeSheet.pictures.add("f2","Event.png",2,2,10,10);
+var picture = activeSheet.pictures.get("f2");
+picture.pictureStretch(GC.Spread.Sheets.ImageLayout.center);
+picture.backColor("Blue");
+picture.borderWidth(2);
+picture.borderColor("Red");
+picture.borderStyle("dotted");
+picture.borderRadius(5);
