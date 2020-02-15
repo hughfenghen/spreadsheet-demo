@@ -2,7 +2,7 @@ const Automerge = require('automerge')
 
 let initTable = Automerge.change(Automerge.init(), doc => {
   doc.table = [
-    ['嘉辰', '刘俊', '吕喆', '高丽君'],
+    ['jc', 'lj', 'lz', 'glj'],
     ['', '', '', ''],
     ['', '', '', ''],
     ['', '', '', ''],
@@ -14,21 +14,21 @@ let serialized = Automerge.save(initTable)
 let jiachen = Automerge.load(serialized)
 jiachen = Automerge.change(jiachen, (doc) => {
   // doc.table = [
-  //   ['嘉辰', '1', '1', '刘俊', '吕喆', '高丽君'],
-  //   ['1', '王慧文', '穆荣均', '', '', ''],
-  //   ['1', '王兴', '没有内容了', '', '', ''],
+  //   ['jc', '1', '1', 'lj', 'lz', 'glj'],
+  //   ['1', 'whw', 'm', '', '', ''],
+  //   ['1', 'w', '没有内容了', '', '', ''],
   //   ['', '没有内容了', '没有内容了', '', '', ''],
   //   ['', '没有内容了', '没有内容了', '', '', ''],
   // ]
   doc.table[1][0] = '1'
   doc.table[2][0] = '1'
   doc.table[0].splice(1, 0, '1')
-  doc.table[1].splice(1, 0, '王慧文')
-  doc.table[2].splice(1, 0, '王兴')
+  doc.table[1].splice(1, 0, 'whw')
+  doc.table[2].splice(1, 0, 'w')
   doc.table[3].splice(1, 0, '没有内容了')
   doc.table[4].splice(1, 0, '没有内容了')
   doc.table[0].splice(2, 0, '1')
-  doc.table[1].splice(2, 0, '穆荣均')
+  doc.table[1].splice(2, 0, 'm')
   doc.table[2].splice(2, 0, '没有内容了')
   doc.table[3].splice(2, 0, '没有内容了')
   doc.table[4].splice(2, 0, '没有内容了')
@@ -37,7 +37,7 @@ jiachen = Automerge.change(jiachen, (doc) => {
 let liujun = Automerge.load(serialized)
 liujun = Automerge.change(liujun, (doc) => {
   // doc.table = [
-  //   ['嘉辰', '刘俊', '', '吕喆', '高丽君'],
+  //   ['jc', 'lj', '', 'lz', 'glj'],
   //   ['', '1', 'q', '', ''],
   //   ['', '2', 'w', '', ''],
   //   ['', '3', 'e', '', ''],
@@ -65,18 +65,18 @@ console.log(222, serverDoc);
 // output
 // 111 {
 //   table: [
-//     ['嘉辰', '1', '1', '刘俊', '吕喆', '高丽君'],
-//     ['1', '王慧文', '穆荣均', '', '', ''],
-//     ['1', '王兴', '没有内容了', '', '', ''],
+//     ['jc', '1', '1', 'lj', 'lz', 'glj'],
+//     ['1', 'whw', 'm', '', '', ''],
+//     ['1', 'w', '没有内容了', '', '', ''],
 //     ['', '没有内容了', '没有内容了', '', '', ''],
 //     ['', '没有内容了', '没有内容了', '', '', '']
 //   ]
 // }
 // 222 {
 //   table: [
-//     ['嘉辰', '1', '1', '刘俊', '', '吕喆', '高丽君'],
-//     ['1', '王慧文', '穆荣均','1', 'q', '', ''],
-//     ['1', '王兴', '没有内容了', '2', 'w', '', ''],
+//     ['jc', '1', '1', 'lj', '', 'lz', 'glj'],
+//     ['1', 'whw', 'm','1', 'q', '', ''],
+//     ['1', 'w', '没有内容了', '2', 'w', '', ''],
 //     ['', '没有内容了', '没有内容了', '3', 'e', '', ''],
 //     ['', '没有内容了', '没有内容了', '4', 'r', '', '']
 //   ]
