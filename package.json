@@ -1,0 +1,11 @@
+{
+  "name": "spreadsheet-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/hughfenghen/handsontable-vs-spreadjs.git",
+  "author": "hughfenghen <hughfenghen@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "automerge": "^0.12.1"
+  }
+}
