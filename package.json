@@ -6,6 +6,7 @@
   "author": "hughfenghen <hughfenghen@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "automerge": "^0.12.1"
+    "automerge": "^0.12.1",
+    "yjs": "^13.0.4"
   }
 }
