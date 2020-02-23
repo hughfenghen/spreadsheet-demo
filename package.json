@@ -5,8 +5,16 @@
   "repository": "https://github.com/hughfenghen/handsontable-vs-spreadjs.git",
   "author": "hughfenghen <hughfenghen@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev:yjs": "parcel src/yjs/*.html",
+    "dev:yjs-s": "PORT=12321 node ./node_modules/y-websocket/bin/server.js"
+  },
   "dependencies": {
     "automerge": "^0.12.1",
+    "y-websocket": "^1.2.4",
     "yjs": "^13.0.4"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
   }
 }
