@@ -1,5 +1,7 @@
 # spreadsheet-demo
 
+*这是电子表格从调研到demo的杂乱记录，关注demo的直接看最后*  
+
 ## [Handsontable](https://handsontable.com/docs/7.3.0/tutorial-introduction.html) vs [SpreadJS](https://demo.grapecity.com.cn/spreadjs/SpreadJSTutorial/home)
 
 | 维度   | Handsontable | SpreadJS |
@@ -40,10 +42,10 @@ SpreadJS：
 
 ### OT(Operational Transformation)
 1989年被提出，理论与工程实践都经历了较长时间，本质是将每个用户的所有操作分解为原子操作、调整顺序，发送给其他用户。  
-但因太多的边缘case，OT算法可能导致不同用户无法收敛到相同状态。
+但因太多的边缘case，OT算法可能导致不同用户无法收敛到相同状态。[基本概念](https://mayanbin.com/post/realtime-collaborative-editing.html)
 
 ### CRDT(Conflict-free replicated data type)
-2006年左右开始出现，2011年正式定义，并快速应用与分布式场景。基本原理图解
+2006年左右开始出现，2011年正式定义，并快速应用与分布式场景，[基本原理](https://juejin.im/entry/5b922d336fb9a05ce7513cff)
 
 ### 对比
 OT更传统，目前在文本协同编辑领域应用更多，但更加复杂，对其理论研究的应用已到达极限。  
@@ -60,3 +62,11 @@ Yjs专为协同编辑文本、富文本而设计，并在性能方面做了优�
 
 yjs作者：https://github.com/yjs/yjs/issues/145  
 性能对比：https://github.com/dmonad/crdt-benchmarks  
+
+## yjs + spreadjs 协同编辑demo
+1. clone 本项目到本地 `git clone https://github.com/hughfenghen/spreadsheet-demo.git`  
+2. 执行 `yarn`  
+3. 运行服务端 `yarn dev:yjs-s`  
+4. 运行客户端 `yarn dev:spread` 
+5. 浏览器中分别在两个tab中打开`localhost:1234`  
+6. 编辑单元格，内容将自动同步到另一个页面  

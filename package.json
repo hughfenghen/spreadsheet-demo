@@ -7,10 +7,12 @@
   "license": "MIT",
   "scripts": {
     "dev:yjs": "parcel src/yjs/*.html",
+    "dev:spread": "parcel src/yjs-spreadjs/*.html",
     "dev:yjs-s": "PORT=12321 node ./node_modules/y-websocket/bin/server.js"
   },
   "dependencies": {
     "automerge": "^0.12.1",
+    "lodash": "^4.17.15",
     "y-websocket": "^1.2.4",
     "yjs": "^13.0.4"
   },
